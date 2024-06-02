@@ -70,7 +70,7 @@ const CardDescriptionL = ({ className }) => {
                     },
                   }}
                   viewport={{ once: true }}
-                  className="text-2xl lg:text-3xl text-white mb-5"
+                  className="text-2xl lg:text-3xl text-[#2F2E2E] mb-5"
                 >
                   {cardDescriptionLContent.heading.title}
                 </motion.h2>
@@ -88,7 +88,7 @@ const CardDescriptionL = ({ className }) => {
                   },
                 }}
                 viewport={{ once: true }}
-                className="leading-relaxed mb-5 text-white text-justify lg-w-[500px]"
+                className="leading-relaxed mb-5 text-[#2F2E2E] text-justify lg-w-[500px]"
               >
                 {cardDescriptionLContent.content.description}
               </motion.p>
@@ -105,7 +105,7 @@ const CardDescriptionL = ({ className }) => {
                   },
                 }}
                 viewport={{ once: true }}
-                className="leading-relaxed mb-5 text-white text-justify md-w-[500px]"
+                className="leading-relaxed mb-5 text-[#2F2E2E] text-justify md-w-[500px]"
               >
                 {cardDescriptionLContent.content.description1}
               </motion.p>
@@ -122,7 +122,7 @@ const CardDescriptionL = ({ className }) => {
                   },
                 }}
                 viewport={{ once: true }}
-                className="leading-relaxed mb-10 text-white text-justify md-w-[500px]"
+                className="leading-relaxed mb-10 text-[#2F2E2E] text-justify md-w-[500px]"
               >
                 {cardDescriptionLContent.content.description2}
               </motion.p>

@@ -69,13 +69,13 @@ const Testimonials = () => {
       <h3 className="text-orange-500 text-xl text-center">
         Retour de ma formation
       </h3>
-      <h2 className="text-white text-3xl text-center mb-10">
+      <h2 className="text-[#2F2E2E] text-3xl text-center mb-10">
         Ce qu&apos;ils pensent de mes services !
       </h2>
       <div className="flex flex-wrap justify-center">
         {testimonials.map((testimonial, index) => (
           <div key={index} className="w-full sm:w-1/2 lg:w-1/3 px-4 py-2">
-            <div className="text-white bg-neutral-900 rounded-md p-6 text-md border border-neutral-800 font-thin">
+            <div className="text-[#2F2E2E] bg-neutral-900 rounded-md p-6 text-md border border-neutral-800 font-thin">
               <p>{testimonial.text}</p>
               <div className="flex mt-8 items-start">
                 <Image

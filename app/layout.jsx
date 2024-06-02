@@ -7,9 +7,8 @@ import Footer from './components/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Unlcoaching | Jérémy Prat',
-  description:
-    'Allier entraînement rigoureux et nutrition équilibrée pour un mode de vie sain et durable.',
+  title: 'Portfolio | Andy Ramaroson',
+  description: "Allier pour votre création de site web booster avec de l'A.I",
   icon: {
     icon: ['favicon.icon'],
   },
@@ -18,13 +17,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="fr">
-      <body
-        className={`{inter.className} bg-[#1D1D1D] overflow-x-hidden w-full`}
-      >
+      <body className={`{inter.className} overflow-x-hidden w-full`}>
         <Navigation />
         {children}
       </body>
-      <Footer className="bg-[#2F2E2E]" />
+      <Footer />
     </html>
   )
 }

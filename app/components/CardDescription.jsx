@@ -67,7 +67,7 @@ const CardDescription = ({ className }) => {
                     },
                   }}
                   viewport={{ once: true }}
-                  className="text-2xl lg:text-4xl text-white mb-7"
+                  className="text-2xl lg:text-4xl text-[#2F2E2E] mb-7"
                 >
                   {cardDescriptionContent.heading.title}
                 </motion.h2>
@@ -85,7 +85,7 @@ const CardDescription = ({ className }) => {
                   },
                 }}
                 viewport={{ once: true }}
-                className="leading-relaxed mb-10 text-white"
+                className="leading-relaxed mb-10 text-[#2F2E2E]"
               >
                 {cardDescriptionContent.content.description}
               </motion.p>

@@ -24,7 +24,7 @@ Création du site avec une stack complète en JavaScript avec Nextjs, React et T
 > React App
 - code           : [Github](https://github.com/AndyRama/FullStack_Portfolio)
 - pre-production: [vercel](https://portfolio-eta-three-93.vercel.app/)
-- production     : [vercel](https://andyramaroson.com/)
+<!-- - production     : [vercel](https://andyramaroson.com/) -->
 
 ## Compétences développées
 
@@ -112,7 +112,7 @@ Creation of the site with a complete stack in JavaScript with Nextjs, React and 
 > ReactApp
 - code: [Github](https://github.com/AndyRama/FullStack_Portfolio)
 - pre-production: [vercel](https://portfolio-eta-three-93.vercel.app/)
-- production: [vercel](https://andyramaroson.com/)
+<!-- - production: [vercel](https://andyramaroson.com/) -->
 
 ## Skills developed
 

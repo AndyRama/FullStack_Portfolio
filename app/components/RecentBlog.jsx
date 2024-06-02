@@ -28,7 +28,7 @@ const PostCard = ({ index, post }) => {
         },
       }}
       viewport={{ once: true }}
-      className="bg-[#2F2E2E] relative overflow-hidden group rounded "
+      className="border border-[#2F2E2E] relative overflow-hidden group rounded "
     >
       <Link href={post.url} className="relative block overflow-hidden">
         <Image
@@ -42,7 +42,7 @@ const PostCard = ({ index, post }) => {
       </Link>
 
       <div className="p-6 ">
-        <p className="text-white mb-2 uppercase text-[12px] tracking-[1px]">
+        <p className="text-[#2F2E2E] mb-2 uppercase text-[12px] tracking-[1px]">
           {format(parseISO(post.date), 'LLL d, yyyy')} • {post.author}
         </p>
 
@@ -52,13 +52,13 @@ const PostCard = ({ index, post }) => {
           </Link>
         </h3>
 
-        <p className="text-white mb-3 text-[14px] tracking-[1px]">
+        <p className="text-[#2F2E2E] mb-3 text-[14px] tracking-[1px]">
           {post.excerpt}
         </p>
         <div>
           <Link
             href={post.url}
-            className="text-gray-500 hover:text-white text-[12px] tracking-[2px] uppercase
+            className="text-gray-500 hover:text-[#2F2E2E] text-[12px] tracking-[2px] uppercase
             inline-block  duration-300 transistion-all bg-white-600
             ease-in-out relative before:content-['']
             before:absolute before:bottom-0 before:left-0 before:w-full

@@ -84,7 +84,7 @@ const CardProgram = ({ className }) => {
             },
           }}
           viewport={{ once: true }}
-          className="text-2xl lg:text-4xl text-white"
+          className="text-2xl lg:text-4xl text-[#2F2E2E]"
         >
           {program.heading.title}
         </motion.h2>
@@ -118,7 +118,7 @@ const CardProgram = ({ className }) => {
                   transition: { delay: 0.2, duration: 0.5 },
                 }}
                 viewport={{ once: true }}
-                className="leading-relaxed text-white text-justify max-w-xl text-lg mb-10 lg:mb-16"
+                className="leading-relaxed text-[#2F2E2E] text-justify max-w-xl text-lg mb-10 lg:mb-16"
               >
                 {program.description}
               </motion.p>
@@ -135,7 +135,7 @@ const CardProgram = ({ className }) => {
                   href={program.btn.href}
                   alt="prestations page"
                   className="transistion-all duration-300 ease-in-out text-[14px] 
-                    tracking-[2px] font-bold uppercase text-white hover:text-orange-500 
+                    tracking-[2px] font-bold uppercase text-[#2F2E2E] hover:text-orange-500 
                     hover:border-orange-400 bg-transparent py-4 px-5 rounded inline-block 
                     border hover:shadow-2xl mb-10"
                 >
