@@ -1,19 +1,20 @@
-# Unlcoaching 🇫🇷
+# Portfolio Andy Ramaroson 🇫🇷
 
-<!-- [Pre-prod](https://unlcoachingv1.vercel.app/) <br/>  -->
-<!-- [Production](https://unlcoaching.com//) -->
+[Pre-prod](https://portfolio-eta-three-93.vercel.app/) <br/> 
+<!-- [Production](https://andyramaroson.com//) -->
 
 ------------------------------------------------
 
 Projet Création de site web Développer avec NextJs | React  
 
-**Presentation**
+**Présentation**
 
 <kbd>![Presentation](./home-portfolio.png)</kbd>
 
 > PROBLEMATIQUE
-Jeremy Prat est un coach sportif qui souhaite présenter son activité et ses différents services dans un site internet.
+Andy souhait presenter ses différents projets aux travers de ce site, présenter son activité et ses différents services dans un site.
 Il souhaiterait aussi crée un blog qui l'alimenterait avec des articles concernant son domain expertise actuelle, ...
+Il souhaiterait aussi crée une page service et un calendly pour closer des contrats ...
 
 > BESOIN
 Création du site avec une stack complète en JavaScript avec Nextjs, React et Tailwind css.
@@ -22,8 +23,8 @@ Création du site avec une stack complète en JavaScript avec Nextjs, React et T
 
 > React App
 - code           : [Github](https://github.com/AndyRama/FullStack_Portfolio)
-- pre-production: [vercel](https://unlcoachingv1.vercel.app/)
-- production     : [vercel](https://unlcoaching.com/)
+- pre-production: [vercel](https://portfolio-eta-three-93.vercel.app/)
+- production     : [vercel](https://andyramaroson.com/)
 
 ## Compétences développées
 
@@ -32,13 +33,15 @@ Création du site avec une stack complète en JavaScript avec Nextjs, React et T
 - [x] Créer des différentes pages de l'application 
 - [x] Utilisation de librairie externe 
 - [x] création de test 
-- [x] Déploiement
 - [x] Module System de paiement
+- [x] Module integration calendly
+- [x] Déploiement
+
 
 ## Ressources
 
-- maquette       : [Figma](https://www.figma.com/file/2HDPEwtBEbHZJSam524o6G/unlcoaching?type=design&node-id=0%3A1&mode=dev&t=xIHxkqNgPPmFc5Bh-1)
-- Tableau        : [Trello](https://trello.com/b/3bd4KDlT/unlcoachingcom)
+- maquette       : [Figma](https%3A%2F%2Fwww.figma.com%2Fdesign%2F9VjWT92jDvr5zQaWRCk7Og%2Flemurian-agency%3Fnode-id%3D0-1%26t%3DecE4rtV9gFFqf0Jc-1)
+- Tableau        : [Trello](https://trello.com)
 
 
 ### Editeur recommandé
@@ -83,10 +86,10 @@ Création du site avec une stack complète en JavaScript avec Nextjs, React et T
 
 ---------------------------
 
-# Unlcoaching 🇬🇧
+# Andy Ramaroson Portfolio 🇬🇧
 
-<!-- [Pre-prod](https://unlcoaching.vercel.app/) <br/> -->
-<!-- [Production](https://unlcoaching.com//) -->
+[Pre-prod](https://portfolio-eta-three-93.vercel.app/) <br/>
+<!-- [Production](https://andyramaroson.com//) -->
 
 ------------------------------------------------
 
@@ -97,8 +100,9 @@ Website Creation Project Develop with NextJs | React
 <kbd>![Presentation](./home-portfolio.png)</kbd>
 
 > PROBLEMATIC
-Jeremy Prat is a sports coach who wishes to present his activity and his various services on a website.
-He would also like to create a blog which would provide him with articles concerning his current field of expertise, ...
+Andy wishes to present his different projects through this site, to present his activity and his different services in one site.
+He would also like to create a blog which would provide him with articles concerning his current area of ​​expertise, ...
+He would also like to create a service page and a calendar to close contracts...
 
 > NEED
 Creation of the site with a complete stack in JavaScript with Nextjs, React and Tailwind css.
@@ -106,9 +110,9 @@ Creation of the site with a complete stack in JavaScript with Nextjs, React and 
 ## Deliverables
 
 > ReactApp
-- code: [Github](https://github.com/AndyRama/project_pj_01)
-- pre-production: [vercel](https://unlcoaching.vercel.app/)
-- production: [vercel](https://unlcoaching.com/)
+- code: [Github](https://github.com/AndyRama/FullStack_Portfolio)
+- pre-production: [vercel](https://portfolio-eta-three-93.vercel.app/)
+- production: [vercel](https://andyramaroson.com/)
 
 ## Skills developed
 
@@ -117,13 +121,15 @@ Creation of the site with a complete stack in JavaScript with Nextjs, React and 
 - [x] Create different pages of the application
 - [x] Use of external library
 - [x] test creation
-- [x] Deployment
 - [x] Payment System Module
+- [x] Module integration calendly
+- [x] Deployment
+
 
 ## Resources
 
-- model: [Figma](https://www.figma.com/file/2HDPEwtBEbHZJSam524o6G/unlcoaching?type=design&node-id=0%3A1&mode=dev&t=xIHxkqNgPPmFc5Bh-1)
-- Board: [Trello](https://trello.com/b/3bd4KDlT/unlcoachingcom)
+- model: [Figma](https%3A%2F%2Fwww.figma.com%2Fdesign%2F9VjWT92jDvr5zQaWRCk7Og%2Flemurian-agency%3Fnode-id%3D0-1%26t%3DecE4rtV9gFFqf0Jc-1)
+- Board: [Trello](https://trello.com)
 
 
 ### Recommended editor
