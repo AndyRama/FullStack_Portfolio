@@ -1,4 +1,4 @@
-import Hero from './components/Hero'
+// import Hero from './components/Hero'
 import CardDescriptionL from './components/CardDescriptionL'
 import CardDescriptionR from './components/CardDescriptionR'
 import CardGridImage from './components/CardGridImage'
@@ -6,11 +6,13 @@ import CardDescription from './components/CardDescription'
 import RecentBlog from './components/RecentBlog'
 import CardProgram from './components/CardProgram'
 import Subscribe from './components/Subscribe'
+import Carousel from './components/Carousel'
 
 export default function Home() {
   return (
     <>
-      <Hero className="pt-32 md:pt-22 pb-0 lg-pb:10" />
+      {/* <Hero className="pt-32 md:pt-22 pb-0 lg-pb:10" /> */}
+      <Carousel />
       <CardDescriptionL className=" pt-14 pb-15" />
       <CardDescriptionR className=" relative pt-14 pb-15" />
       <CardGridImage />

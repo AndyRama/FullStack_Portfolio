@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react'
 import Image from 'next/image'
-import IconLogo from './../asset/Icons/logo.svg'
+import IconLogo from './../../public/images/logo4.jpg'
 import { motion } from 'framer-motion'
 import { BiSolidPaperPlane } from 'react-icons/bi'
 
@@ -53,7 +53,7 @@ const Subscribe = ({ className }) => {
             width={150}
             height={150}
             alt="logo"
-            className="bg-black rounded-full"
+            className="border-black rounded-full"
           />
         </div>
         <div className="flex justify-center items-center">

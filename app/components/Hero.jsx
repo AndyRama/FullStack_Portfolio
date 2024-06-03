@@ -5,23 +5,10 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { motion, useScroll, useTransform } from 'framer-motion'
 
-const statContent = {
-  stats: [
-    {
-      number: '+ 350',
-      label: 'Transformations réussit',
-    },
-    {
-      number: '+ 8',
-      label: 'Années expériences',
-    },
-  ],
-}
-
 const heroContent = {
   intro: {
-    title: 'Coaching ',
-    subTitle: 'Personnel',
+    title: 'Création ',
+    subTitle: 'de site web',
     description:
       'Allier entraînement rigoureux et nutrition équilibrée pour un mode de vie sain et durable.',
     btn: {
@@ -52,31 +39,9 @@ const Hero = ({ className }) => {
       <div className="container px-4 md:px-16 mx-auto pt-28 md:pt-32">
         <div className="md:flex justify-between  space-x-0 ">
           <div className="lg:w-8/12 lg:mb-32">
-            <div className="grid grid-cols-2">
-              {statContent.stats.map((stat, index) => (
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{
-                    opacity: 1,
-                    y: 0,
-                    transition: { delay: 0.2, duration: 0.5 },
-                  }}
-                  viewport={{ once: true }}
-                  className="text-center text-[#2F2E2E] lg:text-left mb-10"
-                  key={stat.label}
-                >
-                  <strong className="text-[#2F2E2E] lg:text-left text-5xl xl:text-[64px] font-bold leading-tight ">
-                    {stat.number}
-                  </strong>
-                  <br />
-                  <span className="text-bold">{stat.label}</span>
-                </motion.div>
-              ))}
-            </div>
-
             {/* Content left - title */}
             {heroContent.intro.title && (
-              <motion.h1
+              <motion.h2
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{
                   opacity: 1,
@@ -85,15 +50,15 @@ const Hero = ({ className }) => {
                 }}
                 viewport={{ once: true }}
                 data-testid="hero-title"
-                className=" text-[#2F2E2E] font-bold text-6xl md:text-6xl lg:text-8xl w-auto lg:w-screen max-w-xl mb-2"
+                className=" text-[#2F2E2E] font-bold text-4xl lg:text-5xl w-auto lg:w-screen max-w-xl mb-2"
               >
                 {heroContent.intro.title}
-              </motion.h1>
+              </motion.h2>
             )}
 
             {/* Content left - subTitle */}
             {heroContent.intro.subTitle && (
-              <motion.h1
+              <motion.h2
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{
                   opacity: 1,
@@ -102,10 +67,10 @@ const Hero = ({ className }) => {
                 }}
                 viewport={{ once: true }}
                 data-testid="hero-subTitle"
-                className=" text-orange-500 font-bold text-4xl md:text-6xl lg:text-8xl w-auto lg:w-screen max-w-xl mb-4 md:mb-8"
+                className=" text-orange-500 font-bold text-4xl lg:text-6xl w-auto lg:w-screen max-w-xl mb-4 md:mb-8"
               >
                 {heroContent.intro.subTitle}
-              </motion.h1>
+              </motion.h2>
             )}
 
             {/* Content left - description */}
@@ -118,7 +83,7 @@ const Hero = ({ className }) => {
                   transition: { delay: 0.2, duration: 0.5 },
                 }}
                 viewport={{ once: true }}
-                className="leading-relaxed text-[#2F2E2E] md:w-[400px] max-w-xl
+                className="leading-relaxed text-[#2F2E2E] md:w-[600px] max-w-xl
                   text-xl xl:text-2xl mb-10 lg:mb-16"
               >
                 {heroContent.intro.description}
@@ -152,7 +117,7 @@ const Hero = ({ className }) => {
 
           {/* Image right */}
 
-          <div className="md:w-6/12 ">
+          <div className="md:w-8/12 ">
             <motion.div
               initial={{ opacity: 0, x: 10 }}
               whileInView={{
@@ -168,11 +133,11 @@ const Hero = ({ className }) => {
               className="z-[2] relative bg-cover bg-center"
             >
               <Image
-                src="/images/jeremy3.jpg"
-                width={800}
+                src="/images/desktop.jpg"
+                width={900}
                 height={900}
                 alt="hero image"
-                className="rounded-md h-[300px] w-[400px] md:h-[400px] lg:w-[800px] lg:h-[600px]"
+                className="rounded-md"
               />
             </motion.div>
           </div>

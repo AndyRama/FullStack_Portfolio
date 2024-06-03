@@ -10,7 +10,7 @@ const cardDescriptionLContent = {
     subTitle: 'Mes valeurs',
   },
   content: {
-    img: '/images/jeremy2.jpg',
+    img: '/images/andy.png',
     description:
       "Bienvenue dans mon univers, je suis Jeremy, un ancien militaire qui a trouvé sa passion dans le coaching sportif et athléte de haut niveau en tant qu'athlète compétitif en Men's Physique IFBB.",
     description1:

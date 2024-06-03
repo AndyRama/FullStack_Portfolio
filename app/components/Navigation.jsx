@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image'
-import IconLogo from './../asset/Icons/logo.svg'
+import IconLogo from './../../public/images/logo4.jpg'
 import Link from 'next/link'
 import React, { Fragment, useState, useEffect } from 'react'
 import { usePathname } from 'next/navigation'
@@ -64,7 +64,7 @@ export default function Navigation() {
           <div>
             <Link
               href="/"
-              className=" flex flex-row text-3xl md:text-4xl text-[#2F2E2E] font-bold "
+              className=" flex flex-row text-2xl md:text-3xl text-[#2F2E2E] font-bold "
             >
               {/* Logo - content left*/}
               <span className="my-[-10px] mx-3">
