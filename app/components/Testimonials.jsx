@@ -32,12 +32,6 @@ const testimonials = [
     text: 'Travailler avec Jeremy a été une expérience enrichissante. Son attention aux détails et son engagement envers notre succès sont remarquables. Je recommande vivement sa formation.',
   },
   {
-    user: 'Ronee Brown',
-    company: 'Fusion Dynamics',
-    image: user4,
-    text: 'La formation en ligne de Jeremy a été un véritable atout pour notre projet. Sa capacité à innover et à proposer des solutions adaptées nous a permis d’atteindre nos objectifs plus rapidement que prévu.',
-  },
-  {
     user: 'Serena Wilson',
     company: 'Visionary Creations',
     image: user5,
@@ -55,12 +49,6 @@ const testimonials = [
     image: user7,
     text: "N'oubliez pas, chaque petit pas compte et contribue à notre succès collectif. Continuons à avancer, main dans la main, vers nos objectifs communs.",
   },
-  // {
-  //   user: 'Emily Davis',
-  //   company: 'Synergy Systems',
-  //   image: user6,
-  //   text: "Jeremy a su aller au-delà pour garantir le succès de notre formation. Son expertise et son dévouement sont incomparables. J'ai hâte de retravailler avec lui à l’avenir.",
-  // },
 ]
 
 const Testimonials = () => {
