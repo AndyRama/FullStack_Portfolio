@@ -1,18 +1,18 @@
 'use client'
 
-import Image from 'next/image'
 import React, { useState } from 'react'
+import Image from 'next/image'
 import {
   BsFillArrowRightCircleFill,
   BsFillArrowLeftCircleFill,
 } from 'react-icons/bs'
 
-const slides = [
-  'https://res.cloudinary.com/dbtnehfrf/image/upload/v1708011316/kent-pilcher-87MIF4vqHWg-unsplash_pv6x7d.jpg',
-  'https://res.cloudinary.com/dbtnehfrf/image/upload/v1708011316/paul-lardet-A4vQJWuVoVc-unsplash_gofjmr.jpg',
-  'https://res.cloudinary.com/dbtnehfrf/image/upload/v1708011316/josie-weiss-3B5w8ywhon0-unsplash_gqhyrf.jpg',
-  'https://res.cloudinary.com/dbtnehfrf/image/upload/v1708011315/hasanul-banna-74X-08EROEI-unsplash_ojexcs.jpg',
-]
+import img1 from './../../public/images/hero-img-1-min.jpg'
+import img2 from './../../public/images/maquette.jpg'
+import img3 from './../../public/images/desktop.jpg'
+import img4 from './../../public/images/Team.jpg'
+
+const slides = [img1, img2, img3, img4]
 
 export default function Carousel() {
   const [current, setCurrent] = useState(0)
@@ -36,7 +36,10 @@ export default function Carousel() {
         }}
       >
         {slides.map((slide, index) => (
-          <div key={index} className="w-fullrelative flex-shrink-0 }">
+          <div
+            key={index}
+            className="w-full h-[500px] relative flex-shrink-0 }"
+          >
             <Image
               src={slide}
               alt={`Slide ${index}`}
