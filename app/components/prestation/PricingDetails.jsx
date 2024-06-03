@@ -50,7 +50,7 @@ const PricingDetails = ({ className }) => {
           <h3 className="text-orange-500 text-xl text-center">
             Ce que tu obtiens
           </h3>
-          <h2 className="text-white text-3xl text-center mb-20">
+          <h2 className="text-[#2F2E2E] text-3xl text-center mb-20">
             Détails de mon offre
           </h2>
           <div className="lg:flex justify-center">
@@ -79,12 +79,12 @@ const PricingDetails = ({ className }) => {
                           <span className="text-3xl text-orange-500 mr-4">
                             <feature.icon />
                           </span>
-                          <h3 className="text-lg mb-4 text-white">
+                          <h3 className="text-lg mb-4 text-[#2F2E2E]">
                             {feature.title}
                           </h3>
                         </div>
                         <p
-                          className="leading-relaxed text-[15px] text-white
+                          className="leading-relaxed text-[15px] text-[#2F2E2E]
                           text-opacity-75 mb-7 text-justify"
                         >
                           <span>• </span>

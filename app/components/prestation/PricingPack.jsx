@@ -96,7 +96,7 @@ const PricingPack = () => {
       </div>
       <h2
         id="pack"
-        className="text-white text-2xl md:text-5xl text-center mb-20"
+        className="text-[#2F2E2E] text-2xl md:text-5xl text-center mb-20"
       >
         Pack <br /> Musculation / Perte de poids
       </h2>
@@ -111,9 +111,9 @@ const PricingPack = () => {
               transition={{ delay: delay(index), duration: 0.5 }}
               className="w-full sm:w-1/2 lg:w-1/3 p-2"
             >
-              <div className="p-10 bg-[#2F2E2E] rounded-md">
+              <div className="p-10 bg-white border border-[#2F2E2E] rounded-md">
                 {/* Card Pricing - Header - Title */}
-                <p className="text-3xl mb-1 text-center text-white">
+                <p className="text-3xl mb-1 text-center text-[#2F2E2E]">
                   {option.title}
                 </p>
                 {/* Card Pricing - Header - subTitle */}
@@ -129,7 +129,7 @@ const PricingPack = () => {
                   <span className="text-orange-500 tracking-tight">/ Mois</span>
                 </p>
                 {/* Card Pricing - Header - subPrice  */}
-                <p className="text-xl mb-6 text-white text-center">
+                <p className="text-xl mb-6 text-[#2F2E2E] text-center">
                   {option.subPrice}
                 </p>
 
@@ -145,7 +145,7 @@ const PricingPack = () => {
                   }}
                   className="inline-flex justify-center items-center text-black text-center
                    w-full h-12 p-5 tracking-tight text-xl bg-gradient-to-r from-orange-500 to-orange-800 hover:bg-transparent
-                    hover:text-white rounded-md transition 
+                    hover:text-[#2F2E2E] rounded-md transition 
                    duration-200"
                 >
                   Choisir le plan
@@ -161,7 +161,7 @@ const PricingPack = () => {
                       transition={{ delay: delay(index), duration: 0.5 }}
                       className="mt-8 flex items-center text-orange-500"
                     >
-                      •<span className="ml-2 text-white">{feature}</span>
+                      •<span className="ml-2 text-[#2F2E2E]">{feature}</span>
                     </motion.li>
                   ))}
                 </ul>

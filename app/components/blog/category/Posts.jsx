@@ -27,7 +27,7 @@ const Items = ({ currentItems, Post }) => {
                 },
               }}
               viewport={{ once: true }}
-              className="bg-[#2F2E2E] relative overflow-hidden group rounded-md"
+              className="bg-white border border-[#2F2E2E] relative overflow-hidden group rounded-md"
               key={post.title}
             >
               <Link
@@ -43,10 +43,10 @@ const Items = ({ currentItems, Post }) => {
                     transition-all ease-in-out group-hover:scale-[1.05] rounded-t-md"
                 />
                 <div className="p-8">
-                  <p className="text-white mb-3 uppercase text-[12px] tracking-[1px]">
+                  <p className="text-[#2F2E2E] mb-3 uppercase text-[12px] tracking-[1px]">
                     {format(parseISO(post.date), 'LLL d, yyyy')} • {post.author}{' '}
                   </p>
-                  <div className="text-white font-bold mb-3 uppercase text-[12px] tracking-[1px]"></div>
+                  <div className="text-[#2F2E2E] font-bold mb-3 uppercase text-[12px] tracking-[1px]"></div>
 
                   <h3 className="mb-4">
                     <Link
@@ -56,14 +56,14 @@ const Items = ({ currentItems, Post }) => {
                       {post.title}
                     </Link>
                   </h3>
-                  <p className="text-white mb-3 text-[14px] tracking-[1px]">
+                  <p className="text-[#2F2E2E] mb-3 text-[14px] tracking-[1px]">
                     {post.excerpt}
                   </p>
                   <div>
                     <Link
                       href={`/${post.url}`}
-                      className={` text-gray-500 hover:text-white text-[12px] tracking-[2px] uppercase
-                        pb-2 inline-block  duration-300 transistion-all bg-white-600
+                      className={` text-gray-500 hover:text-[#2F2E2E] text-[12px] tracking-[2px] uppercase
+                        pb-2 inline-block  duration-300 transistion-all bg-[#2F2E2E]
                         ease-in-out relative before:content-['']
                         before:absolute before:bottom-0 before:left-0 before:w-full
                         before:h-[2px] before:bg-orange-400 before:origin-[100%, 50%]

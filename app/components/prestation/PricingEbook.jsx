@@ -47,7 +47,7 @@ const PricingEbook = () => {
     <section className="mt-10 mb-10">
       <h3 className="text-orange-500 text-xl text-center">Autres contenus</h3>
       <h2
-        className="text-white text-2xl md:text-4xl text-center mb-20"
+        className="text-[#2F2E2E] text-2xl md:text-4xl text-center mb-20"
         id="E-Books"
       >
         Les E-Books
@@ -63,9 +63,9 @@ const PricingEbook = () => {
               transition={{ delay: delay(index), duration: 0.5 }}
               className="w-full sm:w-1/2 lg:w-1/3 p-2"
             >
-              <div className="p-10 bg-[#2F2E2E] rounded-md">
+              <div className="p-10 bg-white rounded-md border border-[#2F2E2E] ">
                 {/* Card Pricing - Header - Title */}
-                <p className="text-4xl mb-1 text-center text-white">
+                <p className="text-4xl mb-1 text-center text-[#2F2E2E]">
                   {option.title}
                 </p>
                 {/* Card Pricing - Header - subTitle */}
@@ -109,7 +109,7 @@ const PricingEbook = () => {
                       transition={{ delay: delay(index), duration: 0.5 }}
                       className="mt-8 flex items-center text-orange-500"
                     >
-                      •<span className="ml-2 text-white">{feature}</span>
+                      •<span className="ml-2 text-[#2F2E2E]">{feature}</span>
                     </motion.li>
                   ))}
                 </ul>

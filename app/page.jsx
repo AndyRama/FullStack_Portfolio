@@ -14,9 +14,9 @@ export default function Home() {
       {/* <Hero className="pt-32 md:pt-22 pb-0 lg-pb:10" /> */}
       <Carousel />
       <CardDescriptionL className=" pt-14 pb-15" />
-      <CardDescriptionR className=" relative pt-14 pb-15" />
-      <CardGridImage />
-      <CardDescription className="pb-15 " />
+      {/* <CardDescriptionR className=" relative pt-14 pb-15" /> */}
+      {/* <CardGridImage /> */}
+      {/* <CardDescription className="pb-15 " /> */}
       <RecentBlog className="pt-14 pb-15 lg:pb-32" />
       <CardProgram />
       <Subscribe className="py-16 pt-64 lg:py-32 " />
