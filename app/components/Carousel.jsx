@@ -7,10 +7,10 @@ import {
   BsFillArrowLeftCircleFill,
 } from 'react-icons/bs'
 
-import img1 from './../../public/images/hero-img-1-min.jpg'
-import img2 from './../../public/images/maquette.jpg'
-import img3 from './../../public/images/desktop.jpg'
-import img4 from './../../public/images/Team.jpg'
+import img1 from './../../public/images/desktop.jpg'
+import img2 from './../../public/images/Team.jpg'
+import img3 from './../../public/images/maquette.jpg'
+import img4 from './../../public/images/cahierDesCharges.jpg'
 
 const slides = [img1, img2, img3, img4]
 
@@ -44,7 +44,7 @@ export default function Carousel() {
               src={slide}
               alt={`Slide ${index}`}
               width={2048}
-              height={500}
+              height={1024}
               style={{ objectFit: 'cover' }}
             />
           </div>
