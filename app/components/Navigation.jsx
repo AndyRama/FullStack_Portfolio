@@ -11,9 +11,11 @@ import { HiMenu } from 'react-icons/hi'
 
 const navigationMenu = [
   { href: '/', label: 'Accueil' },
-  { href: '/prestations', label: 'Prestations' },
+  { href: '/project', label: 'project' },
   { href: '/blog', label: 'Blog' },
-  { href: '/team', label: 'Team' },
+  { href: '/expertise', label: 'Expertise' },
+  { href: '/methodologie', label: 'Méthodologie' },
+  { href: '/prestations', label: 'Prestations' },
   { href: '/contact', label: 'Contact' },
 ]
 export default function Navigation() {
