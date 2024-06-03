@@ -75,7 +75,7 @@ export default function Navigation() {
                   weight={60}
                   height={60}
                   alt="logo"
-                  className="bg-black rounded-full"
+                  className="rounded-full"
                 />
               </span>
               {/* Name Link - content left*/}
@@ -167,7 +167,7 @@ export default function Navigation() {
                   leaveTo="opacity-0"
                 >
                   <Dialog.Panel className="pointer-events-auto w-screen max-w-sm">
-                    <div className="flex h-full flex-col overflow-y-scroll bg-[#1D1D1D] shadow-xl">
+                    <div className="flex h-full flex-col overflow-y-scroll bg-white border border-[#1D1D1D] shadow-xl">
                       <div className="flex-1 overflow-y-auto px-8 py-8 sm:px-12">
                         <div className="flex items-start justify-between">
                           <Dialog.Title className="text-lg font-medium text-[#2F2E2E]">

@@ -14,8 +14,8 @@ export default function Home() {
       <CardDescriptionL className=" pt-14 pb-15" />
       {/* <WhyUs /> */}
       <RecentBlog className="pt-14 pb-15 lg:pb-32" />
-      <Subscribe className="py-16 pt-64 lg:py-32 " />
       <Testimonials />
+      <Subscribe className="py-16 pt-64 lg:py-32 " />
     </>
   )
 }
