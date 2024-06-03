@@ -38,7 +38,7 @@ export default function Carousel() {
         {slides.map((slide, index) => (
           <div
             key={index}
-            className="w-full h-[900px] md:h-[500px] relative flex-shrink-0 }"
+            className="w-full h-[900px] sm:h-[500px] relative flex-shrink-0 }"
           >
             <Image
               src={slide}

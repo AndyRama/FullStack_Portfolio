@@ -37,7 +37,7 @@ const Hero = ({ className }) => {
         }}
       > */}
       <div className="container px-4 md:px-16 mx-auto pt-28 md:pt-32">
-        <div className="md:flex justify-between  space-x-0 ">
+        <div className="md:flex justify-between space-x-0 ">
           <div className="lg:w-8/12 lg:mb-32">
             {/* Content left - title */}
             {heroContent.intro.title && (
