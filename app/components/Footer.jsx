@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { BiSolidHeart } from 'react-icons/bi'
-import { FaInstagramSquare } from 'react-icons/fa'
+import { FaGithub, FaInstagramSquare } from 'react-icons/fa'
 import { FaFacebook } from 'react-icons/fa'
 import { FaLinkedin } from 'react-icons/fa'
 import Link from 'next/link'
@@ -80,10 +80,9 @@ const Copyright = () => {
       <div className="text-center items-center mx-auto text-sm">
         &copy; 2024{' '}
         <Link href="/" className="text-orange-500">
-          Unlcoaching{' '}
+          Portfolio{' '}
         </Link>
-        Tous droits réservés. Crée avec{' '}
-        <BiSolidHeart className="text-red-400 mx-1 inline-block" />
+        Crée avec <BiSolidHeart className="text-red-400 mx-1 inline-block" />
         par{' '}
         <Link href="/" className="text-orange-500">
           Andy Ramaroson
@@ -100,7 +99,7 @@ const Footer = ({ className }) => {
         <div className="md:flex ">
           <div className="md:w-4/12 mb-5 md:mb-0">
             <Link href="#" className="text-[28px] text-orange-500 font-bold">
-              Unlcoaching
+              Andy Ramaroson
               <span className="text-[#2F2E2E]">.</span>
             </Link>
             <br />
@@ -108,19 +107,10 @@ const Footer = ({ className }) => {
               <span>
                 <Link
                   href="#"
-                  className="text-[28px] text-[#2F2E2E] hover:text-orange-200 font-bold mr-10"
-                  alt="Instagrame-iconne"
-                >
-                  <FaInstagramSquare />
-                </Link>
-              </span>
-              <span>
-                <Link
-                  href="#"
                   className="text-[28px] text-[#2F2E2E]  hover:text-orange-200  font-bold mr-10"
-                  alt="facebook-iconne"
+                  alt="Github-iconne"
                 >
-                  <FaFacebook />
+                  <FaGithub />
                 </Link>
               </span>
               <span>
@@ -191,8 +181,8 @@ const Footer = ({ className }) => {
         <Copyright />
       </div>
       <div className="transform-gpu blur-3xl ">
-        <div className="absolute -mt-20 left-0 opacity-50 -z-50 w-32 h-48 md:w-80 md:h-96 bg-gradient-to-trfrom-orange-500 to-orange-800"></div>
-        <div className="absolute -mt-20 right-0 opacity-0 md:opacity-50 -z-50 w-80 h-96 bg-gradient-to-trfrom-orange-500 to-orange-800"></div>
+        <div className="absolute -mt-20 left-0 opacity-50 -z-50 w-32 h-48 md:w-80 md:h-96 bg-gradient-to-tr from-orange-500 to-orange-800"></div>
+        <div className="absolute -mt-20 right-0 opacity-0 md:opacity-50 -z-50 w-80 h-96 bg-gradient-to-tr from-orange-500 to-orange-800"></div>
       </div>
     </footer>
   )
