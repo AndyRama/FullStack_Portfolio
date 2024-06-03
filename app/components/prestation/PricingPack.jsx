@@ -45,45 +45,6 @@ const pricingOptions = [
       'Communication whatsApp & Email + visio ou call chaque mois.',
     ],
   },
-  {
-    title: ' Programmation niveau',
-    subtitle: 'Débutant(1 Mois)',
-    price: '150€',
-    subPrice: '(1 * 150€ / 1 mois) ',
-    features: [
-      'Pack adapté aux débutants en musculation.',
-      'Programme de musculation personalisé en fonction de tes objectifs.',
-      'Plan alimentaire adapté à tes besoins.',
-      'Accompagnement sur les divers TCA ou problématique de santé.',
-      'Bilan mensuel par email après 4 semaines pour le suivie.',
-    ],
-  },
-  {
-    title: ' Programmation niveau',
-    subtitle: 'Intermerdaire (1 Mois)',
-    price: '150€',
-    subPrice: '(1 * 150€ / 1 mois) ',
-    features: [
-      'Pack adapté aux initiés ayant déja des bases en musculation.',
-      'Programme de musculation personalisé en fonction de tes objectifs. ',
-      'Plan alimentaire adapté à tes besoins.',
-      'Accompagnement sur les divers TCA ou problématique de santé.',
-      'Bilan mensuel par email après 4 semaines.',
-    ],
-  },
-  {
-    title: ' Programmation niveau',
-    subtitle: 'Confirmé (1 Mois)',
-    price: '150€',
-    subPrice: '(1 * 150€ / 1 mois) ',
-    features: [
-      'Pack adapté aux initiés ayant déja des bases en musculation.',
-      'Programme de musculation personalisé en fonction de tes objectifs. ',
-      'Plan alimentaire adapté à tes besoins.',
-      'Accompagnement sur les divers TCA ou problématique de santé.',
-      'Bilan mensuel par email après 4 semaines.',
-    ],
-  },
 ]
 
 const PricingPack = () => {

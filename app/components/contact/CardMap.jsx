@@ -38,12 +38,12 @@ const CardMap = ({ className }) => {
             }}
             viewport={{ once: true }}
             whileHover={{ y: -10, transition: 0.1 }}
-            className="group duration-300 bg-[#2F2E2E] relative overflow-hidden hover:shadow-2xl rounded-md w-auto h-[460px]"
+            className="group duration-300 bg-white border border-[#2F2E2E] relative overflow-hidden hover:shadow-2xl rounded-md w-auto h-[460px]"
           >
             <div className="px-2 lg:px-4 mt-5 mb-10 relative flex flex-col gap-3 items-start ">
               <span className="text-2xl flex">
                 <MdHome className="mt-2 mr-2 border-orange-500 rounded-sm text-orange-500 bg-orange-500 bg-opacity-10" />
-                <h2 className="text-3xl text-white">Localisation</h2>
+                <h2 className="text-3xl text-[#2F2E2E]">Localisation</h2>
               </span>
 
               <iframe
