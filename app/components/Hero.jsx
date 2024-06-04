@@ -13,7 +13,7 @@ const heroContent = {
       'Allier entraînement rigoureux et nutrition équilibrée pour un mode de vie sain et durable.',
     btn: {
       href: '/team',
-      label: '🧡 De la team !',
+      label: 'Discutons en !',
     },
   },
 }
@@ -29,16 +29,9 @@ const Hero = ({ className }) => {
 
   return (
     <section className={`${className}`} ref={ref}>
-      {/* Image - main - bg-cover  */}
-      {/* <div
-        className="md-h-[110vh] -mt-[125px] bg-fixed bg-cover "
-        style={{
-          backgroundImage: `url('/images/salle-de-sport.jpg')`,
-        }}
-      > */}
-      <div className="container px-4 md:px-16 mx-auto pt-28 md:pt-32">
+      <div className="container px-4 md:px-16 mx-auto pt-20">
         <div className="md:flex justify-between space-x-0 ">
-          <div className="lg:w-8/12 lg:mb-32">
+          <div className="lg:w-9/12 lg:mb-32">
             {/* Content left - title */}
             {heroContent.intro.title && (
               <motion.h2
@@ -50,7 +43,7 @@ const Hero = ({ className }) => {
                 }}
                 viewport={{ once: true }}
                 data-testid="hero-title"
-                className=" text-[#2F2E2E] font-bold text-4xl lg:text-5xl w-auto lg:w-screen max-w-xl mb-2"
+                className=" text-[#2F2E2E] font-bold text-4xl lg:text-6xl w-auto lg:w-screen max-w-xl mb-2"
               >
                 {heroContent.intro.title}
               </motion.h2>

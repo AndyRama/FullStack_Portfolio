@@ -3,9 +3,10 @@
 import React from 'react'
 import { BiSolidHeart } from 'react-icons/bi'
 import { FaGithub, FaInstagramSquare } from 'react-icons/fa'
-import { FaFacebook } from 'react-icons/fa'
 import { FaLinkedin } from 'react-icons/fa'
+import IconLogo from './../../public/images/logo4.jpg'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const footerContent = {
   footerLinks: [
@@ -17,39 +18,31 @@ const footerContent = {
           label: 'Accueil',
         },
         {
-          href: '/blog',
-          label: 'Blog',
+          href: '/project',
+          label: 'Project',
+          badge: 'New',
         },
         {
           href: '/contact',
           label: 'Contact',
         },
-        {
-          href: '/prestations',
-          label: 'Prestations',
-        },
-        {
-          href: '/team',
-          label: 'Team',
-          badge: 'Coup de 🧡',
-        },
       ],
     },
     {
-      heading: 'Pack',
+      heading: 'Site Map',
       links: [
         {
-          href: '/prestations/#pack',
-          label: 'Débutant',
+          href: '/expertise',
+          label: 'Expertise',
+        },
+        {
+          href: '/Methodologie',
+          label: 'Methodologie',
+        },
+        {
+          href: '/prestations',
+          label: 'Prestations',
           badge: 'New',
-        },
-        {
-          href: '/prestations/#pack',
-          label: 'Intermédiaire',
-        },
-        {
-          href: '/prestations/#pack',
-          label: 'Confirmé',
         },
       ],
     },
@@ -59,15 +52,11 @@ const footerContent = {
         {
           href: '/blog',
           label: 'Blog',
-        },
-        {
-          href: '/',
-          label: 'School',
-        },
-        {
-          href: '/prestations/#E-Books',
-          label: 'E-Books',
           badge: 'New',
+        },
+        {
+          href: '/contact',
+          label: 'Contact',
         },
       ],
     },
@@ -99,6 +88,16 @@ const Footer = ({ className }) => {
         <div className="md:flex ">
           <div className="md:w-4/12 mb-5 md:mb-0">
             <Link href="#" className="text-[28px] text-orange-500 font-bold">
+              {/* Logo - content left*/}
+              <span className="my-[-10px] mx-3">
+                <Image
+                  src={IconLogo}
+                  weight={30}
+                  height={30}
+                  alt="logo"
+                  className="rounded-full"
+                />
+              </span>
               Andy Ramaroson
               <span className="text-[#2F2E2E]">.</span>
             </Link>
@@ -106,7 +105,7 @@ const Footer = ({ className }) => {
             <div className="flex mt-5 pr-10">
               <span>
                 <Link
-                  href="#"
+                  href="https://github.com/AndyRama"
                   className="text-[28px] text-[#2F2E2E]  hover:text-orange-200  font-bold mr-10"
                   alt="Github-iconne"
                 >
@@ -115,7 +114,7 @@ const Footer = ({ className }) => {
               </span>
               <span>
                 <Link
-                  href="#"
+                  href="http://www.linkedin.com/in/andy-ramaroson"
                   className="text-[28px] text-[#2F2E2E] hover:text-orange-200 font-bold mr-10"
                   alt="Linkedin-iconne"
                 >
