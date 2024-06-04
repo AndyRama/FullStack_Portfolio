@@ -43,6 +43,7 @@ const footerContent = {
         {
           href: '/document/privacy',
           label: 'Privacy',
+          target: '_blank',
         },
       ],
     },
@@ -52,10 +53,16 @@ const footerContent = {
         {
           href: '/document/terms',
           label: 'Terms',
+          target: '_blank',
         },
         {
           href: '/expertise',
           label: 'Expertise',
+        },
+        {
+          href: 'https://www.websitecarbon.com/website/portfolio-eta-three-93-vercel-app/',
+          label: 'CO2',
+          target: '_blank',
         },
       ],
     },
