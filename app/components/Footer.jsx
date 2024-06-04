@@ -11,52 +11,51 @@ import Image from 'next/image'
 const footerContent = {
   footerLinks: [
     {
-      heading: 'Site Map',
+      heading: '',
       links: [
         {
           href: '/',
           label: 'Accueil',
         },
         {
-          href: '/project',
-          label: 'Project',
+          href: '/blog',
+          label: 'Blog',
           badge: 'New',
         },
         {
-          href: '/contact',
-          label: 'Contact',
+          href: '/prestations',
+          label: 'Prestations',
         },
       ],
     },
     {
-      heading: 'Site Map',
+      heading: '',
       links: [
         {
-          href: '/expertise',
-          label: 'Expertise',
+          href: '/project',
+          label: 'Project',
+          badge: 'New',
         },
         {
           href: '/Methodologie',
           label: 'Methodologie',
         },
         {
-          href: '/prestations',
-          label: 'Prestations',
-          badge: 'New',
+          href: '/document/privacy',
+          label: 'Privacy',
         },
       ],
     },
     {
-      heading: 'Ressources',
+      heading: '',
       links: [
         {
-          href: '/blog',
-          label: 'Blog',
-          badge: 'New',
+          href: '/document/terms',
+          label: 'Terms',
         },
         {
-          href: '/contact',
-          label: 'Contact',
+          href: '/expertise',
+          label: 'Expertise',
         },
       ],
     },
@@ -67,12 +66,12 @@ const Copyright = () => {
   return (
     <div className="pt-2 mb-5 md:mt-5 md:pt-3 border-t border-t-gray-100 text-center text-[#2F2E2E] ">
       <div className="text-center items-center mx-auto text-sm">
-        &copy; 2024{' '}
+        &copy; 2024
         <Link href="/" className="text-orange-500">
-          Portfolio{' '}
+          Portfolio
         </Link>
         Crée avec <BiSolidHeart className="text-red-400 mx-1 inline-block" />
-        par{' '}
+        par
         <Link href="/" className="text-orange-500">
           Andy Ramaroson
         </Link>
@@ -84,30 +83,30 @@ const Copyright = () => {
 const Footer = ({ className }) => {
   return (
     <footer className={`${className} overflow-hidden w-full h-full z-[2] `}>
-      <div className="container mx-auto px-4 relative mt-10">
+      <div className="container mx-auto px-4 relative">
         <div className="md:flex ">
           <div className="md:w-4/12 mb-5 md:mb-0">
-            <Link href="#" className="text-[28px] text-orange-500 font-bold">
-              {/* Logo - content left*/}
-              <span className="my-[-10px] mx-3">
-                <Image
-                  src={IconLogo}
-                  weight={30}
-                  height={30}
-                  alt="logo"
-                  className="rounded-full"
-                />
-              </span>
-              Andy Ramaroson
-              <span className="text-[#2F2E2E]">.</span>
-            </Link>
+            {/* Logo - content left*/}
+            <span className="flex my-[-10px] mx-3 ">
+              <Image
+                src={IconLogo}
+                weight={30}
+                height={30}
+                alt="logo"
+                className="rounded-full "
+              />
+              <Link href="#" className="text-[28px] text-[#2F2E2E] font-bold">
+                Andy Ramaroson
+                <span className="text-[#2F2E2E]">.</span>
+              </Link>
+            </span>
             <br />
-            <div className="flex mt-5 pr-10">
+            <div className="flex mt-3 pr-10 my-[-10px] mx-3 ">
               <span>
                 <Link
                   href="https://github.com/AndyRama"
-                  className="text-[28px] text-[#2F2E2E]  hover:text-orange-200  font-bold mr-10"
-                  alt="Github-iconne"
+                  className="text-[28px] text-[#2F2E2E] hover:text-orange-200 font-bold mr-10"
+                  alt="Github-icon"
                 >
                   <FaGithub />
                 </Link>
@@ -116,7 +115,7 @@ const Footer = ({ className }) => {
                 <Link
                   href="http://www.linkedin.com/in/andy-ramaroson"
                   className="text-[28px] text-[#2F2E2E] hover:text-orange-200 font-bold mr-10"
-                  alt="Linkedin-iconne"
+                  alt="Linkedin-icon"
                 >
                   <FaLinkedin />
                 </Link>
@@ -124,7 +123,7 @@ const Footer = ({ className }) => {
             </div>
           </div>
 
-          <div className="md:w-8/12 ">
+          <div className="md:w-7/12 ">
             <div className="grid grid-cols-3 md:grid-cols-3 ">
               {footerContent.footerLinks.map((item, index) => (
                 <div className="mb-5 md:mb-0" key={item.heading}>
@@ -163,7 +162,7 @@ const Footer = ({ className }) => {
           </div>
         </div>{' '}
         {/* Version 2 */}
-        <div className="text-right items-right mx-auto text-sm pb-0">
+        {/* <div className="text-right items-right mx-auto text-sm pb-0">
           <Link
             href="/document/privacy"
             className="text-orange-500 hover:text-[#2F2E2E]"
@@ -176,7 +175,7 @@ const Footer = ({ className }) => {
           >
             Terms{' '}
           </Link>
-        </div>
+        </div> */}
         <Copyright />
       </div>
       <div className="transform-gpu blur-3xl ">
