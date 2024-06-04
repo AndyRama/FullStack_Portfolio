@@ -6,12 +6,20 @@ import Subscribe from '../components/Subscribe'
 import Testimonials from '../components/Testimonials'
 
 export const metadata = {
-  title: 'Unlcoaching by Jeremy Prat',
+  title: 'Prestations - Réaliser par Andy Ramaroson',
 }
 const page = () => {
   return (
     <>
-      <SubHero className="pt-32" title="Prestations" subTitle="" />
+      <SubHero
+        className="pt-32"
+        subTitle="mes services"
+        title="Prestations"
+        description="Je suis Andy Ramaroson, un développeur FullStack JS basée
+        sur Bordeaux (N. Aquitaine, 33) et je réalise des applications sur mesure
+        en me basant sur des technologies web modernes. Je suis spécialisé sur le
+        langage  JavaScript avec le framework React & NextJs."
+      />
       <PricingPack />
       <PricingDetails />
       <Testimonials />

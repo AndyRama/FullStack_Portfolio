@@ -35,7 +35,7 @@ const footerContent = {
           badge: 'en cours',
         },
         {
-          href: '/Methodologie',
+          href: '/methodologie',
           label: 'Methodologie',
         },
       ],

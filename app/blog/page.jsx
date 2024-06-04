@@ -10,8 +10,16 @@ export const metadata = {
 const page = () => {
   return (
     <>
-      <SubHero className="pt-32" title="Dernier articles" subTitle="Mon blog" />
-      <Posts className="pt-0 pb-52" itemsPerPage={50} />
+      <SubHero
+        className="pt-32"
+        subTitle="Mon blog"
+        title="Dernier articles"
+        description="Je suis Andy Ramaroson, un développeur FullStack JS basée
+        sur Bordeaux (N. Aquitaine, 33) et je réalise des applications sur mesure
+        en me basant sur des technologies web modernes. Je suis spécialisé sur le
+        langage  JavaScript avec le framework React & NextJs."
+      />
+      <Posts className="pt-10 pb-52" itemsPerPage={50} />
       <Subscribe className="py-16 lg:py-32" />
     </>
   )

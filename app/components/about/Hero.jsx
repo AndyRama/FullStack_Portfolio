@@ -52,7 +52,7 @@ const SubHero = ({ className, title, subTitle }) => {
 
             {/* Content center - title */}
             {title && (
-              <motion.h1
+              <motion.h2
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{
                   opacity: 1,
@@ -63,7 +63,7 @@ const SubHero = ({ className, title, subTitle }) => {
                 className="text-4xl text-bold md:text-5xl xl:text-7xl text-[#2F2E2E]"
               >
                 {title}
-              </motion.h1>
+              </motion.h2>
             )}
           </div>
         </div>

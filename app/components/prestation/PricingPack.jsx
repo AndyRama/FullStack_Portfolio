@@ -51,7 +51,7 @@ const PricingPack = () => {
   const delay = (index) => index * 0.05
 
   return (
-    <section className="mt-10 mb-20">
+    <section className="mt-20 mb-20">
       <div className="transform-gpu blur-3xl">
         <div className="absolute right-0 opacity-30 md:opacity-50 -z-20 w-48 h-52 bg-gradient-to-r from-orange-500 to-orange-800 "></div>
       </div>
@@ -59,7 +59,7 @@ const PricingPack = () => {
         id="pack"
         className="text-[#2F2E2E] text-2xl md:text-5xl text-center mb-20"
       >
-        Pack <br /> Musculation / Perte de poids
+        Mes Services
       </h2>
       <div className="container px-4 md:px-16 mx-auto">
         {/* Main Card Pricing - content  */}
