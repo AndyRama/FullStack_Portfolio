@@ -154,7 +154,7 @@ const Posts = ({ className, itemsPerPage, archive = false, params }) => {
           >
             <Items currentItems={currentItems} />
           </div>
-          <CardCategory className="hidden lg:contents " />
+          <CardCategory className="hidden" />
         </div>
       </div>
     </section>

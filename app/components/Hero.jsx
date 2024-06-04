@@ -112,7 +112,7 @@ const Hero = ({ className }) => {
                   href={heroContent.intro.btn1.href}
                   className="transistion-all duration-300 ease-in-out text-[11.5px]
                   tracking-[2px] font-bold uppercase bg-gradient-to-r from-orange-500 to-orange-800 py-4 px-5
-                  rounded text-whitehover:bg-white hover:text-orange-400
+                  rounded text-white hover:bg-white hover:text-orange-400
                   hover:shadow-2xl mb-5 mr-5 hidden md:inline-block"
                 >
                   {heroContent.intro.btn1.label}
