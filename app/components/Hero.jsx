@@ -6,8 +6,8 @@ import { motion, useScroll, useTransform } from 'framer-motion'
 
 const heroContent = {
   intro: {
-    subTitle: 'Bienvenue',
-    title: 'Lemurian Agency',
+    subTitle: '',
+    title: 'Bienvenue',
     description:
       'Je suis Andy Ramaroson, un développeur FullStack JS basée sur Bordeaux (N. Aquitaine, 33) et je réalise des applications sur mesure en me basant sur des technologies web modernes. Je suis spécialisé sur le langage  JavaScript avec le framework React & NextJs.',
     btn: {
@@ -15,7 +15,7 @@ const heroContent = {
       label: 'Me contacter',
     },
     btn1: {
-      href: '/projects',
+      href: '/project',
       label: 'Projets',
     },
   },

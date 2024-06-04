@@ -117,7 +117,7 @@ const RecentBlog = ({ className }) => {
                   },
                 }}
                 viewport={{ once: true }}
-                className="text-2xl lg:text-4xl mb-4 lg:mb-0 text-white"
+                className="text-2xl lg:text-4xl mb-4 lg:mb-0 text-[#2F2E2E]"
               >
                 {recentBlogContent.heading.title}
               </motion.h2>

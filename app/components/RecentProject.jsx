@@ -15,7 +15,7 @@ const recentProjectContent = {
     subTitle: 'Mes Expériences',
   },
   btn: {
-    href: '/projects',
+    href: '/project',
     label: 'projets',
   },
   main: {
@@ -25,8 +25,8 @@ const recentProjectContent = {
     {
       img: '/images/desktop.jpg',
       title: 'Unlcoaching.com',
-      years: 'Fev. 2024',
-      type: 'Création du site',
+      years: 'Mars. 2024',
+      type: 'Création du site web',
       name: 'Jeremy Prat',
       role: 'Coach Sportif',
       quote:
@@ -35,8 +35,8 @@ const recentProjectContent = {
     {
       img: '/images/desktop.jpg',
       title: 'Fille-de-la-grace.com',
-      years: ' Mars 2024',
-      type: 'Refonte du site',
+      years: ' Avril 2024',
+      type: 'Refonte du site complet',
       name: 'Fara Rabefary',
       role: 'Designe interieur',
       quote:
@@ -45,8 +45,8 @@ const recentProjectContent = {
     {
       img: '/images/desktop.jpg',
       title: 'VanilleB2B.com',
-      years: ' Mars 2024',
-      type: 'Refonte du site',
+      years: ' Mai 2024',
+      type: 'Refonte du site complet',
       name: 'Honoré Rabefary',
       role: 'Landscape Architect',
       quote:
@@ -54,19 +54,9 @@ const recentProjectContent = {
     },
     {
       img: '/images/desktop.jpg',
-      title: 'MarketPlace.com',
-      years: ' Avr. 2024',
-      type: 'Création du site',
-      name: 'Fara Rabefary',
-      role: 'Designe interieur',
-      quote:
-        'Collaborating with Lemurian on projects has been a rewarding experience. Their ability to seamlessly integrate indoor and outdoor spaces, creating a harmonious flow, has elevated the overall design and user experience.',
-    },
-    {
-      img: '/images/desktop.jpg',
-      title: 'app.Unlcoaching.com',
-      years: ' Sept. 2024',
-      type: 'Création du site ',
+      title: 'school-Unlcoaching.com',
+      years: ' Juin 2024',
+      type: 'Plaforme de cours en ligne ',
       name: 'Jeremy Prat',
       role: 'Coach Sportif',
       quote:
@@ -74,13 +64,33 @@ const recentProjectContent = {
     },
     {
       img: '/images/desktop.jpg',
-      title: 'Lemurian-agency.com',
-      years: 'Fev. 2024',
-      type: 'Création du site',
+      title: 'MarketPlace.com',
+      years: ' Avr. 2024',
+      type: 'Création du site de vente Artisanal',
+      name: 'Fara Rabefary',
+      role: 'Designe interieur',
+      quote:
+        'Collaborating with Lemurian on projects has been a rewarding experience. Their ability to seamlessly integrate indoor and outdoor spaces, creating a harmonious flow, has elevated the overall design and user experience.',
+    },
+    {
+      img: '/images/desktop.jpg',
+      title: 'AndyRamaroson.com',
+      years: 'Juin 2024',
+      type: 'Création de mon Portfolio',
       name: 'Andy Ramaroson',
       role: 'Développeur Fullstack Js',
       quote:
         'Working with Lemurian was a dream come true. They truly understood our vision for our dream home and turned it into a stunning reality. Their attention to detail and creativity exceeded our expectations.',
+    },
+    {
+      img: '/images/desktop.jpg',
+      title: 'Andyrb.com',
+      years: ' Dec. 2024',
+      type: 'Création du site location',
+      name: 'Andy Ramaroson',
+      role: 'Développeur Fullstack Js',
+      quote:
+        'Collaborating with Lemurian on projects has been a rewarding experience. Their ability to seamlessly integrate indoor and outdoor spaces, creating a harmonious flow, has elevated the overall design and user experience.',
     },
   ],
 }
