@@ -16,7 +16,7 @@ const navigationMenu = [
   { href: '/methodologie', label: 'Méthodologie' },
   { href: '/prestations', label: 'Prestations' },
   { href: '/blog', label: 'Blog' },
-  { href: '/contact', label: 'Contact' },
+  // { href: '/contact', label: 'Contact' },
 ]
 export default function Navigation() {
   const [open, setOpen] = useState(false)
@@ -126,12 +126,12 @@ export default function Navigation() {
           <div className="border-gray-200 px-4 py-6 sm:px-6 hidden lg:contents">
             <div>
               <Link
-                href="/prestations"
-                alt="Btn Subcribes"
+                href="/contact"
+                alt="Btn Contact"
                 className="block text-center text-[11.5px] tracking-2[2px] font-bold uppercase bg-gradient-to-r 
                 from-orange-500 to-orange-800 py-3 px-5 text-black hover:text-[#2F2E2E] rounded-md"
               >
-                Discutons en !
+                Contact
               </Link>
             </div>
           </div>

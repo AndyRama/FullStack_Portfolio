@@ -8,12 +8,12 @@ import { BiLayer } from 'react-icons/bi'
 const CardPricingContent = {
   step: [
     {
-      title: 'Pricing',
+      title: 'Prestation',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia ipsum et repellat!',
       btn: {
-        href: '/prestations',
-        label: "Plus d'information",
+        href: 'https://calendly.com/lemurian-agency/30min',
+        label: 'Discutons en !',
       },
     },
   ],

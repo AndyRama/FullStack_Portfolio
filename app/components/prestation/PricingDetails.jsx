@@ -30,12 +30,12 @@ const PricingContentDetails = {
       description:
         'Coaching spécialisé pour les candidats aux concours de police, pompier, armée, gendarmerie. La réussite de ses concours et des carrières requiert une très bonne santé physique et mentale. En tant qu’ancien militaire je connais parfaitement les facultés requises pour réussir ces concours et je peux vous apporter un suivi personnalisé et efficace. ',
     },
-    {
-      icon: BiHardHat,
-      title: 'Unlcoaching.app',
-      description:
-        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ipsum consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam praesentium sint veniam ad recusandae ab amet impedit  consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam praesentium sint veniam ad recusandae ab amet impedit !',
-    },
+    // {
+    //   icon: BiHardHat,
+    //   title: 'Unlcoaching.app',
+    //   description:
+    //     'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ipsum consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam praesentium sint veniam ad recusandae ab amet impedit  consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam praesentium sint veniam ad recusandae ab amet impedit !',
+    // },
   ],
 }
 

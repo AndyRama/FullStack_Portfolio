@@ -101,7 +101,7 @@ const Footer = ({ className }) => {
               </Link>
             </span>
             <br />
-            <div className="flex mt-3 pr-10 my-[-10px] mx-3 ">
+            <div className="flex mt-2 pr-10 my-[-10px] mx-3 ">
               <span>
                 <Link
                   href="https://github.com/AndyRama"

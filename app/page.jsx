@@ -2,6 +2,7 @@ import Hero from './components/Hero'
 import RecentProject from './components/RecentProject'
 import PricingDetails from './components/prestation/PricingDetails'
 import RecentBlog from './components/RecentBlog'
+import Stats from './components/Stats'
 import Client from './components/Client'
 import Subscribe from './components/Subscribe'
 import Testimonials from './components/Testimonials'
@@ -11,13 +12,14 @@ export default function Home() {
   return (
     <>
       <Hero className="pt-32 md:pt-22 pb-20" />
-      <DescriptionCard className="mt-28 pt-22" />
-      <Client className="mt-28 pb-20" />
-      <RecentProject className="mt-20 pb-20" />
+      <DescriptionCard className="mt-28 pb-22" />
+      <RecentProject className="mt-28 pb-22" />
+      <Client className="mt-28 pb-22" />
       <Testimonials />
+      <Stats />
       <PricingDetails />
-      <RecentBlog className="pb-15 lg:pb-32" />
-      <Subscribe className="py-16 pt-20 lg:py-32 " />
+      <RecentBlog className="pb-22" />
+      <Subscribe className="py-16 lg:py-32 " />
     </>
   )
 }
