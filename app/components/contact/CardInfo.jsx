@@ -60,7 +60,7 @@ const CardInfo = ({ className }) => {
             whileHover={{ y: -10, transition: 0.1 }}
             className="p-4 group duration-300 bg-white border border-[#2F2E2E] relative overflow-hidden hover:shadow-2xl rounded-md h-[460px]"
           >
-            <div className="px-2 lg:px-4 mt-1 mb-10 relative flex flex-col gap-3 items-start">
+            <div className="px-2 lg:px-4 mt-1 relative flex flex-col gap-3 items-start">
               <div className="flex items-center px-16">
                 <Image
                   src="/images/logo4.jpg"

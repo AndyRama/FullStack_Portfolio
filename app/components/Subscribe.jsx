@@ -58,7 +58,7 @@ const Subscribe = ({ className }) => {
         </div>
         <div className="flex justify-center items-center">
           <div className="w-8/12 flex gap-0">
-            <div className="text-center w-screen max-w-md mx-auto mb-8">
+            <div className="text-center w-screen max-w-md mx-auto mb-4">
               {subscribeContent.heading.subtitle && (
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
@@ -68,7 +68,7 @@ const Subscribe = ({ className }) => {
                     transition: { delay: 0.2, duration: 0.5 },
                   }}
                   viewport={{ once: true }}
-                  className="uppercase tracking-[3px] text-[12.5px] mb-5 text-[#2F2E2E] flex justify-center "
+                  className="uppercase tracking-[3px] text-[12.5px] mb-4 text-[#2F2E2E] flex justify-center "
                 >
                   {subscribeContent.heading.subtitle}
                 </motion.div>
@@ -92,7 +92,7 @@ const Subscribe = ({ className }) => {
           </div>
         </div>
         <div className="flex flex-col mx-auto justify-center">
-          <motion.form
+          {/* <motion.form
             initial={{ opacity: 0, y: 20 }}
             whileInView={{
               opacity: 1,
@@ -121,7 +121,7 @@ const Subscribe = ({ className }) => {
             >
               <BiSolidPaperPlane />
             </button>
-          </motion.form>
+          </motion.form> */}
           {message && (
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -131,7 +131,7 @@ const Subscribe = ({ className }) => {
                 transition: { delay: 0.9, duration: 0.5 },
               }}
               viewport={{ once: true }}
-              className="w-auto max-w-md mx-auto mt-10 text-center text-[#2F2E2E] text-opacity-80"
+              className="w-auto max-w-md mx-auto  text-center text-[#2F2E2E] text-opacity-80"
             >
               {message}
             </motion.p>
@@ -144,7 +144,7 @@ const Subscribe = ({ className }) => {
               transition: { delay: 0.9, duration: 0.5 },
             }}
             viewport={{ once: true }}
-            className="w-auto max-w-md mx-auto mt-10 text-center text-[#2F2E2E] text-opacity-80"
+            className="w-auto max-w-md mx-auto text-center text-[#2F2E2E] text-opacity-80"
           >
             {subscribeContent.heading.description}
           </motion.p>

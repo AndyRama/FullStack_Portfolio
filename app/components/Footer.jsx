@@ -87,19 +87,19 @@ const Footer = ({ className }) => {
         <div className="md:flex ">
           <div className="md:w-4/12 mb-5 md:mb-0">
             {/* Logo - content left*/}
-            <span className="flex my-[-10px] mx-3 mt-3 ">
-              <Image
+            {/* <span className="flex my-[-10px] mx-3 mt-3 "> */}
+            {/* <Image
                 src={IconLogo}
                 weight={30}
                 height={30}
                 alt="logo"
                 className="rounded-full "
-              />
-              <Link href="#" className="text-[28px] text-[#2F2E2E] font-bold">
-                Andy Ramaroson
-                <span className="text-[#2F2E2E]">.</span>
-              </Link>
-            </span>
+              /> */}
+            <Link href="#" className="text-[28px] text-[#2F2E2E] font-bold">
+              Andy Ramaroson
+              <span className="text-[#2F2E2E]">.</span>
+            </Link>
+            {/* </span> */}
             <br />
             <div className="flex mt-2 pr-10 my-[-10px] mx-3 ">
               <span>
