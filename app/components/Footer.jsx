@@ -87,7 +87,7 @@ const Footer = ({ className }) => {
         <div className="md:flex ">
           <div className="md:w-4/12 mb-5 md:mb-0">
             {/* Logo - content left*/}
-            <span className="flex my-[-10px] mx-3 ">
+            <span className="flex my-[-10px] mx-3 mt-3 ">
               <Image
                 src={IconLogo}
                 weight={30}

@@ -55,10 +55,10 @@ const Testimonials = () => {
   return (
     <div className="px-4 tracking-wide mb-48 ">
       <h3 className="text-orange-500 text-xl text-center">
-        Retour de ma formation
+        Retour sur mes services
       </h3>
       <h2 className="text-[#2F2E2E] text-3xl text-center mb-10">
-        Ce qu&apos;ils pensent de mes services !
+        Ce qu&apos;ils pensent de mes prestations !
       </h2>
       <div className="flex flex-wrap justify-center">
         {testimonials.map((testimonial, index) => (

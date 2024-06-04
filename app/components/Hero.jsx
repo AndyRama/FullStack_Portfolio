@@ -1,5 +1,4 @@
 'use client'
-
 import React, { useRef } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -7,13 +6,17 @@ import { motion, useScroll, useTransform } from 'framer-motion'
 
 const heroContent = {
   intro: {
-    title: 'Création ',
-    subTitle: 'de site web',
+    subTitle: 'Bienvenue',
+    title: 'Lemurian Agency',
     description:
-      'Allier entraînement rigoureux et nutrition équilibrée pour un mode de vie sain et durable.',
+      'Je suis Andy Ramaroson, un développeur FullStack JS basée sur Bordeaux (N. Aquitaine, 33) et je réalise des applications sur mesure en me basant sur des technologies web modernes. Je suis spécialisé sur le langage  JavaScript avec le framework React & NextJs.',
     btn: {
-      href: '/team',
-      label: 'Discutons en !',
+      href: 'https://calendly.com/lemurian-agency/30min',
+      label: 'Me contacter',
+    },
+    btn1: {
+      href: '/projects',
+      label: 'Projets',
     },
   },
 }
@@ -25,45 +28,46 @@ const Hero = ({ className }) => {
     offset: ['start end', 'end start'],
   })
 
-  const imgScroll1 = useTransform(scrollYProgress, [0, 1], ['30%', '-20%'])
+  const imgScroll1 = useTransform(scrollYProgress, [0, 1], ['20%', '-20%'])
 
   return (
-    <section className={`${className}`} ref={ref}>
-      <div className="container px-4 md:px-16 mx-auto pt-20">
-        <div className="md:flex justify-between space-x-0 ">
-          <div className="lg:w-9/12 lg:mb-32">
-            {/* Content left - title */}
-            {heroContent.intro.title && (
-              <motion.h2
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{
-                  opacity: 1,
-                  y: 0,
-                  transition: { delay: 0.2, duration: 0.5 },
-                }}
-                viewport={{ once: true }}
-                data-testid="hero-title"
-                className=" text-[#2F2E2E] font-bold text-4xl lg:text-6xl w-auto lg:w-screen max-w-xl mb-2"
-              >
-                {heroContent.intro.title}
-              </motion.h2>
-            )}
-
-            {/* Content left - subTitle */}
+    <section className={`${className}`}>
+      <div className="container px-4 mx-auto ">
+        <div className="lg:flex items-center justify-between">
+          {/* Content left - subtitle */}
+          <div className="lg:w-5/12 mb-10 lg:mb-10 mt-6">
             {heroContent.intro.subTitle && (
-              <motion.h2
+              <motion.span
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{
                   opacity: 1,
                   y: 0,
-                  transition: { delay: 0.2, duration: 0.5 },
+                  transition: { delay: 0.1, duration: 0.5 },
                 }}
                 viewport={{ once: true }}
-                data-testid="hero-subTitle"
-                className=" text-orange-500 font-bold text-4xl lg:text-6xl w-auto lg:w-screen max-w-xl mb-4 md:mb-8"
+                className="inline-block py-0.5 pl-3 text-heading font-semibold
+                  relative mb-7 before:content-[''] before:absolute before:w-2/3
+                  before:bg-yellowLight before:left-0 before:top-0 before:bottom-0
+                  before:z-[-1]"
               >
                 {heroContent.intro.subTitle}
-              </motion.h2>
+              </motion.span>
+            )}
+
+            {/* Content left - title */}
+            {heroContent.intro.title && (
+              <motion.h1
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{
+                  opacity: 1,
+                  y: 0,
+                  transition: { delay: 0.2, duration: 0.5 },
+                }}
+                viewport={{ once: true }}
+                className=" text-gray-800 text-3xl sm:text-3xl md:text-4xl lg:text-5xl w-auto lg:w-screen max-w-xl mb-4 md:mb-7"
+              >
+                {heroContent.intro.title}
+              </motion.h1>
             )}
 
             {/* Content left - description */}
@@ -76,17 +80,15 @@ const Hero = ({ className }) => {
                   transition: { delay: 0.2, duration: 0.5 },
                 }}
                 viewport={{ once: true }}
-                className="leading-relaxed text-[#2F2E2E] md:w-[600px] max-w-xl
-                  text-xl xl:text-2xl mb-10 lg:mb-16"
+                className="leading-relaxed text-gray-500 w-auto lg:w-screen max-w-lg text-base lg:text-lg mb-10 lg:mb-16"
               >
                 {heroContent.intro.description}
               </motion.p>
             )}
 
-            {/* btn link */}
-
+            {/* Content left - btn */}
             {heroContent.intro.btn.label && (
-              <motion.button
+              <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{
                   opacity: 1,
@@ -94,25 +96,34 @@ const Hero = ({ className }) => {
                   transition: { delay: 0.2, duration: 0.5 },
                 }}
                 viewport={{ once: true }}
+                className="btn-container"
               >
                 <Link
                   href={heroContent.intro.btn.href}
-                  alt="Team Page redirection"
-                  className="transistion-all duration-300 ease-in-out text-[14px] 
-                    tracking-[2px] font-bold uppercase bg-white py-4 px-5
-                    rounded text-[#1D1D1D] inline-block hover:bg-transparent border hover:text-[#2F2E2E] hover:shadow-2xl mb-10"
+                  className="transistion-all duration-300 ease-in-out text-[11.5px]
+                  tracking-[2px] font-bold uppercase bg-gradient-to-r from-orange-500 to-orange-800 py-4 px-5
+                  rounded text-white inline-block hover:bg-white hover:text-orange-400
+                  hover:shadow-2xl mb-5 mr-5"
                 >
                   {heroContent.intro.btn.label}
                 </Link>
-              </motion.button>
+                <Link
+                  href={heroContent.intro.btn1.href}
+                  className="transistion-all duration-300 ease-in-out text-[11.5px]
+                  tracking-[2px] font-bold uppercase bg-gradient-to-r from-orange-500 to-orange-800 py-4 px-5
+                  rounded text-white inline-block hover:bg-white hover:text-orange-400
+                  hover:shadow-2xl mb-5 mr-5"
+                >
+                  {heroContent.intro.btn1.label}
+                </Link>
+              </motion.div>
             )}
           </div>
 
           {/* Image right */}
-
-          <div className="md:w-8/12 ">
+          <div className="lg:w-12/12 relative lg:-mt-140 mb-8 ">
             <motion.div
-              initial={{ opacity: 0, x: 10 }}
+              initial={{ opacity: 0, x: 20 }}
               whileInView={{
                 opacity: 1,
                 x: 0,
@@ -127,16 +138,14 @@ const Hero = ({ className }) => {
             >
               <Image
                 src="/images/desktop.jpg"
-                width={900}
-                height={900}
-                alt="hero image"
-                className="rounded-md"
+                width={700}
+                height={985}
+                alt="hero image desktop"
               />
             </motion.div>
           </div>
         </div>
       </div>
-      {/* </div> */}
     </section>
   )
 }
