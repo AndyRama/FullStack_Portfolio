@@ -1,11 +1,11 @@
-import Hero from './../components/Hero'
 import DescriptionCard from './../components/DescriptionCard'
 import CardDescriptionR from './../components/CardDescriptionR'
+import SubHero from '../components/about/SubHero'
 
 export default function Methodologie() {
   return (
     <>
-      <Hero className="pt-32 md:pt-22 pb-0 lg-pb:10" />
+      <SubHero className="pt-32" title="Méthodologie" subTitle="" />
       <DescriptionCard className=" pt-14 pb-15" />
       <DescriptionCard className=" pt-14 pb-15" />
       <DescriptionCard className=" pt-14 pb-15" />

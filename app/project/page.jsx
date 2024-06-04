@@ -1,7 +1,11 @@
 import React from 'react'
 
 function project() {
-  return <div>Page project</div>
+  return (
+    <h2 className="h-[85vh] flex items-center text-center mx-auto text-4xl  text-orange-400">
+      Page projet en construction
+    </h2>
+  )
 }
 
 export default project
