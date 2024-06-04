@@ -4,9 +4,7 @@ import React from 'react'
 import { BiSolidHeart } from 'react-icons/bi'
 import { FaGithub, FaInstagramSquare } from 'react-icons/fa'
 import { FaLinkedin } from 'react-icons/fa'
-import IconLogo from './../../public/images/logo4.jpg'
 import Link from 'next/link'
-import Image from 'next/image'
 
 const footerContent = {
   footerLinks: [
@@ -23,8 +21,8 @@ const footerContent = {
           badge: 'New',
         },
         {
-          href: '/prestations',
-          label: 'Prestations',
+          href: '/expertise',
+          label: 'Expertise',
         },
       ],
     },
@@ -34,16 +32,11 @@ const footerContent = {
         {
           href: '/project',
           label: 'Project',
-          badge: 'New',
+          badge: 'en cours',
         },
         {
           href: '/Methodologie',
           label: 'Methodologie',
-        },
-        {
-          href: '/document/privacy',
-          label: 'Privacy',
-          target: '_blank',
         },
       ],
     },
@@ -51,18 +44,14 @@ const footerContent = {
       heading: '',
       links: [
         {
-          href: '/document/terms',
-          label: 'Terms',
-          target: '_blank',
-        },
-        {
-          href: '/expertise',
-          label: 'Expertise',
+          href: '/prestations',
+          label: 'Prestations',
         },
         {
           href: 'https://www.websitecarbon.com/website/portfolio-eta-three-93-vercel-app/',
           label: 'CO2',
           target: '_blank',
+          badge: 'New',
         },
       ],
     },
@@ -93,15 +82,6 @@ const Footer = ({ className }) => {
       <div className="container mx-auto px-4 relative">
         <div className="md:flex ">
           <div className="md:w-4/12 mb-5 md:mb-0">
-            {/* Logo - content left*/}
-            {/* <span className="flex my-[-10px] mx-3 mt-3 "> */}
-            {/* <Image
-                src={IconLogo}
-                weight={30}
-                height={30}
-                alt="logo"
-                className="rounded-full "
-              /> */}
             <Link href="#" className="text-[28px] text-[#2F2E2E] font-bold">
               Andy Ramaroson
               <span className="text-[#2F2E2E]">.</span>
@@ -169,7 +149,7 @@ const Footer = ({ className }) => {
           </div>
         </div>{' '}
         {/* Version 2 */}
-        {/* <div className="text-right items-right mx-auto text-sm pb-0">
+        <div className="text-right items-right mx-auto text-sm pb-0">
           <Link
             href="/document/privacy"
             className="text-orange-500 hover:text-[#2F2E2E]"
@@ -182,7 +162,7 @@ const Footer = ({ className }) => {
           >
             Terms{' '}
           </Link>
-        </div> */}
+        </div>
         <Copyright />
       </div>
       <div className="transform-gpu blur-3xl ">
