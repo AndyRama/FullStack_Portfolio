@@ -18,7 +18,7 @@ const page = () => {
         en me basant sur des technologies web modernes. Je suis spécialisé sur le
         langage  JavaScript avec le framework React & NextJs."
       />
-      <Projects />
+      <Projects className="pt-0 pb-52" itemsPerPage={6} />
     </>
   )
 }
