@@ -1,5 +1,6 @@
 import React from 'react'
 import SubHero from '../components/about/SubHero'
+import Projects from '../components/projects/Projects'
 
 export const metadata = {
   title: 'Projets - Réalisation Andy Ramaroson',
@@ -17,6 +18,7 @@ const page = () => {
         en me basant sur des technologies web modernes. Je suis spécialisé sur le
         langage  JavaScript avec le framework React & NextJs."
       />
+      <Projects />
     </>
   )
 }
