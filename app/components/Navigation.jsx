@@ -1,10 +1,10 @@
 'use client'
+
 import Image from 'next/image'
 import IconLogo from './../../public/images/logo4.jpg'
 import Link from 'next/link'
 import React, { Fragment, useState, useEffect } from 'react'
 import { usePathname } from 'next/navigation'
-
 import { Dialog, Transition } from '@headlessui/react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
 import { HiMenu } from 'react-icons/hi'
@@ -16,7 +16,6 @@ const navigationMenu = [
   { href: '/methodologie', label: 'Méthodologie' },
   { href: '/prestations', label: 'Prestations' },
   { href: '/blog', label: 'Blog' },
-  // { href: '/contact', label: 'Contact' },
 ]
 export default function Navigation() {
   const [open, setOpen] = useState(false)
@@ -69,13 +68,13 @@ export default function Navigation() {
               className=" flex flex-row text-2xl md:text-3xl text-[#2F2E2E] font-bold "
             >
               {/* Logo - content left*/}
-              <span className="my-[-10px] mx-3">
+              <span className="my-[-10px] mx-3 hidden md:contents">
                 <Image
                   src={IconLogo}
                   weight={60}
                   height={60}
                   alt="logo"
-                  className="rounded-full"
+                  className="rounded-full "
                 />
               </span>
               {/* Name Link - content left*/}

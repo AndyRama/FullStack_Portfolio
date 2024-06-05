@@ -19,9 +19,6 @@ export default function Expertise() {
         langage  JavaScript avec le framework React & NextJs."
       />
       <DescriptionCard className=" pt-14 pb-15" />
-      <CardDescriptionR className=" pt-14 pb-15" />
-      <DescriptionCard className=" pt-14 pb-15" />
-      <CardDescriptionR className=" pt-14 pb-15" />
       <Subscribe className="py-16 pt-64 lg:py-32 " />
     </>
   )

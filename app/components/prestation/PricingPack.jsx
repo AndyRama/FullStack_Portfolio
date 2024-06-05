@@ -61,7 +61,7 @@ const PricingPack = () => {
       >
         Mes Services
       </h2>
-      <div className="container px-4 md:px-16 mx-auto">
+      <div className="container px-4 md:px-4 mx-auto">
         {/* Main Card Pricing - content  */}
         <div className="flex flex-wrap ">
           {pricingOptions.map((option, index) => (
