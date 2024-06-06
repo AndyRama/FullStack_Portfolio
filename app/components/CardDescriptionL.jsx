@@ -132,7 +132,7 @@ const CardDescriptionL = ({ className }) => {
               {/* Card Description - Image - Right */}
               <motion.div style={{ y: img1 }} className="z-[2] relative">
                 <Image
-                  src="/images/jeremy2.jpg"
+                  src={cardDescriptionLContent.content.img}
                   className="object-cover
                   !w-full h-[900] !lg:h-[600] max-w-md items-center object-center rounded-md "
                   width={400}
