@@ -38,24 +38,37 @@ const ProjectCard = ({ project, index }) => {
         />
       </Link>
 
-      <div className="p-8">
+      <div className="p-4 bg-white border border-[#2F2E2E] rounded-b-md">
         <p className="text-gray-500 mb-3 uppercase text-[12px] tracking-[1px]">
           {format(parseISO(project.date), 'LLL d, yyyy')} • {project.author}
         </p>
         <h3 className="mb-4">
-          <Link href={`/${project.url}`} className="text-lg leading-none">
-            {project.description}
-          </Link>
-        </h3>
-        <p>
           <Link
             href={`/${project.url}`}
-            className="uppercase text-[12px] tracking-[2px] border-b-2
-            pb-2 inline-block border-orange-600"
+            className="text-orange-500 text-lg leading-none"
           >
-            Read More
+            {project.title}
           </Link>
-        </p>
+        </h3>
+
+        <div>
+          <Link
+            href={`/${project.url}`}
+            className={`text-gray-500 hover:text-white text-[12px] tracking-[2px] uppercase
+            pb-2 inline-block  duration-300 transistion-all bg-white-600
+            ease-in-out relative before:content-['']
+            before:absolute before:bottom-0 before:left-0 before:w-full
+            before:h-[2px] before:bg-gradient-to-r from-orange-500 to-orange-800 before:origin-[100%, 50%]
+            before:transistion-all before:duration-300 before:ease-in-out
+            before:scale-x-0 before:scale-y-[1] before:scale-z[1]
+            before:wil-change-transform hover:before:origin-[100%, 0%]
+            hover:before:scale-x-[1] hover:before:scale-y-[1]
+            hover:before:scale-z-[1] `}
+          >
+            lire l&apos;article
+          </Link>
+          <span className="text-orange-500 ml-20">Lecture 5 min</span>
+        </div>
       </div>
     </motion.div>
   )

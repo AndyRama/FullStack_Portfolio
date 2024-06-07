@@ -114,7 +114,7 @@ export default function Navigation() {
               ))}
             </ul>
             <button
-              className="lg:hidden text-lg text-white rounded-md"
+              className="lg:hidden text-lg text-[#2F2E2E] rounded-md"
               onClick={() => setOpen(true)}
             >
               {open ? null : <HiMenu className="text-[32px] mt-2" />}

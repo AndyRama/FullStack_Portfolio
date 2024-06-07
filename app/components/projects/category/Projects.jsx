@@ -5,9 +5,9 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { allProjects } from 'contentlayer/generated'
 import { compareDesc, format, parseISO } from 'date-fns'
+import CardCategory from '../../CardCategory'
+
 import { motion } from 'framer-motion'
-import CardCategory from '../CardCategory'
-// import ReactPaginate from 'react-paginate'
 
 const Items = ({ currentItems }) => {
   return (
@@ -27,7 +27,7 @@ const Items = ({ currentItems }) => {
                 },
               }}
               viewport={{ once: true }}
-              className="bg-white border border-[#2F2E2E]  relative overflow-hidden group rounded-md"
+              className="bg-white border border-[#2F2E2E] relative overflow-hidden group rounded-md"
               key={project.title}
             >
               <Link
@@ -43,32 +43,31 @@ const Items = ({ currentItems }) => {
                     transition-all ease-in-out group-hover:scale-[1.05] rounded-t-md"
                 />
                 <div className="p-8">
-                  <p className="text-[#2F2E2E] mb-3 uppercase text-[12px] tracking-[1px] font-bold">
+                  <p className="text-[#2F2E2E] mb-3 uppercase text-[12px] tracking-[1px]">
                     {format(parseISO(project.date), 'LLL d, yyyy')} •{' '}
                     {project.author}{' '}
                   </p>
+                  <div className="text-[#2F2E2E] font-bold mb-3 uppercase text-[12px] tracking-[1px]"></div>
 
-                  <h3 className="mb-4 text-orange-500">
+                  <h3 className="mb-4">
                     <Link
-                      href={project.url}
-                      className="text-lg font-bold leading-none"
+                      href={`/${project.url}`}
+                      className="text-orange-400 text-lg leading-none text-center "
                     >
                       {project.title}
                     </Link>
                   </h3>
-
                   <p className="text-[#2F2E2E] mb-3 text-[14px] tracking-[1px]">
                     {project.excerpt}
                   </p>
-
                   <div>
                     <Link
-                      href={project.url}
+                      href={`/${project.url}`}
                       className={` text-gray-500 hover:text-[#2F2E2E] text-[12px] tracking-[2px] uppercase
-                        pb-2 inline-block  duration-300 transistion-all bg-white-600
+                        pb-2 inline-block  duration-300 transistion-all bg-[#2F2E2E]
                         ease-in-out relative before:content-['']
                         before:absolute before:bottom-0 before:left-0 before:w-full
-                        before:h-[2px] before:bg-gradient-to-r from-orange-500 to-orange-800 before:origin-[100%, 50%]
+                        before:h-[2px] before:bg-orange-400 before:origin-[100%, 50%]
                         before:transistion-all before:duration-300 before:ease-in-out
                         before:scale-x-0 before:scale-y-[1] before:scale-z[1]
                         before:wil-change-transform hover:before:origin-[100%, 0%]
@@ -77,7 +76,7 @@ const Items = ({ currentItems }) => {
                     >
                       lire l&apos;article
                     </Link>
-                    <span className="text-orange-500 ml-20">Lecture 5 min</span>
+                    <span className="text-orange-400 ml-20">Lecture 5 min</span>
                   </div>
                 </div>
               </Link>
@@ -87,7 +86,6 @@ const Items = ({ currentItems }) => {
     </>
   )
 }
-
 const Projects = ({ className, itemsPerPage, archive = false, params }) => {
   const [currentItems, setCurrentItems] = useState(null)
   const [pageCount, setPageCount] = useState(0)
@@ -136,7 +134,7 @@ const Projects = ({ className, itemsPerPage, archive = false, params }) => {
     itemsPerPage,
     clickPaginate,
     ref,
-    items,
+    Items,
   ])
 
   const handlePageClick = (event) => {
@@ -148,40 +146,19 @@ const Projects = ({ className, itemsPerPage, archive = false, params }) => {
   if (!items) return null
 
   return (
-    <>
-      <section className={`${className}`} ref={ref}>
-        <div className="container mx-auto mt-10 w-auto ">
-          <div className="flex">
-            <div className="lg:w-10/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-              <Items currentItems={currentItems} />
-            </div>
-            <CardCategory className="hidden" />
+    <section className={`${className}`} ref={ref}>
+      <div className="container px-4 mx-auto">
+        <div className="flex">
+          <div
+            className="lg:w-10/12 mx-auto mb-20 grid grid-cols-1 md:grid-cols-2
+            lg:grid-cols-3 gap-3 "
+          >
+            <Items currentItems={currentItems} />
           </div>
+          <CardCategory className="hidden" />
         </div>
-        {/* <div className="lg:w-10/12 mx-auto flex flex-wrap text-[#2F2E2E] mt-20">
-          <ReactPaginate
-            nextLabel="Next"
-            onPageChange={handlePageClick}
-            pageRangeDisplayed={3}
-            marginPagesDisplayed={2}
-            pageCount={pageCount}
-            previousLabel="Previous"
-            pageClassName="page-item"
-            pageLinkClassName="page-link"
-            previousClassName="page-item"
-            previousLinkClassName="page-link"
-            nextClassName="page-item"
-            nextLinkClassName="page-link"
-            breakLabel="..."
-            breakClassName="page-item"
-            breakLinkClassName="page-link"
-            containerClassName="pagination"
-            activeClassName="active"
-            renderOnZeroPageCount={null}
-          />
-        </div> */}
-      </section>
-    </>
+      </div>
+    </section>
   )
 }
 

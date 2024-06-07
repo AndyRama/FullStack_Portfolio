@@ -1,4 +1,5 @@
-import { allProjects } from '.contentlayer/generated'
+import React from 'react'
+import { allProjects } from 'contentlayer/generated'
 import ProjectContent from './ProjectContent'
 
 export async function generateStaticParams() {
@@ -14,7 +15,7 @@ export const generateMetadata = async ({ params }) => {
   return { title: project?.title, excerpt: project?.excerpt }
 }
 
-const ProjectLayout = ({ params }) => {
+const page = ({ params }) => {
   const project = allProjects.find(
     (project) => project._raw.flattenedPath === 'projects/' + params.slug,
   )
@@ -25,4 +26,4 @@ const ProjectLayout = ({ params }) => {
   )
 }
 
-export default ProjectLayout
+export default page
