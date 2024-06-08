@@ -1,35 +1,21 @@
 import React from 'react'
-import Image from 'next/image'
 import Link from 'next/link'
-import { BiChevronRight } from 'react-icons/bi'
 
 const statContent = {
   stats: [
-    {
-      number: '6',
-      label: 'Projets achevés',
-    },
-    {
-      number: '3',
-      label: "Années d'expériences",
-    },
-    {
-      number: '2',
-      label: 'Cafés par jour',
-    },
-    {
-      number: '5',
-      label: 'Clients',
-    },
+    { number: '5', label: 'Projets achevés' },
+    { number: '3', label: "Années d'expériences" },
+    { number: '2', label: 'Cafés par jour' },
+    { number: '4', label: 'Clients' },
   ],
   getStarted: {
-    heading: 'Get started with our service?',
-    description:
-      'We undestand that protecting your loved ones is of ut most importance',
+    heading:
+      'Vous avez besoin d’un développeur pour créer ou mettre à jour votre site ?',
+    description: 'Contactez-moi, je reviendrai vers vous très rapidement.',
     image: '/images/icon.',
     cta: {
       cta_href: 'https://calendly.com/lemurian-agency/30min',
-      cta_label: 'Discutons en !',
+      cta_label: 'Prendre rendez-vous',
     },
   },
 }
@@ -38,18 +24,15 @@ const Stats = () => {
   return (
     <section className="pt-10 pb-10 bg-white">
       <div className="container px-4 mx-auto">
-        <div className="lg:flex justify-between items-center  space-x-0 ">
-          <div className="w-full lg:w-8/12 mb-20 lg:mb-0">
-            <div className="grid grid-cols-4">
+        <div className="lg:flex justify-between items-center space-x-0">
+          <div className="w-full lg:w-9/12 mb-10 lg:mb-0">
+            <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
               {statContent.stats.map((stat, index) => (
                 <div
-                  className="text-center w-[100] hover:shadow-xl transistion-all duration-300 ease-in-out"
-                  key={stat.label}
+                  className="text-center w-full hover:shadow-xl transition-all duration-300 ease-in-out"
+                  key={index}
                 >
-                  <strong
-                    className="text-primary text-4xl xl:text-[52px] font-bold
-                  leading-tight"
-                  >
+                  <strong className="text-primary text-4xl xl:text-[52px] font-bold leading-tight">
                     {stat.number}
                   </strong>
                   <br />
@@ -58,21 +41,8 @@ const Stats = () => {
               ))}
             </div>
           </div>
-          <div className="w-full lg:w-4/12">
-            <div
-              className="bg-light py-10 px-7 lg:px-10 !pr-28 md:!pr-32
-              lg:!pr-40 rounded-lg relative"
-            >
-              {/* {statContent.getStarted.image && (
-                  <Image
-                    src={statContent.getStarted.image}
-                    width={600}
-                    height={900}
-                    alt="andyramaroson.com"
-                    className='absolute right-0 lg:right-6 -top-14 w-24'
-                  />
-                )} */}
-
+          <div className="w-full lg:w-5/12">
+            <div className="bg-light py-10 px-7 lg:px-10 md:pr-32 rounded-lg relative">
               {statContent.getStarted.heading && (
                 <h3 className="text-heading font-bold text-xl mb-3">
                   {statContent.getStarted.heading}
@@ -86,21 +56,9 @@ const Stats = () => {
               )}
 
               {statContent.getStarted.cta.cta_label && (
-                // <Link href={statContent.getStarted.cta.cta_href}
-                //   className='flex space-x-2 outline-none items-center
-                //   fontse-semibold text-primary'>
-                //     <span>{ statContent.getStarted.cta.cta_label}</span>
-                //     <span className='w-6 h-6 rounded-full bg-primary text-white
-                //      inline-flex items-center justify-center'>
-                //       <BiChevronRight className='text-lg'/>
-                //      </span>
-                //   {statContent.getStarted.cta.cta_href}
-                // </Link>
-
                 <Link
                   href={statContent.getStarted.cta.cta_href}
-                  className="block text-center text-[11.5px]
-                  tracking-2[2px] font-bold uppercase bg-orange-600 py-4 px-5 text-white rounded-md"
+                  className="block text-center text-[11.5px] tracking-[2px] font-bold uppercase bg-orange-600 py-4 px-5 text-white rounded-md"
                 >
                   <span>{statContent.getStarted.cta.cta_label}</span>
                 </Link>

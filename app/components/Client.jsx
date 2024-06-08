@@ -32,8 +32,8 @@ const Client = ({ className }) => {
   return (
     <section className={`${className} overflow-hidden`}>
       <div className="container px-4 mx-auto">
-        <div className="lg:flex justify-center mb-2">
-          <div className="w-full lg:w-9/12 lg:flex gap-0 items-center mb-20 lg:mb-0 ">
+        <div className="lg:flex justify-center mb-5">
+          <div className="w-full lg:w-9/12 lg:flex gap-4 pt-10 items-center mb-20 lg:mb-0 ">
             <div className="lg:w-8/12">
               {clientContent.intro.subTitle && (
                 <motion.span
@@ -73,7 +73,7 @@ const Client = ({ className }) => {
           </div>
         </div>
       </div>
-      <div className="w-full lg:w-8/12 items-center justify-between lg:ml-[20%] ml-[5%] mt-20 lg:mb-20">
+      <div className="w-full lg:w-8/12 items-center justify-between lg:ml-[20%] ml-[5%] mt-20 mb-10 lg:mb-20">
         <div className="grid grid-cols-3 md:grid-cols-6">
           {clientContent.logos.map((logo) => {
             id += 0.5
@@ -98,7 +98,7 @@ const Client = ({ className }) => {
                   width={90}
                   height={90}
                   alt={`logo${logo.id}`}
-                  className=" rounded-full"
+                  className=" rounded-full mt-10"
                 />
               </motion.div>
             )

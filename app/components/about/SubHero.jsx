@@ -39,7 +39,7 @@ const SubHero = ({ className, title, subTitle, description }) => {
 
   return (
     <section className={`${className}`}>
-      <div className="container px-4 mx-auto">
+      <div className="container mx-auto">
         <div className="lg:flex lg:w-12/12 mx-auto items-left justify-between">
           {/* Content center - subtitle */}
           <div className="lg:max-w-3xl mx-auto mt-[75px] md:mt-[150px] mb-10">

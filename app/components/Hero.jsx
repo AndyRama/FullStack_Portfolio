@@ -16,7 +16,7 @@ const heroContent = {
     },
     btn1: {
       href: 'https://calendly.com/lemurian-agency/30min',
-      label: 'Calendly',
+      label: 'Prendre rendez-vous',
     },
   },
 }
@@ -113,7 +113,7 @@ const Hero = ({ className }) => {
                   className="transistion-all duration-300 ease-in-out text-[11.5px]
                   tracking-[2px] font-bold uppercase bg-gradient-to-r from-orange-500 to-orange-800 py-4 px-5
                   rounded text-white hover:bg-white hover:text-orange-400
-                  hover:shadow-2xl mb-5 mr-5 hidden md:inline-block"
+                  hover:shadow-2xl mb-5 mr-5 inline-block"
                 >
                   {heroContent.intro.btn1.label}
                 </Link>
@@ -141,6 +141,7 @@ const Hero = ({ className }) => {
                 src="/images/desktop1.jpg"
                 width={700}
                 height={985}
+                className=" rounded-md"
                 alt="hero image desktop"
               />
             </motion.div>

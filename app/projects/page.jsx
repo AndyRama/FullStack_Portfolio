@@ -11,7 +11,7 @@ const page = () => {
   return (
     <>
       <SubHero
-        className="pt-32"
+        className="pt-32 lowercase"
         subTitle="Mes dernierers réalisations"
         title="Projects récents"
         description="Je suis Andy Ramaroson, un développeur FullStack JS basée

@@ -11,11 +11,11 @@ import { HiMenu } from 'react-icons/hi'
 
 const navigationMenu = [
   { href: '/', label: 'Accueil' },
-  { href: '/projects', label: 'projects' },
+  { href: '/blog', label: 'Blog' },
   { href: '/expertise', label: 'Expertise' },
   { href: '/methodologie', label: 'Méthodologie' },
   { href: '/prestations', label: 'Prestations' },
-  { href: '/blog', label: 'Blog' },
+  { href: '/projects', label: 'projects' },
 ]
 export default function Navigation() {
   const [open, setOpen] = useState(false)
@@ -68,7 +68,7 @@ export default function Navigation() {
               className=" flex flex-row text-2xl md:text-3xl text-[#2F2E2E] font-bold "
             >
               {/* Logo - content left*/}
-              <span className="my-[-10px] mx-3 hidden md:contents">
+              <span className="my-[-10px] mx-3 hidden md:flex">
                 <Image
                   src={IconLogo}
                   weight={60}

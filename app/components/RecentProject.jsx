@@ -11,19 +11,19 @@ import 'swiper/css'
 
 const recentProjectContent = {
   heading: {
-    title: 'Réalisations Éffectuées',
+    title: 'Réalisations ',
     subTitle: 'Mes Expériences',
   },
   btn: {
-    href: '/project',
-    label: 'projets',
+    href: '/projects',
+    label: '+ de projets',
   },
   main: {
     title: 'Les Projets',
   },
   recentProjects: [
     {
-      img: '/images/desktop.jpg',
+      img: '/images/unlcoaching.png',
       title: 'Unlcoaching.com',
       years: 'Mars. 2024',
       type: 'Création du site web',
@@ -56,7 +56,7 @@ const recentProjectContent = {
       img: '/images/desktop.jpg',
       title: 'school-Unlcoaching.com',
       years: ' Juin 2024',
-      type: 'Plaforme de cours en ligne ',
+      type: 'Plaforme de cours de musculation en ligne ',
       name: 'Jeremy Prat',
       role: 'Coach Sportif',
       quote:
@@ -66,14 +66,14 @@ const recentProjectContent = {
       img: '/images/desktop.jpg',
       title: 'MarketPlace.com',
       years: ' Avr. 2024',
-      type: 'Création du site de vente Artisanal',
+      type: 'Création du site de vente produit malgache',
       name: 'Fara Rabefary',
       role: 'Designe interieur',
       quote:
         'Collaborating with Lemurian on projects has been a rewarding experience. Their ability to seamlessly integrate indoor and outdoor spaces, creating a harmonious flow, has elevated the overall design and user experience.',
     },
     {
-      img: '/images/desktop.jpg',
+      img: '/images/home-portfolio.png',
       title: 'AndyRamaroson.com',
       years: 'Juin 2024',
       type: 'Création de mon Portfolio',
@@ -124,7 +124,7 @@ const RecentProject = ({ className }) => {
     <section className={`${className} overflow-hidden`}>
       <div className="container px-4 mx-auto">
         <div className="flex justify-center">
-          <div className="w-full md:w-8/12 flex gap-0 items-center">
+          <div className="w-full md:w-10/12 flex gap-0 items-center">
             <div className="text-center w-auto md:w-screen max-w-full md:max-w-xl mx-auto">
               {recentProjectContent.heading.subTitle && (
                 <motion.span
@@ -162,29 +162,6 @@ const RecentProject = ({ className }) => {
                 </motion.h2>
               )}
             </div>
-          </div>
-          <div>
-            {/*  Content left - btn Right  */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{
-                opacity: 1,
-                y: 0,
-                transition: { delay: 0.2, duration: 0.5 },
-              }}
-              viewport={{ once: true }}
-              className="btn-container"
-            >
-              <Link
-                href={recentProjectContent.btn.href}
-                className="transistion-all duration-300 ease-in-out text-[11.5px]
-                      tracking-[2px] font-bold uppercase bg-orange-400 py-2 lg:py-4 px-5
-                      rounded text-white inline-block items-end hover:bg-white hover:text-orange-400
-                      hover:shadow-1xl"
-              >
-                {recentProjectContent.btn.label}
-              </Link>
-            </motion.div>
           </div>
         </div>
 
@@ -283,6 +260,28 @@ const RecentProject = ({ className }) => {
                 className={`text-3xl text-primary transition-all duration-300 ease-in-out group-hover:text-white`}
               />
             </div>
+
+            {/*  Content center - btn Right + de Projects  */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: { delay: 0.2, duration: 0.5 },
+              }}
+              viewport={{ once: true }}
+              className="btn-container text-center"
+            >
+              <Link
+                href={recentProjectContent.btn.href}
+                className="transistion-all duration-300 ease-in-out text-[11.5px]
+                      tracking-[2px] font-bold uppercase bg-orange-400 py-4 px-3
+                      rounded text-white inline-block items-end hover:bg-white hover:text-orange-400
+                      hover:shadow-1xl h-12  "
+              >
+                {recentProjectContent.btn.label}
+              </Link>
+            </motion.div>
           </div>
         </motion.div>
       </div>

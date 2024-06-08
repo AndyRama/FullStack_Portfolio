@@ -6,10 +6,10 @@ import { motion } from 'framer-motion'
 
 const subscribeContent = {
   heading: {
-    title: 'Ne manquez jamais une actualité.',
-    subtitle: 'Rejoinds la communauté',
+    title: 'Une idée, un besoin, un projet ?',
+    subtitle: 'Contactez-moi',
     description:
-      'Que ce soit pour une question, une demande de devis, une remarque ou une candidature : n&apos;hésitez pas à nous contacter via notre formulaire de contact. On se fera un plaisir de revenir vers vous pour en discuter ensemble.',
+      'Vous avez besoin d’un développeur pour créer ou mettre à jour votre site ? Je reviendrai vers vous très rapidement.',
   },
 }
 
@@ -53,7 +53,7 @@ const Subscribe = ({ className }) => {
           />
         </div>
         <div className="flex justify-center items-center">
-          <div className="w-8/12 flex gap-0">
+          <div className="w-12/12 flex gap-0">
             <div className="text-center w-screen max-w-md mx-auto mb-4">
               {subscribeContent.heading.subtitle && (
                 <motion.div
@@ -97,7 +97,7 @@ const Subscribe = ({ className }) => {
                 transition: { delay: 0.9, duration: 0.5 },
               }}
               viewport={{ once: true }}
-              className="w-auto max-w-md mx-auto  text-center text-[#2F2E2E] text-opacity-80"
+              className="w-auto max-w-md mx-auto text-center text-[#2F2E2E] text-opacity-80"
             >
               {message}
             </motion.p>
