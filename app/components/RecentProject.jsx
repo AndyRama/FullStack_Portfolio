@@ -165,7 +165,7 @@ const RecentProject = ({ className }) => {
           </div>
         </div>
 
-        <div className="lg: flex justify-start lg:justify-center">
+        <div className="lg:flex justify-start lg:justify-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{
@@ -270,7 +270,7 @@ const RecentProject = ({ className }) => {
                 transition: { delay: 0.2, duration: 0.5 },
               }}
               viewport={{ once: true }}
-              className="btn-container text-center"
+              className="btn-container"
             >
               <Link
                 href={recentProjectContent.btn.href}

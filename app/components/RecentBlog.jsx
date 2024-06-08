@@ -135,7 +135,7 @@ const RecentBlog = ({ className }) => {
                 },
               }}
               viewport={{ once: true }}
-              className="text-white"
+              className="text-[#2F2E2E]"
             >
               {recentBlogContent.heading.description}
             </motion.p>
@@ -150,6 +150,28 @@ const RecentBlog = ({ className }) => {
         {posts.slice(0, 4).map((post, index) => (
           <PostCard key={index} index={index} post={post} />
         ))}
+
+        {/*  Content center - btn Right + de Projects  */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            transition: { delay: 0.2, duration: 0.5 },
+          }}
+          viewport={{ once: true }}
+          className="btn-container text-left mt-5"
+        >
+          <Link
+            href="/blog"
+            className="transistion-all duration-300 ease-in-out text-[11.5px]
+          tracking-[2px] font-bold uppercase bg-orange-400 py-4 px-3
+          rounded text-white inline-block items-start hover:bg-white hover:text-orange-400
+          hover:shadow-1xl h-12  "
+          >
+            Voir tous mes articles
+          </Link>
+        </motion.div>
       </div>
     </section>
   )
