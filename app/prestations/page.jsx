@@ -20,8 +20,8 @@ const page = () => {
         en me basant sur des technologies web modernes. Je suis spécialisé sur le
         langage  JavaScript avec le framework React & NextJs."
       />
-      <PricingDetails />
       <PricingPack />
+      <PricingDetails />
       <Testimonials />
       <Subscribe className="py-16 lg:py-32" />
     </>

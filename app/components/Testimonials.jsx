@@ -53,7 +53,7 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <div className="container px-4 mx-auto tracking-wide mb-24 mt-20 md:mt-0">
+    <div className="container px-4 mx-auto tracking-wide mb-24 mt-10 md:mt-0">
       <h3 className="text-orange-500 text-xl text-center">
         Retour sur mes services
       </h3>

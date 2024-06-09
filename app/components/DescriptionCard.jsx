@@ -11,7 +11,7 @@ const CardDescription = ({ className }) => {
     offset: ['start end', 'end start'],
   })
 
-  const imgScroll1 = useTransform(scrollYProgress, [0, 1], ['20%', '-20%'])
+  const imgScroll1 = useTransform(scrollYProgress, [0, 1], ['30%', '-10%'])
 
   const cardDescriptionContent = {
     heading: {

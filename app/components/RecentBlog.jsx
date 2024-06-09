@@ -28,7 +28,7 @@ const PostCard = ({ index, post }) => {
         },
       }}
       viewport={{ once: true }}
-      className="border border-[#2F2E2E] relative overflow-hidden group rounded "
+      className="border border-[#2F2E2E] bg-white relative overflow-hidden group rounded "
     >
       <Link href={post.url} className="relative block overflow-hidden">
         <Image
@@ -84,7 +84,7 @@ const RecentBlog = ({ className }) => {
   )
   return (
     <section className={`${className}`}>
-      <div className="container mx-auto rounded-md">
+      <div className="container mx-auto rounded-md ">
         <div className=" px-4 lg:px-20 lg:flex justify-center mb-2">
           <div className="lg:w-7/12">
             {recentBlogContent.heading.subTitle && (
@@ -151,7 +151,7 @@ const RecentBlog = ({ className }) => {
           <PostCard key={index} index={index} post={post} />
         ))}
 
-        {/*  Content center - btn Right + de Projects  */}
+        {/*  Content center - btn Right + de Article  */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{

@@ -1,7 +1,8 @@
 'use client'
 
-import { motion } from 'framer-motion'
 import React from 'react'
+import Link from 'next/link'
+import { motion } from 'framer-motion'
 import { BiHardHat, BiPaintRoll, BiNote, BiLayer } from 'react-icons/bi'
 
 const PricingContentDetails = {
@@ -97,6 +98,27 @@ const PricingDetails = ({ className }) => {
               </div>
             </div>
           </div>
+          {/*  Content center - btn Right + de Projects  */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: { delay: 0.2, duration: 0.5 },
+            }}
+            viewport={{ once: true }}
+            className="btn-container text-left mt-5"
+          >
+            <Link
+              href="/prestations"
+              className="transistion-all duration-300 ease-in-out text-[11.5px]
+          tracking-[2px] font-bold uppercase bg-orange-400 py-4 px-3
+          rounded text-white inline-block items-start hover:bg-white hover:text-orange-400
+          hover:shadow-1xl h-12  "
+            >
+              Prestations
+            </Link>
+          </motion.div>
         </div>
         <div className="transform-gpu blur-3xl">
           <div className="absolute right-0 opacity-30 md:opacity-50 -z-20 w-56 h-64 bg-gradient-to-tr from-orange-500 to-orange-800"></div>

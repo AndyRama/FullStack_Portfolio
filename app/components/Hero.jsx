@@ -32,10 +32,10 @@ const Hero = ({ className }) => {
 
   return (
     <section className={`${className}`}>
-      <div className="container px-4 mx-auto ">
+      <div className="container px-4 mx-auto">
         <div className="lg:flex items-center justify-between">
           {/* Content left - subtitle */}
-          <div className="lg:w-5/12 mb-10 lg:mb-10 mt-6">
+          <div className="lg:w-4/12 mb-10 lg:mb-10 mt-6">
             {heroContent.intro.subTitle && (
               <motion.span
                 initial={{ opacity: 0, y: 20 }}

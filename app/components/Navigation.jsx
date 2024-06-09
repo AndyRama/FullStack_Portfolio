@@ -128,7 +128,7 @@ export default function Navigation() {
                 href="/contact"
                 alt="Btn Contact"
                 className="block text-center text-[11.5px] tracking-2[2px] font-bold uppercase bg-gradient-to-r 
-                from-orange-500 to-orange-800 py-3 px-5 text-black hover:text-[#2F2E2E] rounded-md"
+                from-orange-500 to-orange-800 py-3 px-5 text-white hover:shadow-2xl hover:text-[#2F2E2E] rounded-md"
               >
                 Contact
               </Link>
