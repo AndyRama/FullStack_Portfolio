@@ -1,15 +1,20 @@
 'use client'
 import React, { useState } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import IconLogo from './../../public/images/logo4.jpg'
 import { motion } from 'framer-motion'
 
 const subscribeContent = {
   heading: {
-    title: 'Une idée, un besoin, un projet ?',
+    title:
+      'Vous avez besoin d’un développeur pour créer ou mettre à jour votre site ?',
     subtitle: 'Contactez-moi',
-    description:
-      'Vous avez besoin d’un développeur pour créer ou mettre à jour votre site ? Je reviendrai vers vous très rapidement.',
+    description: 'Je reviendrai vers vous très rapidement.',
+    btn: {
+      label: 'Contactez-moi',
+      href: 'https://calendly.com/lemurian-agency/30min',
+    },
   },
 }
 
@@ -79,7 +84,7 @@ const Subscribe = ({ className }) => {
                     transition: { delay: 0.3, duration: 0.5 },
                   }}
                   viewport={{ once: true }}
-                  className="text-2xl lg:text-3xl text-[#2F2E2E]"
+                  className="text-2xl text-[#2F2E2E]"
                 >
                   {subscribeContent.heading.title}
                 </motion.h2>
@@ -97,7 +102,7 @@ const Subscribe = ({ className }) => {
                 transition: { delay: 0.9, duration: 0.5 },
               }}
               viewport={{ once: true }}
-              className="w-auto max-w-md mx-auto text-center text-[#2F2E2E] text-opacity-80"
+              className="w-full max-w-md mx-auto text-center text-[#2F2E2E] text-opacity-80"
             >
               {message}
             </motion.p>
@@ -114,6 +119,15 @@ const Subscribe = ({ className }) => {
           >
             {subscribeContent.heading.description}
           </motion.p>
+          <Link
+            href={subscribeContent.heading.btn.href}
+            className="transistion-all duration-300 ease-in-out text-[11.5px]
+          md:tracking-[2px] font-bold uppercase bg-gradient-to-r from-orange-500 to-orange-800 py-4 px-5
+          rounded text-white hover:bg-white hover:text-orange-400
+          hover:shadow-2xl mb-5 mr-5 inline-block w-[300px] text-center justify-center"
+          >
+            {subscribeContent.heading.btn.label}
+          </Link>
         </div>
       </div>
       <div className="transform-gpu blur-3xl">

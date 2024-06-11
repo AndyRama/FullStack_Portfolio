@@ -1,13 +1,12 @@
 'use client'
-
 import React, { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { allProjects } from 'contentlayer/generated'
 import { compareDesc, format, parseISO } from 'date-fns'
-import { motion } from 'framer-motion'
-import CardCategory from '../CardCategory'
 // import ReactPaginate from 'react-paginate'
+
+import { motion } from 'framer-motion'
 
 const Items = ({ currentItems }) => {
   return (
@@ -27,11 +26,11 @@ const Items = ({ currentItems }) => {
                 },
               }}
               viewport={{ once: true }}
-              className="bg-white border border-[#2F2E2E]  relative overflow-hidden group rounded-md"
+              className="bg-white relative overflow-hidden group rounded-md"
               key={project.title}
             >
               <Link
-                href={`/${project.url}`}
+                href={project.url}
                 className="relative block overflow-hidden"
               >
                 <Image
@@ -43,42 +42,33 @@ const Items = ({ currentItems }) => {
                     transition-all ease-in-out group-hover:scale-[1.05] rounded-t-md"
                 />
                 <div className="p-8">
-                  <p className="text-[#2F2E2E] mb-3 uppercase text-[12px] tracking-[1px] font-bold">
+                  <p className="text-gray-500 mb-3 uppercase text-[12px] tracking-[1px]">
                     {format(parseISO(project.date), 'LLL d, yyyy')} •{' '}
-                    {project.author}{' '}
+                    {project.author}
                   </p>
 
-                  <h3 className="mb-4 text-orange-500">
-                    <Link
-                      href={project.url}
-                      className="text-lg font-bold leading-none"
-                    >
-                      {project.title}
+                  <h3 className="mb-4">
+                    <Link href={project.url} className="text-lg leading-none">
+                      {project.description}
                     </Link>
                   </h3>
-
-                  <p className="text-[#2F2E2E] mb-3 text-[14px] tracking-[1px]">
-                    {project.excerpt}
-                  </p>
-
-                  <div>
+                  <p>
                     <Link
                       href={project.url}
-                      className={` text-gray-500 hover:text-[#2F2E2E] text-[12px] tracking-[2px] uppercase
+                      className={`text-[12px] tracking-[2px] uppercase
                         pb-2 inline-block  duration-300 transistion-all bg-white-600
                         ease-in-out relative before:content-['']
                         before:absolute before:bottom-0 before:left-0 before:w-full
-                        before:h-[2px] before:bg-gradient-to-r from-orange-500 to-orange-800 before:origin-[100%, 50%]
+                        before:h-[2px] before:bg-orange-600 before:origin-[100%, 50%]
                         before:transistion-all before:duration-300 before:ease-in-out
                         before:scale-x-0 before:scale-y-[1] before:scale-z[1]
                         before:wil-change-transform hover:before:origin-[100%, 0%]
                         hover:before:scale-x-[1] hover:before:scale-y-[1]
                         hover:before:scale-z-[1]`}
                     >
-                      lire l&apos;article
+                      Read More
                     </Link>
-                    <span className="text-orange-500 ml-20">Lecture 5 min</span>
-                  </div>
+                  </p>
                 </div>
               </Link>
             </motion.div>
@@ -87,8 +77,7 @@ const Items = ({ currentItems }) => {
     </>
   )
 }
-
-const Projects = ({ className, itemsPerPage, archive = false, params }) => {
+const Project = ({ className, itemsPerPage, archive = false, params }) => {
   const [currentItems, setCurrentItems] = useState(null)
   const [pageCount, setPageCount] = useState(0)
   const [itemOffset, setItemOffset] = useState(0)
@@ -150,39 +139,40 @@ const Projects = ({ className, itemsPerPage, archive = false, params }) => {
   return (
     <>
       <section className={`${className}`} ref={ref}>
-        <div className="container mx-auto mt-10 w-auto ">
-          <div className="flex">
-            <div className="lg:w-10/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-              <Items currentItems={currentItems} />
-            </div>
-            <CardCategory className="hidden" />
+        <div className="container px-4 mx-auto">
+          <div
+            className="lg:w-10/12 mx-auto mb-20 grid grid-cols-1 md:grid-cols-2
+          lg:grid-cols-3 gap-10 "
+          >
+            <Items currentItems={currentItems} />
           </div>
-        </div>
-        {/* <div className="lg:w-10/12 mx-auto flex flex-wrap text-[#2F2E2E] mt-20">
+
+          {/* <div className="lg:w-10/12 mx-auto flex flex-wrap">
           <ReactPaginate
-            nextLabel="Next"
-            onPageChange={handlePageClick}
-            pageRangeDisplayed={3}
-            marginPagesDisplayed={2}
-            pageCount={pageCount}
-            previousLabel="Previous"
-            pageClassName="page-item"
-            pageLinkClassName="page-link"
-            previousClassName="page-item"
-            previousLinkClassName="page-link"
-            nextClassName="page-item"
-            nextLinkClassName="page-link"
-            breakLabel="..."
-            breakClassName="page-item"
-            breakLinkClassName="page-link"
-            containerClassName="pagination"
-            activeClassName="active"
-            renderOnZeroPageCount={null}
-          />
+              nextLabel="Next"
+              onPageChange={handlePageClick}
+              pageRangeDisplayed={3}
+              marginPagesDisplayed={2}
+              pageCount={pageCount}
+              previousLabel="Previous"
+              pageClassName="page-item"
+              pageLinkClassName="page-link"
+              previousClassName="page-item"
+              previousLinkClassName="page-link"
+              nextClassName="page-item"
+              nextLinkClassName="page-link"
+              breakLabel="..."
+              breakClassName="page-item"
+              breakLinkClassName="page-link"
+              containerClassName="pagination"
+              activeClassName="active"
+              renderOnZeroPageCount={null}
+            />
         </div> */}
+        </div>
       </section>
     </>
   )
 }
 
-export default Projects
+export default Project

@@ -1,5 +1,6 @@
 'use client'
-import React, { useEffect, useState } from 'react'
+
+import React from 'react'
 import { motion } from 'framer-motion'
 import { allPosts } from '.contentlayer/generated'
 import { compareDesc, format, parseISO } from 'date-fns'
@@ -165,7 +166,7 @@ const RecentBlog = ({ className }) => {
           <Link
             href="/blog"
             className="transistion-all duration-300 ease-in-out text-[11.5px]
-          tracking-[2px] font-bold uppercase bg-orange-400 py-4 px-3
+          tracking-[2px] font-bold uppercase bg-gradient-to-r from-orange-500 to-orange-800 py-4 px-3
           rounded text-white inline-block items-start hover:bg-white hover:text-orange-400
           hover:shadow-1xl h-12  "
           >

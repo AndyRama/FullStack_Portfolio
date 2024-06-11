@@ -65,9 +65,9 @@ const ProjectCard = ({ project, index }) => {
             hover:before:scale-x-[1] hover:before:scale-y-[1]
             hover:before:scale-z-[1] `}
           >
-            lire l&apos;article
+            voir les autres projets
           </Link>
-          <span className="text-orange-500 ml-20">Lecture 5 min</span>
+          {/* <span className="text-orange-500 ml-20">Lecture 5 min</span> */}
         </div>
       </div>
     </motion.div>

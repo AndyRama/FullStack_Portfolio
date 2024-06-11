@@ -10,8 +10,8 @@ const page = ({ params }) => {
     items = null
 
   if (params?.slug) {
-    items = allProjects.filter((post) =>
-      post.categories.some(
+    items = allProjects.filter((project) =>
+      project.categories.some(
         (category) =>
           category.title
             .toLowerCase()

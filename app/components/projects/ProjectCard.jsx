@@ -20,7 +20,7 @@ const ProjectCard = ({ project, index }) => {
         },
       }}
       viewport={{ once: true }}
-      className="relative overflow-hidden rounded-t-md"
+      className="relative overflow-hidden"
     >
       {/* Image top card */}
       <Link
@@ -37,25 +37,24 @@ const ProjectCard = ({ project, index }) => {
         />
       </Link>
 
-      <div className="p-4 bg-white border border-[#2F2E2E]  rounded-b-md">
+      <div className="p-8">
         <p className="text-gray-500 mb-3 uppercase text-[12px] tracking-[1px]">
           {format(parseISO(project.date), 'LLL d, yyyy')} • {project.author}
         </p>
         <h3 className="mb-4">
-          <Link href={`/${project.url}`} className="text-lg leading-none">
-            {project.title}
+          <Link href={`/${urlWithoutBlog}`} className="text-lg leading-none">
+            {project.description}
           </Link>
         </h3>
-        <div>
+        <p>
           <Link
-            href={`/${project.url}`}
-            className="text-[#2F2E2E] uppercase text-[12px] tracking-[2px] border-b-2
-            pb-2 inline-block border-orange-500"
+            href={`/${urlWithoutBlog}`}
+            className="uppercase text-[12px] tracking-[2px] border-b-2
+            pb-2 inline-block border-orange-600"
           >
-            lire l&apos;article
+            Read More
           </Link>
-          <span className="text-orange-500 ml-20 md:ml-32">Lecture 5 min</span>
-        </div>
+        </p>
       </div>
     </motion.div>
   )
