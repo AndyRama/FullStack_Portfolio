@@ -4,28 +4,28 @@ import React, { useRef } from 'react'
 import Image from 'next/image'
 import { motion, useScroll, useTransform } from 'framer-motion'
 
-const subHeroContent = {
+const subHeroRContent = {
   heading: {
     subTitle: '',
     title: '',
     description: '',
   },
 }
-const SubHero = ({ className, title, subTitle, description }) => {
+const SubHeroR = ({ className, title, subTitle, description }) => {
   if (title) {
     title = title
   } else {
-    title = subHeroContent.heading.title
+    title = subHeroRContent.heading.title
   }
   if (subTitle) {
     subTitle = subTitle
   } else {
-    subTitle = subHeroContent.heading.subTitle
+    subTitle = subHeroRContent.heading.subTitle
   }
   if (description) {
     description = description
   } else {
-    description = subHeroContent.heading.description
+    description = subHeroRContent.heading.description
   }
 
   const ref = useRef(null)
@@ -39,9 +39,33 @@ const SubHero = ({ className, title, subTitle, description }) => {
 
   return (
     <section className={`${className}`}>
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto">
         <div className="lg:flex lg:w-12/12 mx-auto items-left justify-between">
           {/* Content center - subtitle */}
+          {/* Image right */}
+          <div className="lg:w-12/12 relative lg:-mt-140 mb-8 ">
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+                transition: {
+                  delai: 0.4,
+                  duration: 0.5,
+                },
+              }}
+              viewport={{ once: true }}
+              style={{ y: imgScroll1 }}
+              className="z-[2] relative bg-cover bg-center"
+            >
+              <Image
+                src="/images/desktop.jpg"
+                width={700}
+                height={985}
+                alt="hero image desktop"
+              />
+            </motion.div>
+          </div>
           <div className="lg:max-w-3xl mx-auto mt-[75px] md:mt-[150px] mb-10">
             {subTitle && (
               <motion.span
@@ -91,34 +115,10 @@ const SubHero = ({ className, title, subTitle, description }) => {
               </motion.p>
             )}
           </div>
-          {/* Image right */}
-          <div className="lg:w-12/12 relative lg:-mt-140 mb-8 ">
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{
-                opacity: 1,
-                x: 0,
-                transition: {
-                  delai: 0.4,
-                  duration: 0.5,
-                },
-              }}
-              viewport={{ once: true }}
-              style={{ y: imgScroll1 }}
-              className="z-[2] relative bg-cover bg-center"
-            >
-              <Image
-                src="/images/desktop.jpg"
-                width={700}
-                height={985}
-                alt="hero image desktop"
-              />
-            </motion.div>
-          </div>
         </div>
       </div>
     </section>
   )
 }
 
-export default SubHero
+export default SubHeroR

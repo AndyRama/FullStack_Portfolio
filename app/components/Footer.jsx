@@ -30,7 +30,7 @@ const footerContent = {
       heading: '',
       links: [
         {
-          href: '/project',
+          href: '/projects',
           label: 'Project',
           badge: 'en cours',
         },
@@ -50,8 +50,8 @@ const footerContent = {
         {
           href: 'https://www.websitecarbon.com/website/portfolio-eta-three-93-vercel-app/',
           label: 'CO2',
-          target: '_blank',
           badge: 'New',
+          target: '_blank'
         },
       ],
     },
@@ -60,15 +60,15 @@ const footerContent = {
 
 const Copyright = () => {
   return (
-    <div className="pt-2 mb-5 md:mt-5 md:pt-3 border-t border-t-gray-100 text-center text-[#2F2E2E] ">
+    <div className="pt-2 mb-5 md:mt-5 md:pt-3 mr-1 border-t border-t-gray-100 text-center text-[#2F2E2E] ">
       <div className="text-center items-center mx-auto text-sm">
         &copy; 2024
-        <Link href="/" className="text-orange-500">
+        <Link href="/" className="text-orange-500 ml-1 mr-1">
           Portfolio
         </Link>
-        Crée avec <BiSolidHeart className="text-red-400 mx-1 inline-block" />
+        Crée avec <BiSolidHeart className="text-red-400 inline-block mr-1" />
         par
-        <Link href="/" className="text-orange-500">
+        <Link href="/" className="text-orange-500 ml-1">
           Andy Ramaroson
         </Link>
       </div>
@@ -79,14 +79,13 @@ const Copyright = () => {
 const Footer = ({ className }) => {
   return (
     <footer className={`${className} overflow-hidden w-full h-full z-[2] `}>
-      <div className="container mx-auto px-4 relative">
+      <div className="container mx-auto px-4 relative mt-10">
         <div className="md:flex ">
           <div className="md:w-4/12 mb-5 md:mb-0">
             <Link href="#" className="text-[28px] text-[#2F2E2E] font-bold">
               Andy Ramaroson
               <span className="text-[#2F2E2E]">.</span>
             </Link>
-            {/* </span> */}
             <br />
             <div className="flex mt-2">
               <span>
@@ -94,6 +93,7 @@ const Footer = ({ className }) => {
                   href="https://github.com/AndyRama"
                   className="text-[28px] text-[#2F2E2E] hover:text-orange-200 font-bold mr-10"
                   alt="Github-icon"
+                  target="_blank"
                 >
                   <FaGithub />
                 </Link>
@@ -103,6 +103,7 @@ const Footer = ({ className }) => {
                   href="http://www.linkedin.com/in/andy-ramaroson"
                   className="text-[28px] text-[#2F2E2E] hover:text-orange-200 font-bold mr-10"
                   alt="Linkedin-icon"
+                  target="_blank"
                 >
                   <FaLinkedin />
                 </Link>
@@ -152,12 +153,14 @@ const Footer = ({ className }) => {
         <div className="text-right items-right mx-auto text-sm pb-0">
           <Link
             href="/document/privacy"
+            target="_blank"
             className="text-orange-500 hover:text-[#2F2E2E]"
           >
             Privacy{' '}
           </Link>{' '}
           <Link
             href="/document/terms"
+            target="_blank"
             className="text-[#2F2E2E] hover:text-orange-500"
           >
             Terms{' '}

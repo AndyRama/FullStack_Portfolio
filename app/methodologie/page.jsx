@@ -1,5 +1,5 @@
 import DescriptionCard from './../components/DescriptionCard'
-import CardDescriptionR from './../components/CardDescriptionR'
+import DescriptionCardR from './../components/DescriptionCardR'
 import SubHero from '../components/about/SubHero'
 
 export const metadata = {
@@ -17,6 +17,11 @@ export default function Methodologie() {
         en me basant sur des technologies web modernes. Je suis spécialisé sur le
         langage  JavaScript avec le framework React & NextJs."
       />
+      <DescriptionCard className=" pt-14 pb-15" />
+      <DescriptionCard className=" pt-14 pb-15" />
+      <DescriptionCard className=" pt-14 pb-15" />
+      <DescriptionCard className=" pt-14 pb-15" />
+      <DescriptionCard className=" pt-14 pb-15" />
       <DescriptionCard className=" pt-14 pb-15" />
     </>
   )

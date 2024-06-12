@@ -4,8 +4,8 @@ import Image from 'next/image'
 import React, { useRef } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
 
-const CardDescription = ({ className, title, subTitle, description }) => {
-  const cardDescriptionContent = {
+const CardDescriptionR = ({ className, title, subTitle, description }) => {
+  const cardDescriptionRContent = {
     heading: {
       title: title || '',
       subTitle: subTitle || '',
@@ -31,7 +31,7 @@ const CardDescription = ({ className, title, subTitle, description }) => {
     <section className={`${className}`} ref={ref}>
       <div className="container px-4 mx-auto">
         <div className="text-center lg:max-w-xl mx-auto mb-15 mt-10 md:mt-0 lg:mb-12 relative z-[5]">
-          {cardDescriptionContent.heading.subTitle && (
+          {cardDescriptionRContent.heading.subTitle && (
             <motion.span
               initial={{ opacity: 0, y: 20 }}
               whileInView={{
@@ -45,11 +45,11 @@ const CardDescription = ({ className, title, subTitle, description }) => {
               viewport={{ once: true }}
               className="uppercase tracking-[3px] text-[12.5px] mb-2 inline-block text-gray-500"
             >
-              {cardDescriptionContent.heading.subTitle}
+              {cardDescriptionRContent.heading.subTitle}
             </motion.span>
           )}
 
-          {cardDescriptionContent.heading.title && (
+          {cardDescriptionRContent.heading.title && (
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
               whileInView={{
@@ -63,40 +63,24 @@ const CardDescription = ({ className, title, subTitle, description }) => {
               viewport={{ once: true }}
               className="text-2xl lg:text-4xl"
             >
-              {cardDescriptionContent.heading.title}
+              {cardDescriptionRContent.heading.title}
             </motion.h2>
           )}
         </div>
 
         <div className="lg:flex justify-center">
           <div className="lg:w-8/12 lg:flex gap-20 items-center">
-            <div className="mb-7 lg:mb-0 lg:w-6/12 lg:order-2 relative">
-              <motion.div
-                initial={{ opacity: 0, x: 20 }}
-                whileInView={{
-                  opacity: 1,
-                  x: 0,
-                  transition: {
-                    delay: 0.4,
-                    duration: 0.5,
-                  },
-                }}
-                viewport={{ once: true }}
-                style={{ y: imgScroll1 }}
-                className="z-[2] relative bg-cover bg-center"
-              >
-                <Image
-                  src={cardDescriptionContent.content.img}
-                  className="object-cover !w-full !h-[400px] lg:max-w-2xl object-center rounded-md"
-                  alt="Andy profile"
-                  width={200}
-                  height={200}
-                />
-              </motion.div>
-            </div>
-
             <div className="lg:w-6/12 mt-20 text-justify">
-              {cardDescriptionContent.content.descriptions.map(
+              <Image
+                src={cardDescriptionRContent.content.img}
+                className="object-cover !w-full !h-[400px] lg:max-w-2xl object-center rounded-md"
+                alt="Andy profile"
+                width={200}
+                height={200}
+              />
+            </div>
+            <div className="mb-7 lg:mb-0 lg:w-6/12 lg:order-2 relative">
+              {cardDescriptionRContent.content.descriptions.map(
                 (description, index) => (
                   <motion.p
                     key={index}
@@ -114,7 +98,7 @@ const CardDescription = ({ className, title, subTitle, description }) => {
                   >
                     {description}
                   </motion.p>
-                ),
+                )
               )}
             </div>
           </div>
@@ -124,4 +108,4 @@ const CardDescription = ({ className, title, subTitle, description }) => {
   )
 }
 
-export default CardDescription
+export default CardDescriptionR

@@ -170,7 +170,7 @@ const RecentBlog = ({ className }) => {
           rounded text-white inline-block items-start hover:bg-white hover:text-orange-400
           hover:shadow-1xl h-12  "
           >
-            Voir tous mes articles
+            Voir tous les articles
           </Link>
         </motion.div>
       </div>

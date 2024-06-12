@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <Hero className="pt-32 md:pt-22 pb-20" />
-      <DescriptionCard className="mt-28 pb-22" />
+      <DescriptionCard className="mt-28 pb-22" title="À propos de moi" subTitle="quelques mots"/>
       <RecentProject className="mt-28 pb-22" />
       <Client className="mt-28 pb-22" />
       <Testimonials />
