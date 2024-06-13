@@ -1,8 +1,8 @@
 'use client'
 
-import React, { useRef } from 'react'
+import React from 'react'
 import Image from 'next/image'
-import { motion, useScroll, useTransform } from 'framer-motion'
+import { motion } from 'framer-motion'
 
 const subHeroRContent = {
   heading: {
@@ -28,20 +28,10 @@ const SubHeroR = ({ className, title, subTitle, description }) => {
     description = subHeroRContent.heading.description
   }
 
-  const ref = useRef(null)
-
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ['start end', 'end start'],
-  })
-
-  const imgScroll1 = useTransform(scrollYProgress, [0, 1], ['20%', '-20%'])
-
   return (
     <section className={`${className}`}>
       <div className="container mx-auto">
         <div className="lg:flex lg:w-12/12 mx-auto items-left justify-between">
-          {/* Content center - subtitle */}
           {/* Image right */}
           <div className="lg:w-12/12 relative lg:-mt-140 mb-8 ">
             <motion.div
@@ -55,7 +45,7 @@ const SubHeroR = ({ className, title, subTitle, description }) => {
                 },
               }}
               viewport={{ once: true }}
-              style={{ y: imgScroll1 }}
+              // style={{ y: imgScroll1 }}
               className="z-[2] relative bg-cover bg-center"
             >
               <Image
@@ -67,6 +57,7 @@ const SubHeroR = ({ className, title, subTitle, description }) => {
             </motion.div>
           </div>
           <div className="lg:max-w-3xl mx-auto mt-[75px] md:mt-[150px] mb-10">
+            {/* Content center - subtitle */}
             {subTitle && (
               <motion.span
                 initial={{ opacity: 0, y: 20 }}
