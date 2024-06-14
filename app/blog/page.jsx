@@ -1,5 +1,5 @@
 import React from 'react'
-import SubHero from '../components/about/SubHero'
+import SubHero from '../components/blog/SubHero'
 import Posts from '../components/blog/Posts'
 import Subscribe from '../components/Subscribe'
 

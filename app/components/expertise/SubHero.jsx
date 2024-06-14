@@ -9,7 +9,7 @@ const subHeroContent = {
     subTitle: '',
     title: '',
     description: '',
-    image: '/images/hero-img-1-min.jpg',
+    image: '/images/cahierDesCharges.jpg',
   },
 }
 const SubHero = ({ className, title, subTitle, description, image }) => {
