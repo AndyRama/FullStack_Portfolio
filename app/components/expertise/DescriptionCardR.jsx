@@ -4,14 +4,7 @@ import Image from 'next/image'
 import React, { useRef } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
 
-const CardDescriptionR = ({
-  className,
-  title,
-  subTitle,
-  description,
-  img,
-  descriptions,
-}) => {
+const CardDescriptionR = ({ className, title, subTitle, description, img }) => {
   const cardDescriptionRContent = {
     heading: {
       title: title || '',

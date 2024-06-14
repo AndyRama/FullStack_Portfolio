@@ -13,16 +13,49 @@ export default function Expertise() {
         className="pt-32"
         subTitle="Toutes mon"
         title="Expertise"
-        description="Je suis Andy Ramaroson, un développeur FullStack JS basée
-        sur Bordeaux (N. Aquitaine, 33) et je réalise des applications sur mesure
-        en me basant sur des technologies web modernes. Je suis spécialisé sur le
-        langage  JavaScript avec le framework React & NextJs."
+        description=" Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Amet non nihil tenetur est minima, molestiae, laborum animi eum qui quos
+         beatae debitis, molestias veniam voluptatibus itaque inventore perspiciatis
+         ea aut."
       />
-      <DescriptionCardR className=" pt-14 pb-15" img="/images/desktop.jpg" />
-      <DescriptionCard className=" pt-14 pb-15" />
-      <DescriptionCardR className=" pt-14 pb-15" img="/images/desktop1.jpg" />
-      <DescriptionCard className=" pt-14 pb-15" />
-      <DescriptionCardR className=" pt-14 pb-15" img="/images/desktop.jpg" />
+      <DescriptionCardR
+        className=" pt-14 pb-15"
+        img="/images/desktop.jpg"
+        description=" Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Amet non nihil tenetur est minima, molestiae, laborum animi eum qui quos
+         beatae debitis, molestias veniam voluptatibus itaque inventore perspiciatis
+         ea aut."
+      />
+      <DescriptionCard
+        className=" pt-14 pb-15"
+        description=" Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Amet non nihil tenetur est minima, molestiae, laborum animi eum qui quos
+         beatae debitis, molestias veniam voluptatibus itaque inventore perspiciatis
+         ea aut."
+      />
+      <DescriptionCardR
+        className=" pt-14 pb-15"
+        img="/images/desktop1.jpg"
+        description=" Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Amet non nihil tenetur est minima, molestiae, laborum animi eum qui quos
+         beatae debitis, molestias veniam voluptatibus itaque inventore perspiciatis
+         ea aut."
+      />
+      <DescriptionCard
+        className=" pt-14 pb-15"
+        description=" Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Amet non nihil tenetur est minima, molestiae, laborum animi eum qui quos
+         beatae debitis, molestias veniam voluptatibus itaque inventore perspiciatis
+         ea aut."
+      />
+      <DescriptionCardR
+        className=" pt-14 pb-15"
+        img="/images/desktop.jpg"
+        description=" Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Amet non nihil tenetur est minima, molestiae, laborum animi eum qui quos
+         beatae debitis, molestias veniam voluptatibus itaque inventore perspiciatis
+         ea aut."
+      />
       <Subscribe className="py-16 pt-64 lg:py-32 " />
     </>
   )

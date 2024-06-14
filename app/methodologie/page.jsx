@@ -10,8 +10,8 @@ export default function Methodologie() {
     <>
       <SubHero
         className="pt-32"
-        subTitle="Mais"
-        title="comment ça marche ? "
+        subTitle="Mais comment"
+        title="ça marche ? "
         image=""
         description="Je développe pour vous, mais surtout
         AVEC vous. Le client est inclus dans toutes les etapes
@@ -19,13 +19,8 @@ export default function Methodologie() {
         une maquette, tester l'application, nous faire des suggestions
         d'amélioration, intégrer vos données... Je ne vous lâche pas !"
       />
-      <DescriptionCard className=" pt-14 pb-15" />
-      <DescriptionCard className=" pt-14 pb-15" />
-      <DescriptionCard className=" pt-14 pb-15" />
-      <DescriptionCard className=" pt-14 pb-15" />
-      <DescriptionCard className=" pt-14 pb-15" />
-      <DescriptionCard className=" pt-14 pb-15" />
-      <SubHeroR
+      {/* <DescriptionCard className=" pt-14 pb-15" /> */}
+      {/* <SubHeroR
         className="pt-20"
         subTitle="Mais"
         title="comment ça marche ? "
@@ -34,10 +29,10 @@ export default function Methodologie() {
         du développement. Dégrossir le projet ensemble, valider
         une maquette, tester l'application, nous faire des suggestions
         d'amélioration, intégrer vos données... Je ne vous lâche pas !"
-      />
+      /> */}
       {/* Faq */}
       {/* Bloc text */}s
-      <SubHero
+      {/* <SubHero
         className="pt-32"
         subTitle="Comment je fonctionne"
         title="La méthode Agile"
@@ -45,8 +40,8 @@ export default function Methodologie() {
         sur Bordeaux (N. Aquitaine, 33) et je réalise des applications sur mesure
         en me basant sur des technologies web modernes. Je suis spécialisé sur le
         langage  JavaScript avec le framework React & NextJs."
-      />
-      <SubHeroR
+      /> */}
+      {/* <SubHeroR
         className="pt-32"
         subTitle="Comment je fonctionne"
         title="Méthodologie"
@@ -54,7 +49,7 @@ export default function Methodologie() {
         sur Bordeaux (N. Aquitaine, 33) et je réalise des applications sur mesure
         en me basant sur des technologies web modernes. Je suis spécialisé sur le
         langage  JavaScript avec le framework React & NextJs."
-      />
+      /> */}
     </>
   )
 }
