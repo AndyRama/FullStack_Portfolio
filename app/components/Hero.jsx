@@ -9,7 +9,7 @@ const heroContent = {
     subTitle: '',
     title: 'Bienvenue',
     description:
-      'Je suis Andy Ramaroson, un développeur FullStack JS basée sur Bordeaux (N. Aquitaine, 33) et je réalise des applications sur mesure en me basant sur des technologies web modernes. Je suis spécialisé sur le langage  JavaScript avec le framework React & NextJs.',
+      'Je suis Andy Ramaroson, un développeur FullStack JS basée sur Bordeaux (N. Aquitaine, 33) et je réalise des applications sur mesure en me basant sur des technologies web modernes et I.A . Je suis spécialisé sur le langage  JavaScript avec le framework React & NextJs.',
     btn1: {
       href: '/projects',
       label: 'Projets',
@@ -33,7 +33,7 @@ const Hero = ({ className }) => {
   return (
     <section className={`${className}`}>
       <div className="container px-4 mx-auto">
-        <div className="lg:flex items-center justify-between">
+        <div className="lg:flex items-center ">
           {/* Content left - subtitle */}
           <div className="lg:w-6/12 mb-10 lg:mb-10 mt-6">
             {heroContent.intro.subTitle && (
@@ -98,6 +98,7 @@ const Hero = ({ className }) => {
                 viewport={{ once: true }}
                 className="btn-container"
               >
+                {/* Content left - btn - calendly */}
                 <Link
                   href={heroContent.intro.btn.href}
                   className="transistion-all duration-300 ease-in-out text-[11.5px]
@@ -107,7 +108,7 @@ const Hero = ({ className }) => {
                 >
                   {heroContent.intro.btn.label}
                 </Link>
-
+                {/* Content left - btn - projects */}
                 <Link
                   href={heroContent.intro.btn1.href}
                   className="transistion-all duration-300 ease-in-out text-[11.5px]
@@ -139,8 +140,8 @@ const Hero = ({ className }) => {
             >
               <Image
                 src="/images/desktop1.jpg"
-                width={700}
-                height={985}
+                width={900}
+                height={1024}
                 className=" rounded-md"
                 alt="hero image desktop"
               />

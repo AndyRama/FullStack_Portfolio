@@ -66,7 +66,7 @@ const PricingDetails = ({ className }) => {
                       }}
                       viewport={{ once: true }}
                       key={feature.title}
-                      className="relative z-40 flex gap-3
+                      className="relative z-5 flex gap-3
                       items-start "
                     >
                       <div>

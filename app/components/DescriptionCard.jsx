@@ -14,7 +14,7 @@ const CardDescription = ({ className, title, subTitle, description }) => {
     content: {
       img: '/images/andy.jpeg',
       descriptions: [
-        "Je réalise depuis plus de 2 ans des outils sur-mesure à destination d'entreprises de toutes tailles. Je transforme chaque besoin de mes clients en solution web, en garantissant le respect de leurs règles métiers.",
+        "Passionné par le développement web, je suis un développeur front-end spécialisé en React avec une solide expérience dans la création d'interfaces utilisateur interactives et performantes. Mon expertise couvre une variété de technologies modernes et de pratiques de développement, me permettant de transformer des idées en produits numériques innovants.",
         "Je réalise depuis plus de 2 ans des outils sur-mesure à destination d'entreprises de toutes tailles. Je transforme chaque besoin de mes clients en solution web, en garantissant le respect de leurs règles métiers.",
       ],
     },
