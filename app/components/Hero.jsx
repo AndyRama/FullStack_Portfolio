@@ -35,7 +35,7 @@ const Hero = ({ className }) => {
       <div className="container px-4 mx-auto">
         <div className="lg:flex items-center justify-between">
           {/* Content left - subtitle */}
-          <div className="lg:w-4/12 mb-10 lg:mb-10 mt-6">
+          <div className="lg:w-6/12 mb-10 lg:mb-10 mt-6">
             {heroContent.intro.subTitle && (
               <motion.span
                 initial={{ opacity: 0, y: 20 }}
@@ -64,7 +64,7 @@ const Hero = ({ className }) => {
                   transition: { delay: 0.2, duration: 0.5 },
                 }}
                 viewport={{ once: true }}
-                className=" text-gray-800 text-3xl sm:text-3xl md:text-4xl lg:text-5xl w-auto lg:w-screen max-w-xl mb-4 md:mb-7 mt-32"
+                className=" text-gray-800 text-3xl sm:text-3xl md:text-4xl lg:text-5xl w-auto lg:w-screen max-w-xl mb-4 md:mb-7 mt-0 lg:mt-32"
               >
                 {heroContent.intro.title}
               </motion.h1>
@@ -80,7 +80,7 @@ const Hero = ({ className }) => {
                   transition: { delay: 0.2, duration: 0.5 },
                 }}
                 viewport={{ once: true }}
-                className="leading-relaxed text-gray-500 w-auto lg:w-screen max-w-lg text-base lg:text-lg mb-10 lg:mb-16"
+                className="leading-relaxed text-gray-500 w-auto md:w-screen max-w-md text-base lg:text-lg mb-10 lg:mb-16"
               >
                 {heroContent.intro.description}
               </motion.p>
