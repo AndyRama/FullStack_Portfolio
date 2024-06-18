@@ -15,7 +15,7 @@ const heroContent = {
       label: 'Projets',
     },
     btn: {
-      href: 'https://calendly.com/lemurian-agency/30min',
+      href: 'https://calendly.com/andyramaroson/30min',
       label: 'Prendre rendez-vous',
     },
   },
@@ -33,7 +33,7 @@ const Hero = ({ className }) => {
   return (
     <section className={`${className}`}>
       <div className="container px-4 mx-auto">
-        <div className="lg:flex items-center ">
+        <div className="lg:flex items-left ">
           {/* Content left - subtitle */}
           <div className="lg:w-6/12 mb-10 lg:mb-10 mt-6">
             {heroContent.intro.subTitle && (

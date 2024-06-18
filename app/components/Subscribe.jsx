@@ -13,7 +13,7 @@ const subscribeContent = {
     description: 'Je reviendrai vers vous très rapidement.',
     btn: {
       label: 'Contactez-moi',
-      href: 'https://calendly.com/lemurian-agency/30min',
+      href: 'https://calendly.com/andyramaroson/30min',
     },
   },
 }
@@ -119,19 +119,17 @@ const Subscribe = ({ className }) => {
           >
             {subscribeContent.heading.description}
           </motion.p>
-      <div className="flex flex-col mx-auto justify-center mt-10">
-
-        <Link
-          href={subscribeContent.heading.btn.href}
-          target="_blank"
-          className="transistion-all duration-300 ease-in-out text-[11.5px]
-          md:tracking-[2px] font-bold uppercase bg-gradient-to-r from-orange-500 to-orange-800 py-4 px-5
-          rounded text-white hover:bg-white hover:text-orange-400
-          hover:shadow-2xl mb-5 mr-5 inline-block w-[300px] text-center"
-          >
-          {subscribeContent.heading.btn.label}
-        </Link>
-      </div>
+          <div className="flex flex-col mx-auto justify-center mt-10">
+            <Link
+              href={subscribeContent.heading.btn.href}
+              target="_blank"
+              className="transistion-all duration-300 ease-in-out text-[11.5px] md:tracking-[2px] font-bold uppercase 
+              bg-gradient-to-r from-orange-500 to-orange-800 py-4 px-5 rounded text-white hover:bg-white
+               hover:text-black hover:shadow-2xl mb-5 mr-5 inline-block w-[300px] text-center"
+            >
+              {subscribeContent.heading.btn.label}
+            </Link>
+          </div>
         </div>
       </div>
       <div className="transform-gpu blur-3xl">
