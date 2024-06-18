@@ -26,14 +26,24 @@ const recentProjectContent = {
       img: '/images/unlcoaching.png',
       title: 'Unlcoaching.com',
       years: 'Mars. 2024',
-      type: 'Création du site web',
-      name: 'Jeremy Prat',
+      type: 'Site vitrine de coaching personnel',
+      name: 'Jérémy Prat',
       role: 'Coach Sportif',
       quote:
-        'Working with Lemurian was a dream come true. They truly understood our vision for our dream home and turned it into a stunning reality. Their attention to detail and creativity exceeded our expectations.',
+        "Ayant à présent un développeur web capable de transformer mes idées ambitieuses en solutions numériques, J'ai demandé à Andy de réaliser un autre project pour moi. Un site web vitrine avec un blog présentant mon activité de coaching, on a réalisé la maquette ensemble puis l'a intégrée pour me livrer un site web responsive et performant.",
     },
     {
-      img: '/images/desktop.jpg',
+      img: '/images/Fille-de-la-grace.png',
+      title: 'Fille-de-la-grace.com',
+      years: ' Avril 2024',
+      type: "Création d'un blog",
+      name: 'Fara Rabefary',
+      role: 'Designe interieur',
+      quote:
+        "I've had the privilege of partnering with Lemurian on several projects. Their ability to combine functionality, aesthetics, and sustainability in their designs is truly remarkable. Their spaces provide the perfect canvas for interior design excellence.",
+    },
+    {
+      img: '/images/Fille-de-la-grace.png',
       title: 'Fille-de-la-grace.com',
       years: ' Avril 2024',
       type: 'Refonte du site complet',
@@ -42,36 +52,16 @@ const recentProjectContent = {
       quote:
         "I've had the privilege of partnering with Lemurian on several projects. Their ability to combine functionality, aesthetics, and sustainability in their designs is truly remarkable. Their spaces provide the perfect canvas for interior design excellence.",
     },
-    {
-      img: '/images/desktop.jpg',
-      title: 'VanilleB2B.com',
-      years: ' Mai 2024',
-      type: 'Refonte du site complet',
-      name: 'Honoré Rabefary',
-      role: 'Landscape Architect',
-      quote:
-        'Collaborating with Lemurian on projects has been a rewarding experience. Their ability to seamlessly integrate indoor and outdoor spaces, creating a harmonious flow, has elevated the overall design and user experience.',
-    },
-    {
-      img: '/images/desktop.jpg',
-      title: 'school-Unlcoaching.com',
-      years: ' Juin 2024',
-      type: 'Plaforme de cours de musculation en ligne ',
-      name: 'Jeremy Prat',
-      role: 'Coach Sportif',
-      quote:
-        'Working with Lemurian was a dream come true. They truly understood our vision for our dream home and turned it into a stunning reality. Their attention to detail and creativity exceeded our expectations.',
-    },
-    {
-      img: '/images/desktop.jpg',
-      title: 'MarketPlace.com',
-      years: ' Avr. 2024',
-      type: 'Création du site de vente produit malgache',
-      name: 'Fara Rabefary',
-      role: 'Designe interieur',
-      quote:
-        'Collaborating with Lemurian on projects has been a rewarding experience. Their ability to seamlessly integrate indoor and outdoor spaces, creating a harmonious flow, has elevated the overall design and user experience.',
-    },
+    // {
+    //   img: '/images/desktop.jpg',
+    //   title: 'VanilleB2B.com',
+    //   years: ' Mai 2024',
+    //   type: 'Refonte du site complet',
+    //   name: 'Honoré Rabefary',
+    //   role: 'Landscape Architect',
+    //   quote:
+    //     'Collaborating with Lemurian on projects has been a rewarding experience. Their ability to seamlessly integrate indoor and outdoor spaces, creating a harmonious flow, has elevated the overall design and user experience.',
+    // },
     {
       img: '/images/home-portfolio.png',
       title: 'AndyRamaroson.com',
@@ -80,18 +70,38 @@ const recentProjectContent = {
       name: 'Andy Ramaroson',
       role: 'Développeur Fullstack Js',
       quote:
-        'Working with Lemurian was a dream come true. They truly understood our vision for our dream home and turned it into a stunning reality. Their attention to detail and creativity exceeded our expectations.',
+        "Réalisation d'un portfolio afin de présenter mon activité, Je souhaitais aussi tenir un blog tech me permetant de partager régulièrement mes connaissances et mes réflexions sur les dernières tendances du développement web. Je souhaitais aussi mettre en valeur quelques réalisations. Vitrine en ligne captivante pour promouvoir mon expertise, attirer nouveaux clients, collaborer avec d'autres professionnels.",
     },
     {
-      img: '/images/desktop.jpg',
-      title: 'Andyrb.com',
-      years: ' Dec. 2024',
-      type: 'Création du site location',
-      name: 'Andy Ramaroson',
-      role: 'Développeur Fullstack Js',
+      img: '/images/unlcoaching.png',
+      title: 'School-Unlcoaching.com',
+      years: ' Juin 2024',
+      type: "Application de gestion et créations d'exercices de musculations",
+      name: 'Jeremy Prat',
+      role: 'Coach Sportif',
       quote:
-        'Collaborating with Lemurian on projects has been a rewarding experience. Their ability to seamlessly integrate indoor and outdoor spaces, creating a harmonious flow, has elevated the overall design and user experience.',
+        "En tant qu'entrepreneur exigeant, je recherchais un développeur web capable de transformer mes idées ambitieuses en solutions numériques percutantes. Andy s'est montré à l'écoute de mes besoins spécifiques, apportant des solutions créatives et adaptées à mon contexte d'enseignement. Mon site web est optimisé pour tous les appareils, offre une expérience fluide et facilite l'engagement et la participation des apprenants.",
     },
+    // {
+    //   img: '/images/desktop.jpg',
+    //   title: 'MarketPlace.com',
+    //   years: ' Avr. 2024',
+    //   type: 'Création du site de vente produit malgache',
+    //   name: 'Fara Rabefary',
+    //   role: 'Designe interieur',
+    //   quote:
+    //     'Collaborating with Lemurian on projects has been a rewarding experience. Their ability to seamlessly integrate indoor and outdoor spaces, creating a harmonious flow, has elevated the overall design and user experience.',
+    // },
+    // {
+    //   img: '/images/desktop.jpg',
+    //   title: 'Andyrb.com',
+    //   years: ' Dec. 2024',
+    //   type: 'Création du site location',
+    //   name: 'Andy Ramaroson',
+    //   role: 'Développeur Fullstack Js',
+    //   quote:
+    //     'Collaborating with Lemurian on projects has been a rewarding experience. Their ability to seamlessly integrate indoor and outdoor spaces, creating a harmonious flow, has elevated the overall design and user experience.',
+    // },
   ],
 }
 
@@ -189,16 +199,16 @@ const RecentProject = ({ className }) => {
                 (recentProject, index) => (
                   <SwiperSlide key={index} className="w-full">
                     <div className="block md:flex overflow-y-visible items-stretch bg-white">
-                      <div className="md:w-4/12">
+                      <div className="md:w-5/12">
                         <Image
                           src={recentProject.img}
                           alt={recentProject.name}
-                          width={379}
-                          height={320}
-                          className="object-cover object-center !h-full !w-full rounded-md"
+                          width={400}
+                          height={350}
+                          className="object-cover object-center !h-full !w-full rounded-md border-2"
                         />
                       </div>
-                      <div className="md:w-8/12 p-7 md:p-16 flex items-center">
+                      <div className="md:w-7/12 p-7 md:p-8 flex items-center">
                         <div>
                           <h2 className=" text-2xl text-orange-400 block">
                             {recentProject.title}

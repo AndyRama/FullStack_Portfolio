@@ -29,7 +29,7 @@ const Stats = () => {
             <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
               {statContent.stats.map((stat, index) => (
                 <div
-                  className="text-center w-full hover:shadow-xl transition-all duration-300 ease-in-out"
+                  className="text-center pt-8 w-full hover:shadow-lg transition-all duration-300 ease-in-out rounded-md h-[150px]"
                   key={index}
                 >
                   <strong className="text-primary text-4xl xl:text-[52px] font-bold leading-tight">
