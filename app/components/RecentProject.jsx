@@ -26,7 +26,7 @@ const recentProjectContent = {
       img: '/images/unlcoaching.png',
       title: 'Unlcoaching.com',
       years: 'Mars. 2024',
-      type: 'Site vitrine de coaching personnel',
+      type: 'Site vitrine',
       name: 'Jérémy Prat',
       role: 'Coach Sportif',
       quote:
@@ -36,11 +36,11 @@ const recentProjectContent = {
       img: '/images/Fille-de-la-grace2.png',
       title: 'Fille-de-la-grace.com',
       years: ' Avril 2024',
-      type: "Refonte du site complet",
+      type: 'Refonte du site complet',
       name: 'Fara Rabefary',
       role: 'Designe interieur',
       quote:
-        "I've had the privilege of partnering with Lemurian on several projects. Their ability to combine functionality, aesthetics, and sustainability in their designs is truly remarkable. Their spaces provide the perfect canvas for interior design excellence.",
+        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ipsum consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam praesentium sint veniam ad recusandae ab amet impedit  consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam praesentium sint veniam ad recusandae ab amet impedit !',
     },
     {
       img: '/images/Fille-de-la-grace1.png',
@@ -50,7 +50,7 @@ const recentProjectContent = {
       name: 'Fara Rabefary',
       role: 'Designe interieur',
       quote:
-        "I've had the privilege of partnering with Lemurian on several projects. Their ability to combine functionality, aesthetics, and sustainability in their designs is truly remarkable. Their spaces provide the perfect canvas for interior design excellence.",
+        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ipsum consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam praesentium sint veniam ad recusandae ab amet impedit  consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam praesentium sint veniam ad recusandae ab amet impedit !',
     },
     // {
     //   img: '/images/desktop.jpg',
@@ -66,17 +66,17 @@ const recentProjectContent = {
       img: '/images/home-portfolio.png',
       title: 'AndyRamaroson.com',
       years: 'Juin 2024',
-      type: 'Création de mon Portfolio',
+      type: 'Site vitrine',
       name: 'Andy Ramaroson',
       role: 'Développeur Fullstack Js',
       quote:
-        "Réalisation d'un portfolio afin de présenter mon activité, Je souhaitais aussi tenir un blog tech me permetant de partager régulièrement mes connaissances et mes réflexions sur les dernières tendances du développement web. Je souhaitais aussi mettre en valeur quelques réalisations. Vitrine en ligne captivante pour promouvoir mon expertise, attirer nouveaux clients, collaborer avec d'autres professionnels.",
+        "Réalisation d'un portfolio afin de présenter mon activité, Je souhaitais aussi tenir un blog tech me permetant de partager régulièrement mes connaissances et mes réflexions sur les dernières tendances du développement web.  Vitrine en ligne captivante pour promouvoir mon expertise, attirer nouveaux clients, collaborer avec d'autres professionnels en mettant en valeur quelques réalisations.",
     },
     {
       img: '/images/unlcoaching.png',
       title: 'School-Unlcoaching.com',
       years: ' Juin 2024',
-      type: "Application de gestion et créations d'exercices de musculations",
+      type: 'Application web',
       name: 'Jeremy Prat',
       role: 'Coach Sportif',
       quote:
@@ -85,7 +85,7 @@ const recentProjectContent = {
     // {
     //   img: '/images/desktop.jpg',
     //   title: 'MarketPlace.com',
-    //   years: ' Avr. 2024',
+    //   years: ' juil. 2024',
     //   type: 'Création du site de vente produit malgache',
     //   name: 'Fara Rabefary',
     //   role: 'Designe interieur',

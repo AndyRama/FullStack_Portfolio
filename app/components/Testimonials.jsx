@@ -1,53 +1,50 @@
 import React from 'react'
 
 import Image from 'next/image'
-import Link from 'next/link'
 
-import user1 from './../../public/images/user1.jpg'
-import user2 from './../../public/images/user2.jpg'
-import user3 from './../../public/images/user3.jpg'
-import user4 from './../../public/images/user4.jpg'
+import user1 from './../../public/images/jeremy.jpg'
+import user2 from './../../public/images/fara.png'
+import user3 from './../../public/images/jeremy.jpg'
+import user4 from './../../public/images/honore.png'
 import user5 from './../../public/images/user5.jpg'
 import user6 from './../../public/images/user6.jpg'
-import user7 from './../../public/images/jeremy.jpg'
-// import user8 from './../../public/images/user6.jpg'
 
 const testimonials = [
   {
-    user: 'Emlie Prevot',
-    company: 'Stellar Solutions',
+    user: 'Jéremy Prat',
+    company: 'Coach Sportif',
     image: user1,
-    text: "La formation de Jeremy m'a vraiment aidé à progresser. Son approche pédagogique est claire et ses conseils sont pratiques et applicables immédiatement.",
+    text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ipsum consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam !',
+  },
+  {
+    user: 'Fara Rabefarihy',
+    company: "Fondatrice de l'association",
+    image: user2,
+    text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ipsum consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam !',
   },
   {
     user: 'Jane Smith',
     company: 'Blue Horizon Technologies',
-    image: user2,
-    text: 'Je suis très satisfaite de la formation en ligne de Jeremy  Son expertise et sa manière de transmettre les connaissances ont fait toute la différence pour moi.',
-  },
-  {
-    user: 'David Johnson',
-    company: 'Quantum Innovations',
-    image: user3,
-    text: 'Travailler avec Jeremy a été une expérience enrichissante. Son attention aux détails et son engagement envers notre succès sont remarquables. Je recommande vivement sa formation.',
-  },
-  {
-    user: 'Serena Wilson',
-    company: 'Visionary Creations',
     image: user5,
-    text: 'Je suis impressionné par le professionnalisme et le dévouement de Jeremy  Sa formation a dépassé nos attentes et a produit des résultats exceptionnels.',
+    text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ipsum consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam !',
+  },
+  {
+    user: 'Honoré Rabefarihy',
+    company: 'Ingénieur Agronome',
+    image: user4,
+    text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ipsum consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam !',
+  },
+  {
+    user: 'Jéremy Prat',
+    company: 'Coach Sportif',
+    image: user1,
+    text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ipsum consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam !',
   },
   {
     user: 'Marc Davis',
     company: 'Synergy Systems',
     image: user6,
-    text: "Jeremy a su aller au-delà pour garantir le succès de notre formation. Son expertise et son dévouement sont incomparables. J'ai hâte de retravailler avec lui à l’avenir.",
-  },
-  {
-    user: 'Jéremy Prat',
-    company: 'Coach Sportif',
-    image: user7,
-    text: "N'oubliez pas, chaque petit pas compte et contribue à notre succès collectif. Continuons à avancer, main dans la main, vers nos objectifs communs.",
+    text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ipsum consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam !',
   },
 ]
 
