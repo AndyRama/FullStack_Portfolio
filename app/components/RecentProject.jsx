@@ -33,20 +33,20 @@ const recentProjectContent = {
         "Ayant à présent un développeur web capable de transformer mes idées ambitieuses en solutions numériques, J'ai demandé à Andy de réaliser un autre project pour moi. Un site web vitrine avec un blog présentant mon activité de coaching, on a réalisé la maquette ensemble puis l'a intégrée pour me livrer un site web responsive et performant.",
     },
     {
-      img: '/images/Fille-de-la-grace.png',
+      img: '/images/Fille-de-la-grace2.png',
       title: 'Fille-de-la-grace.com',
       years: ' Avril 2024',
-      type: "Création d'un blog",
+      type: "Refonte du site complet",
       name: 'Fara Rabefary',
       role: 'Designe interieur',
       quote:
         "I've had the privilege of partnering with Lemurian on several projects. Their ability to combine functionality, aesthetics, and sustainability in their designs is truly remarkable. Their spaces provide the perfect canvas for interior design excellence.",
     },
     {
-      img: '/images/Fille-de-la-grace.png',
+      img: '/images/Fille-de-la-grace1.png',
       title: 'Fille-de-la-grace.com',
       years: ' Avril 2024',
-      type: 'Refonte du site complet',
+      type: "Création d'un blog",
       name: 'Fara Rabefary',
       role: 'Designe interieur',
       quote:
