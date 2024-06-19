@@ -3,6 +3,7 @@ import { allPosts } from 'contentlayer/generated'
 import SubHero from '@/app/components/about/SubHero'
 import Posts from '@/app/components/blog/category/Posts'
 import Subscribe from '@/app/components/Subscribe'
+import CardCategory from '@/app/components/CardCategory'
 
 const page = ({ params }) => {
   const newTitle = params?.slug.replace('-', ' ')
@@ -36,6 +37,7 @@ const page = ({ params }) => {
         params={params}
         itemsPerPage={6}
       />
+      <CardCategory className="hidden md:contents w-3/12 mr-2" />
       <Subscribe className="py-16 pt-32 lg:py-32" />
     </>
   )

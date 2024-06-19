@@ -10,12 +10,12 @@ import { XMarkIcon } from '@heroicons/react/24/outline'
 import { HiMenu } from 'react-icons/hi'
 
 const navigationMenu = [
-  { href: '/', label: 'Accueil' },
+  { href: '/', label: 'Home' },
   { href: '/blog', label: 'Blog' },
+  { href: '/projects', label: 'projects' },
   { href: '/expertise', label: 'Expertise' },
   { href: '/methodologie', label: 'Méthodologie' },
   { href: '/prestations', label: 'Prestations' },
-  { href: '/projects', label: 'projects' },
 ]
 export default function Navigation() {
   const [open, setOpen] = useState(false)

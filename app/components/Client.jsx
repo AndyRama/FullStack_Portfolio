@@ -32,9 +32,9 @@ const Client = ({ className }) => {
 
   return (
     <section className={`${className} overflow-hidden`}>
-      <div className="container px-4 mx-auto">
+      <div className="container mx-auto">
         <div className="lg:flex justify-center">
-          <div className="w-full lg:w-9/12 lg:flex gap-4 pt-10 items-center mb-20 lg:mb-0 ">
+          <div className="w-full lg:w-9/12 lg:flex gap-4 pt-10 items-center mb-20 lg:mb-0 px-4 lg:px-16 ">
             <div className="lg:w-8/12">
               {clientContent.intro.subTitle && (
                 <motion.span

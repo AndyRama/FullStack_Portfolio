@@ -77,7 +77,7 @@ const recentProjectContent = {
       title: 'School-Unlcoaching.com',
       years: ' Juin 2024',
       type: 'Application web',
-      name: 'Jeremy Prat',
+      name: 'Jérémy Prat',
       role: 'Coach Sportif',
       quote:
         "En tant qu'entrepreneur exigeant, je recherchais un développeur web capable de transformer mes idées ambitieuses en solutions numériques percutantes. Andy s'est montré à l'écoute de mes besoins spécifiques, apportant des solutions créatives et adaptées à mon contexte d'enseignement. Mon site web est optimisé pour tous les appareils, offre une expérience fluide et facilite l'engagement et la participation des apprenants.",

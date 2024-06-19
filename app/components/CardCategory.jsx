@@ -5,8 +5,6 @@ import Link from 'next/link'
 import React from 'react'
 import { BiBulb } from 'react-icons/bi'
 import { MdFitnessCenter, MdOutlineSportsKabaddi } from 'react-icons/md'
-import { SiFranprix } from 'react-icons/si'
-import { MdHome } from 'react-icons/md'
 
 const iconMapping = {
   icon1: (

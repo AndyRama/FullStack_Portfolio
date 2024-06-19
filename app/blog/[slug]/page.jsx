@@ -1,6 +1,7 @@
 import React from "react";
 import { allPosts } from "contentlayer/generated";
 import BlogContent from "./BlogContent"
+import CardCategory from "@/app/components/CardCategory"
 
 export async function generateStaticParams() {
   const posts = await allPosts;
@@ -18,6 +19,7 @@ const page = ({ params }) => {
   return (
     <>
       <BlogContent post={post}/>
+      <CardCategory className="hidden md:contents w-3/12 mr-2" />
     </>
   )
 }

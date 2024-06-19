@@ -14,7 +14,7 @@ const statContent = {
     description: 'Contactez-moi, je reviendrai vers vous très rapidement.',
     image: '/images/icon.',
     cta: {
-      cta_href: 'https://calendly.com/lemurian-agency/30min',
+      cta_href: 'https://calendly.com/andyramaroson/30min',
       cta_label: 'Prendre rendez-vous',
     },
   },
@@ -58,6 +58,7 @@ const Stats = () => {
               {statContent.getStarted.cta.cta_label && (
                 <Link
                   href={statContent.getStarted.cta.cta_href}
+                  target="_blank"
                   className="block text-center text-[11.5px] tracking-[2px] font-bold uppercase bg-orange-600 py-4 px-5 text-white rounded-md"
                 >
                   <span>{statContent.getStarted.cta.cta_label}</span>
