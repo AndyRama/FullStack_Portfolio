@@ -9,27 +9,27 @@ const PricingContentDetails = {
   features: [
     {
       icon: BiHardHat,
-      title: 'Transformation Physique',
+      title: 'Développement Web Sur Mesure',
       description:
-        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ipsum consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam praesentium sint veniam ad recusandae ab amet impedit  consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam praesentium sint veniam ad recusandae ab amet impedit !',
+        "En tant que développeur web indépendant, je vous propose des solutions entièrement personnalisées pour répondre à vos besoins spécifiques. Que vous cherchiez à créer un site e-commerce, un portail d'entreprise ou une plateforme de gestion de contenu, je conçois des sites web sur mesure, optimisés pour offrir une expérience utilisateur exceptionnelle et des performances de pointe. Grâce à mon expertise approfondie dans les dernières technologies web, je vous garantis un produit final de qualité supérieure, évolutif et sécurisé.",
     },
     {
       icon: BiNote,
-      title: 'Préparation aux Compétitions',
+      title: "Créez votre site web en un clin d'œil avec IA",
       description:
-        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ipsum consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam praesentium sint veniam ad recusandae ab amet impedit  consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam praesentium sint veniam ad recusandae ab amet impedit !',
+        "Grâce à notre IA de pointe, créez un site web personnalisé en quelques clics. Notre technologie analyse vos besoins pour concevoir un site sur mesure, professionnel et attrayant.Que ce soit pour améliorer l'engagement des utilisateurs, automatiser des tâches ou exploiter les données de manière intelligente, l'intégration de l'IA apportera une valeur ajoutée significative à votre site web.",
     },
     {
       icon: BiLayer,
-      title: "Maintien de l'Activité Physique",
+      title: 'Optimisation pour les Moteurs de Recherche (SEO)',
       description:
-        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ipsum consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam praesentium sint veniam ad recusandae ab amet impedit  consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam praesentium sint veniam ad recusandae ab amet impedit !',
+        "Je comprends l'importance cruciale du référencement naturel pour assurer la visibilité et le succès de votre site web. C'est pourquoi j'intègre des stratégies SEO avancées dès la phase de conception, afin d'optimiser votre site pour les moteurs de recherche les plus populaires. En analysant en profondeur votre secteur d'activité, vos mots-clés cibles et la concurrence, je mets en place des techniques éprouvées qui amélioreront le classement de votre site dans les résultats de recherche.",
     },
     {
       icon: BiPaintRoll,
-      title: 'Support pour TCA',
+      title: 'Maintenance et Assistance Continues',
       description:
-        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ipsum consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam praesentium sint veniam ad recusandae ab amet impedit  consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam praesentium sint veniam ad recusandae ab amet impedit !',
+        "Je ne me contente pas de livrer un site web fonctionnel ; je m'engage à assurer sa pérennité et son succès à long terme. Mon service de maintenance et d'assistance continue vous offre un soutien technique régulier, des mises à jour de sécurité, des sauvegardes régulières et une surveillance constante des performances. De plus, je suis disponible pour répondre à toutes vos questions ou préoccupations, garantissant ainsi une expérience client exceptionnelle.",
     },
   ],
 }
@@ -42,10 +42,10 @@ const PricingDetails = ({ className }) => {
           <div className="absolute left-0 opacity-30 md:opacity-50 -z-20 w-56 h-64 bg-gradient-to-tr from-orange-500 to-orange-800"></div>
         </div>
         <div className="container px-4 mx-auto">
-          <h3 className="text-orange-500 text-xl text-center">
-            Ce que tu obtiens
+          <h3 className="text-orange-500 text-xl text-left">
+            Ce que je te propose
           </h3>
-          <h2 className="text-[#2F2E2E] text-3xl text-center mb-20">
+          <h2 className="text-[#2F2E2E] text-3xl text-left mb-20">
             Détails de mon offre
           </h2>
           <div className="lg:flex justify-center">
@@ -82,7 +82,7 @@ const PricingDetails = ({ className }) => {
                           className="leading-relaxed text-[15px] text-[#2F2E2E]
                           text-opacity-75 mb-7 text-justify"
                         >
-                          <span>• </span>
+                          {/* <span>• </span> */}
                           {feature.description}
                         </p>
                       </div>

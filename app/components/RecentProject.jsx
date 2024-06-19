@@ -133,9 +133,9 @@ const RecentProject = ({ className }) => {
   return (
     <section className={`${className} overflow-hidden`}>
       <div className="container px-4 mx-auto">
-        <div className="flex justify-center">
-          <div className="w-full md:w-10/12 flex gap-0 items-center">
-            <div className="text-center w-auto md:w-screen max-w-full md:max-w-xl mx-auto">
+        <div className="flex ">
+          <div className="w-full md:w-6/12 flex gap-0 items-center">
+            <div className="text-left w-auto md:w-screen max-w-full md:max-w-xl">
               {recentProjectContent.heading.subTitle && (
                 <motion.span
                   initial={{ opacity: 0, y: 20 }}
@@ -148,7 +148,7 @@ const RecentProject = ({ className }) => {
                     },
                   }}
                   viewport={{ once: true }}
-                  className="uppercase tracking-[3px] text-[12.5px] mb-5 inline-block text-gray-500"
+                  className="uppercase tracking-[3px] text-[12.5px] mb-4 inline-block text-orange-400"
                 >
                   {recentProjectContent.heading.subTitle}
                 </motion.span>
@@ -210,7 +210,7 @@ const RecentProject = ({ className }) => {
                       </div>
                       <div className="md:w-7/12 p-7 md:p-8 flex items-center">
                         <div>
-                          <h2 className=" text-2xl text-orange-400 block">
+                          <h2 className="text-2xl text-orange-400 block">
                             {recentProject.title}
                           </h2>
                           <div className="flex space-x-2 text-sm">

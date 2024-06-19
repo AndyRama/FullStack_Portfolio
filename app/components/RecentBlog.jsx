@@ -86,7 +86,7 @@ const RecentBlog = ({ className }) => {
   return (
     <section className={`${className}`}>
       <div className="container mx-auto rounded-md ">
-        <div className=" px-4 lg:px-20 lg:flex justify-center mb-2">
+        <div className=" px-4 lg:flex justify-left mb-2">
           <div className="lg:w-7/12">
             {recentBlogContent.heading.subTitle && (
               <motion.span
@@ -100,8 +100,7 @@ const RecentBlog = ({ className }) => {
                   },
                 }}
                 viewport={{ once: true }}
-                className="uppercase tracking-[3px] text-sm mb-5 inline-block
-                 text-orange-400"
+                className="uppercase tracking-[3px] text-sm inline-block text-orange-400"
               >
                 {recentBlogContent.heading.subTitle}
               </motion.span>

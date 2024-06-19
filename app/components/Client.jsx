@@ -33,8 +33,8 @@ const Client = ({ className }) => {
   return (
     <section className={`${className} overflow-hidden`}>
       <div className="container mx-auto">
-        <div className="lg:flex justify-center">
-          <div className="w-full lg:w-9/12 lg:flex gap-4 pt-10 items-center mb-20 lg:mb-0 px-4 lg:px-16 ">
+        <div className="lg:flex justify-left">
+          <div className="w-full lg:w-9/12 lg:flex gap-4 pt-10 items-center mb-10 lg:mb-0 px-4 ">
             <div className="lg:w-8/12">
               {clientContent.intro.subTitle && (
                 <motion.span
@@ -48,7 +48,7 @@ const Client = ({ className }) => {
                     },
                   }}
                   viewport={{ once: true }}
-                  className="uppercase tracking-[3px] text-sm mb-5 inline-block text-gray-500"
+                  className="uppercase tracking-[3px] text-sm inline-block text-orange-400"
                 >
                   {clientContent.intro.subTitle}
                 </motion.span>
@@ -65,7 +65,7 @@ const Client = ({ className }) => {
                     },
                   }}
                   viewport={{ once: true }}
-                  className="text-2xl lg:text-4xl mb-4 lg:mb-0 "
+                  className="text-2xl lg:text-4xl mb-4 lg:mb-0"
                 >
                   {clientContent.intro.title}
                 </motion.h2>

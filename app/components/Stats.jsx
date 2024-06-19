@@ -9,8 +9,7 @@ const statContent = {
     { number: '4', label: 'Clients' },
   ],
   getStarted: {
-    heading:
-      'Vous avez besoin d’un développeur pour créer ou mettre à jour votre site ?',
+    heading: 'Vous avez besoin d’un développeur pour votre site ?',
     description: 'Contactez-moi, je reviendrai vers vous très rapidement.',
     image: '/images/icon.',
     cta: {
@@ -42,7 +41,7 @@ const Stats = () => {
             </div>
           </div>
           <div className="w-full lg:w-5/12">
-            <div className="bg-light py-10 px-7 lg:px-10 md:pr-32 rounded-lg relative">
+            <div className="bg-light py-10 lg:px-8 md:pr-32 rounded-lg relative">
               {statContent.getStarted.heading && (
                 <h3 className="text-heading font-bold text-xl mb-3">
                   {statContent.getStarted.heading}

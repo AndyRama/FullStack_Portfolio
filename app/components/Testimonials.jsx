@@ -50,16 +50,16 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <div className="container px-4 mx-auto tracking-wide mb-24 mt-10 md:mt-0">
-      <h3 className="text-orange-500 text-xl text-center">
+    <div className="container mx-auto tracking-wide mb-24 mt-10 md:mt-0">
+      <h3 className="uppercase tracking-[3px] text-sm inline-block text-orange-400">
         Retour sur mes services
       </h3>
-      <h2 className="text-[#2F2E2E] text-3xl text-center mb-10">
-        Ce qu&apos;ils ont pensés de ma prestation !
+      <h2 className="text-2xl lg:text-3xl mb-4 lg:mb-10">
+        Quelques témoignage sur les prestations !
       </h2>
       <div className="flex flex-wrap justify-center">
         {testimonials.map((testimonial, index) => (
-          <div key={index} className="w-full sm:w-1/2 lg:w-1/3 px-4 py-2">
+          <div key={index} className="w-full sm:w-1/2 lg:w-1/3 px-4  py-2">
             <div className="text-[#2F2E2E] bg-white rounded-md p-6 text-md border border-neutral-800 font-thin">
               <p>{testimonial.text}</p>
               <div className="flex mt-8 items-start">

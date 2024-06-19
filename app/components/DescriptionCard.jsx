@@ -30,7 +30,7 @@ const CardDescription = ({ className, title, subTitle, description }) => {
   return (
     <section className={`${className}`} ref={ref}>
       <div className="container px-4 mx-auto">
-        <div className="text-center lg:max-w-xl mx-auto mb-15 mt-10 md:mt-0 lg:mb-12 relative z-[5]">
+        <div className="text-left lg:max-w-xl mb-4 mt-10 md:mt-0 relative z-[5]">
           {cardDescriptionContent.heading.subTitle && (
             <motion.span
               initial={{ opacity: 0, y: 20 }}
@@ -43,7 +43,7 @@ const CardDescription = ({ className, title, subTitle, description }) => {
                 },
               }}
               viewport={{ once: true }}
-              className="uppercase tracking-[3px] text-[12.5px] mb-2 inline-block text-gray-500"
+              className="uppercase tracking-[3px] text-[12.5px] inline-block text-orange-400"
             >
               {cardDescriptionContent.heading.subTitle}
             </motion.span>
