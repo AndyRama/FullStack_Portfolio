@@ -38,7 +38,7 @@ const PostCard = ({ post, index }) => {
         />
       </Link>
 
-      <div className="p-4 bg-white border border-[#2F2E2E] rounded-b-md">
+      <div className="p-4 bg-white border border-gray-200 rounded-b-md">
         <p className="text-gray-500 mb-3 uppercase text-[12px] tracking-[1px]">
           {format(parseISO(post.date), 'LLL d, yyyy')} • {post.author}
         </p>

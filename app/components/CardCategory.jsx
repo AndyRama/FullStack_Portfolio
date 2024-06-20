@@ -1,40 +1,50 @@
 'use client'
 
+import React from 'react'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
-import React from 'react'
-import { BiBulb } from 'react-icons/bi'
-import { MdFitnessCenter, MdOutlineSportsKabaddi } from 'react-icons/md'
+import { HiSparkles } from 'react-icons/hi'
+import { HiOutlineTerminal } from 'react-icons/hi'
+import { HiOutlineTemplate } from 'react-icons/hi'
+import { GrReactjs } from 'react-icons/gr'
+import { TbBrandNextjs } from 'react-icons/tb'
+import { BiSolidGrid } from 'react-icons/bi'
 
 const iconMapping = {
   icon1: (
-    <MdFitnessCenter
+    <HiSparkles
       data-testid="icon1"
-      className="mt-1 mr-2 rounded-sm text-black-300 bg-gradient-to-r from-orange-500 to-orange-800 bg-opacity-10"
+      className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10"
     />
   ),
   icon2: (
-    <BiBulb
+    <HiOutlineTerminal
       data-testid="icon2"
-      className="mt-1 mr-2 rounded-sm text-black-300 bg-gradient-to-r from-orange-500 to-orange-800 bg-opacity-10"
+      className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10"
     />
   ),
   icon3: (
-    <MdOutlineSportsKabaddi
+    <GrReactjs
       data-testid="icon3"
-      className="mt-1 mr-2 rounded-sm text-black-300 bg-gradient-to-r from-orange-500 to-orange-800 bg-opacity-10"
+      className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10"
     />
   ),
   icon4: (
-    <MdOutlineSportsKabaddi
+    <TbBrandNextjs
       data-testid="icon4"
-      className="mt-1 mr-2 rounded-sm text-black-300 bg-gradient-to-r from-orange-500 to-orange-800 bg-opacity-10"
+      className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10"
     />
   ),
   icon5: (
-    <MdFitnessCenter
+    <HiOutlineTemplate
       data-testid="icon5"
-      className="mt-1 mr-2 rounded-sm text-black-300 bg-gradient-to-r from-orange-500 to-orange-800 bg-opacity-10"
+      className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10"
+    />
+  ),
+  icon6: (
+    <BiSolidGrid
+      data-testid="icon5"
+      className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10"
     />
   ),
 }
@@ -46,33 +56,39 @@ const CardCategoriesContent = {
   },
   step: [
     {
-      title1: 'Complément Alim.',
+      title1: 'Inteligence Art.',
       icon1: 'icon1',
       btn1: {
         href: '/blog/categories/complement',
         label: 'Complément Alim.',
       },
-      title2: 'Entraînement',
+      title2: 'Développement w.',
       icon2: 'icon2',
       btn2: {
         href: '/blog/categories/entrainement',
         label: 'Entraînement',
       },
-      title3: 'Compétition',
+      title3: 'React | JavaScript',
       icon3: 'icon3',
       btn3: {
         href: '/blog/categories/competition',
         label: 'Compétition',
       },
-      title4: 'Exercices',
+      title4: 'NextJs',
       icon4: 'icon4',
       btn4: {
         href: '/blog/categories/exercice',
         label: 'Exercices',
       },
-      title5: 'Exercices',
+      title5: 'No code',
       icon5: 'icon5',
       btn5: {
+        href: '/blog/categories/exercice',
+        label: 'Exercices',
+      },
+      title6: 'Autres',
+      icon6: 'icon6',
+      btn6: {
         href: '/blog/categories/exercice',
         label: 'Exercices',
       },
@@ -98,7 +114,7 @@ const CardCategory = ({ className }) => {
             }}
             viewport={{ once: true }}
             whileHover={{ y: -10, transition: 0.1 }}
-            className="group duration-300 bg-white border border-[#2F2E2E] relative overflow-hidden hover:shadow-2xl rounded-md h-[365px] mr-3"
+            className="group duration-300 bg-white border border-gray-200 relative overflow-hidden hover:shadow-2xl rounded-md h-[365px] mr-3"
           >
             <div className="px-2 lg:px-4 mt-2 relative flex flex-col gap-3 items-start ">
               <span className="text-3xl flex">
@@ -115,7 +131,7 @@ const CardCategory = ({ className }) => {
                 {step.description}
               </p>
 
-              {['title1', 'title2', 'title3', 'title4', 'title5'].map(
+              {['title1', 'title2', 'title3', 'title4', 'title5', 'title6'].map(
                 (titleKey, idx) => (
                   <div key={idx}>
                     <Link href={step[`btn${idx + 1}`].href}>

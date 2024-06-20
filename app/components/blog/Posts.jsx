@@ -27,7 +27,7 @@ const Items = ({ currentItems }) => {
                 },
               }}
               viewport={{ once: true }}
-              className="bg-white border border-[#2F2E2E]  relative overflow-hidden group rounded-md"
+              className="bg-white border border-gray-200 relative overflow-hidden group rounded-md"
               key={post.title}
             >
               <Link
