@@ -3,10 +3,12 @@
 import React from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { BiHardHat, BiPaintRoll, BiNote, BiLayer } from 'react-icons/bi'
-import { HiOutlineSparkles } from 'react-icons/hi'
-import { HiOutlineFolder } from 'react-icons/hi'
-import { HiOutlineCode } from 'react-icons/hi'
+import { BiLayer } from 'react-icons/bi'
+import {
+  HiOutlineSparkles,
+  HiOutlineFolder,
+  HiOutlineCode,
+} from 'react-icons/hi'
 
 const PricingContentDetails = {
   features: [
