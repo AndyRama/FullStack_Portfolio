@@ -27,7 +27,7 @@ const Items = ({ currentItems, Post }) => {
                 },
               }}
               viewport={{ once: true }}
-              className="bg-white border border-[#2F2E2E] relative overflow-hidden group rounded-md"
+              className="bg-white border border-gray-200 relative overflow-hidden group rounded-md"
               key={post.title}
             >
               <Link
@@ -63,8 +63,7 @@ const Items = ({ currentItems, Post }) => {
                     <Link
                       href={`/${post.url}`}
                       className={` text-gray-500 hover:text-[#2F2E2E] text-[12px] tracking-[2px] uppercase
-                        pb-2 inline-block  duration-300 transistion-all bg-[#2F2E2E]
-                        ease-in-out relative before:content-['']
+                        pb-2 inline-block  duration-300 transistion-all ease-in-out relative before:content-['']
                         before:absolute before:bottom-0 before:left-0 before:w-full
                         before:h-[2px] before:bg-orange-400 before:origin-[100%, 50%]
                         before:transistion-all before:duration-300 before:ease-in-out
@@ -148,13 +147,13 @@ const Posts = ({ className, itemsPerPage, archive = false, params }) => {
     <section className={`${className}`} ref={ref}>
       <div className="container px-4 mx-auto">
         <div className="flex">
+          <CardCategory className="hidden lg:contents" />
           <div
             className="lg:w-10/12 mx-auto mb-20 grid grid-cols-1 md:grid-cols-2
             lg:grid-cols-3 gap-3 "
           >
             <Items currentItems={currentItems} />
           </div>
-          <CardCategory className="hidden" />
         </div>
       </div>
     </section>

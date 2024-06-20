@@ -2,7 +2,6 @@ import React from 'react'
 import SubHero from '../components/blog/SubHero'
 import Posts from '../components/blog/Posts'
 import Subscribe from '../components/Subscribe'
-import CardCategory from '../components/CardCategory'
 
 export const metadata = {
   title: 'Blogs - Unlcoaching by Jérémy Prat',
@@ -20,8 +19,7 @@ const page = () => {
         en me basant sur des technologies web modernes. Je suis spécialisé sur le
         langage  JavaScript avec le framework React & NextJs."
       />
-      <Posts className="pt-10 pb-52" itemsPerPage={50} />
-      <CardCategory />
+      <Posts className="pt-10 pb-32" itemsPerPage={50} />
       <Subscribe className="py-16 lg:py-32" />
     </>
   )
