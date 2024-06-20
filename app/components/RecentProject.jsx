@@ -193,7 +193,7 @@ const RecentProject = ({ className }) => {
               onSlideChangeTransitionEnd={(swiper) =>
                 setSlideIndex(swiper.realIndex)
               }
-              className="z-50 py-32 mb-7 relative flex items-center"
+              className="z-50 py-16 relative flex items-center"
             >
               {recentProjectContent.recentProjects.map(
                 (recentProject, index) => (

@@ -4,17 +4,20 @@ import React from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { BiHardHat, BiPaintRoll, BiNote, BiLayer } from 'react-icons/bi'
+import { HiOutlineSparkles } from 'react-icons/hi'
+import { HiOutlineFolder } from 'react-icons/hi'
+import { HiOutlineCode } from 'react-icons/hi'
 
 const PricingContentDetails = {
   features: [
     {
-      icon: BiHardHat,
+      icon: HiOutlineCode,
       title: 'Développement Web Sur Mesure',
       description:
         "En tant que développeur web indépendant, je vous propose des solutions entièrement personnalisées pour répondre à vos besoins spécifiques. Que vous cherchiez à créer un site e-commerce, un portail d'entreprise ou une plateforme de gestion de contenu, je conçois des sites web sur mesure, optimisés pour offrir une expérience utilisateur exceptionnelle et des performances de pointe. Grâce à mon expertise approfondie dans les dernières technologies web, je vous garantis un produit final de qualité supérieure, évolutif et sécurisé.",
     },
     {
-      icon: BiNote,
+      icon: HiOutlineSparkles,
       title: "Créez votre site web en un clin d'œil avec IA",
       description:
         "Grâce à notre IA de pointe, créez un site web personnalisé en quelques clics. Notre technologie analyse vos besoins pour concevoir un site sur mesure, professionnel et attrayant.Que ce soit pour améliorer l'engagement des utilisateurs, automatiser des tâches ou exploiter les données de manière intelligente, l'intégration de l'IA apportera une valeur ajoutée significative à votre site web.",
@@ -26,7 +29,7 @@ const PricingContentDetails = {
         "Je comprends l'importance cruciale du référencement naturel pour assurer la visibilité et le succès de votre site web. C'est pourquoi j'intègre des stratégies SEO avancées dès la phase de conception, afin d'optimiser votre site pour les moteurs de recherche les plus populaires. En analysant en profondeur votre secteur d'activité, vos mots-clés cibles et la concurrence, je mets en place des techniques éprouvées qui amélioreront le classement de votre site dans les résultats de recherche.",
     },
     {
-      icon: BiPaintRoll,
+      icon: HiOutlineFolder,
       title: 'Maintenance et Assistance Continues',
       description:
         "Je ne me contente pas de livrer un site web fonctionnel ; je m'engage à assurer sa pérennité et son succès à long terme. Mon service de maintenance et d'assistance continue vous offre un soutien technique régulier, des mises à jour de sécurité, des sauvegardes régulières et une surveillance constante des performances. De plus, je suis disponible pour répondre à toutes vos questions ou préoccupations, garantissant ainsi une expérience client exceptionnelle.",

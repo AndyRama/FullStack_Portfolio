@@ -84,7 +84,7 @@ const Subscribe = ({ className }) => {
                     transition: { delay: 0.3, duration: 0.5 },
                   }}
                   viewport={{ once: true }}
-                  className="text-2xl text-[#2F2E2E]"
+                  className="text-xl md:text-2xl text-[#2F2E2E]"
                 >
                   {subscribeContent.heading.title}
                 </motion.h2>
