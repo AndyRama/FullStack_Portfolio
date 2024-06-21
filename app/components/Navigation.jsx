@@ -13,9 +13,9 @@ const navigationMenu = [
   { href: '/', label: 'Home' },
   { href: '/blog', label: 'Blog' },
   { href: '/projects', label: 'projects' },
-  { href: '/expertise', label: 'Expertise' },
-  { href: '/methodologie', label: 'Méthodologie' },
-  { href: '/prestations', label: 'Prestations' },
+  // { href: '/expertise', label: 'Expertise' },
+  // { href: '/methodologie', label: 'Méthodologie' },
+  // { href: '/prestations', label: 'Prestations' },
 ]
 export default function Navigation() {
   const [open, setOpen] = useState(false)

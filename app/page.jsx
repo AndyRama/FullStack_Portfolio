@@ -7,7 +7,6 @@ import Client from './components/Client'
 import Subscribe from './components/Subscribe'
 import Testimonials from './components/Testimonials'
 import DescriptionCard from './components/DescriptionCard'
-import WhyUs from './components/WhyUs'
 
 export default function Home() {
   return (
@@ -23,7 +22,6 @@ export default function Home() {
       <Testimonials />
       <Stats />
       <PricingDetails />
-      {/* <WhyUs /> */}
       <RecentBlog className="pb-22" />
       <Subscribe className="py-16 lg:py-32 " />
     </>

@@ -51,7 +51,7 @@ const PricingDetails = ({ className }) => {
             Ce que je te propose
           </h3>
           <h2 className="text-[#2F2E2E] text-3xl text-left mb-20">
-            Détails de mon offre
+            Détails de mes services
           </h2>
           <div className="lg:flex justify-center">
             <div className="w-full lf:w-8/12 flex gap-0 items-center">
@@ -108,7 +108,7 @@ const PricingDetails = ({ className }) => {
             viewport={{ once: true }}
             className="btn-container text-left mt-5"
           >
-            <Link
+            {/* <Link
               href="/prestations"
               className="transistion-all duration-300 ease-in-out text-[11.5px]
           tracking-[2px] font-bold uppercase bg-gradient-to-r from-orange-500 to-orange-800  py-4 px-3
@@ -116,7 +116,7 @@ const PricingDetails = ({ className }) => {
           hover:shadow-1xl h-12"
             >
               Prestations
-            </Link>
+            </Link> */}
           </motion.div>
         </div>
         <div className="transform-gpu blur-3xl">

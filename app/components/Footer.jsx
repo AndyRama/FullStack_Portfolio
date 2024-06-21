@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { BiSolidHeart } from 'react-icons/bi'
-import { FaGithub, FaInstagramSquare } from 'react-icons/fa'
+import { FaGithub } from 'react-icons/fa'
 import { FaLinkedin } from 'react-icons/fa'
 import Link from 'next/link'
 
@@ -13,17 +13,17 @@ const footerContent = {
       links: [
         {
           href: '/',
-          label: 'Accueil',
+          label: 'Home',
         },
         {
           href: '/blog',
           label: 'Blog',
           badge: 'New',
         },
-        {
-          href: '/expertise',
-          label: 'Expertise',
-        },
+        // {
+        //   href: '/expertise',
+        //   label: 'Expertise',
+        // },
       ],
     },
     {
@@ -34,10 +34,10 @@ const footerContent = {
           label: 'Project',
           badge: 'en cours',
         },
-        {
-          href: '/methodologie',
-          label: 'Methodologie',
-        },
+        // {
+        //   href: '/methodologie',
+        //   label: 'Methodologie',
+        // },
         {
           href: '/contact',
           label: 'Contact',
@@ -47,10 +47,10 @@ const footerContent = {
     {
       heading: '',
       links: [
-        {
-          href: '/prestations',
-          label: 'Prestations',
-        },
+        // {
+        //   href: '/prestations',
+        //   label: 'Prestations',
+        // },
         {
           href: 'https://www.websitecarbon.com/website/portfolio-eta-three-93-vercel-app/',
           label: 'CO2',
