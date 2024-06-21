@@ -7,7 +7,6 @@ import { allPosts } from 'contentlayer/generated'
 import { compareDesc, format, parseISO } from 'date-fns'
 import { motion } from 'framer-motion'
 import CardCategory from '../CardCategory'
-// import ReactPaginate from 'react-paginate'
 
 const Items = ({ currentItems }) => {
   return (
@@ -150,34 +149,12 @@ const Posts = ({ className, itemsPerPage, archive = false, params }) => {
       <section className={`${className}`} ref={ref}>
         <div className="container mx-auto mt-10 w-auto">
           <div className="flex">
-            <div className="lg:w-10/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-4">
+            <div className="w-12/12 lg:w-10/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-4">
               <Items currentItems={currentItems} />
             </div>
-            <CardCategory className="hidden lg:contents" />
+            <CardCategory className="hidden xl:contents" />
           </div>
         </div>
-        {/* <div className="lg:w-10/12 mx-auto flex flex-wrap text-[#2F2E2E] mt-20">
-          <ReactPaginate
-            nextLabel="Next"
-            onPageChange={handlePageClick}
-            pageRangeDisplayed={3}
-            marginPagesDisplayed={2}
-            pageCount={pageCount}
-            previousLabel="Previous"
-            pageClassName="page-item"
-            pageLinkClassName="page-link"
-            previousClassName="page-item"
-            previousLinkClassName="page-link"
-            nextClassName="page-item"
-            nextLinkClassName="page-link"
-            breakLabel="..."
-            breakClassName="page-item"
-            breakLinkClassName="page-link"
-            containerClassName="pagination"
-            activeClassName="active"
-            renderOnZeroPageCount={null}
-          />
-        </div> */}
       </section>
     </>
   )

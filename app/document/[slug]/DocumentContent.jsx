@@ -29,9 +29,9 @@ const DocumentContent = ({ info }) => {
       className="container px-4 mx-auto"
     >
       <div className="mx-auto max-w-4xl">
-        <div className="text-left max-w-4xl mx-auto">
+        <div className="text-left max-w-5xl mx-auto">
           {/* Content Article */}
-          <article className="text-[#2F2E2E] text-left prose mx-auto max-w-2xl mt-10 pb-10">
+          <article className="text-[#2F2E2E] text-left prose mx-auto max-w-2xl pt-[110px] ">
             <MDXContent />
           </article>
         </div>

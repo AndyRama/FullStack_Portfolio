@@ -1,7 +1,6 @@
 import React from 'react'
 import { allInfos } from 'contentlayer/generated'
 import DocumentContent from './DocumentContent'
-import SubHero from './../../components/about/SubHero'
 
 export async function generateStaticParams() {
   const infos = await allInfos
@@ -22,12 +21,6 @@ const page = ({ params }) => {
   )
   return (
     <>
-      <SubHero
-        className="pt-32 capitalize"
-        info={info}
-        title={info.title}
-        subTitle=""
-      />
       <DocumentContent info={info} />
     </>
   )
