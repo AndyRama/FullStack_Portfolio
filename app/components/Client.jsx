@@ -32,7 +32,7 @@ const Client = ({ className }) => {
 
   return (
     <section className={`${className} overflow-hidden`}>
-      <div className="container mx-auto">
+      <div className="container mx-auto ">
         <div className="lg:flex justify-left">
           <div className="w-full lg:w-9/12 lg:flex gap-4 pt-10 items-center mb-10 lg:mb-0 px-4 ">
             <div className="lg:w-8/12">

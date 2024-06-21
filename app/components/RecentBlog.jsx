@@ -12,7 +12,7 @@ const recentBlogContent = {
     title: 'Articles récents',
     subTitle: 'Mon blog',
     description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elitd non pariatur veritatis ipsum dolorsit amet consectetur, adipisicing elitd non pariatur veritatis it amet consectetur, adipisicing elitd non pariatur veritatis..',
+      'Ma veille technologique se concentre principalement sur le langage JavaScript. Je suis également les évolutions des frameworks populaires comme React et NextJS, en explorant les nouvelles fonctionnalités, les meilleures pratiques et les patterns de conception émergents que je partage au travers de ce blog.',
   },
 }
 const PostCard = ({ index, post }) => {

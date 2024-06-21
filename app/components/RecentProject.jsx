@@ -134,8 +134,8 @@ const RecentProject = ({ className }) => {
     <section className={`${className} overflow-hidden`}>
       <div className="container px-4 mx-auto">
         <div className="flex ">
-          <div className="w-full md:w-6/12 flex gap-0 items-center">
-            <div className="text-left w-auto md:w-screen max-w-full md:max-w-xl">
+          <div className="w-full gap-0 ">
+            <div className="text-left md:text-center w-auto md:w-screen max-w-full lg:max-w-xl">
               {recentProjectContent.heading.subTitle && (
                 <motion.span
                   initial={{ opacity: 0, y: 20 }}

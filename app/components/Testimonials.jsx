@@ -59,8 +59,8 @@ const Testimonials = () => {
       </h2>
       <div className="flex flex-wrap justify-center">
         {testimonials.map((testimonial, index) => (
-          <div key={index} className="w-full sm:w-1/2 lg:w-1/2 px-4  py-2">
-            <div className="text-[#2F2E2E] bg-white rounded-md p-6 text-md border border-neutral-800 font-thin">
+          <div key={index} className="w-full sm:w-1/2 lg:w-1/2 px-4 py-2">
+            <div className="text-[#2F2E2E] bg-white rounded-md p-6 text-md border border-gray-200 font-thin">
               <p>{testimonial.text}</p>
               <div className="flex mt-8 items-start">
                 <Image

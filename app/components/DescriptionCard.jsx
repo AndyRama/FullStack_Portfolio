@@ -14,8 +14,8 @@ const CardDescription = ({ className, title, subTitle, description }) => {
     content: {
       img: '/images/andy.jpeg',
       descriptions: [
-        "En tant que développeur front-end passionné par le développement web, je me spécialise dans la création d'interfaces utilisateur modernes et performantes à l'aide de la bibliothèque React.",
-        "Avec plus de deux ans d'expérience dans la conception et le développement d'applications web sur mesure, j'ai acquis une expertise approfondie. En utilisant une approche agile et itérative, je transforme leurs idées en solutions web sur mesure, performantes et répondant au mieux à leurs besoins",
+        "En tant que développeur FullStack JS passionné par le développement web, je me spécialise dans la création d'interfaces utilisateur modernes et performantes.",
+        "Avec plus de deux ans d'expérience dans le développement d'applications web sur mesure, j'ai acquis une expertise approfondie qui me permet de transformer leurs idées en solutions web sur mesure, performantes et répondant au mieux à leurs besoins",
       ],
     },
   }
@@ -30,7 +30,7 @@ const CardDescription = ({ className, title, subTitle, description }) => {
   return (
     <section className={`${className}`} ref={ref}>
       <div className="container px-4 mx-auto">
-        <div className="text-left lg:max-w-xl mb-4 mt-10 md:mt-0 relative z-[5]">
+        <div className="text-left md:text-center lg:max-w-xl mb-4 mt-10 md:mt-0 relative z-[5]">
           {cardDescriptionContent.heading.subTitle && (
             <motion.span
               initial={{ opacity: 0, y: 20 }}
@@ -69,7 +69,7 @@ const CardDescription = ({ className, title, subTitle, description }) => {
         </div>
 
         <div className="lg:flex justify-center">
-          <div className="lg:w-10/12 lg:flex gap-20 items-center">
+          <div className="lg:w-10/12 lg:flex gap-20 items-center md:items-start">
             <div className="mb-7 lg:mb-0 lg:w-6/12 lg:order-2 relative">
               <motion.div
                 initial={{ opacity: 0, x: 20 }}
@@ -95,7 +95,7 @@ const CardDescription = ({ className, title, subTitle, description }) => {
               </motion.div>
             </div>
 
-            <div className="lg:w-6/12 mt-20 text-justify">
+            <div className="lg:w-6/12 mt-20 text-justify lg:text-base">
               {cardDescriptionContent.content.descriptions.map(
                 (description, index) => (
                   <motion.p
