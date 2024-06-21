@@ -6,5 +6,6 @@ import blog__nextJsMdx from './blog__NextJs.mdx.json' assert { type: 'json' }
 import blog__optimiserLesPerformancesDeVotreApplicationReactMdx from './blog__Optimiser-les-performances-de-votre-application-React.mdx.json' assert { type: 'json' }
 import blog__perplexcityVsChatGptMdx from './blog__Perplexcity-VS-ChatGPT.mdx.json' assert { type: 'json' }
 import blog__reactCommentAMarcheMdx from './blog__React-comment-ça-marche.mdx.json' assert { type: 'json' }
+import blog__webflowMdx from './blog__Webflow.mdx.json' assert { type: 'json' }
 
-export const allPosts = [blog__chatGptMdx, blog__nextJsKesakoMdx, blog__nextJsMdx, blog__optimiserLesPerformancesDeVotreApplicationReactMdx, blog__perplexcityVsChatGptMdx, blog__reactCommentAMarcheMdx]
+export const allPosts = [blog__chatGptMdx, blog__nextJsKesakoMdx, blog__nextJsMdx, blog__optimiserLesPerformancesDeVotreApplicationReactMdx, blog__perplexcityVsChatGptMdx, blog__reactCommentAMarcheMdx, blog__webflowMdx]
