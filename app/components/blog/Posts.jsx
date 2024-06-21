@@ -76,7 +76,6 @@ const Items = ({ currentItems }) => {
                     >
                       lire l&apos;article
                     </Link>
-                    <span className="text-orange-500 ml-20">Lecture 5 min</span>
                   </div>
                 </div>
               </Link>
@@ -151,7 +150,7 @@ const Posts = ({ className, itemsPerPage, archive = false, params }) => {
       <section className={`${className}`} ref={ref}>
         <div className="container mx-auto mt-10 w-auto">
           <div className="flex">
-            <div className="lg:w-10/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pr-8">
+            <div className="lg:w-10/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-4">
               <Items currentItems={currentItems} />
             </div>
             <CardCategory className="hidden lg:contents" />

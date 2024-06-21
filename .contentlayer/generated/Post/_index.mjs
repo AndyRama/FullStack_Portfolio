@@ -4,6 +4,6 @@ import blog__chatGptMdx from './blog__ChatGpt.mdx.json' assert { type: 'json' }
 import blog__nextJsKesakoMdx from './blog__NextJs-Kesako.mdx.json' assert { type: 'json' }
 import blog__optimiserLesPerformancesDeVotreApplicationReactMdx from './blog__Optimiser-les-performances-de-votre-application-React.mdx.json' assert { type: 'json' }
 import blog__perplexcityVsChatGptMdx from './blog__Perplexcity-VS-ChatGPT.mdx.json' assert { type: 'json' }
-import blog__reactCommentAMarcheMdx from './blog__React -comment-ça-marche.mdx.json' assert { type: 'json' }
+import blog__reactCommentAMarcheMdx from './blog__React-comment-ça-marche.mdx.json' assert { type: 'json' }
 
 export const allPosts = [blog__chatGptMdx, blog__nextJsKesakoMdx, blog__optimiserLesPerformancesDeVotreApplicationReactMdx, blog__perplexcityVsChatGptMdx, blog__reactCommentAMarcheMdx]

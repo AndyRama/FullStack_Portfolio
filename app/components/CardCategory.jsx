@@ -18,19 +18,19 @@ const iconMapping = {
     />
   ),
   icon2: (
-    <HiOutlineTerminal
+    <GrReactjs
       data-testid="icon2"
       className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10"
     />
   ),
   icon3: (
-    <GrReactjs
+    <TbBrandNextjs
       data-testid="icon3"
       className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10"
     />
   ),
   icon4: (
-    <TbBrandNextjs
+    <HiOutlineTerminal
       data-testid="icon4"
       className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10"
     />
@@ -62,31 +62,31 @@ const CardCategoriesContent = {
         href: '/blog/categories/complement',
         label: 'Complément Alim.',
       },
-      title2: 'Développement w.',
+      title2: 'React',
       icon2: 'icon2',
       btn2: {
-        href: '/blog/categories/entrainement',
-        label: 'Entraînement',
-      },
-      title3: 'React | JavaScript',
-      icon3: 'icon3',
-      btn3: {
         href: '/blog/categories/competition',
         label: 'Compétition',
       },
-      title4: 'NextJs',
-      icon4: 'icon4',
-      btn4: {
+      title3: 'NextJs',
+      icon3: 'icon3',
+      btn3: {
         href: '/blog/categories/exercice',
         label: 'Exercices',
       },
-      title5: 'No code',
+      title4: 'Dévelop. Web',
+      icon4: 'icon4',
+      btn4: {
+        href: '/blog/categories/entrainement',
+        label: 'Entraînement',
+      },
+      title5: 'Code Reviews',
       icon5: 'icon5',
       btn5: {
         href: '/blog/categories/exercice',
         label: 'Exercices',
       },
-      title6: 'Autres',
+      title6: 'No code',
       icon6: 'icon6',
       btn6: {
         href: '/blog/categories/exercice',
@@ -116,7 +116,7 @@ const CardCategory = ({ className }) => {
             whileHover={{ y: -10, transition: 0.1 }}
             className="group duration-300 bg-white border border-gray-200 relative overflow-hidden hover:shadow-2xl rounded-md h-[365px] mr-3"
           >
-            <div className="px-2 lg:px-4 mt-2 relative flex flex-col gap-3 items-start ">
+            <div className="px-2 mt-2 relative flex flex-col gap-2 items-start ">
               <span className="text-3xl flex">
                 <Link href="/blog">
                   <h2
