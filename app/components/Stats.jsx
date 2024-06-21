@@ -9,7 +9,7 @@ const statContent = {
     { number: '4', label: 'Clients' },
   ],
   getStarted: {
-    heading: 'Vous avez besoin d’un développeur pour votre site ?',
+    heading: 'Besoin d’un développeur pour créer votre site ?',
     description: 'Contactez-moi, je reviendrai vers vous très rapidement.',
     image: '/images/icon.',
     cta: {
