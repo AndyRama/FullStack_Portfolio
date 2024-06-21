@@ -1,4 +1,5 @@
 'use client'
+
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -6,7 +7,6 @@ import { motion } from 'framer-motion'
 import { allPosts } from 'contentlayer/generated'
 import { compareDesc, format, parseISO } from 'date-fns'
 import PostCard from '@/app/components/blog/category/PostCard'
-import CardCategory from '@/app/components/CardCategory'
 
 import { getMDXComponent } from 'next-contentlayer/hooks'
 
@@ -88,11 +88,10 @@ const BlogContent = ({ post }) => {
         </div>
 
         {/* Content Article */}
-        <div>
-          <article className="prose mx-auto text-base md:text-left ">
+        <div className="w-full">
+          <article className="prose mx-auto text-base md:text-left">
             <MDXContent />
           </article>
-          <CardCategory className="hidden md:contents w-3/12 mr-2" />
         </div>
 
         <div className="max-w-5xl mx-auto mt-20 lg:mt-32">
