@@ -45,10 +45,10 @@ const BlogContent = ({ post }) => {
         },
       }}
       viewport={{ once: true }}
-      className="pt-44 pb-20 container px-4 mx-auto"
+      className="pt-44 pb-20 container mx-auto px-4"
     >
-      <div className="mx-auto max-w-6xl">
-        <div className="text-center mb-16 max-w-4xl mx-auto">
+      <div className="mx-auto">
+        <div className="text-center mb-16">
           {/* Content title post */}
           <h2 className="text-[#2F2E2E] text-center text-4xl/none lg:text-6xl/none font-medium">
             {post.title}
@@ -82,14 +82,14 @@ const BlogContent = ({ post }) => {
             src={post.image}
             width={1065}
             height={644}
-            className="object-cover object-top rounded-md border border-gray-200 w-full"
+            className="object-cover object-top rounded-md border border-gray-200 w-full mx-auto"
             alt={post.title}
           />
         </div>
 
         {/* Content Article */}
-        <div className="flex">
-          <article className="prose mx-auto max-w-3xl">
+        <div>
+          <article className="prose mx-auto text-base md:text-left ">
             <MDXContent />
           </article>
           <CardCategory className="hidden md:contents w-3/12 mr-2" />

@@ -22,7 +22,7 @@ const statContent = {
 const Stats = () => {
   return (
     <section className="pb-10 bg-white ">
-      <div className="container px-8 mx-auto md:border border-gray-200 rounded-md">
+      <div className="container px-8 mx-auto lg:border border-gray-200 rounded-md">
         <div className="lg:flex justify-between items-center space-x-0">
           <div className="w-full lg:w-9/12 mb-10 lg:mb-0">
             <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
