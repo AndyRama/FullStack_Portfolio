@@ -64,7 +64,7 @@ export default function Navigation() {
         className="py-4 fixed w-full z-[10] bg-[#ffffff] border-b border-gray-200"
         alt="NavBar"
       >
-        <div className=" px-4 md:px-14 mx-auto flex items-center justify-between  ">
+        <div className="px-4 md:px-14 mx-auto flex items-center justify-between  ">
           <div>
             <Link
               href="/"
@@ -227,7 +227,7 @@ export default function Navigation() {
                             alt="Btn Contact"
                             className="block text-center text-[11.5px] tracking-2[2px] font-bold uppercase bg-gradient-to-r 
                                      from-orange-500 to-orange-800 py-3 px-5 text-white hover:shadow-2xl hover:text-[#2F2E2E]
-                                       rounded-md"
+                                      rounded-md"
                           >
                             Contact
                           </Link>

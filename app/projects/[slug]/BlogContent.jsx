@@ -117,7 +117,7 @@ const BlogContent = ({ post }) => {
                bg-gradient-to-r from-orange-500 to-orange-800 hover:transparent hover:border-white py-4 px-5
              text-white hover:shadown-2xl rounded-md"
             >
-              Voir tous mes articles
+              Voir tous les articles
             </Link>
           </div>
         </div>

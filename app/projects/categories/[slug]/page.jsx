@@ -1,7 +1,7 @@
 import React from 'react'
-import { allProjects } from 'contentlayer/generated'
+import { allPosts } from 'contentlayer/generated'
 import SubHero from '@/app/components/about/SubHero'
-import Projects from '@/app/components/projects/category/Projects'
+import Posts from '@/app/components/blog/category/Posts'
 import Subscribe from '@/app/components/Subscribe'
 
 const page = ({ params }) => {
@@ -10,8 +10,8 @@ const page = ({ params }) => {
     items = null
 
   if (params?.slug) {
-    items = allProjects.filter((project) =>
-      project.categories.some(
+    items = allPosts.filter((post) =>
+      post.categories.some(
         (category) =>
           category.title
             .toLowerCase()
@@ -29,12 +29,13 @@ const page = ({ params }) => {
         className="pt-32 pb-10 capitalize"
         title={`${newTitle} [${itemsTotal}]`}
         subTitle="Categories"
+        description="lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
       />
-      <Projects
+      <Posts
         className="pb-32"
         archive={true}
         params={params}
-        itemsPerPage={6}
+        itemsPerPage={50}
       />
       <Subscribe className="py-16 pt-32 lg:py-32" />
     </>

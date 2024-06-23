@@ -6,7 +6,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { format, parseISO } from 'date-fns'
 
-const ProjectCard = ({ project, index }) => {
+const PostCard = ({ post, index }) => {
   index *= 0.05
 
   return (
@@ -25,12 +25,12 @@ const ProjectCard = ({ project, index }) => {
     >
       {/* Image top card */}
       <Link
-        href={`/${project.url}`}
+        href={`/${post.url}`}
         className="relative block overflow-hidden group"
       >
         <Image
-          src={project.image}
-          alt={project.title}
+          src={post.image}
+          alt={post.title}
           width={1064}
           height={644}
           className="object-cover object-center h-[400px] !max-w-full duration-300
@@ -38,22 +38,22 @@ const ProjectCard = ({ project, index }) => {
         />
       </Link>
 
-      <div className="p-4 bg-white border border-[#2F2E2E] rounded-b-md">
+      <div className="p-4 bg-white border border-gray-200 rounded-b-md">
         <p className="text-gray-500 mb-3 uppercase text-[12px] tracking-[1px]">
-          {format(parseISO(project.date), 'LLL d, yyyy')} • {project.author}
+          {format(parseISO(post.date), 'LLL d, yyyy')} • {post.author}
         </p>
         <h3 className="mb-4">
           <Link
-            href={`/${project.url}`}
+            href={`/${post.url}`}
             className="text-orange-500 text-lg leading-none"
           >
-            {project.title}
+            {post.title}
           </Link>
         </h3>
 
         <div>
           <Link
-            href={`/${project.url}`}
+            href={`/${post.url}`}
             className={`text-gray-500 hover:text-white text-[12px] tracking-[2px] uppercase
             pb-2 inline-block  duration-300 transistion-all bg-white-600
             ease-in-out relative before:content-['']
@@ -65,13 +65,12 @@ const ProjectCard = ({ project, index }) => {
             hover:before:scale-x-[1] hover:before:scale-y-[1]
             hover:before:scale-z-[1] `}
           >
-            voir les autres projets
+            lire l&apos;article
           </Link>
-          {/* <span className="text-orange-500 ml-20">Lecture 5 min</span> */}
         </div>
       </div>
     </motion.div>
   )
 }
 
-export default ProjectCard
+export default PostCard

@@ -7,7 +7,7 @@ import { compareDesc, format, parseISO } from 'date-fns'
 import Link from 'next/link'
 import Image from 'next/image'
 
-const recentBlogContent = {
+const FeatPostContent = {
   heading: {
     title: 'Articles récents',
     subTitle: 'Mon blog',
@@ -72,13 +72,14 @@ const PostCard = ({ index, post }) => {
           >
             lire l&apos;article
           </Link>
+          {/* <span className="text-orange-500 ml-18 md:ml-32">Lecture 5 min</span> */}
         </div>
       </div>
     </motion.div>
   )
 }
 
-const RecentBlog = ({ className }) => {
+const FeatPost = ({ className }) => {
   const posts = allPosts.sort((a, b) =>
     compareDesc(new Date(a.date), new Date(b.date)),
   )
@@ -86,8 +87,8 @@ const RecentBlog = ({ className }) => {
     <section className={`${className}`}>
       <div className="container mx-auto rounded-md ">
         <div className=" px-4 lg:flex justify-left mb-2">
-          <div className="lg:w-7/12">
-            {recentBlogContent.heading.subTitle && (
+          <div className="lg:w-8/12">
+            {featPostContent.heading.subTitle && (
               <motion.span
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{
@@ -101,10 +102,10 @@ const RecentBlog = ({ className }) => {
                 viewport={{ once: true }}
                 className="uppercase tracking-[3px] text-sm inline-block text-orange-400"
               >
-                {recentBlogContent.heading.subTitle}
+                {featPostContent.heading.subTitle}
               </motion.span>
             )}
-            {recentBlogContent.heading.title && (
+            {featPostContent.heading.title && (
               <motion.h2
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{
@@ -118,7 +119,7 @@ const RecentBlog = ({ className }) => {
                 viewport={{ once: true }}
                 className="text-2xl lg:text-4xl mb-4 lg:mb-0 text-[#2F2E2E]"
               >
-                {recentBlogContent.heading.title}
+                {featPostContent.heading.title}
               </motion.h2>
             )}
           </div>
@@ -136,7 +137,7 @@ const RecentBlog = ({ className }) => {
               viewport={{ once: true }}
               className="text-[#2F2E2E]"
             >
-              {recentBlogContent.heading.description}
+              {featPostContent.heading.description}
             </motion.p>
           </div>
         </div>
@@ -144,7 +145,7 @@ const RecentBlog = ({ className }) => {
 
       <div
         className="px-4 md:px-8 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4
-          gap-4 w-full lg:w-11/12 mx-auto mt-10 mb-10  "
+          gap-4 w-full lg:w-12/12 mx-auto mt-10 mb-10  "
       >
         {posts.slice(0, 4).map((post, index) => (
           <PostCard key={index} index={index} post={post} />
@@ -176,4 +177,4 @@ const RecentBlog = ({ className }) => {
   )
 }
 
-export default RecentBlog
+export default FeatPost
