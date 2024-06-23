@@ -125,14 +125,15 @@ const Footer = ({ className }) => {
                       <li className="mb-2" key={link.label}>
                         <Link
                           href={link.href}
+                          target={link.target || '_self'}
                           className={`${
                             link.badge ? 'flex gap-2 items-center' : ''
                           }
                             text-[#2F2E2E] duration-300 transition-all ease-in-out hover:text-orange-500`}
                         >
-                          {link.badge ? (
+                          {link.label === 'CO2' ? (
                             <>
-                              <span>{link.label}</span>
+                              <span className="target_blanc">{link.label}</span>
                               <span
                                 className="py-0.5 px-1 rounded-full bg-orange-100
                                     border border-orange-500 text-[10px] text-orange-500
