@@ -1,10 +1,11 @@
 'use client'
+
 import React from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
 
-const PostCard = ({ project, index }) => {
+const ProjectCard = ({ project, index }) => {
   index *= 0.05
 
   return (
@@ -22,7 +23,10 @@ const PostCard = ({ project, index }) => {
       className={`relative overflow-hidden `}
     >
       {/* Image top card */}
-      <Link href={project.url} className="relative block overflow-hidden group">
+      <Link
+        href={project.url}
+        className="relative block overflow-hidden group "
+      >
         <Image
           src={project.image}
           alt={project.title}
@@ -46,4 +50,4 @@ const PostCard = ({ project, index }) => {
   )
 }
 
-export default PostCard
+export default ProjectCard

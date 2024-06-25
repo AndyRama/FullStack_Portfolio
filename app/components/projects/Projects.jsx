@@ -4,7 +4,7 @@ import React, { useState, useEffect, useRef } from 'react'
 import Image from 'next/image'
 import { allProjects } from '@/.contentlayer/generated'
 import { compareDesc } from 'date-fns'
-import ReactPaginate from 'react-paginate'
+// import ReactPaginate from 'react-paginate'
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
@@ -17,7 +17,7 @@ const Items = ({ currentItems }) => {
           index *= 0.05
           return (
             <motion.div
-              className="relative overflow-hidden w-full lg:w-6/12 p-2 group "
+              className="relative overflow-hidden w-full lg:w-4/12 p-2 group "
               initial={{ opacity: 0, y: 20 }}
               whileInView={{
                 opacity: 1,
@@ -105,8 +105,8 @@ const Projects = ({ className, itemsPerPage }) => {
           <Items className="" currentItems={currentItems} />
         </div>
 
-        <div className="lg:w-10/12 mx-auto flex flex-wrap">
-          <ReactPaginate
+        {/* <div className="lg:w-10/12 mx-auto flex flex-wrap"> */}
+        {/* <ReactPaginate
             nextLabel="Next"
             onPageChange={handlePageClick}
             pageRangeDisplayed={3}
@@ -125,8 +125,8 @@ const Projects = ({ className, itemsPerPage }) => {
             containerClassName="pagination"
             activeClassName="active"
             renderOnZeroPageCount={null}
-          />
-        </div>
+          /> */}
+        {/* </div> */}
       </div>
     </section>
   )

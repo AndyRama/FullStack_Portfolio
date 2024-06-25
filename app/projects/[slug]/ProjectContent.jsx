@@ -1,4 +1,5 @@
 'use client'
+
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -7,7 +8,8 @@ import { compareDesc, format, parseISO } from 'date-fns'
 
 import { motion } from 'framer-motion'
 import { getMDXComponent } from 'next-contentlayer/hooks'
-import PostCard from '@/app/components/projects/PostCard'
+import ProjectCard from '@/app/components/projects/ProjectCard'
+import { TbWorldWww } from 'react-icons/tb'
 
 const ProjectContent = ({ project }) => {
   const projects = allProjects.sort((a, b) =>
@@ -18,7 +20,7 @@ const ProjectContent = ({ project }) => {
 
   if (!projects) return null
   if (!project) {
-    console.log('Post not found')
+    console.log('Projects not found')
   } else {
     MDXContent = getMDXComponent(project.body.code)
   }
@@ -42,10 +44,13 @@ const ProjectContent = ({ project }) => {
           </h1>
           <p className="text-slate-500 mt-10">
             <span className="inline-flex space-x-3">
-              <span>{format(parseISO(project.date), 'LLL d, yyyy')}</span>
+              <span>{format(parseISO(project.date), 'd LLL yyyy')}</span>
               <span>•</span>
-
-              <span>{project.role}</span>
+              <span>{project.realisation}</span>
+              <span>•</span>
+              <span>{project.duration}</span>
+              <span>•</span>
+              <span>{project.client}</span>
             </span>
           </p>
         </div>
@@ -54,9 +59,9 @@ const ProjectContent = ({ project }) => {
           {/* Content Image project */}
           <Image
             src={project.image}
-            width={1065}
+            width={1024}
             height={644}
-            className="object-cover object-top rounded-md"
+            className="object-cover object-top rounded-md "
             alt={project.title}
           />
         </div>
@@ -79,8 +84,8 @@ const ProjectContent = ({ project }) => {
                 before:top-0 before:-left-[1px] before:absolute before:h-7 before:w-[1px]
                 before:bg-orange-600"
               >
-                <span className="block text-gray-400">Year</span>
-                <span>{project.year}</span>
+                <span className="block text-gray-400">Réalisation</span>
+                <span>{project.realisation}</span>
               </div>
 
               {/* Content Role */}
@@ -89,8 +94,8 @@ const ProjectContent = ({ project }) => {
                 before:top-0 before:-left-[1px] before:absolute before:h-7 before:w-[1px]
                 before:bg-orange-600"
               >
-                <span className="block text-gray-400">Role</span>
-                <span>{project.role}</span>
+                <span className="block text-gray-400">Stack</span>
+                <span>{project.stack}</span>
               </div>
             </div>
           </div>
@@ -101,24 +106,24 @@ const ProjectContent = ({ project }) => {
 
       {/* More Projects */}
       <div className="max-w-4xl mx-auto mt-20 lg:mt-32">
-        <h2 className="text-2xl text-gray-700 mb-10"> More Projects</h2>
+        <h2 className="text-2xl text-gray-700 mb-10"> Plus de projets</h2>
         {/* Card others projects */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
           {projects
             .filter((a) => project.title !== a.title)
             .map((item, index) => {
               if (index > 3) return null
-              return <PostCard key={index} index={index} project={item} />
+              return <ProjectCard key={index} index={index} project={item} />
             })}
         </div>
         <div className="flex justify-center mt-10">
           <Link
             href="/projects"
             className="transition-all duration-300 ease-in-out
-            text-[11.5px] tracking-[2px] font-bold uupercase bg-orange-600
+            text-[11.5px] tracking-[2px] font-bold upercase bg-orange-600
             hover:text-orange-600 py-4 px-5 text-white hover:bg-white hover:shadown-2xl rounded-md"
           >
-            View All Project
+            Voir tous les Projets
           </Link>
         </div>
       </div>

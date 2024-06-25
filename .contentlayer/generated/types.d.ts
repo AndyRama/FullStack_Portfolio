@@ -59,10 +59,14 @@ export type Project = {
   image?: string | undefined
   /** The client of the project */
   client?: string | undefined
-  /** The role of the project */
-  role?: string | undefined
+  /** The stack of the project */
+  stack?: string | undefined
   /** The year of the project */
   year?: string | undefined
+  /** The duration of the project */
+  duration?: string | undefined
+  /** The type of the project realised */
+  realisation?: string | undefined
   /** the  description content of the project  */
   description: string
   /** MDX file body */

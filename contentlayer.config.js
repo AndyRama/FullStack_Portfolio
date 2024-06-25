@@ -79,14 +79,24 @@ const Project = defineDocumentType(() => ({
       description: 'The client of the project',
       require: true,
     },
-    role: {
+    stack: {
       type: 'string',
-      description: 'The role of the project',
+      description: 'The stack of the project',
       require: true,
     },
     year: {
       type: 'string',
       description: 'The year of the project',
+      require: true,
+    },
+    duration: {
+      type: 'string',
+      description: 'The duration of the project',
+      require: true,
+    },
+    realisation: {
+      type: 'string',
+      description: 'The type of the project realised',
       require: true,
     },
     description: {
