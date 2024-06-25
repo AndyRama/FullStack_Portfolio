@@ -1,24 +1,30 @@
+import Link from 'next/link'
 import React from 'react'
-import SubHero from '../components/blog/SubHero'
-import Posts from '../components/blog/Posts'
-import Subscribe from '../components/Subscribe'
+import SubHero from '@/app/components/projects/SubHero'
+import Projects from '../components/projects/Projects'
+import Subscribe from '@/app/components/Subscribe'
+import { allProjects } from 'contentlayer/generated'
 
 export const metadata = {
-  title: 'Blogs - Unlcoaching by Jérémy Prat',
+  title: 'Projects - Lemurian by Andy Ramaroson',
 }
 
-const page = () => {
+const page = ({ params }) => {
   return (
     <>
       <SubHero
-        className="pt-32 "
-        subTitle="Mon blog"
-        title="Dernier articles"
-        description="Ma veille technologique se concentre principalement sur le langage JavaScript. Je suis également les évolutions des frameworks populaires comme React et NextJS, en explorant les nouvelles fonctionnalités, les meilleures pratiques
-        et les patterns de conception émergents que je partage au travers de ce blog."
+        className="pt-32 pb-10 capitalize"
+        title="Projects"
+        subTitle="Categories"
+        description="lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
       />
-      <Posts className="pt-10 pb-32" itemsPerPage={50} />
-      <Subscribe className="py-16 lg:py-32" />
+      <Projects
+        className="pb-32"
+        archive={true}
+        params={params}
+        itemsPerPage={50}
+      />
+      <Subscribe className="py-16 pt-32 lg:py-32" />
     </>
   )
 }

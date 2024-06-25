@@ -1,29 +1,28 @@
-import React from 'react'
-import { allPosts } from 'contentlayer/generated'
-import BlogContent from './BlogContent'
+import { allProjects } from '.contentlayer/generated'
+import ProjectContent from './ProjectContent'
 
 export async function generateStaticParams() {
-  const posts = await allPosts
+  const projects = await allProjects
 
-  return posts.map((post) => ({ slug: post.slug }))
+  return projects.map((project) => ({ slug: project.slug }))
 }
 
 export const generateMetadata = async ({ params }) => {
-  const post = allPosts.find(
-    (post) => post._raw.flattenedPath === 'blog/' + params.slug,
+  const project = allProjects.find(
+    (project) => project._raw.flattenedPath === 'projects/' + params.slug,
   )
-  return { title: post?.title, excerpt: post?.excerpt }
+  return { title: project?.title, excerpt: project?.excerpt }
 }
 
-const page = ({ params }) => {
-  const post = allPosts.find(
-    (post) => post._raw.flattenedPath === 'blog/' + params.slug,
+const ProjectLayout = ({ params }) => {
+  const project = allProjects.find(
+    (project) => project._raw.flattenedPath === 'projects/' + params.slug,
   )
   return (
     <>
-      <BlogContent post={post} />
+      <ProjectContent project={project} />
     </>
   )
 }
 
-export default page
+export default ProjectLayout

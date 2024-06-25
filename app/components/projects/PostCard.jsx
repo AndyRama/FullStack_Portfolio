@@ -3,9 +3,8 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
-import { format, parseISO } from 'date-fns'
 
-const PostCard = ({ post, index }) => {
+const PostCard = ({ project, index }) => {
   index *= 0.05
 
   return (
@@ -20,16 +19,13 @@ const PostCard = ({ post, index }) => {
         },
       }}
       viewport={{ once: true }}
-      className="relative overflow-hidden rounded-t-md"
+      className={`relative overflow-hidden `}
     >
       {/* Image top card */}
-      <Link
-        href={`/${post.url}`}
-        className="relative block overflow-hidden group"
-      >
+      <Link href={project.url} className="relative block overflow-hidden group">
         <Image
-          src={post.image}
-          alt={post.title}
+          src={project.image}
+          alt={project.title}
           width={1064}
           height={644}
           className="object-cover object-center h-[400px] !max-w-full duration-300
@@ -37,25 +33,14 @@ const PostCard = ({ post, index }) => {
         />
       </Link>
 
-      <div className="p-4 bg-white border border-[#2F2E2E]  rounded-b-md">
-        <p className="text-gray-500 mb-3 uppercase text-[12px] tracking-[1px]">
-          {format(parseISO(post.date), 'LLL d, yyyy')} • {post.author}
-        </p>
+      {/* title - text bottom card */}
+      <div className="py-8 px-2 bg-white rounded-md">
+        <span className="block mb-1 text-gray-500">{project.role}</span>
         <h3 className="mb-4">
-          <Link href={`/${urlWithoutBlog}`} className="text-lg leading-none">
-            {post.title}
+          <Link href={project.url} className="text-2xl leading-none">
+            {project.title}
           </Link>
         </h3>
-        <div>
-          <Link
-            href={`/${urlWithoutBlog}`}
-            className="text-[#2F2E2E] uppercase text-[12px] tracking-[2px] border-b-2
-            pb-2 inline-block border-orange-500"
-          >
-            lire l&apos;article
-          </Link>
-          {/* <span className="text-orange-500">Lecture 5 min</span> */}
-        </div>
       </div>
     </motion.div>
   )
