@@ -16,6 +16,8 @@ const CardDescription = ({ className, title, subTitle, description }) => {
       descriptions: [
         "En tant que développeur FullStack JS passionné par le développement web, je me spécialise dans la création d'interfaces utilisateur modernes et performantes.",
         "Avec plus de deux ans d'expérience dans le développement d'applications web sur mesure, j'ai acquis une expertise approfondie qui me permet de transformer leurs idées en solutions web sur mesure, performantes et répondant au mieux à leurs besoins",
+        "Avec plus de deux ans d'expérience dans le développement d'applications web sur mesure, j'ai acquis une expertise approfondie qui me permet de transformer leurs idées en solutions web sur mesure, performantes et répondant au mieux à leurs besoins",
+        "Avec plus de deux ans d'expérience dans le développement d'applications web sur mesure, j'ai acquis une expertise approfondie qui me permet de transformer leurs idées ",
       ],
     },
   }
@@ -25,12 +27,12 @@ const CardDescription = ({ className, title, subTitle, description }) => {
     target: ref,
     offset: ['start end', 'end start'],
   })
-  const imgScroll1 = useTransform(scrollYProgress, [0, 1], ['30%', '-10%'])
+  const imgScroll1 = useTransform(scrollYProgress, [0, 1], ['10%', '-10%'])
 
   return (
     <section className={`${className}`} ref={ref}>
       <div className="container px-4 mx-auto">
-        <div className="text-left md:text-center lg:max-w-xl mb-4 mt-10 md:mt-0 relative z-[5]">
+        <div className="text-center lg:max-w-xl pb-0 md:pb-10 relative z-[5]">
           {cardDescriptionContent.heading.subTitle && (
             <motion.span
               initial={{ opacity: 0, y: 20 }}
@@ -95,7 +97,7 @@ const CardDescription = ({ className, title, subTitle, description }) => {
               </motion.div>
             </div>
 
-            <div className="lg:w-6/12 mt-20 text-justify lg:text-base">
+            <div className="lg:w-6/12 text-justify lg:text-base">
               {cardDescriptionContent.content.descriptions.map(
                 (description, index) => (
                   <motion.p

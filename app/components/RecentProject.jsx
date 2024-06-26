@@ -175,7 +175,7 @@ const RecentProject = ({ className }) => {
           </div>
         </div>
 
-        <div className="lg:flex justify-start lg:justify-center">
+        <div className="lg:flex justify-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{
@@ -242,7 +242,7 @@ const RecentProject = ({ className }) => {
             transition: { delay: 0.9, duration: 0.5 },
           }}
           viewport={{ once: true }}
-          className="flex justify-center"
+          className="flex justify-center md:mt-20"
         >
           <div className="flex space-x-3">
             <div
@@ -287,7 +287,7 @@ const RecentProject = ({ className }) => {
                 className="transistion-all duration-300 ease-in-out text-[11.5px]
                       tracking-[2px] font-bold uppercase bg-orange-400 py-4 px-3
                       rounded text-white inline-block items-end hover:bg-white hover:text-orange-400
-                      hover:shadow-1xl h-12  "
+                      hover:shadow-1xl h-12"
               >
                 {recentProjectContent.btn.label}
               </Link>
