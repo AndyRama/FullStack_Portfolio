@@ -1,29 +1,26 @@
 'use client'
-
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { allProjects } from '.contentlayer/generated'
+import { allProjects } from 'contentlayer/generated'
 import { compareDesc, format, parseISO } from 'date-fns'
 
 import { motion } from 'framer-motion'
 import { getMDXComponent } from 'next-contentlayer/hooks'
 import ProjectCard from '@/app/components/projects/ProjectCard'
-import { TbWorldWww } from 'react-icons/tb'
 
 const ProjectContent = ({ project }) => {
   const projects = allProjects.sort((a, b) =>
     compareDesc(new Date(a.date), new Date(b.date)),
   )
 
-  let MDXContent
-
   if (!projects) return null
   if (!project) {
-    console.log('Projects not found')
-  } else {
-    MDXContent = getMDXComponent(project.body.code)
+    console.log('Post not found')
+    return <p>Post not found</p> // Ajoutez un retour si le projet n'est pas trouvé
   }
+
+  const MDXContent = getMDXComponent(project.body.code)
 
   return (
     <motion.div
@@ -31,7 +28,7 @@ const ProjectContent = ({ project }) => {
       whileInView={{
         opacity: 1,
         y: 0,
-        transistion: { delay: 0.2, duration: 0.5 },
+        transition: { delay: 0.2, duration: 0.5 },
       }}
       viewport={{ once: true }}
       className="pt-44 pb-20 lg:py-44 container px-4 mx-auto"
@@ -44,13 +41,9 @@ const ProjectContent = ({ project }) => {
           </h1>
           <p className="text-slate-500 mt-10">
             <span className="inline-flex space-x-3">
-              <span>{format(parseISO(project.date), 'd LLL yyyy')}</span>
+              <span>{format(parseISO(project.date), 'LLL d, yyyy')}</span>
               <span>•</span>
-              <span>{project.realisation}</span>
-              <span>•</span>
-              <span>{project.duration}</span>
-              <span>•</span>
-              <span>{project.client}</span>
+              <span>{project.role}</span>
             </span>
           </p>
         </div>
@@ -59,9 +52,9 @@ const ProjectContent = ({ project }) => {
           {/* Content Image project */}
           <Image
             src={project.image}
-            width={1024}
+            width={1065}
             height={644}
-            className="object-cover object-top rounded-md "
+            className="object-cover object-top rounded-md"
             alt={project.title}
           />
         </div>
@@ -84,8 +77,8 @@ const ProjectContent = ({ project }) => {
                 before:top-0 before:-left-[1px] before:absolute before:h-7 before:w-[1px]
                 before:bg-orange-600"
               >
-                <span className="block text-gray-400">Réalisation</span>
-                <span>{project.realisation}</span>
+                <span className="block text-gray-400">Year</span>
+                <span>{project.year}</span>
               </div>
 
               {/* Content Role */}
@@ -94,8 +87,8 @@ const ProjectContent = ({ project }) => {
                 before:top-0 before:-left-[1px] before:absolute before:h-7 before:w-[1px]
                 before:bg-orange-600"
               >
-                <span className="block text-gray-400">Stack</span>
-                <span>{project.stack}</span>
+                <span className="block text-gray-400">Role</span>
+                <span>{project.role}</span>
               </div>
             </div>
           </div>
@@ -106,7 +99,7 @@ const ProjectContent = ({ project }) => {
 
       {/* More Projects */}
       <div className="max-w-4xl mx-auto mt-20 lg:mt-32">
-        <h2 className="text-2xl text-gray-700 mb-10"> Plus de projets</h2>
+        <h2 className="text-2xl text-gray-700 mb-10"> More Projects</h2>
         {/* Card others projects */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
           {projects
@@ -120,10 +113,10 @@ const ProjectContent = ({ project }) => {
           <Link
             href="/projects"
             className="transition-all duration-300 ease-in-out
-            text-[11.5px] tracking-[2px] font-bold upercase bg-orange-600
-            hover:text-orange-600 py-4 px-5 text-white hover:bg-white hover:shadown-2xl rounded-md"
+            text-[11.5px] tracking-[2px] font-bold uppercase bg-orange-600
+            hover:text-orange-600 py-4 px-5 text-white hover:bg-white hover:shadow-2xl rounded-md"
           >
-            Voir tous les Projets
+            View All Project
           </Link>
         </div>
       </div>

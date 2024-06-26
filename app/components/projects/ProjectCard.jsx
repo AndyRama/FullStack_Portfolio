@@ -1,9 +1,9 @@
 'use client'
-
 import React from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
+import { format, parseISO } from 'date-fns'
 
 const ProjectCard = ({ project, index }) => {
   index *= 0.05
@@ -20,12 +20,12 @@ const ProjectCard = ({ project, index }) => {
         },
       }}
       viewport={{ once: true }}
-      className={`relative overflow-hidden `}
+      className="relative overflow-hidden rounded-t-md"
     >
       {/* Image top card */}
       <Link
-        href={project.url}
-        className="relative block overflow-hidden group "
+        href={`/${project.url}`}
+        className="relative block overflow-hidden group"
       >
         <Image
           src={project.image}
@@ -37,14 +37,25 @@ const ProjectCard = ({ project, index }) => {
         />
       </Link>
 
-      {/* title - text bottom card */}
-      <div className="py-8 px-2 bg-white rounded-md">
-        <span className="block mb-1 text-gray-500">{project.role}</span>
+      <div className="p-4 bg-white border border-[#2F2E2E]  rounded-b-md">
+        <p className="text-gray-500 mb-3 uppercase text-[12px] tracking-[1px]">
+          {format(parseISO(project.date), 'LLL d, yyyy')} • {project.author}
+        </p>
         <h3 className="mb-4">
-          <Link href={project.url} className="text-2xl leading-none">
+          <Link href={`/${urlWithoutBlog}`} className="text-lg leading-none">
             {project.title}
           </Link>
         </h3>
+        <div>
+          <Link
+            href={`/${urlWithoutBlog}`}
+            className="text-[#2F2E2E] uppercase text-[12px] tracking-[2px] border-b-2
+            pb-2 inline-block border-orange-500"
+          >
+            lire l&apos;article
+          </Link>
+          {/* <span className="text-orange-500">Lecture 5 min</span> */}
+        </div>
       </div>
     </motion.div>
   )
