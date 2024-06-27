@@ -1,10 +1,10 @@
 import React from 'react'
-import SubHero from '../components/blog/SubHero'
-import Projects from '../components/projects/Projects'
+import SubHero from '../components/project/SubHero'
+import Projects from '../components/project/Projects'
 import Subscribe from '../components/Subscribe'
 
 export const metadata = {
-  title: 'Projets réalisés par Andy Ramaroson',
+  title: 'Projects - Andy Ramaroson',
 }
 
 const page = () => {
@@ -12,8 +12,8 @@ const page = () => {
     <>
       <SubHero
         className="pt-32 mb-32"
-        subTitle="Mes réalsations"
-        title="Dernier projets"
+        subTitle="Projets réalisés"
+        title="Dernier ajout"
         description="Ma veille technologique se concentre principalement sur le langage JavaScript. Je suis également les évolutions des frameworks populaires comme React et NextJS, en explorant les nouvelles fonctionnalités, les meilleures pratiques
         et les patterns de conception émergents que je partage au travers de ce blog."
       />

@@ -6,7 +6,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { format, parseISO } from 'date-fns'
 
-const ProjectCard = ({ post, index }) => {
+const ProjectCard = ({ project, index }) => {
   index *= 0.05
 
   return (
@@ -25,12 +25,12 @@ const ProjectCard = ({ post, index }) => {
     >
       {/* Image top card */}
       <Link
-        href={`/${post.url}`}
+        href={`/${project.url}`}
         className="relative block overflow-hidden group"
       >
         <Image
-          src={post.image}
-          alt={post.title}
+          src={project.image}
+          alt={project.title}
           width={1064}
           height={644}
           className="object-cover object-center h-[400px] !max-w-full duration-300
@@ -40,20 +40,20 @@ const ProjectCard = ({ post, index }) => {
 
       <div className="p-4 bg-white border border-gray-200 rounded-b-md">
         <p className="text-gray-500 mb-3 uppercase text-[12px] tracking-[1px]">
-          {format(parseISO(post.date), 'LLL d, yyyy')} • {post.author}
+          {format(parseISO(project.date), 'LLL d, yyyy')} • {project.author}
         </p>
         <h3 className="mb-4">
           <Link
-            href={`/${post.url}`}
+            href={`/${project.url}`}
             className="text-orange-500 text-lg leading-none"
           >
-            {post.title}
+            {project.title}
           </Link>
         </h3>
 
         <div>
           <Link
-            href={`/${post.url}`}
+            href={`/${project.url}`}
             className={`text-gray-500 hover:text-white text-[12px] tracking-[2px] uppercase
             pb-2 inline-block  duration-300 transistion-all bg-white-600
             ease-in-out relative before:content-['']

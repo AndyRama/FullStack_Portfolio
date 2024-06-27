@@ -1,5 +1,4 @@
-import React from 'react'
-import { allProjects } from 'contentlayer/generated'
+import { allProjects } from '.contentlayer/generated'
 import ProjectContent from './ProjectContent'
 
 export async function generateStaticParams() {

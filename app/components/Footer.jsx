@@ -30,7 +30,7 @@ const footerContent = {
       heading: '',
       links: [
         {
-          href: '/projects',
+          href: '/project',
           label: 'Project',
           badge: 'en cours',
         },

@@ -48,6 +48,69 @@ var Post = defineDocumentType(() => ({
     }
   }
 }));
+var Project = defineDocumentType(() => ({
+  name: "Project",
+  filePathPattern: `project/*.mdx`,
+  contentType: "mdx",
+  fields: {
+    title: {
+      type: "string",
+      description: "The title of the project",
+      require: true
+    },
+    location: {
+      type: "string",
+      description: "The location of the project",
+      require: true
+    },
+    date: {
+      type: "date",
+      description: "The date of the project",
+      require: true
+    },
+    image: {
+      type: "string",
+      description: "The image of the project",
+      require: true
+    },
+    client: {
+      type: "string",
+      description: "The client of the project",
+      require: true
+    },
+    stack: {
+      type: "string",
+      description: "The stack of the project",
+      require: true
+    },
+    year: {
+      type: "string",
+      description: "The year of the project",
+      require: true
+    },
+    duration: {
+      type: "string",
+      description: "The duration of the project",
+      require: true
+    },
+    realisation: {
+      type: "string",
+      description: "The type of the project realised",
+      require: true
+    },
+    description: {
+      type: "string",
+      description: "the  description content of the project ",
+      required: true
+    }
+  },
+  computedFields: {
+    url: {
+      type: "string",
+      resolve: (doc) => `/${doc._raw.flattenedPath}`
+    }
+  }
+}));
 var Category = defineNestedType(() => ({
   name: "Category",
   fields: {
@@ -83,9 +146,9 @@ var Info = defineDocumentType(() => ({
 }));
 var contentlayer_config_default = makeSource({
   contentDirPath: "content",
-  documentTypes: [Post, Info]
+  documentTypes: [Post, Info, Project]
 });
 export {
   contentlayer_config_default as default
 };
-//# sourceMappingURL=compiled-contentlayer-config-N43BB4QM.mjs.map
+//# sourceMappingURL=compiled-contentlayer-config-SDWBTAZ2.mjs.map

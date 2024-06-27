@@ -2,25 +2,26 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { allProjects } from 'contentlayer/generated'
+import { allProjects } from '.contentlayer/generated'
 import { compareDesc, format, parseISO } from 'date-fns'
 
 import { motion } from 'framer-motion'
 import { getMDXComponent } from 'next-contentlayer/hooks'
-import ProjectCard from '@/app/components/projects/ProjectCard'
+import RecentBlog from '@/app/components/project/RecentBlog'
 
 const ProjectContent = ({ project }) => {
   const projects = allProjects.sort((a, b) =>
     compareDesc(new Date(a.date), new Date(b.date)),
   )
 
+  let MDXContent
+
   if (!projects) return null
   if (!project) {
     console.log('Post not found')
-    return <p>Post not found</p> // Ajoutez un retour si le projet n'est pas trouvé
+  } else {
+    MDXContent = getMDXComponent(project.body.code)
   }
-
-  const MDXContent = getMDXComponent(project.body.code)
 
   return (
     <motion.div
@@ -28,7 +29,7 @@ const ProjectContent = ({ project }) => {
       whileInView={{
         opacity: 1,
         y: 0,
-        transition: { delay: 0.2, duration: 0.5 },
+        transistion: { delay: 0.2, duration: 0.5 },
       }}
       viewport={{ once: true }}
       className="pt-44 pb-20 lg:py-44 container px-4 mx-auto"
@@ -41,9 +42,14 @@ const ProjectContent = ({ project }) => {
           </h1>
           <p className="text-slate-500 mt-10">
             <span className="inline-flex space-x-3">
-              <span>{format(parseISO(project.date), 'LLL d, yyyy')}</span>
+              <span>{format(parseISO(project.date), 'd LLL yyyy')}</span>
               <span>•</span>
-              <span>{project.role}</span>
+
+              <span>{project.stack}</span>
+
+              <span>•</span>
+
+              <span>{project.duration}</span>
             </span>
           </p>
         </div>
@@ -81,14 +87,15 @@ const ProjectContent = ({ project }) => {
                 <span>{project.year}</span>
               </div>
 
-              {/* Content Role */}
+              {/* Content Type */}
               <div
                 className="border-l border-gray-200 relative pl-3 before:content-['']
                 before:top-0 before:-left-[1px] before:absolute before:h-7 before:w-[1px]
                 before:bg-orange-600"
               >
-                <span className="block text-gray-400">Role</span>
-                <span>{project.role}</span>
+                <span className="block text-gray-400">Types</span>
+                <span>{project.realisation}</span>
+                {/* </div> */}
               </div>
             </div>
           </div>
@@ -98,27 +105,8 @@ const ProjectContent = ({ project }) => {
       </div>
 
       {/* More Projects */}
-      <div className="max-w-4xl mx-auto mt-20 lg:mt-32">
-        <h2 className="text-2xl text-gray-700 mb-10"> More Projects</h2>
-        {/* Card others projects */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
-          {projects
-            .filter((a) => project.title !== a.title)
-            .map((item, index) => {
-              if (index > 3) return null
-              return <ProjectCard key={index} index={index} project={item} />
-            })}
-        </div>
-        <div className="flex justify-center mt-10">
-          <Link
-            href="/projects"
-            className="transition-all duration-300 ease-in-out
-            text-[11.5px] tracking-[2px] font-bold uppercase bg-orange-600
-            hover:text-orange-600 py-4 px-5 text-white hover:bg-white hover:shadow-2xl rounded-md"
-          >
-            View All Project
-          </Link>
-        </div>
+      <div className="mx-auto mt-20 lg:mt-32">
+        <RecentBlog />
       </div>
     </motion.div>
   )
