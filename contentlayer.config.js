@@ -104,6 +104,12 @@ const Project = defineDocumentType(() => ({
       description: 'the  description content of the project ',
       required: true,
     },
+    categories: {
+      type: 'list',
+      of: Category,
+      description: 'the  categories image of the project',
+      required: true,
+    },
   },
   computedFields: {
     url: {

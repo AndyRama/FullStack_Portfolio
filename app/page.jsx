@@ -19,8 +19,8 @@ export default function Home() {
       />
       <RecentProject className="mt-28 pb-22" />
       <Client className="mt-28 pb-22" />
-      <Stats />
       <Testimonials />
+      <Stats />
       <PricingDetails />
       <RecentBlog className="pt-14 pb-15 lg:pb-32" />
       <Subscribe className="py-16 lg:py-32 " />

@@ -3,17 +3,17 @@
 import React, { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { allPosts } from 'contentlayer/generated'
+import { allProjects } from 'contentlayer/generated'
 import { compareDesc, format, parseISO } from 'date-fns'
 import CardCategory from '../../CardCategory'
 
 import { motion } from 'framer-motion'
 
-const Items = ({ currentItems, Post }) => {
+const Items = ({ currentItems, Project }) => {
   return (
     <>
       {currentItems &&
-        currentItems.map((post, index) => {
+        currentItems.map((project, index) => {
           index *= 0.05
           return (
             <motion.div
@@ -28,15 +28,15 @@ const Items = ({ currentItems, Post }) => {
               }}
               viewport={{ once: true }}
               className="bg-white border border-gray-200 relative overflow-hidden group rounded-md"
-              key={post.title}
+              key={project.title}
             >
               <Link
-                href={`/${post.url}`}
+                href={`/${project.url}`}
                 className="relative block overflow-hidden"
               >
                 <Image
-                  src={post.image}
-                  alt={post.title}
+                  src={project.image}
+                  alt={project.title}
                   width={1064}
                   height={644}
                   className="object-cover object-center h-[200px] duration-300
@@ -44,24 +44,25 @@ const Items = ({ currentItems, Post }) => {
                 />
                 <div className="p-8">
                   <p className="text-[#2F2E2E] mb-3 uppercase text-[12px] tracking-[1px]">
-                    {format(parseISO(post.date), 'LLL d, yyyy')} • {post.author}{' '}
+                    {format(parseISO(project.date), 'LLL d, yyyy')} •{' '}
+                    {project.author}{' '}
                   </p>
                   <div className="text-[#2F2E2E] font-bold mb-3 uppercase text-[12px] tracking-[1px]"></div>
 
                   <h3 className="mb-4">
                     <Link
-                      href={`/${post.url}`}
+                      href={`/${project.url}`}
                       className="text-orange-400 text-lg leading-none text-center "
                     >
-                      {post.title}
+                      {project.title}
                     </Link>
                   </h3>
                   <p className="text-[#2F2E2E] mb-3 text-[14px] tracking-[1px]">
-                    {post.excerpt}
+                    {project.excerpt}
                   </p>
                   <div>
                     <Link
-                      href={`/${post.url}`}
+                      href={`/${project.url}`}
                       className={` text-gray-500 hover:text-[#2F2E2E] text-[12px] tracking-[2px] uppercase
                         pb-2 inline-block  duration-300 transistion-all ease-in-out relative before:content-['']
                         before:absolute before:bottom-0 before:left-0 before:w-full
@@ -84,7 +85,7 @@ const Items = ({ currentItems, Post }) => {
     </>
   )
 }
-const Posts = ({ className, itemsPerPage, archive = false, params }) => {
+const Projects = ({ className, itemsPerPage, archive = false, params }) => {
   const [currentItems, setCurrentItems] = useState(null)
   const [pageCount, setPageCount] = useState(0)
   const [itemOffset, setItemOffset] = useState(0)
@@ -94,13 +95,13 @@ const Posts = ({ className, itemsPerPage, archive = false, params }) => {
   let items = null
 
   if (archive === false) {
-    items = allPosts.sort((a, b) =>
+    items = allProjects.sort((a, b) =>
       compareDesc(new Date(a.date), new Date(b.date)),
     )
   } else {
     if (params?.slug) {
-      items = allPosts.filter((post) =>
-        post.categories.some(
+      items = allProjects.filter((project) =>
+        project.categories.some(
           (category) =>
             category.title
               .toLowerCase()
@@ -160,4 +161,4 @@ const Posts = ({ className, itemsPerPage, archive = false, params }) => {
   )
 }
 
-export default Posts
+export default Projects

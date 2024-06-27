@@ -42,14 +42,14 @@ const ProjectContent = ({ project }) => {
           </h1>
           <p className="text-slate-500 mt-10">
             <span className="inline-flex space-x-3">
-              <span>{format(parseISO(project.date), 'd LLL yyyy')}</span>
+              <span>{format(parseISO(project.date), 'LLL d, yyyy')}</span>
               <span>•</span>
 
               <span>{project.stack}</span>
 
               <span>•</span>
 
-              <span>{project.duration}</span>
+              <span>{project.realisation}</span>
             </span>
           </p>
         </div>
@@ -87,15 +87,24 @@ const ProjectContent = ({ project }) => {
                 <span>{project.year}</span>
               </div>
 
-              {/* Content Type */}
+              {/* Content Role */}
               <div
                 className="border-l border-gray-200 relative pl-3 before:content-['']
                 before:top-0 before:-left-[1px] before:absolute before:h-7 before:w-[1px]
                 before:bg-orange-600"
               >
-                <span className="block text-gray-400">Types</span>
-                <span>{project.realisation}</span>
-                {/* </div> */}
+                <span className="block text-gray-400">Durée</span>
+                <span>{project.duration}</span>
+              </div>
+
+              {/* Content Role */}
+              <div
+                className="border-l border-gray-200 relative pl-3 before:content-['']
+                before:top-0 before:-left-[1px] before:absolute before:h-7 before:w-[1px]
+                before:bg-orange-600"
+              >
+                <span className="block text-gray-400">Durée</span>
+                <span>{project.duration}</span>
               </div>
             </div>
           </div>

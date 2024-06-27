@@ -69,6 +69,8 @@ export type Project = {
   realisation?: string | undefined
   /** the  description content of the project  */
   description: string
+  /** the  categories image of the project */
+  categories: Category[]
   /** MDX file body */
   body: MDX
   url: string
