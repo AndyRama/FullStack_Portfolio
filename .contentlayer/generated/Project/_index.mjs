@@ -2,7 +2,5 @@
 
 import projects__portfolioAndyRamarosonMdx from './projects__Portfolio-andy-ramaroson.mdx.json' assert { type: 'json' }
 import projects__unlcoachingJeremyPratMdx from './projects__Unlcoaching-jeremy-prat.mdx.json' assert { type: 'json' }
-import projects__ramarosonMdx from './projects__ramaroson.mdx.json' assert { type: 'json' }
-import projects__testCopyMdx from './projects__test-copy.mdx.json' assert { type: 'json' }
 
-export const allProjects = [projects__portfolioAndyRamarosonMdx, projects__unlcoachingJeremyPratMdx, projects__ramarosonMdx, projects__testCopyMdx]
+export const allProjects = [projects__portfolioAndyRamarosonMdx, projects__unlcoachingJeremyPratMdx]
