@@ -11,7 +11,7 @@ const page = () => {
   return (
     <>
       <SubHero
-        className="pt-32 mb-22"
+        className="pt-32 pb-22"
         subTitle="Projets réalisés"
         title="Dernier ajout"
         description="Ma veille technologique se concentre principalement sur le langage JavaScript. Je suis également les évolutions des frameworks populaires comme React et NextJS, en explorant les nouvelles fonctionnalités, les meilleures pratiques

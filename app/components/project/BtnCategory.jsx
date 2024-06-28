@@ -56,7 +56,7 @@ const BtnCategoriesContent = {
         href: '/blog/categories/nextjs',
         label: 'NextJs',
       },
-      title4: 'Code',
+      title4: "Cas d'etudes",
       icon4: 'icon4',
       btn4: {
         href: '/blog/categories/developpement',
@@ -98,12 +98,12 @@ const BtnCategory = ({ className }) => {
             whileHover={{ y: -10, transition: 0.1 }}
             className=" bg-white relative rounded-md"
           >
-            <div className="pb-10 grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-10 ">
+            <div className="pb-10 grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-4 lg:gap-8 ">
               {['title1', 'title2', 'title3', 'title4', 'title5', 'title6'].map(
                 (titleKey, idx) => (
                   <div key={idx}>
                     <Link href={step[`btn${idx + 1}`].href}>
-                      <span className="text-3xl flex ">
+                      <span className="text-2xl md:text-3xl flex ">
                         {iconMapping[step[`icon${idx + 1}`]]}
                         <h3
                           className="text-xl hover:text-gray-500 text-[#2F2E2E] pb-2 inline-block duration-300 transition-all bg-white-600 ease-in-out 

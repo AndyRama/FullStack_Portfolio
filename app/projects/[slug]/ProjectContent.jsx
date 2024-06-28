@@ -66,7 +66,7 @@ const ProjectContent = ({ project }) => {
           />
         </div>
         <article className="prose mx-auto max-w-2xl">
-          <div className="mx-auto max-w-2xl mb-10">
+          <div className="mx-auto max-w32xl mb-10">
             <div className=" flex justify-between ">
               <div
                 className="border-l border-gray-200 relative pl-3 before:content-['']
@@ -112,7 +112,7 @@ const ProjectContent = ({ project }) => {
           {/* Content Article */}
           <MDXContent />
         </article>
-        <CardCategory className="hidden lg:contents" />
+        {/* <CardCategory className="hidden lg:contents" /> */}
       </div>
 
       {/* More Projects */}

@@ -57,7 +57,7 @@ const CardCategoriesContent = {
         href: '/blog/categories/nextjs',
         label: 'NextJs',
       },
-      title4: 'Développement',
+      title4: "Cas d'etudes",
       icon4: 'icon4',
       btn4: {
         href: '/blog/categories/developpement',
