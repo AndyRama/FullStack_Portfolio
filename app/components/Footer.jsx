@@ -155,7 +155,7 @@ const Footer = ({ className }) => {
           </div>
         </div>{' '}
         {/* Version 2 */}
-        <div className="text-right items-right mx-auto text-sm pb-0">
+        {/* <div className="text-right items-right mx-auto text-sm pb-0">
           <Link
             href="/document/privacy"
             target="_blank"
@@ -170,7 +170,7 @@ const Footer = ({ className }) => {
           >
             Terms{' '}
           </Link>
-        </div>
+        </div> */}
         <Copyright />
       </div>
       <div className="transform-gpu blur-3xl ">

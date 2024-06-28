@@ -1,7 +1,7 @@
 import React, { act } from 'react'
 import 'intersection-observer'
 import { render, screen } from '@testing-library/react'
-import CardCategory from '@/app/components/CardCategory'
+import CardCategory from '@/app/components/blog/CardCategory'
 
 describe('CardCategory Component', () => {
   test('renders categories title correctly', async () => {

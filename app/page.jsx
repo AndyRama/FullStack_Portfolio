@@ -22,7 +22,7 @@ export default function Home() {
       <Testimonials />
       <Stats />
       <PricingDetails />
-      <RecentBlog className="pt-14 pb-15 lg:pb-32" />
+      <RecentBlog className="pt-14 pb-15 " />
       <Subscribe className="py-16 lg:py-32 " />
     </>
   )

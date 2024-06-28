@@ -26,7 +26,7 @@ const Items = ({ currentItems }) => {
                 },
               }}
               viewport={{ once: true }}
-              className="bg-white relative overflow-hidden group rounded-md"
+              className="bg-white relative overflow-hidden group rounded-md border border-gray-200 mb-10"
               key={project.title}
             >
               <Link
@@ -38,7 +38,7 @@ const Items = ({ currentItems }) => {
                   alt={project.title}
                   width={1064}
                   height={644}
-                  className="object-cover object-center h-[200px] duration-300
+                  className="object-cover object-center h-[200px] lg:h-[400px] duration-300
                     transition-all ease-in-out group-hover:scale-[1.05] rounded-t-md"
                 />
                 <div className="p-8">
@@ -139,11 +139,8 @@ const Project = ({ className, itemsPerPage, archive = false, params }) => {
   return (
     <>
       <section className={`${className}`} ref={ref}>
-        <div className="container px-4 mx-auto">
-          <div
-            className="lg:w-10/12 mx-auto mb-20 grid grid-cols-1 md:grid-cols-2
-          lg:grid-cols-3 gap-10 "
-          >
+        <div className="container mx-auto">
+          <div className="px-4 lg:w-12/12 mx-auto mb-20 grid grid-cols-1 md:grid-cols-2 gap-10">
             <Items currentItems={currentItems} />
           </div>
 

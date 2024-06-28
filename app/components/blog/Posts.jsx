@@ -6,8 +6,8 @@ import Image from 'next/image'
 import { allPosts } from 'contentlayer/generated'
 import { compareDesc, format, parseISO } from 'date-fns'
 import { motion } from 'framer-motion'
-import CardCategory from '../CardCategory'
-import BtnCategory from '../BtnCategory'
+import CardCategory from './CardCategory'
+import BtnCategory from './BtnCategory'
 
 const Items = ({ currentItems }) => {
   return (

@@ -58,7 +58,7 @@ const Subscribe = ({ className }) => {
           />
         </div>
         <div className="flex justify-center items-center">
-          <div className="w-12/12 flex gap-0">
+          <div className="w-10/12 flex gap-0">
             <div className="text-center w-screen max-w-md mx-auto mb-4">
               {subscribeContent.heading.subtitle && (
                 <motion.div

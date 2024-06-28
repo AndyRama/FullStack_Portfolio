@@ -5,7 +5,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { allProjects } from 'contentlayer/generated'
 import { compareDesc, format, parseISO } from 'date-fns'
-import CardCategory from '../../CardCategory'
+import CardCategory from '../../blog/CardCategory'
 
 import { motion } from 'framer-motion'
 

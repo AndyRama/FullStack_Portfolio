@@ -100,7 +100,7 @@ const BtnCategoriesContent = {
 const BtnCategory = ({ className }) => {
   return (
     <section className={className}>
-      <div className="hidden md:contents xl:hidden">
+      <div className="table xl:hidden mx-auto">
         {BtnCategoriesContent.step.map((step, index) => (
           <motion.div
             key={index}
@@ -115,13 +115,9 @@ const BtnCategory = ({ className }) => {
             }}
             viewport={{ once: true }}
             whileHover={{ y: -10, transition: 0.1 }}
-            className="group duration-300 bg-white relative rounded-md"
+            className="group duration-300 bg-white relative rounded-md "
           >
-            <div className="relative pb-10 flex flex-row gap-8 lg:gap-20 ">
-              <p className="text-justify leading-relaxed text-[15px] text-gray-500 duration-300 transition-all ease-in-out group-hover:text-white">
-                {step.description}
-              </p>
-
+            <div className="pb-10 px-4 gap-0 grid grid-cols-3 justify-center">
               {['title1', 'title2', 'title3', 'title4', 'title5', 'title6'].map(
                 (titleKey, idx) => (
                   <div key={idx}>
