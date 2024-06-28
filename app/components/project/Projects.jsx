@@ -1,10 +1,12 @@
 'use client'
+
 import React, { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { allProjects } from 'contentlayer/generated'
 import { compareDesc, format, parseISO } from 'date-fns'
-// import ReactPaginate from 'react-paginate'
+import CardCategory from './CardCategory'
+import BtnCategory from './BtnCategory'
 
 import { motion } from 'framer-motion'
 
@@ -140,32 +142,13 @@ const Project = ({ className, itemsPerPage, archive = false, params }) => {
     <>
       <section className={`${className}`} ref={ref}>
         <div className="container mx-auto">
-          <div className="px-4 lg:w-12/12 mx-auto mb-20 grid grid-cols-1 md:grid-cols-2 gap-10">
-            <Items currentItems={currentItems} />
+          <BtnCategory />
+          <div className="flex">
+            <div className="w-12/12 lg:w-10/12 mx-auto mb-20 grid grid-cols-1 lg:grid-cols-2  gap-4 px-4">
+              <Items currentItems={currentItems} />
+            </div>
+            <CardCategory className="hidden xl:contents" />
           </div>
-
-          {/* <div className="lg:w-10/12 mx-auto flex flex-wrap">
-          <ReactPaginate
-              nextLabel="Next"
-              onPageChange={handlePageClick}
-              pageRangeDisplayed={3}
-              marginPagesDisplayed={2}
-              pageCount={pageCount}
-              previousLabel="Previous"
-              pageClassName="page-item"
-              pageLinkClassName="page-link"
-              previousClassName="page-item"
-              previousLinkClassName="page-link"
-              nextClassName="page-item"
-              nextLinkClassName="page-link"
-              breakLabel="..."
-              breakClassName="page-item"
-              breakLinkClassName="page-link"
-              containerClassName="pagination"
-              activeClassName="active"
-              renderOnZeroPageCount={null}
-            />
-        </div> */}
         </div>
       </section>
     </>
@@ -173,4 +156,3 @@ const Project = ({ className, itemsPerPage, archive = false, params }) => {
 }
 
 export default Project
-//ok

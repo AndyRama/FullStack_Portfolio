@@ -5,8 +5,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { allProjects } from 'contentlayer/generated'
 import { compareDesc, format, parseISO } from 'date-fns'
-import CardCategory from '../../blog/CardCategory'
-
 import { motion } from 'framer-motion'
 
 const Items = ({ currentItems, Project }) => {
@@ -146,15 +144,11 @@ const Projects = ({ className, itemsPerPage, archive = false, params }) => {
 
   return (
     <section className={`${className}`} ref={ref}>
-      <div className="container px-4 mx-auto">
+      <div className="container mx-auto mt-10 w-auto">
         <div className="flex">
-          <div
-            className="lg:w-10/12 mx-auto mb-20 grid grid-cols-1 md:grid-cols-2
-            lg:grid-cols-3 gap-3 "
-          >
+          <div className="w-12/12 lg:w-10/12 mx-auto grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 px-4">
             <Items currentItems={currentItems} />
           </div>
-          <CardCategory className="hidden lg:contents" />
         </div>
       </div>
     </section>
