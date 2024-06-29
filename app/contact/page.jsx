@@ -1,5 +1,5 @@
 import React from 'react'
-import SubHero from '../components/about/SubHero'
+import SubHero from '../components/SubHero'
 import CardContact from '../components/contact/CardContact'
 
 export const metadata = {

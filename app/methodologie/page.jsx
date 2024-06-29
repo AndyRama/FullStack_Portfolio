@@ -1,6 +1,6 @@
 import DescriptionCard from './../components/DescriptionCard'
-import SubHero from '../components/about/SubHero'
-import SubHeroR from '../components/about/SubHeroR'
+import SubHero from '../components/SubHero'
+// import SubHeroR from '../components/about/SubHeroR'
 
 export const metadata = {
   title: 'Méthodologie et Processus de fonctionnement',

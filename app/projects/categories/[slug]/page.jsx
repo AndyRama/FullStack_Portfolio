@@ -1,6 +1,6 @@
 import React from 'react'
 import { allProjects } from 'contentlayer/generated'
-import SubHero from '@/app/components/about/SubHero'
+import SubHero from '@/app/components/project/SubHero'
 import Projects from '@/app/components/project/category/Projects'
 import Subscribe from '@/app/components/Subscribe'
 

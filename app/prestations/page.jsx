@@ -1,5 +1,5 @@
 import React from 'react'
-import SubHero from '../components/about/SubHero'
+import SubHero from '../components/SubHero'
 import PricingPack from '../components/prestation/PricingPack'
 import PricingDetails from '../components/prestation/PricingDetails'
 import Subscribe from '../components/Subscribe'
