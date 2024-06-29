@@ -105,7 +105,7 @@ const Project = defineDocumentType(() => ({
       description: 'the  categories image of the project',
       required: true,
     },
-    stack: {
+    stacks: {
       type: 'list',
       of: Stack,
       description: 'the  stack of the project',

@@ -70,7 +70,7 @@ export type Project = {
   /** the  categories image of the project */
   categories: Category[]
   /** the  stack of the project */
-  stack: Stack[]
+  stacks: Stack[]
   /** MDX file body */
   body: MDX
   url: string

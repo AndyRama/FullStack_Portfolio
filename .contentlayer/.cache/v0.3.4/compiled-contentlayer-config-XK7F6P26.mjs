@@ -78,11 +78,6 @@ var Project = defineDocumentType(() => ({
       description: "The client of the project",
       require: true
     },
-    stack: {
-      type: "string",
-      description: "The stack of the project",
-      require: true
-    },
     year: {
       type: "string",
       description: "The year of the project",
@@ -108,6 +103,12 @@ var Project = defineDocumentType(() => ({
       of: Category,
       description: "the  categories image of the project",
       required: true
+    },
+    stacks: {
+      type: "list",
+      of: Stack,
+      description: "the  stack of the project",
+      required: true
     }
   },
   computedFields: {
@@ -123,6 +124,16 @@ var Category = defineNestedType(() => ({
     title: {
       type: "string",
       description: "The title of the category",
+      required: true
+    }
+  }
+}));
+var Stack = defineNestedType(() => ({
+  name: "Stack",
+  fields: {
+    title: {
+      type: "string",
+      description: "The title of the stack",
       required: true
     }
   }
@@ -157,4 +168,4 @@ var contentlayer_config_default = makeSource({
 export {
   contentlayer_config_default as default
 };
-//# sourceMappingURL=compiled-contentlayer-config-TP4GDL6V.mjs.map
+//# sourceMappingURL=compiled-contentlayer-config-XK7F6P26.mjs.map

@@ -8,7 +8,6 @@ import { compareDesc, format, parseISO } from 'date-fns'
 import { motion } from 'framer-motion'
 import { getMDXComponent } from 'next-contentlayer/hooks'
 import RecentBlog from '@/app/components/project/RecentBlog'
-import CardCategory from '@/app/components/project/CardCategory'
 
 const ProjectContent = ({ project }) => {
   const projects = allProjects.sort((a, b) =>
@@ -112,7 +111,6 @@ const ProjectContent = ({ project }) => {
           {/* Content Article */}
           <MDXContent />
         </article>
-        {/* <CardCategory className="hidden lg:contents" /> */}
       </div>
 
       {/* More Projects */}
