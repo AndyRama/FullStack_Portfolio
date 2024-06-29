@@ -59,8 +59,6 @@ export type Project = {
   image?: string | undefined
   /** The client of the project */
   client?: string | undefined
-  /** The stack of the project */
-  stack?: string | undefined
   /** The year of the project */
   year?: string | undefined
   /** The duration of the project */
@@ -71,6 +69,8 @@ export type Project = {
   description: string
   /** the  categories image of the project */
   categories: Category[]
+  /** the  stack of the project */
+  stack: Stack[]
   /** MDX file body */
   body: MDX
   url: string
@@ -85,6 +85,16 @@ export type Category = {
   /** The title of the category */
   title: string
 
+}
+
+export type Stack = {
+  /** File path relative to `contentDirPath` */
+  _id: string
+  _raw: Local.RawDocumentData
+  type: 'Stack'
+  /** The title of the stack */
+  title: string
+
 }  
 
 /** Helper types */
@@ -95,8 +105,8 @@ export type AllTypeNames = DocumentTypeNames | NestedTypeNames
 export type DocumentTypes = Info | Post | Project
 export type DocumentTypeNames = 'Info' | 'Post' | 'Project'
 
-export type NestedTypes = Category
-export type NestedTypeNames = 'Category'
+export type NestedTypes = Category | Stack
+export type NestedTypeNames = 'Category' | 'Stack'
 
 export type DataExports = {
   allDocuments: DocumentTypes[]
@@ -129,6 +139,7 @@ export type DocumentTypeMap = {
 
 export type NestedTypeMap = {
   Category: Category
+  Stack: Stack
 }
 
  

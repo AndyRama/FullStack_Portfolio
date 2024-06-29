@@ -9,7 +9,7 @@ const subHeroContent = {
     subTitle: '',
     title: '',
     description: '',
-    image: '/images/cahierDesCharges.jpg',
+    image: '/images/Team.jpg',
   },
 }
 const SubHero = ({ className, title, subTitle, description, image }) => {
@@ -46,9 +46,9 @@ const SubHero = ({ className, title, subTitle, description, image }) => {
   return (
     <section className={`${className}`}>
       <div className="container mx-auto px-4">
-        <div className="lg:flex lg:w-12/12 mx-auto items-left justify-between">
+        <div className="lg:flex lg:w-12/12 mx-auto ">
           {/* Content center - subtitle */}
-          <div className="lg:max-w-3xl mx-auto mt-[75px] mb-10">
+          <div className="lg:max-w-4xl mx-auto mt-[75px] mb-10">
             {subTitle && (
               <motion.span
                 initial={{ opacity: 0, y: 20 }}
@@ -91,7 +91,7 @@ const SubHero = ({ className, title, subTitle, description, image }) => {
                   transition: { delay: 0.2, duration: 0.5 },
                 }}
                 viewport={{ once: true }}
-                className="leading-relaxed text-gray-500 w-auto lg:w-screen max-w-lg text-base lg:text-lg mb-10 lg:mb-16"
+                className="leading-relaxed text-gray-500 w-auto lg:w-screen max-w-xl text-left lg:text-lg mb-10 lg:mb-16"
               >
                 {description}
               </motion.p>

@@ -99,7 +99,7 @@ const CardCategory = ({ className }) => {
             whileHover={{ y: -10, transition: 0.1 }}
             className=" bg-white border border-gray-200 relative overflow-hidden hover:shadow-2xl rounded-md h-[365px] mr-3"
           >
-            <div className="px-2 mt-2 relative flex flex-col gap-2 items-start ">
+            <div className="px-8 lg:mt-5 mt-8 relative flex flex-col gap-2 items-start ">
               <span className="text-3xl flex">
                 {/* <Link href="/blog"> */}
                 <h2

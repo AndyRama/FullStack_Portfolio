@@ -11,11 +11,12 @@ const page = () => {
   return (
     <>
       <SubHero
-        className="pt-32 pb-22"
+        className="pt-32 pb-32"
         subTitle="Projets réalisés"
         title="Dernier ajout"
-        description="Ma veille technologique se concentre principalement sur le langage JavaScript. Je suis également les évolutions des frameworks populaires comme React et NextJS, en explorant les nouvelles fonctionnalités, les meilleures pratiques
-        et les patterns de conception émergents que je partage au travers de ce blog."
+        description="J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
+        les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
+        esthétiquement plaisantes."
       />
 
       <Projects className="pt-10 pb-32" itemsPerPage={50} />

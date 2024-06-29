@@ -46,20 +46,20 @@ const Items = ({ currentItems }) => {
                 <div className="p-8">
                   <p className="text-gray-500 mb-3 uppercase text-[12px] tracking-[1px]">
                     {format(parseISO(project.date), 'LLL d, yyyy')} •{' '}
-                    {project.author}
+                    {project.client} • {project.realisation}
                   </p>
-
-                  <h3 className="mb-4">
+                  <h3>
                     <Link href={project.url} className="text-lg leading-none">
-                      {project.description}
+                      {project.title}
                     </Link>
                   </h3>
+
                   <p>
                     <Link
                       href={project.url}
                       className={`text-[12px] tracking-[2px] uppercase
                         pb-2 inline-block  duration-300 transistion-all bg-white-600
-                        ease-in-out relative before:content-['']
+                        ease-in-out relative before:content-&apos;&apos;
                         before:absolute before:bottom-0 before:left-0 before:w-full
                         before:h-[2px] before:bg-orange-600 before:origin-[100%, 50%]
                         before:transistion-all before:duration-300 before:ease-in-out
@@ -68,7 +68,7 @@ const Items = ({ currentItems }) => {
                         hover:before:scale-x-[1] hover:before:scale-y-[1]
                         hover:before:scale-z-[1]`}
                     >
-                      Read More
+                      plus d&apos;infos
                     </Link>
                   </p>
                 </div>
@@ -144,10 +144,10 @@ const Project = ({ className, itemsPerPage, archive = false, params }) => {
         <div className="container mx-auto">
           <BtnCategory />
           <div className="flex">
-            <div className="w-12/12 lg:w-10/12 mx-auto mb-20 grid grid-cols-1 lg:grid-cols-2  gap-4 px-4">
+            <div className="w-12/12 lg:w-10/12 mx-auto mb-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-4">
               <Items currentItems={currentItems} />
             </div>
-            <CardCategory className="hidden xl:contents" />
+            <CardCategory className="hidden xl:contents ml-20" />
           </div>
         </div>
       </section>

@@ -42,7 +42,7 @@ const PricingContentDetails = {
 const PricingDetails = ({ className }) => {
   return (
     <>
-      <section className="pb-20">
+      <section className="mt-10 pb-20">
         <div className="transform-gpu blur-3xl">
           <div className="absolute left-0 opacity-30 md:opacity-50 -z-20 w-56 h-64 bg-gradient-to-tr from-orange-500 to-orange-800"></div>
         </div>

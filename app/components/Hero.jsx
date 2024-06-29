@@ -33,9 +33,9 @@ const Hero = ({ className }) => {
   return (
     <section className={`${className}`}>
       <div className="container px-4 mx-auto">
-        <div className="lg:flex items-left ">
+        <div className="lg:flex ">
           {/* Content left - subtitle */}
-          <div className="lg:w-6/12 mb-10 lg:mb-10 mt-6">
+          <div className="lg:w-6/12 mb-10 lg:mb-10 px-10 mt-6">
             {heroContent.intro.subTitle && (
               <motion.span
                 initial={{ opacity: 0, y: 20 }}

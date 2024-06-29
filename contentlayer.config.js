@@ -79,11 +79,6 @@ const Project = defineDocumentType(() => ({
       description: 'The client of the project',
       require: true,
     },
-    stack: {
-      type: 'string',
-      description: 'The stack of the project',
-      require: true,
-    },
     year: {
       type: 'string',
       description: 'The year of the project',
@@ -110,6 +105,12 @@ const Project = defineDocumentType(() => ({
       description: 'the  categories image of the project',
       required: true,
     },
+    stack: {
+      type: 'list',
+      of: Stack,
+      description: 'the  stack of the project',
+      required: true,
+    },
   },
   computedFields: {
     url: {
@@ -125,6 +126,17 @@ const Category = defineNestedType(() => ({
     title: {
       type: 'string',
       description: 'The title of the category',
+      required: true,
+    },
+  },
+}))
+
+const Stack = defineNestedType(() => ({
+  name: 'Stack',
+  fields: {
+    title: {
+      type: 'string',
+      description: 'The title of the stack',
       required: true,
     },
   },
