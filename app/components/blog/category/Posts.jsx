@@ -5,7 +5,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { allPosts } from 'contentlayer/generated'
 import { compareDesc, format, parseISO } from 'date-fns'
-import CardCategory from '../CardCategory'
+import CardCategory from './../../../components/CardCategory'
+import BtnCategory from './../../../components/BtnCategory'
 
 import { motion } from 'framer-motion'
 
@@ -146,11 +147,12 @@ const Posts = ({ className, itemsPerPage, archive = false, params }) => {
   return (
     <section className={`${className}`} ref={ref}>
       <div className="container px-4 mx-auto">
+        <BtnCategory contentType="blog" />
         <div className="flex">
           <div className="lg:w-10/12 mx-auto mb-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
             <Items currentItems={currentItems} />
           </div>
-          <CardCategory className="hidden xl:contents" />
+          <CardCategory contentType="blog" className="hidden xl:contents" />
         </div>
       </div>
     </section>

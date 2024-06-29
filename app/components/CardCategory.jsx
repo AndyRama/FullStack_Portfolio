@@ -9,8 +9,11 @@ import { FaShop } from 'react-icons/fa6'
 import { TbBrandNextjs } from 'react-icons/tb'
 import { BiSolidGrid } from 'react-icons/bi'
 import { LuWrench } from 'react-icons/lu'
+import { HiSparkles } from 'react-icons/hi'
+import { GrReactjs } from 'react-icons/gr'
+import { BiArrowBack } from 'react-icons/bi'
 
-const iconMapping = {
+const iconMappingProject = {
   icon1: (
     <BiSolidGrid className="mt-1 mr-1 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
   ),
@@ -31,7 +34,7 @@ const iconMapping = {
   ),
 }
 
-const CardCategoriesContent = {
+const CardCategoriesContentProject = {
   heading: {
     title: '',
     subTitle: '',
@@ -39,37 +42,109 @@ const CardCategoriesContent = {
   },
   step: [
     {
-      title1: 'Tous les projets [9]',
+      title1: 'Tous les projets [4]',
       icon1: 'icon1',
       btn1: {
-        href: '/blog/categories/inteligence',
-        label: 'Inteligence Art.',
+        href: '/projects',
+        label: 'Projets',
       },
       title2: 'NextJs [4]',
       icon2: 'icon2',
       btn2: {
-        href: '/blog/categories/react',
-        label: 'React',
+        href: '/projects/categories/nextjs',
+        label: 'NextJs',
       },
       title3: 'Maintenance [3]',
       icon3: 'icon3',
       btn3: {
+        href: '/projects/categories/maintenance ',
+        label: 'Maintenance ',
+      },
+      title4: "Cas d'etudes [0]",
+      icon4: 'icon4',
+      btn4: {
+        href: '/projects/categories/studientsCases',
+        label: "Cas d'etudes",
+      },
+      title5: 'E-commerce [0]',
+      icon5: 'icon5',
+      btn5: {
+        href: '/projects/categories/ecommerce',
+        label: 'E-commerce',
+      },
+      title6: 'Webflow [0]',
+      icon6: 'icon6',
+      btn6: {
+        href: '/projects/categories/webflow',
+        label: 'Webflow',
+      },
+    },
+  ],
+}
+
+const iconMappingBlog = {
+  icon1: (
+    <BiSolidGrid className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
+  ),
+  icon2: (
+    <TbBrandNextjs className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
+  ),
+  icon3: (
+    <GrReactjs className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
+  ),
+  icon4: (
+    <HiSparkles
+      HiOutlineTerminal
+      className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10"
+    />
+  ),
+  icon5: (
+    <HiOutlineTerminal className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
+  ),
+  icon6: (
+    <HiOutlineTemplate className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
+  ),
+}
+
+const CardCategoriesContentBlog = {
+  heading: {
+    title: '',
+    subTitle: '',
+    description: '',
+  },
+  step: [
+    {
+      title1: 'Tous les articles [7]',
+      icon1: 'icon1',
+      btn1: {
+        href: '/blog',
+        label: 'Tous les articles',
+      },
+      title2: 'NextJs [2]',
+      icon2: 'icon2',
+      btn2: {
         href: '/blog/categories/nextjs',
         label: 'NextJs',
       },
-      title4: "Cas d'etudes [9]",
+      title3: 'React [2]',
+      icon3: 'icon3',
+      btn3: {
+        href: '/blog/categories/react',
+        label: 'React',
+      },
+      title4: 'Inteligence Art. [1]',
       icon4: 'icon4',
       btn4: {
+        href: '/blog/categories/inteligence',
+        label: 'Inteligence Art.',
+      },
+      title5: 'Dévelop. Web [0]',
+      icon5: 'icon5',
+      btn5: {
         href: '/blog/categories/developpement',
         label: 'Développement Web',
       },
-      title5: 'E-commerce [2]',
-      icon5: 'icon5',
-      btn5: {
-        href: '/blog/categories/reviews',
-        label: 'Code Reviews',
-      },
-      title6: 'Webflow [1]',
+      title6: 'No code [0]',
       icon6: 'icon6',
       btn6: {
         href: '/blog/categories/noCode',
@@ -79,7 +154,13 @@ const CardCategoriesContent = {
   ],
 }
 
-const CardCategory = ({ className }) => {
+const CardCategory = ({ className, contentType }) => {
+  const isProject = contentType === 'project'
+  const iconMapping = isProject ? iconMappingProject : iconMappingBlog
+  const CardCategoriesContent = isProject
+    ? CardCategoriesContentProject
+    : CardCategoriesContentBlog
+
   return (
     <section className={className}>
       <div className="w-auto contents">

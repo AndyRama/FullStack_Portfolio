@@ -1,5 +1,3 @@
-'use client'
-
 import React from 'react'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
@@ -9,8 +7,11 @@ import { FaShop } from 'react-icons/fa6'
 import { TbBrandNextjs } from 'react-icons/tb'
 import { BiSolidGrid } from 'react-icons/bi'
 import { LuWrench } from 'react-icons/lu'
+import { HiSparkles } from 'react-icons/hi'
+import { GrReactjs } from 'react-icons/gr'
+import { BiArrowBack } from 'react-icons/bi'
 
-const iconMapping = {
+const iconMappingProject = {
   icon1: (
     <BiSolidGrid className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
   ),
@@ -30,7 +31,8 @@ const iconMapping = {
     <HiOutlineTemplate className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
   ),
 }
-const BtnCategoriesContent = {
+
+const BtnCategoriesContentProject = {
   heading: {
     title: '',
     subTitle: '',
@@ -41,34 +43,103 @@ const BtnCategoriesContent = {
       title1: 'Tous les projets',
       icon1: 'icon1',
       btn1: {
-        href: '/blog/categories/inteligence',
-        label: 'Inteligence Art.',
+        href: '/projects',
+        label: 'Projets',
       },
       title2: 'NextJs',
       icon2: 'icon2',
       btn2: {
-        href: '/blog/categories/react',
-        label: 'React',
+        href: '/projects/categories/nextjs',
+        label: 'NextJs',
       },
       title3: 'Maintenance',
       icon3: 'icon3',
       btn3: {
-        href: '/blog/categories/nextjs',
-        label: 'NextJs',
+        href: '/projects/categories/maintenance',
+        label: 'Maintenance',
       },
-      title4: "Cas d'etudes",
+      title4: "Cas d'études",
       icon4: 'icon4',
       btn4: {
-        href: '/blog/categories/developpement',
-        label: 'Développement Web',
+        href: '/projects/categories/studientsCases',
+        label: "Cas d'études",
       },
       title5: 'E-commerce',
       icon5: 'icon5',
       btn5: {
-        href: '/blog/categories/reviews',
-        label: 'Code Reviews',
+        href: '/projects/categories/ecommerce',
+        label: 'E-commerce',
       },
       title6: 'Webflow',
+      icon6: 'icon6',
+      btn6: {
+        href: '/projects/categories/webflow',
+        label: 'Webflow',
+      },
+    },
+  ],
+}
+
+const iconMappingBlog = {
+  icon1: (
+    <BiSolidGrid className="mt-0 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
+  ),
+  icon2: (
+    <TbBrandNextjs className="mt-0 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
+  ),
+  icon3: (
+    <GrReactjs className="mt-0 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
+  ),
+  icon4: (
+    <HiSparkles className="mt-0 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
+  ),
+  icon5: (
+    <HiOutlineTerminal className="mt-0 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
+  ),
+  icon6: (
+    <HiOutlineTemplate className="mt- mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
+  ),
+}
+
+const BtnCategoriesContentBlog = {
+  heading: {
+    title: '',
+    subTitle: '',
+    description: '',
+  },
+  step: [
+    {
+      title1: 'Tous les articles',
+      icon1: 'icon1',
+      btn1: {
+        href: '/blog',
+        label: 'Tous les articles',
+      },
+      title2: 'NextJs',
+      icon2: 'icon2',
+      btn2: {
+        href: '/blog/categories/nextjs',
+        label: 'NextJs',
+      },
+      title3: 'React',
+      icon3: 'icon3',
+      btn3: {
+        href: '/blog/categories/react',
+        label: 'React',
+      },
+      title4: 'I.A',
+      icon4: 'icon4',
+      btn4: {
+        href: '/blog/categories/inteligence',
+        label: 'Inteligence Art.',
+      },
+      title5: 'Dev.',
+      icon5: 'icon5',
+      btn5: {
+        href: '/blog/categories/developpement',
+        label: 'Développement Web',
+      },
+      title6: 'No code [0]',
       icon6: 'icon6',
       btn6: {
         href: '/blog/categories/noCode',
@@ -78,7 +149,13 @@ const BtnCategoriesContent = {
   ],
 }
 
-const BtnCategory = ({ className }) => {
+const BtnCategory = ({ className, contentType }) => {
+  const isProject = contentType === 'project'
+  const iconMapping = isProject ? iconMappingProject : iconMappingBlog
+  const BtnCategoriesContent = isProject
+    ? BtnCategoriesContentProject
+    : BtnCategoriesContentBlog
+
   return (
     <section className={className}>
       <div className="table mx-auto xl:hidden items-center justify-center">
