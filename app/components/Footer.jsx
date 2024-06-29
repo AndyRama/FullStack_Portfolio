@@ -48,8 +48,9 @@ const footerContent = {
       heading: '',
       links: [
         // {
-        //   href: '/prestations',
-        //   label: 'Prestations',
+        //   href: 'https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fportfolio-eta-three-93.vercel.app%2F&strategy=desktop&category=performance&category=accessibility&category=best-practices&category=seo&utm_source=lh-chrome-ext#',
+        //   label: 'LighHouse',
+        //   target: '_blank',
         // },
         {
           href: 'https://www.websitecarbon.com/website/portfolio-eta-three-93-vercel-app/',
