@@ -11,7 +11,7 @@ const page = () => {
   return (
     <>
       <SubHero
-        className="pt-32 "
+        className="pt-32 lg:mb-22 xl:mb-32 "
         subTitle="Projets réalisés"
         title="Dernier ajout"
         description="J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 

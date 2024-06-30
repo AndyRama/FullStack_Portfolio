@@ -7,8 +7,8 @@ import { allProjects } from 'contentlayer/generated'
 import { compareDesc, format, parseISO } from 'date-fns'
 import CardCategory from './../../components/CardCategory'
 import BtnCategory from './../../components/BtnCategory'
-
 import { motion } from 'framer-motion'
+import BtnStack from './../../components/project/BtnStack'
 
 const Items = ({ currentItems }) => {
   return (
@@ -43,35 +43,57 @@ const Items = ({ currentItems }) => {
                   className="object-cover object-center h-[200px] lg:h-[400px] duration-300
                     transition-all ease-in-out group-hover:scale-[1.05] rounded-t-md"
                 />
-                <div className="p-8">
+                {/* <div className="w-12/12 f"> */}
+                <div className="p-4  ">
                   <p className="text-gray-500 mb-3 uppercase text-[12px] tracking-[1px]">
                     {format(parseISO(project.date), 'LLL d, yyyy')} •{' '}
-                    {project.client} • {project.realisation}
+                    {project.realisation}
                   </p>
                   <h3>
-                    <Link href={project.url} className="text-lg leading-none">
+                    <Link
+                      href={project.url}
+                      className="text-lg leading-none mb-3"
+                    >
                       {project.title}
                     </Link>
                   </h3>
+                  <p className="text-gray-500 text-[12px] tracking-[1px]">
+                    {project.description}
+                  </p>
 
-                  <p>
+                  <div className="flex flex-row">
                     <Link
                       href={project.url}
-                      className={`text-[12px] tracking-[2px] uppercase
-                        pb-2 inline-block  duration-300 transistion-all bg-white-600
-                        ease-in-out relative before:content-&apos;&apos;
-                        before:absolute before:bottom-0 before:left-0 before:w-full
-                        before:h-[2px] before:bg-orange-600 before:origin-[100%, 50%]
-                        before:transistion-all before:duration-300 before:ease-in-out
-                        before:scale-x-0 before:scale-y-[1] before:scale-z[1]
-                        before:wil-change-transform hover:before:origin-[100%, 0%]
-                        hover:before:scale-x-[1] hover:before:scale-y-[1]
-                        hover:before:scale-z-[1]`}
+                      className={`text-[12px] tracking-[2px] uppercase mt-6 mr-5 border
+                        border-gray-200 px-4 pt-2 pb-2 rounded-md hover:text-bold hover:text-green-900
+                        hover:border-green-500`}
                     >
+                      {' '}
                       plus d&apos;infos
                     </Link>
-                  </p>
+
+                    <Link
+                      href={project.url}
+                      className={`text-[12px] tracking-[2px] uppercase mt-6 mr-5 border
+                      border-gray-200 px-4 pt-2 pb-2 rounded-md hover:text-bold hover:text-green-900
+                      hover:border-green-500`}
+                      target="_blank"
+                    >
+                      Demo
+                    </Link>
+
+                    <Link
+                      href={project.url}
+                      className={`text-[12px] tracking-[2px] uppercase mt-6 mr-5 border
+                      border-gray-200 px-4 pt-2 pb-2 rounded-md hover:text-bold hover:text-green-900
+                      hover:border-green-500`}
+                      target="_blank"
+                    >
+                      code
+                    </Link>
+                  </div>
                 </div>
+                {/* </div> */}
               </Link>
             </motion.div>
           )
@@ -144,7 +166,7 @@ const Project = ({ className, itemsPerPage, archive = false, params }) => {
         <div className="container mx-auto">
           <BtnCategory contentType="project" />
           <div className="flex">
-            <div className="w-12/12 lg:w-10/12 mx-auto mb-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-4">
+            <div className=" lg:w-10/12 mx-auto mb-20 grid grid-cols-1 md:grid-cols-2 gap-4 px-4">
               <Items currentItems={currentItems} />
             </div>
             <CardCategory

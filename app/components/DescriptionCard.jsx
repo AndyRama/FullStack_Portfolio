@@ -17,6 +17,7 @@ const CardDescription = ({ className, title, subTitle, description }) => {
         "En tant que développeur FullStack JS passionné par le développement web, je me spécialise dans la création d'interfaces utilisateur modernes et performantes.",
         "Avec plus de deux ans d'expérience dans le développement d'applications web sur mesure, j'ai acquis une expertise approfondie qui me permet de transformer leurs idées en solutions web sur mesure, performantes et répondant au mieux à leurs besoins",
         "Avec plus de deux ans d'expérience dans le développement d'applications web sur mesure, j'ai acquis une expertise approfondie qui me permet de transformer leurs idées",
+        "Avec plus de deux ans d'expérience dans le développement d'applications web sur mesure, j'ai acquis une expertise approfondie qui me permet de transformer leurs idées",
       ],
     },
   }
@@ -96,7 +97,7 @@ const CardDescription = ({ className, title, subTitle, description }) => {
               </motion.div>
             </div>
 
-            <div className="lg:w-6/12 text-justify lg:text-base">
+            <div className="lg:w-6/12 text-justify lg:text-base mt-10">
               {cardDescriptionContent.content.descriptions.map(
                 (description, index) => (
                   <motion.p
