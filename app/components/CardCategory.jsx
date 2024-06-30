@@ -8,25 +8,26 @@ import { HiOutlineTemplate } from 'react-icons/hi'
 import { FaShop } from 'react-icons/fa6'
 import { TbBrandNextjs } from 'react-icons/tb'
 import { BiSolidGrid } from 'react-icons/bi'
-import { LuWrench } from 'react-icons/lu'
 import { HiSparkles } from 'react-icons/hi'
 import { GrReactjs } from 'react-icons/gr'
+import { TbDeviceMobileCode } from 'react-icons/tb'
+import { CgWebsite } from 'react-icons/cg'
 
 const iconMappingProject = {
   icon1: (
-    <BiSolidGrid className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
+    <CgWebsite className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
   ),
   icon2: (
-    <TbBrandNextjs className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
+    <HiOutlineTerminal className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
   ),
   icon3: (
-    <LuWrench className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
+    <TbDeviceMobileCode className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
   ),
   icon4: (
     <FaShop className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
   ),
   icon5: (
-    <HiOutlineTerminal className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
+    <BiSolidGrid className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
   ),
   icon6: (
     <HiOutlineTemplate className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
@@ -47,13 +48,13 @@ const CardCategoriesContentProject = {
         href: '/projects',
         label: 'Projets',
       },
-      title2: 'Application web [1]',
-      icon2: 'icon5',
+      title2: 'Appli. web [1]',
+      icon2: 'icon2',
       btn2: {
         href: '/projects/categories/nextjs',
         label: 'NextJs',
       },
-      title3: "Cas d'étude [9]",
+      title3: 'Appli. mob. [0]',
       icon3: 'icon3',
       btn3: {
         href: '/projects/categories/maintenance ',
@@ -65,7 +66,7 @@ const CardCategoriesContentProject = {
         href: '/projects/categories/studientsCases',
         label: "Cas d'etudes",
       },
-      title5: 'Application mob. [0]',
+      title5: "Cas d'étude [9]",
       icon5: 'icon5',
       btn5: {
         href: '/projects/categories/ecommerce',
@@ -92,10 +93,7 @@ const iconMappingBlog = {
     <GrReactjs className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
   ),
   icon4: (
-    <HiSparkles
-      HiOutlineTerminal
-      className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10"
-    />
+    <HiSparkles className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
   ),
   icon5: (
     <HiOutlineTerminal className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />

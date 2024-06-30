@@ -166,7 +166,7 @@ const Project = ({ className, itemsPerPage, archive = false, params }) => {
         <div className="container mx-auto">
           <BtnCategory contentType="project" />
           <div className="flex">
-            <div className=" lg:w-10/12 mx-auto mb-20 grid grid-cols-1 md:grid-cols-2 gap-4 px-4">
+            <div className=" w-12/12 lg:w-10/12 mx-auto mb-20 grid grid-cols-1 md:grid-cols-2 gap-4 px-4">
               <Items currentItems={currentItems} />
             </div>
             <CardCategory
