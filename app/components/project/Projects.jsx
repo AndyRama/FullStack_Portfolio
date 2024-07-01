@@ -5,10 +5,9 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { allProjects } from 'contentlayer/generated'
 import { compareDesc, format, parseISO } from 'date-fns'
+import { motion } from 'framer-motion'
 import CardCategory from './../../components/CardCategory'
 import BtnCategory from './../../components/BtnCategory'
-import { motion } from 'framer-motion'
-import BtnStack from './../../components/project/BtnStack'
 
 const Items = ({ currentItems }) => {
   return (
@@ -40,7 +39,7 @@ const Items = ({ currentItems }) => {
                   alt={project.title}
                   width={1064}
                   height={644}
-                  className="object-cover object-center h-[200px] lg:h-[400px] duration-300
+                  className="object-cover object-center h-[200px] lg:h-[300px] duration-300
                     transition-all ease-in-out group-hover:scale-[1.05] rounded-t-md"
                 />
                 {/* <div className="w-12/12 f"> */}

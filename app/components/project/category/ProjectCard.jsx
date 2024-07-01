@@ -40,7 +40,8 @@ const ProjectCard = ({ project, index }) => {
 
       <div className="p-4 bg-white border border-gray-200 rounded-b-md">
         <p className="text-gray-500 mb-3 uppercase text-[12px] tracking-[1px]">
-          {format(parseISO(project.date), 'LLL d, yyyy')} • {project.client}
+          {format(parseISO(project.date), 'LLL d, yyyy')} •{' '}
+          {project.realisation}
         </p>
         <h3 className="mb-4">
           <Link

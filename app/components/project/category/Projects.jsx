@@ -6,6 +6,8 @@ import Image from 'next/image'
 import { allProjects } from 'contentlayer/generated'
 import { compareDesc, format, parseISO } from 'date-fns'
 import { motion } from 'framer-motion'
+import CardCategory from './../../../components/CardCategory'
+import BtnCategory from './../../../components/BtnCategory'
 
 const Items = ({ currentItems, Project }) => {
   return (
@@ -43,7 +45,7 @@ const Items = ({ currentItems, Project }) => {
                 <div className="p-8">
                   <p className="text-[#2F2E2E] mb-3 uppercase text-[12px] tracking-[1px]">
                     {format(parseISO(project.date), 'LLL d, yyyy')} •{' '}
-                    {project.author}{' '}
+                    {project.realisation} • {project.client}
                   </p>
                   <div className="text-[#2F2E2E] font-bold mb-3 uppercase text-[12px] tracking-[1px]"></div>
 
@@ -60,7 +62,7 @@ const Items = ({ currentItems, Project }) => {
                   </p>
                   <div>
                     <Link
-                      href={`/${project.url}`}
+                      href={project.url}
                       className={` text-gray-500 hover:text-[#2F2E2E] text-[12px] tracking-[2px] uppercase
                         pb-2 inline-block  duration-300 transistion-all ease-in-out relative before:content-['']
                         before:absolute before:bottom-0 before:left-0 before:w-full
@@ -71,9 +73,8 @@ const Items = ({ currentItems, Project }) => {
                         hover:before:scale-x-[1] hover:before:scale-y-[1]
                         hover:before:scale-z-[1]`}
                     >
-                      lire l&apos;article
+                      Plus d&apos;informations
                     </Link>
-                    <span className="text-orange-400 ml-20">Lecture 5 min</span>
                   </div>
                 </div>
               </Link>
@@ -145,10 +146,15 @@ const Projects = ({ className, itemsPerPage, archive = false, params }) => {
   return (
     <section className={`${className}`} ref={ref}>
       <div className="container mx-auto mt-10 w-auto">
+        <BtnCategory contentType="project" />
         <div className="flex">
           <div className="w-12/12 lg:w-10/12 mx-auto grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 px-4">
             <Items currentItems={currentItems} />
           </div>
+          <CardCategory
+            contentType="project"
+            className="hidden xl:contents ml-20"
+          />
         </div>
       </div>
     </section>
