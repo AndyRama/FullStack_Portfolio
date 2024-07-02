@@ -55,7 +55,7 @@ const SubHero = ({ className, title, subTitle, description, image }) => {
                 whileInView={{
                   opacity: 1,
                   y: 0,
-                  transition: { delay: 0.03, duration: 0.5 },
+                  transition: { delay: 0.02, duration: 0.5 },
                 }}
                 viewport={{ once: true }}
                 className="uppercase tracking-[3px] text-[18px]
@@ -72,7 +72,7 @@ const SubHero = ({ className, title, subTitle, description, image }) => {
                 whileInView={{
                   opacity: 1,
                   y: 0,
-                  transition: { delay: 0.06, duration: 0.5 },
+                  transition: { delay: 0.02, duration: 0.5 },
                 }}
                 viewport={{ once: true }}
                 className="text-4xl md:text-5xl xl:text-7xl text-[#2F2E2E] mb-10"
