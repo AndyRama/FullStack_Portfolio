@@ -121,7 +121,6 @@ const Hero = ({ className }) => {
               </motion.div>
             )}
           </div>
-
           {/* Image right */}
           <div className="lg:w-12/12 relative lg:-mt-140 mb-8 ">
             <motion.div

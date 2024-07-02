@@ -7,6 +7,7 @@ import Client from './components/Client'
 import Subscribe from './components/Subscribe'
 import Testimonials from './components/Testimonials'
 import DescriptionCard from './components/DescriptionCard'
+import AnimatedBanner from './components/AnimatedBanner'
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       <PricingDetails />
       <RecentBlog className="pt-14 pb-15 " />
       <Subscribe className="py-16 lg:py-32 " />
+      <AnimatedBanner />
     </>
   )
 }
