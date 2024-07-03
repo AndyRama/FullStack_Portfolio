@@ -45,7 +45,7 @@ const Items = ({ currentItems }) => {
                   transition-all ease-in-out group-hover:scale-[1.05] rounded-t-md"
                 />
 
-                <div className="p-4">
+                <div className="p-8">
                   <p className="text-[#2F2E2E] mb-3 uppercase text-[12px] tracking-[2px]">
                     {format(parseISO(project.date), 'LLL d, yyyy')} •{' '}
                     {project.realisation}
@@ -53,7 +53,7 @@ const Items = ({ currentItems }) => {
                   <h3>
                     <Link
                       href={project.url}
-                      className="text-lg leading-none mb-3"
+                      className="text-lg leading-none mb-4"
                     >
                       {project.title}
                     </Link>

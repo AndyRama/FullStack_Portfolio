@@ -45,7 +45,16 @@ const ProjectContent = ({ project }) => {
               <span>{format(parseISO(project.date), 'LLL d, yyyy')}</span>
               <span>•</span>
 
-              <span>{project.stack}</span>
+              {project.categories?.map((category, index) => (
+                <Link
+                  href={`/project/categories/${slugify(category.title)}`}
+                  key={category.title}
+                  className="font-medium"
+                >
+                  {category.title}
+                  {index < project.categories.length - 1 ? ` | ` : ``}
+                </Link>
+              ))}
 
               <span>•</span>
 
@@ -98,14 +107,14 @@ const ProjectContent = ({ project }) => {
               </div>
 
               {/* Content Role */}
-              <div
+              {/* <div
                 className="border-l border-gray-200 relative pl-3 before:content-['']
                 before:top-0 before:-left-[1px] before:absolute before:h-7 before:w-[1px]
                 before:bg-orange-600"
               >
                 <span className="block text-gray-400">Durée</span>
                 <span>{project.duration}</span>
-              </div>
+              </div> */}
             </div>
           </div>
           {/* Content Article */}
