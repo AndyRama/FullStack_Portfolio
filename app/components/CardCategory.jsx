@@ -18,18 +18,15 @@ const iconMappingProject = {
     <CgWebsite className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
   ),
   icon2: (
-    <HiOutlineTerminal className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
-  ),
-  icon3: (
     <TbDeviceMobileCode className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
   ),
-  icon4: (
+  icon3: (
     <FaShop className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
   ),
-  icon5: (
+  icon4: (
     <BiSolidGrid className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
   ),
-  icon6: (
+  icon5: (
     <HiOutlineTemplate className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
   ),
 }
@@ -45,38 +42,32 @@ const CardCategoriesContentProject = {
       title1: 'Site vitrine [3]',
       icon1: 'icon1',
       btn1: {
-        href: '/projects',
-        label: 'Projets',
+        href: '/projects/categories/vitrine/#projects',
+        label: 'Vitrine',
       },
-      title2: 'Appli. web [1]',
+      title2: 'Appli. mob. [0]',
       icon2: 'icon2',
       btn2: {
-        href: '/projects/categories/nextjs/#projects',
-        label: 'NextJs',
+        href: '/projects/categories/application-mobile/#projects ',
+        label: 'Application mobile',
       },
-      title3: 'Appli. mob. [0]',
+      title3: 'E-commerce [1]',
       icon3: 'icon3',
       btn3: {
-        href: '/projects/categories/maintenance/#projects ',
-        label: 'Maintenance ',
-      },
-      title4: 'E-commerce [1]',
-      icon4: 'icon4',
-      btn4: {
-        href: '/projects/categories/studientsCases/#projects',
-        label: "Cas d'etudes",
-      },
-      title5: "Cas d'étude [9]",
-      icon5: 'icon5',
-      btn5: {
         href: '/projects/categories/ecommerce/#projects',
         label: 'E-commerce',
       },
-      title6: 'Webflow [1]',
-      icon6: 'icon6',
-      btn6: {
-        href: '/projects/categories/webflow/#projects',
-        label: 'Webflow',
+      title4: "Cas d'étude [9]",
+      icon4: 'icon4',
+      btn4: {
+        href: '/projects/categories/studientsCases/#projects',
+        label: "Cas d'étude",
+      },
+      title5: 'Nocode [1]',
+      icon5: 'icon5',
+      btn5: {
+        href: '/projects/categories/no-code/#projects',
+        label: 'No code',
       },
     },
   ],
@@ -159,7 +150,7 @@ const CardCategory = ({ className, contentType }) => {
     : CardCategoriesContentBlog
 
   return (
-    <section className={className}>
+    <section id="projects" className={className}>
       <div className="w-auto contents">
         {CardCategoriesContent.step.map((step, index) => (
           <motion.div
@@ -177,7 +168,7 @@ const CardCategory = ({ className, contentType }) => {
             whileHover={{ y: -10, transition: 0.1 }}
             className=" bg-white border border-gray-200 relative overflow-hidden hover:shadow-2xl rounded-md h-[365px] w-[250px] mr-3"
           >
-            <div className="px-4 lg:mt-5 mt-8 relative flex flex-col gap-2 items-start ">
+            <div className="px-8 mt-10 relative flex flex-col gap-4 items-start ">
               <span className="text-2xl flex">
                 <h2
                   data-testid="categories-title"
@@ -190,7 +181,7 @@ const CardCategory = ({ className, contentType }) => {
                 {step.description}
               </p>
 
-              {['title1', 'title2', 'title3', 'title4', 'title5', 'title6'].map(
+              {['title1', 'title2', 'title3', 'title4', 'title5'].map(
                 (titleKey, idx) => (
                   <div key={idx}>
                     <Link href={step[`btn${idx + 1}`].href}>

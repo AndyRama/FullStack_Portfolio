@@ -18,18 +18,15 @@ const iconMappingProject = {
     <CgWebsite className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
   ),
   icon2: (
-    <HiOutlineTerminal className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
-  ),
-  icon3: (
     <TbDeviceMobileCode className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
   ),
-  icon4: (
+  icon3: (
     <FaShop className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
   ),
-  icon5: (
+  icon4: (
     <BiSolidGrid className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
   ),
-  icon6: (
+  icon5: (
     <HiOutlineTemplate className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
   ),
 }
@@ -45,38 +42,32 @@ const BtnCategoriesContentProject = {
       title1: 'Site vitrine',
       icon1: 'icon1',
       btn1: {
-        href: '/projects',
-        label: 'Projets',
+        href: '/projects/categories/vitrine/#projects-min',
+        label: 'Vitrine',
       },
-      title2: 'Appli. web',
+      title2: 'Appli. mob. [0]',
       icon2: 'icon2',
       btn2: {
-        href: '/projects/categories/nextjs',
-        label: 'NextJs',
+        href: '/projects/categories/application-mobile/#projects-min',
+        label: 'Appli. mobile',
       },
-      title3: 'Appli. mobile',
+      title3: 'E-commerce',
       icon3: 'icon3',
       btn3: {
-        href: '/projects/categories/maintenance',
-        label: 'Maintenance',
+        href: '/projects/categories//ecommerce/#projects-min',
+        label: 'E-commerce',
       },
-      title4: 'E-commerce',
+      title4: "Cas d'étude ",
       icon4: 'icon4',
       btn4: {
-        href: '/projects/categories/studientsCases',
-        label: "Cas d'études",
+        href: '/projects/categories/studientsCases/#projects-min',
+        label: "Cas d'étude ",
       },
-      title5: "Cas d'étude ",
+      title5: 'No code',
       icon5: 'icon5',
       btn5: {
-        href: '/projects/categories/mobile',
-        label: 'Application mob.',
-      },
-      title6: 'Webflow',
-      icon6: 'icon6',
-      btn6: {
-        href: '/projects/categories/webflow',
-        label: 'Webflow',
+        href: '/projects/categories/no-code/#projects-min',
+        label: 'No code',
       },
     },
   ],
@@ -159,7 +150,7 @@ const BtnCategory = ({ className, contentType }) => {
     : BtnCategoriesContentBlog
 
   return (
-    <section className={className}>
+    <section className={className} id="projects-min">
       <div className="table mx-auto xl:hidden items-center justify-center">
         {BtnCategoriesContent.step.map((step, index) => (
           <motion.div
@@ -178,7 +169,7 @@ const BtnCategory = ({ className, contentType }) => {
             className=" bg-white relative rounded-md"
           >
             <div className="pb-10 grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-4 lg:gap-8 ">
-              {['title1', 'title2', 'title3', 'title4', 'title5', 'title6'].map(
+              {['title1', 'title2', 'title3', 'title4', 'title5'].map(
                 (titleKey, idx) => (
                   <div key={idx}>
                     <Link href={step[`btn${idx + 1}`].href}>

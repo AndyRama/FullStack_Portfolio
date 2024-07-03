@@ -67,7 +67,7 @@ const Items = ({ currentItems }) => {
               <div className="flex flex-row px-4 pb-6">
                 <Link
                   href={project.url}
-                  className={`text-[12px] tracking-[2px] uppercase mt-6 mr-5 border
+                  className={`text-[12px] tracking-[2px] uppercase mt-6 md:px-2 mr-5 border
                         border-gray-200 px-4 pt-2 pb-2 rounded-md hover:text-bold hover:text-green-900
                         hover:border-green-500`}
                 >
@@ -76,7 +76,7 @@ const Items = ({ currentItems }) => {
 
                 <Link
                   href={production}
-                  className={`text-[12px] tracking-[2px] uppercase flex mt-6 mr-5 border
+                  className={`text-[10px] tracking-[2px] uppercase flex mt-6 md:px-2 mr-5 border
                           border-gray-200 px-4 pt-2 pb-2 rounded-md hover:text-bold hover:text-green-900
                           hover:border-green-500`}
                   target="_blank"
@@ -87,7 +87,7 @@ const Items = ({ currentItems }) => {
                 <Link
                   href={repository}
                   target="_blank"
-                  className={`text-[12px] tracking-[2px] uppercase flex mt-6 mr-5 border
+                  className={`text-[10px] tracking-[2px] uppercase flex mt-6 md:px-2 mr-5 border
                         border-gray-200 px-4 pt-2 pb-0 rounded-md hover:text-bold hover:text-green-900
                         hover:border-green-500`}
                 >
@@ -161,7 +161,7 @@ const Project = ({ className, itemsPerPage, archive = false, params }) => {
 
   return (
     <>
-      <section className={`${className}`} ref={ref} id="projects">
+      <section className={`${className}`} ref={ref}>
         <div className="container mx-auto">
           <BtnCategory contentType="project" />
           <div className="flex">
