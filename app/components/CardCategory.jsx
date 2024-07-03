@@ -42,7 +42,7 @@ const CardCategoriesContentProject = {
       title1: 'Site vitrine [3]',
       icon1: 'icon1',
       btn1: {
-        href: '/projects/categories/vitrine/#projects',
+        href: '/projects/#projects',
         label: 'Vitrine',
       },
       title2: 'Appli. mob. [0]',
