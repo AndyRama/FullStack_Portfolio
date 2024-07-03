@@ -15,6 +15,8 @@ const Items = ({ currentItems }) => {
       {currentItems &&
         currentItems.map((project, index) => {
           index *= 0.05
+          const production = `${project.herb}`
+          const repository = `${project.github}`
           return (
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -40,10 +42,10 @@ const Items = ({ currentItems }) => {
                   width={1064}
                   height={644}
                   className="object-cover object-center h-[200px] lg:h-[300px] duration-300
-                    transition-all ease-in-out group-hover:scale-[1.05] rounded-t-md"
+                  transition-all ease-in-out group-hover:scale-[1.05] rounded-t-md"
                 />
 
-                <div className="p-4  ">
+                <div className="p-4">
                   <p className="text-gray-500 mb-3 uppercase text-[12px] tracking-[1px]">
                     {format(parseISO(project.date), 'LLL d, yyyy')} •{' '}
                     {project.realisation}
@@ -59,40 +61,39 @@ const Items = ({ currentItems }) => {
                   <p className="text-gray-500 text-[12px] tracking-[1px]">
                     {project.description}
                   </p>
-
-                  <div className="flex flex-row">
-                    <Link
-                      href={project.url}
-                      className={`text-[12px] tracking-[2px] uppercase mt-6 mr-5 border
-                        border-gray-200 px-4 pt-2 pb-2 rounded-md hover:text-bold hover:text-green-900
-                        hover:border-green-500`}
-                    >
-                      plus d&apos;infos
-                    </Link>
-
-                    <Link
-                      href={`${project.herb}`} // localhost:3000/
-                      className={`text-[12px] tracking-[2px] uppercase mt-6 mr-5 border
-                      border-gray-200 px-4 pt-2 pb-2 rounded-md hover:text-bold hover:text-green-900
-                      hover:border-green-500`}
-                      target="_blank"
-                    >
-                      Demo
-                    </Link>
-
-                    <Link
-                      href={`${project.github}`}
-                      // href={`/${urlWithoutBlog}`}
-                      className={`text-[12px] tracking-[2px] uppercase mt-6 mr-5 border
-                      border-gray-200 px-4 pt-2 pb-2 rounded-md hover:text-bold hover:text-green-900
-                      hover:border-green-500`}
-                      target="_blank"
-                    >
-                      Code
-                    </Link>
-                  </div>
                 </div>
               </Link>
+
+              <div className="flex flex-row px-4 pb-6">
+                <Link
+                  href={project.url}
+                  className={`text-[12px] tracking-[2px] uppercase mt-6 mr-5 border
+                        border-gray-200 px-4 pt-2 pb-2 rounded-md hover:text-bold hover:text-green-900
+                        hover:border-green-500`}
+                >
+                  plus d&apos;infos
+                </Link>
+
+                <Link
+                  href={production}
+                  className={`text-[12px] tracking-[2px] uppercase flex mt-6 mr-5 border
+                          border-gray-200 px-4 pt-2 pb-2 rounded-md hover:text-bold hover:text-green-900
+                          hover:border-green-500`}
+                  target="_blank"
+                >
+                  Demo
+                </Link>
+
+                <Link
+                  href={repository}
+                  target="_blank"
+                  className={`text-[12px] tracking-[2px] uppercase flex mt-6 mr-5 border
+                        border-gray-200 px-4 pt-2 pb-0 rounded-md hover:text-bold hover:text-green-900
+                        hover:border-green-500`}
+                >
+                  Code
+                </Link>
+              </div>
             </motion.div>
           )
         })}

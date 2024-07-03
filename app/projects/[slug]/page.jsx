@@ -18,6 +18,7 @@ const ProjectLayout = ({ params }) => {
   const project = allProjects.find(
     (project) => project._raw.flattenedPath === 'projects/' + params.slug,
   )
+
   return (
     <>
       <ProjectContent project={project} />
