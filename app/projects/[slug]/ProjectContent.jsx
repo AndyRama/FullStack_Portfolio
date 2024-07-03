@@ -9,6 +9,13 @@ import { motion } from 'framer-motion'
 import { getMDXComponent } from 'next-contentlayer/hooks'
 import RecentBlog from '@/app/components/project/RecentBlog'
 
+function slugify(str) {
+  return str
+    .toLowerCase()
+    .replace(/[^a-z0-9 -]/g, '')
+    .replace(/\s+/g, '-')
+    .replace(/-+/g, '-')
+}
 const ProjectContent = ({ project }) => {
   const projects = allProjects.sort((a, b) =>
     compareDesc(new Date(a.date), new Date(b.date)),
