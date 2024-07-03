@@ -46,7 +46,7 @@ const Items = ({ currentItems }) => {
                 />
 
                 <div className="p-4">
-                  <p className="text-gray-500 mb-3 uppercase text-[12px] tracking-[1px]">
+                  <p className="text-gray-500 mb-3 uppercase text-[12px] tracking-[2px]">
                     {format(parseISO(project.date), 'LLL d, yyyy')} •{' '}
                     {project.realisation}
                   </p>
@@ -58,7 +58,7 @@ const Items = ({ currentItems }) => {
                       {project.title}
                     </Link>
                   </h3>
-                  <p className="text-gray-500 text-[12px] tracking-[1px]">
+                  <p className="text-gray-500 text-[12px] tracking-[2px]">
                     {project.description}
                   </p>
                 </div>
@@ -67,7 +67,7 @@ const Items = ({ currentItems }) => {
               <div className="flex flex-row px-4 pb-6">
                 <Link
                   href={project.url}
-                  className={`text-[12px] tracking-[2px] uppercase mt-6 md:px-2 mr-5 border
+                  className={`text-[12px] tracking-[2px] uppercase mt-6 md:px-2 mr-2 border
                         border-gray-200 px-4 pt-2 pb-2 rounded-md hover:text-bold hover:text-green-900
                         hover:border-green-500`}
                 >
@@ -76,7 +76,7 @@ const Items = ({ currentItems }) => {
 
                 <Link
                   href={production}
-                  className={`text-[10px] tracking-[2px] uppercase flex mt-6 md:px-2 mr-5 border
+                  className={`text-[12px] tracking-[2px] uppercase flex mt-6 md:px-2 mr-2 border
                           border-gray-200 px-4 pt-2 pb-2 rounded-md hover:text-bold hover:text-green-900
                           hover:border-green-500`}
                   target="_blank"
@@ -87,7 +87,7 @@ const Items = ({ currentItems }) => {
                 <Link
                   href={repository}
                   target="_blank"
-                  className={`text-[10px] tracking-[2px] uppercase flex mt-6 md:px-2 mr-5 border
+                  className={`text-[12px] tracking-[2px] uppercase flex mt-6 md:px-2 mr-2 border
                         border-gray-200 px-4 pt-2 pb-0 rounded-md hover:text-bold hover:text-green-900
                         hover:border-green-500`}
                 >
@@ -165,7 +165,7 @@ const Project = ({ className, itemsPerPage, archive = false, params }) => {
         <div className="container mx-auto">
           <BtnCategory contentType="project" />
           <div className="flex">
-            <div className=" w-12/12 lg:w-10/12 mx-auto mb-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-4">
+            <div className=" w-12/12 lg:w-10/12 mx-auto mb-20 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 px-4">
               <Items currentItems={currentItems} />
             </div>
             <CardCategory

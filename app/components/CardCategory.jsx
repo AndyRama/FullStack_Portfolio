@@ -102,11 +102,11 @@ const CardCategoriesContentBlog = {
   },
   step: [
     {
-      title1: 'Tous les articles [7]',
+      title1: 'Articles [7]',
       icon1: 'icon1',
       btn1: {
         href: '/blog',
-        label: 'Tous les articles',
+        label: 'Articles',
       },
       title2: 'NextJs [2]',
       icon2: 'icon2',
@@ -120,13 +120,13 @@ const CardCategoriesContentBlog = {
         href: '/blog/categories/react',
         label: 'React',
       },
-      title4: 'Inteligence Art. [1]',
+      title4: 'Intel. Art. [1]',
       icon4: 'icon4',
       btn4: {
         href: '/blog/categories/inteligence',
         label: 'Inteligence Art.',
       },
-      title5: 'Dévelop. Web [0]',
+      title5: 'Dév. Web [0]',
       icon5: 'icon5',
       btn5: {
         href: '/blog/categories/developpement',

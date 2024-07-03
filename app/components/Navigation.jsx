@@ -71,7 +71,7 @@ export default function Navigation() {
               className="flex flex-row text-2xl md:text-3xl text-[#2F2E2E] font-bold "
             >
               {/* Logo - content left*/}
-              <span className="my-[-10px] mx-3 hidden sm:flex">
+              <span className="my-[-10px] mx-3 flex">
                 <Image
                   src={IconLogo}
                   weight={60}

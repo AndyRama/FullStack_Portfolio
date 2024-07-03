@@ -38,7 +38,7 @@ const ProjectCard = ({ project, index }) => {
       </Link>
 
       <div className="p-8">
-        <p className="text-gray-500 mb-3 uppercase text-[12px] tracking-[1px]">
+        <p className="text-gray-500 mb-3 uppercase text-[12px] tracking-[2px]">
           {format(parseISO(project.date), 'LLL d, yyyy')} • {project.author}
         </p>
         <h3 className="mb-4">
@@ -52,7 +52,7 @@ const ProjectCard = ({ project, index }) => {
             className="uppercase text-[12px] tracking-[2px] border-b-2
             pb-2 inline-block border-orange-600"
           >
-            Read More
+            Plus d&apos;informations
           </Link>
         </p>
       </div>
@@ -61,5 +61,3 @@ const ProjectCard = ({ project, index }) => {
 }
 
 export default ProjectCard
-
-// ok
