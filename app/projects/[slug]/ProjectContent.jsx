@@ -54,7 +54,7 @@ const ProjectContent = ({ project }) => {
 
               {project.categories?.map((category, index) => (
                 <Link
-                  href={`/project/categories/${slugify(category.title)}`}
+                  href={`/projects/categories/${slugify(category.title)}`}
                   key={category.title}
                   className="font-medium"
                 >
