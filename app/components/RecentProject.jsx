@@ -286,8 +286,8 @@ const RecentProject = ({ className }) => {
                 href={recentProjectContent.btn.href}
                 className="transistion-all duration-300 ease-in-out text-[11.5px]
                       tracking-[2px] font-bold uppercase bg-orange-400 py-4 px-3
-                      rounded text-white inline-block items-end hover:bg-white hover:text-orange-400
-                      hover:shadow-1xl h-12"
+                      rounded text-white inline-block items-end hover:bg-white 
+                      hover:shadow-2xl h-12"
               >
                 {recentProjectContent.btn.label}
               </Link>

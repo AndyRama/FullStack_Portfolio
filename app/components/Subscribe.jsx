@@ -125,7 +125,7 @@ const Subscribe = ({ className }) => {
               target="_blank"
               className="transistion-all duration-300 ease-in-out text-[11.5px] md:tracking-[2px] font-bold uppercase 
               bg-gradient-to-r from-orange-500 to-orange-800 py-4 px-5 rounded text-white hover:bg-white
-               hover:text-black hover:shadow-2xl mb-5 mr-5 inline-block w-[300px] text-center"
+              hover:shadow-2xl mb-5 mr-5 inline-block w-[300px] text-center"
             >
               {subscribeContent.heading.btn.label}
             </Link>

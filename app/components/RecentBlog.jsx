@@ -165,7 +165,7 @@ const RecentBlog = ({ className }) => {
             href="/blog"
             className="transistion-all duration-300 ease-in-out text-[11.5px]
           tracking-[2px] font-bold uppercase bg-gradient-to-r from-orange-500 to-orange-800 py-4 px-3
-          rounded text-white inline-block items-start hover:bg-white hover:text-orange-400
+          rounded text-white inline-block items-start hover:bg-white hover:shadow-2xl 
           hover:shadow-1xl h-12  "
           >
             Voir tous les articles

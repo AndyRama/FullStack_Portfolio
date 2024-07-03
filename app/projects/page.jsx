@@ -2,7 +2,6 @@ import React from 'react'
 import SubHero from '../components/project/SubHero'
 import Projects from '../components/project/Projects'
 import Subscribe from '../components/Subscribe'
-// import AnimatedBanner from '../components/AnimatedBanner'
 
 export const metadata = {
   title: 'Projects - Andy Ramaroson',
@@ -20,9 +19,8 @@ const page = () => {
         esthétiquement plaisantes."
       />
 
-      <Projects className="pt-10 pb-32" itemsPerPage={50} />
+      <Projects className="pt-10 pb-22" itemsPerPage={50} />
       <Subscribe className="py-16 lg:py-32" />
-      {/* <AnimatedBanner /> */}
     </>
   )
 }
