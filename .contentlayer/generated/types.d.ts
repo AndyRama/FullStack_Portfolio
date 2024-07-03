@@ -33,11 +33,11 @@ export type Post = {
   excerpt: string
   /** the date of the post  */
   date: IsoDateTimeString
-  /** the  featured image of the post  */
+  /** the featured image of the post  */
   image: string
-  /** the  author image of the post  */
+  /** the author image of the post  */
   author: string
-  /** the  categories image of the post  */
+  /** the categories image of the post  */
   categories: Category[]
   /** MDX file body */
   body: MDX
@@ -65,11 +65,15 @@ export type Project = {
   duration?: string | undefined
   /** The type of the project realised */
   realisation?: string | undefined
-  /** the  description content of the project  */
+  /** the description content of the project  */
   description: string
-  /** the  categories image of the project */
+  /** the url of the project  */
+  herb: string
+  /** the code content of the project  */
+  github: string
+  /** the categories image of the project */
   categories: Category[]
-  /** the  stack of the project */
+  /** the stack of the project */
   stacks: Stack[]
   /** MDX file body */
   body: MDX

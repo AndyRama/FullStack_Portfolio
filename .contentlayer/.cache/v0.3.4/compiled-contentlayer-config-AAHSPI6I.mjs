@@ -26,18 +26,18 @@ var Post = defineDocumentType(() => ({
     },
     image: {
       type: "string",
-      description: "the  featured image of the post ",
+      description: "the featured image of the post ",
       required: true
     },
     author: {
       type: "string",
-      description: "the  author image of the post ",
+      description: "the author image of the post ",
       required: true
     },
     categories: {
       type: "list",
       of: Category,
-      description: "the  categories image of the post ",
+      description: "the categories image of the post ",
       required: true
     }
   },
@@ -95,19 +95,29 @@ var Project = defineDocumentType(() => ({
     },
     description: {
       type: "string",
-      description: "the  description content of the project ",
+      description: "the description content of the project ",
+      required: true
+    },
+    herb: {
+      type: "string",
+      description: "the url of the project ",
+      required: true
+    },
+    github: {
+      type: "string",
+      description: "the code content of the project ",
       required: true
     },
     categories: {
       type: "list",
       of: Category,
-      description: "the  categories image of the project",
+      description: "the categories image of the project",
       required: true
     },
     stacks: {
       type: "list",
       of: Stack,
-      description: "the  stack of the project",
+      description: "the stack of the project",
       required: true
     }
   },
@@ -168,4 +178,4 @@ var contentlayer_config_default = makeSource({
 export {
   contentlayer_config_default as default
 };
-//# sourceMappingURL=compiled-contentlayer-config-XK7F6P26.mjs.map
+//# sourceMappingURL=compiled-contentlayer-config-AAHSPI6I.mjs.map

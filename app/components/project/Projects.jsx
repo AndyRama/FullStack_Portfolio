@@ -42,7 +42,7 @@ const Items = ({ currentItems }) => {
                   className="object-cover object-center h-[200px] lg:h-[300px] duration-300
                     transition-all ease-in-out group-hover:scale-[1.05] rounded-t-md"
                 />
-                {/* <div className="w-12/12 f"> */}
+
                 <div className="p-4  ">
                   <p className="text-gray-500 mb-3 uppercase text-[12px] tracking-[1px]">
                     {format(parseISO(project.date), 'LLL d, yyyy')} •{' '}
@@ -67,12 +67,11 @@ const Items = ({ currentItems }) => {
                         border-gray-200 px-4 pt-2 pb-2 rounded-md hover:text-bold hover:text-green-900
                         hover:border-green-500`}
                     >
-                      {' '}
                       plus d&apos;infos
                     </Link>
 
                     <Link
-                      href={project.url}
+                      href={`${project.herb}`} // localhost:3000/
                       className={`text-[12px] tracking-[2px] uppercase mt-6 mr-5 border
                       border-gray-200 px-4 pt-2 pb-2 rounded-md hover:text-bold hover:text-green-900
                       hover:border-green-500`}
@@ -82,17 +81,17 @@ const Items = ({ currentItems }) => {
                     </Link>
 
                     <Link
-                      href={project.url}
+                      href={`${project.github}`}
+                      // href={`/${urlWithoutBlog}`}
                       className={`text-[12px] tracking-[2px] uppercase mt-6 mr-5 border
                       border-gray-200 px-4 pt-2 pb-2 rounded-md hover:text-bold hover:text-green-900
                       hover:border-green-500`}
                       target="_blank"
                     >
-                      code
+                      Code
                     </Link>
                   </div>
                 </div>
-                {/* </div> */}
               </Link>
             </motion.div>
           )
