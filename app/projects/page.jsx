@@ -2,6 +2,7 @@ import React from 'react'
 import SubHero from '../components/project/SubHero'
 import Projects from '../components/project/Projects'
 import Subscribe from '../components/Subscribe'
+import AnimatedBanner from '../components/AnimatedBanner'
 
 export const metadata = {
   title: 'Projects - Andy Ramaroson',
@@ -10,6 +11,7 @@ export const metadata = {
 const page = () => {
   return (
     <>
+      <AnimatedBanner />
       <SubHero
         className="pt-32 lg:mb-22 xl:mb-32 "
         subTitle="Projets réalisés"

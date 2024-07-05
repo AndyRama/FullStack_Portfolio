@@ -8,7 +8,7 @@ const AnimatedBanner = () => {
 
   useEffect(() => {
     setIsVisible(true)
-    const timer = setTimeout(() => setIsVisible(false), 500)
+    const timer = setTimeout(() => setIsVisible(false), 1000)
     return () => clearTimeout(timer)
   }, [])
 
@@ -21,7 +21,7 @@ const AnimatedBanner = () => {
           x: isVisible ? 0 : '-99%',
           opacity: isVisible ? 1 : 0,
         }}
-        transition={{ duration: 0.2, ease: 'easeInOut' }}
+        transition={{ duration: 0.3, ease: 'easeInOut' }}
         style={{
           padding: '80vh',
           position: 'fixed',
