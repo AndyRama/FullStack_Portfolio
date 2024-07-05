@@ -9,8 +9,8 @@ import Image from 'next/image'
 
 const recentProjectContent = {
   heading: {
-    title: 'Articles récents',
-    subTitle: 'Mon blog',
+    title: 'Project récents',
+    subTitle: 'Mes réalisations',
     description: '',
   },
 }
@@ -69,7 +69,7 @@ const ProjectCard = ({ index, project }) => {
             hover:before:scale-x-[1] hover:before:scale-y-[1]
             hover:before:scale-z-[1] pb-2"
           >
-            lire l&apos;article
+            lire plus dl&apos;informations
           </Link>
         </div>
       </div>
