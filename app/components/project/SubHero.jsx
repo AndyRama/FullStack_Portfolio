@@ -9,30 +9,12 @@ const subHeroContent = {
     subTitle: '',
     title: '',
     description: '',
-    image: '/images/Team.jpg',
   },
 }
 const SubHero = ({ className, title, subTitle, description, image }) => {
-  if (title) {
-    title = title
-  } else {
-    title = subHeroContent.heading.title
-  }
-  if (subTitle) {
-    subTitle = subTitle
-  } else {
-    subTitle = subHeroContent.heading.subTitle
-  }
-  if (description) {
-    description = description
-  } else {
-    description = subHeroContent.heading.description
-  }
-  if (image) {
-    image = image
-  } else {
-    image = subHeroContent.heading.image
-  }
+  title = title || subHeroContent.heading.title
+  subTitle = subTitle || subHeroContent.heading.subTitle
+  description = description || subHeroContent.heading.description
 
   const ref = useRef(null)
 
@@ -48,7 +30,7 @@ const SubHero = ({ className, title, subTitle, description, image }) => {
       <div className="container mx-auto px-4">
         <div className="lg:flex lg:w-12/12 mx-auto ">
           {/* Content center - subtitle */}
-          <div className="lg:max-w-4xl mx-auto mt-[75px] mb-10">
+          <div className="lg:max-w-3xl mx-auto mt-[75px] mb-10">
             {subTitle && (
               <motion.span
                 initial={{ opacity: 0, y: 20 }}
@@ -114,12 +96,9 @@ const SubHero = ({ className, title, subTitle, description, image }) => {
               style={{ y: imgScroll1 }}
               className="z-[2] relative bg-cover bg-center"
             >
-              <Image
-                src={subHeroContent.heading.image}
-                width={700}
-                height={985}
-                alt="hero image desktop"
-              />
+              {image && (
+                <Image src={image} width={700} height={985} alt="hero image" />
+              )}
             </motion.div>
           </div>
         </div>

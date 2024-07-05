@@ -1,5 +1,4 @@
 'use client'
-
 import React, { useRef } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -10,7 +9,7 @@ const heroContent = {
     subTitle: '',
     title: 'Bienvenue',
     description:
-      'Je suis Andy Ramaroson, un développeur FullStack JS basé à Bordeaux (N. Aquitaine, 33) et je réalise des applications sur mesure en me basant sur des technologies web modernes et I.A. Je suis spécialisé dans le langage JavaScript avec le framework React & NextJs.',
+      'Je suis Andy Ramaroson, un développeur FullStack JS basée sur Bordeaux (N. Aquitaine, 33) et je réalise des applications sur mesure en me basant sur des technologies web modernes et I.A. Je suis spécialisé sur le langage  JavaScript avec le framework React & NextJs.',
     btn1: {
       href: '/projects',
       label: 'Projets',
@@ -32,7 +31,7 @@ const Hero = ({ className }) => {
   const imgScroll1 = useTransform(scrollYProgress, [0, 1], ['20%', '-20%'])
 
   return (
-    <section className={`${className}`} ref={ref}>
+    <section className={`${className}`}>
       <div className="container px-4 mx-auto">
         <div className="lg:flex ">
           {/* Content left - subtitle */}
@@ -102,7 +101,7 @@ const Hero = ({ className }) => {
                 {/* Content left - btn - calendly */}
                 <Link
                   href={heroContent.intro.btn.href}
-                  className="transition-all duration-300 ease-in-out text-[11.5px]
+                  className="transistion-all duration-300 ease-in-out text-[11.5px]
                   md:tracking-[2px] font-bold uppercase bg-gradient-to-r from-orange-500 to-orange-800 py-4 px-5
                   rounded text-white inline-block hover:bg-white 
                   hover:shadow-2xl mb-5 mr-5"
@@ -112,7 +111,7 @@ const Hero = ({ className }) => {
                 {/* Content left - btn - projects */}
                 <Link
                   href={heroContent.intro.btn1.href}
-                  className="transition-all duration-300 ease-in-out text-[11.5px]
+                  className="transistion-all duration-300 ease-in-out text-[11.5px]
                   md:tracking-[2px] font-bold uppercase bg-gradient-to-r from-orange-500 to-orange-800 py-4 px-5
                   rounded text-white hover:bg-white 
                   hover:shadow-2xl mb-5 mr-5 inline-block"
@@ -130,31 +129,22 @@ const Hero = ({ className }) => {
                 opacity: 1,
                 x: 0,
                 transition: {
-                  delay: 0.4,
+                  delai: 0.4,
                   duration: 0.5,
                 },
               }}
               viewport={{ once: true }}
               style={{ y: imgScroll1 }}
               className="z-[2] relative bg-cover bg-center"
-            ></motion.div>
-            <motion.image
-              initial={{ opacity: 0, x: 200 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{
-                type: 'spring',
-                stiffness: 100,
-                damping: 10,
-                delay: 1.2,
-                duration: 0.4,
-              }}
-              src="/images/desktop1.jpg"
-              width={900}
-              height={1024}
-              className="rounded-md"
-              alt="hero image desktop"
             >
-            </motion.image>
+              <Image
+                src="/images/desktop1.jpg"
+                width={900}
+                height={1024}
+                className=" rounded-md"
+                alt="hero image desktop"
+              />
+            </motion.div>
           </div>
         </div>
       </div>
