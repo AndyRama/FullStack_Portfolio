@@ -1,6 +1,6 @@
 import React from 'react'
 import SubHero from '../components/project/SubHero'
-// import Projects from '../components/project/Projects'
+import Projects from '../components/project/Projects'
 import Subscribe from '../components/Subscribe'
 import ProjectBanner from '../components/project/ProjectBanner'
 import ProjectBannerR from '../components/project/ProjectBannerR'
@@ -73,7 +73,7 @@ const page = () => {
         les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
         esthétiquement plaisantes."
       />
-      {/* <Projects className="pt-10 pb-22" itemsPerPage={50} /> */}
+      <Projects className="pt-10 pb-22" itemsPerPage={50} />
       <Subscribe className="py-16 lg:py-32" />
     </>
   )
