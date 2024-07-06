@@ -31,7 +31,7 @@ const page = () => {
       <ProjectBannerR
         className="pt-32 lg:mb-22 xl:mb-32 "
         subTitle="Site vitrine"
-        title="Unlcoaching"
+        title="Unlcoaching.com"
         image={UnlcoachingImage}
         description="J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
         les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
@@ -40,7 +40,7 @@ const page = () => {
       <ProjectBanner
         className="pt-32 lg:mb-22 xl:mb-32 "
         subTitle="Application web"
-        title="school-Unlcoaching"
+        title="Unlcoaching.app"
         image={UnlcoachingImage}
         description="J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
         les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
@@ -49,7 +49,7 @@ const page = () => {
       <ProjectBannerR
         className="pt-32 lg:mb-22 xl:mb-32 "
         subTitle="Site vitrine"
-        title="Lemurian Agency"
+        title="Andyramaroson.com"
         image={HomePortfolio}
         description="J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
         les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
@@ -58,7 +58,7 @@ const page = () => {
       <ProjectBanner
         className="pt-32 lg:mb-22 xl:mb-32 "
         subTitle="Site vitrine"
-        title="Vanille B2B"
+        title="Vanille-B2B.com"
         image={FilleDeLaGraceImage1}
         description="J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
         les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
@@ -67,13 +67,13 @@ const page = () => {
       <ProjectBannerR
         className="pt-32 lg:mb-22 xl:mb-32 "
         subTitle="Site vitrine"
-        title="Fille de la grace"
+        title="Fille-de-la-grace.com"
         image={FilleDeLaGraceImage}
         description="J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
         les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
         esthétiquement plaisantes."
       />
-      <Projects className="pt-10 pb-22" itemsPerPage={50} />
+      {/* <Projects className="pt-10 pb-22" itemsPerPage={50} /> */}
       <Subscribe className="py-16 lg:py-32" />
     </>
   )

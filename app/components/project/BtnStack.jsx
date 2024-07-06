@@ -14,7 +14,7 @@ import { SiVercel } from 'react-icons/si'
 import { BsFiletypeMdx } from 'react-icons/bs'
 import { FaCcStripe } from 'react-icons/fa'
 import { MdMarkEmailRead } from 'react-icons/md'
-import { RiTailwindCssLine } from 'react-icons/ri'
+import { FaGithub } from 'react-icons/fa'
 
 const iconMappingProject = {
   icon1: (
@@ -38,9 +38,9 @@ const iconMappingProject = {
   icon7: (
     <MdMarkEmailRead className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
   ),
-  // icon8: (
-  //   <RiTailwindCssLine className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
-  // ),
+  icon8: (
+    <FaGithub className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
+  ),
 }
 
 const BtnCategoriesContentProject = {
@@ -93,12 +93,12 @@ const BtnCategoriesContentProject = {
         href: '/projects/categories/no-code/#projects-min',
         label: 'No code',
       },
-      // title8: 'TailwindCss',
-      // icon8: 'icon8',
-      // btn8: {
-      //   href: '/projects/categories/no-code/#projects-min',
-      //   label: 'No code',
-      // },
+      title8: 'Github',
+      icon8: 'icon8',
+      btn8: {
+        href: '/projects/categories/no-code/#projects-min',
+        label: 'No code',
+      },
     },
   ],
 }
@@ -181,7 +181,7 @@ const BtnCategory = ({ className, contentType }) => {
 
   return (
     <section className={className} id="projects-min">
-      <div className="table mx-auto items-center justify-center">
+      <div className="table mx-auto items-left md:items-center px-4">
         {BtnCategoriesContent.step.map((step, index) => (
           <motion.div
             key={index}
@@ -198,7 +198,7 @@ const BtnCategory = ({ className, contentType }) => {
             whileHover={{ y: -10, transition: 0.1 }}
             className=" bg-white relative rounded-md"
           >
-            <div className="pb-10 grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-4 lg:gap-8 ">
+            <div className="pb-10 grid grid-cols-4 gap-4 lg:gap-8">
               {[
                 'title1',
                 'title2',
@@ -207,11 +207,11 @@ const BtnCategory = ({ className, contentType }) => {
                 'title5',
                 'title6',
                 'title7',
-                // 'title8',
+                'title8',
               ].map((titleKey, idx) => (
                 <div key={idx}>
                   <Link href={step[`btn${idx + 1}`].href}>
-                    <span className="text-2xl md:text-3xl flex ">
+                    <span className="text-2xl md:text-3xl flex flex-col items-center ">
                       {iconMapping[step[`icon${idx + 1}`]]}
                       <h3
                         className="text-xl hover:text-gray-500 text-[#2F2E2E] pb-2 inline-block duration-300 transition-all bg-white-600 ease-in-out 

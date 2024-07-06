@@ -3,6 +3,7 @@
 import React, { useRef } from 'react'
 import Image from 'next/image'
 import { motion, useScroll, useTransform } from 'framer-motion'
+import BtnStack from './BtnStack'
 
 const projectBannerContent = {
   heading: {
@@ -52,7 +53,7 @@ const ProjectBanner = ({ className, title, subTitle, description, image }) => {
 
           {/* Content */}
           <div className="lg:w-12/12 relative lg:mt-0 mb-8 lg:mb-0 lg:ml-20">
-            <div className="lg:max-w-4xl mx-auto mt-0 lg:mt-[75px] mb-10">
+            <div className="lg:max-w-4xl mx-auto mt-0 mb-10">
               {/* Content center - subtitle */}
               {subTitle && (
                 <motion.span
@@ -85,6 +86,9 @@ const ProjectBanner = ({ className, title, subTitle, description, image }) => {
                 </motion.h2>
               )}
 
+              {/* Content left - stack */}
+              <BtnStack contentType="project" className="contents md:hidden" />
+
               {/* Content left - description */}
               {description && (
                 <motion.p
@@ -100,6 +104,9 @@ const ProjectBanner = ({ className, title, subTitle, description, image }) => {
                   {description}
                 </motion.p>
               )}
+
+              {/* Content left - stack */}
+              <BtnStack contentType="project" className="hidden md:contents " />
             </div>
           </div>
         </div>

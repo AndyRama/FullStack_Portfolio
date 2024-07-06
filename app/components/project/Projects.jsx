@@ -8,7 +8,6 @@ import { compareDesc, format, parseISO } from 'date-fns'
 import { motion } from 'framer-motion'
 import CardCategory from './../../components/CardCategory'
 import BtnCategory from './../../components/BtnCategory'
-import BtnStack from './../../components/project/BtnStack'
 
 const Items = ({ currentItems }) => {
   return (
@@ -164,17 +163,16 @@ const Project = ({ className, itemsPerPage, archive = false, params }) => {
     <>
       <section className={`${className}`} ref={ref}>
         <div className="container mx-auto">
-          {/* <BtnCategory contentType="project" /> */}
-          <BtnStack contentType="project" />
+          <BtnCategory contentType="project" />
           <div className="flex">
             <div className=" w-12/12 lg:w-10/12 mx-auto mb-20 grid grid-cols-1 md:grid-cols-2 gap-4 px-4">
               <Items currentItems={currentItems} />
             </div>
 
-            {/* <CardCategory
+            <CardCategory
               contentType="project"
               className="hidden xl:contents ml-20"
-            /> */}
+            />
           </div>
         </div>
       </section>
