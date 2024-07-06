@@ -171,10 +171,10 @@ const Project = ({ className, itemsPerPage, archive = false, params }) => {
             </div>
 
             <BtnStack contentType="project" />
-            <CardCategory
+            {/* <CardCategory
               contentType="project"
               className="hidden xl:contents ml-20"
-            />
+            /> */}
           </div>
         </div>
       </section>

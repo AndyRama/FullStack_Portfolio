@@ -5,7 +5,6 @@ import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { HiOutlineTerminal } from 'react-icons/hi'
 import { HiOutlineTemplate } from 'react-icons/hi'
-import { FaCcStripe } from 'react-icons/fa'
 import { TbBrandNextjs } from 'react-icons/tb'
 import { BiSolidGrid } from 'react-icons/bi'
 import { HiSparkles } from 'react-icons/hi'
@@ -13,8 +12,9 @@ import { GrReactjs } from 'react-icons/gr'
 import { TbDeviceMobileCode } from 'react-icons/tb'
 import { SiVercel } from 'react-icons/si'
 import { BsFiletypeMdx } from 'react-icons/bs'
-import { SiResend } from 'react-icons/si'
-import { RiTailwindCssFill } from 'react-icons/ri'
+import { FaCcStripe } from 'react-icons/fa'
+import { MdMarkEmailRead } from 'react-icons/md'
+import { RiTailwindCssLine } from 'react-icons/ri'
 
 const iconMappingProject = {
   icon1: (
@@ -36,11 +36,11 @@ const iconMappingProject = {
     <FaCcStripe className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
   ),
   icon7: (
-    <SiResend className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
+    <MdMarkEmailRead className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
   ),
-  icon8: (
-    <RiTailwindCssFill className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
-  ),
+  // icon8: (
+  //   <RiTailwindCssLine className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
+  // ),
 }
 
 const BtnCategoriesContentProject = {
@@ -93,12 +93,12 @@ const BtnCategoriesContentProject = {
         href: '/projects/categories/no-code/#projects-min',
         label: 'No code',
       },
-      title8: 'TailwindCss',
-      icon8: 'icon8',
-      btn8: {
-        href: '/projects/categories/no-code/#projects-min',
-        label: 'No code',
-      },
+      // title8: 'TailwindCss',
+      // icon8: 'icon8',
+      // btn8: {
+      //   href: '/projects/categories/no-code/#projects-min',
+      //   label: 'No code',
+      // },
     },
   ],
 }
@@ -207,7 +207,7 @@ const BtnCategory = ({ className, contentType }) => {
                 'title5',
                 'title6',
                 'title7',
-                'title8',
+                // 'title8',
               ].map((titleKey, idx) => (
                 <div key={idx}>
                   <Link href={step[`btn${idx + 1}`].href}>
