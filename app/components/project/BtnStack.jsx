@@ -181,7 +181,7 @@ const BtnCategory = ({ className, contentType }) => {
 
   return (
     <section className={className} id="projects-min">
-      <div className="table mx-auto xl:hidden items-center justify-center">
+      <div className="table mx-auto items-center justify-center">
         {BtnCategoriesContent.step.map((step, index) => (
           <motion.div
             key={index}
