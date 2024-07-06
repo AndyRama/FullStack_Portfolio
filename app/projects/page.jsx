@@ -4,7 +4,7 @@ import Projects from '../components/project/Projects'
 import Subscribe from '../components/Subscribe'
 import ProjectBanner from '../components/project/ProjectBanner'
 import ProjectBannerR from '../components/project/ProjectBannerR'
-
+import AnimatedBanner from '../components/AnimatedBanner'
 import TeamImage from './../../public/images/Team.jpg'
 import UnlcoachingImage from './../../public/images/unlcoaching.png'
 import FilleDeLaGraceImage from './../../public/images/Fille-de-la-grace2.png'
@@ -18,7 +18,7 @@ export const metadata = {
 const page = () => {
   return (
     <>
-      {/* <AnimatedBanner /> */}
+      <AnimatedBanner />
       <SubHero
         className="pt-32 lg:mb-22 xl:mb-32 "
         subTitle="Projets réalisés"
