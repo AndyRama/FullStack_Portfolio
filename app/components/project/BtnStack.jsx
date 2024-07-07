@@ -2,7 +2,6 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
-import Link from 'next/link'
 import { HiOutlineTerminal } from 'react-icons/hi'
 import { HiOutlineTemplate } from 'react-icons/hi'
 import { TbBrandNextjs } from 'react-icons/tb'
@@ -53,52 +52,20 @@ const BtnCategoriesContentProject = {
     {
       title1: 'Nextjs',
       icon1: 'icon1',
-      btn1: {
-        href: '/projects/categories/vitrine/#projects-min',
-        label: 'Vitrine',
-      },
       title2: 'React',
       icon2: 'icon2',
-      btn2: {
-        href: '/projects/categories/application-mobile/#projects-min',
-        label: 'Appli. mobile',
-      },
       title3: 'Responsive',
       icon3: 'icon3',
-      btn3: {
-        href: '/projects/categories//ecommerce/#projects-min',
-        label: 'E-commerce',
-      },
       title4: 'Vercel',
       icon4: 'icon4',
-      btn4: {
-        href: '/projects/categories/studientsCases/#projects-min',
-        label: "Cas d'étude ",
-      },
       title5: 'Mdx',
       icon5: 'icon5',
-      btn5: {
-        href: '/projects/categories/no-code/#projects-min',
-        label: 'No code',
-      },
       title6: 'Stripe',
       icon6: 'icon6',
-      btn6: {
-        href: '/projects/categories/no-code/#projects-min',
-        label: 'No code',
-      },
       title7: 'Resend',
       icon7: 'icon7',
-      btn7: {
-        href: '/projects/categories/no-code/#projects-min',
-        label: 'No code',
-      },
       title8: 'Github',
       icon8: 'icon8',
-      btn8: {
-        href: '/projects/categories/no-code/#projects-min',
-        label: 'No code',
-      },
     },
   ],
 }
@@ -134,40 +101,16 @@ const BtnCategoriesContentBlog = {
     {
       title1: 'Articles',
       icon1: 'icon1',
-      btn1: {
-        href: '/blog/#projects-min',
-        label: 'Articles',
-      },
       title2: 'NextJs',
       icon2: 'icon2',
-      btn2: {
-        href: '/blog/categories/nextjs/#projects-min',
-        label: 'NextJs',
-      },
       title3: 'React',
       icon3: 'icon3',
-      btn3: {
-        href: '/blog/categories/react/#projects-min',
-        label: 'React',
-      },
       title4: 'Intelig. Art',
       icon4: 'icon4',
-      btn4: {
-        href: '/blog/categories/inteligence/#projects-min',
-        label: 'Inteligence Art.',
-      },
       title5: 'Develop. Web',
       icon5: 'icon5',
-      btn5: {
-        href: '/blog/categories/developpement/#projects-min',
-        label: 'Développement Web',
-      },
       title6: 'No code',
       icon6: 'icon6',
-      btn6: {
-        href: '/blog/categories/noCode/#projects-min',
-        label: 'No code',
-      },
     },
   ],
 }
@@ -210,20 +153,18 @@ const BtnCategory = ({ className, contentType }) => {
                 'title8',
               ].map((titleKey, idx) => (
                 <div key={idx}>
-                  <Link href={step[`btn${idx + 1}`].href}>
-                    <span className="text-2xl md:text-3xl flex flex-col items-center ">
-                      {iconMapping[step[`icon${idx + 1}`]]}
-                      <h3
-                        className="text-xl hover:text-gray-500 text-[#2F2E2E] pb-2 inline-block duration-300 transition-all bg-white-600 ease-in-out 
-                        relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:h-[2px] before:bg-gradient-to-r from-orange-500
-                        to-orange-800  before:origin-[100%, 50%] before:transition-all before:duration-300 before:ease-in-out before:scale-x-0
-                        before:scale-y-[1] before:scale-z[1] before:will-change-transform hover:before:origin-[100%, 0%] hover:before:scale-x-[1] 
-                        hover:before:scale-y-[1] hover:before:scale-z-[1]"
-                      >
-                        {step[titleKey]}
-                      </h3>
-                    </span>
-                  </Link>
+                  <span className="text-2xl md:text-3xl flex flex-col items-center ">
+                    {iconMapping[step[`icon${idx + 1}`]]}
+                    <h3
+                      className="text-xl hover:text-gray-500 text-[#2F2E2E] pb-2 inline-block duration-300 transition-all bg-white-600 ease-in-out 
+                      relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:h-[2px] before:bg-gradient-to-r from-orange-500
+                      to-orange-800  before:origin-[100%, 50%] before:transition-all before:duration-300 before:ease-in-out before:scale-x-0
+                      before:scale-y-[1] before:scale-z[1] before:will-change-transform hover:before:origin-[100%, 0%] hover:before:scale-x-[1] 
+                      hover:before:scale-y-[1] hover:before:scale-z-[1]"
+                    >
+                      {step[titleKey]}
+                    </h3>
+                  </span>
                 </div>
               ))}
             </div>

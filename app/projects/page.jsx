@@ -61,7 +61,7 @@ const page = () => {
         esthétiquement plaisantes."
       />
 
-      <ProjectBannerR
+      <ProjectBanner
         className="pt-32 lg:mb-22 xl:mb-32 "
         subTitle="Site vitrine"
         title="Fille-de-la-grace.com"
