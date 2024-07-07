@@ -3,6 +3,7 @@
 import React, { useRef } from 'react'
 import Image from 'next/image'
 import { motion, useScroll, useTransform } from 'framer-motion'
+import Link from 'next/link'
 
 const subHeroContent = {
   heading: {
@@ -10,8 +11,17 @@ const subHeroContent = {
     title: '',
     description: '',
     image: '/images/Team.jpg',
+    btn1: {
+      href: '/projects',
+      label: 'Projets',
+    },
+    btn: {
+      href: 'https://calendly.com/andyramaroson/30min',
+      label: 'Prendre rendez-vous',
+    },
   },
 }
+
 const SubHero = ({ className, title, subTitle, description, image }) => {
   if (title) {
     title = title

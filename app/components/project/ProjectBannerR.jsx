@@ -4,12 +4,21 @@ import React, { useRef } from 'react'
 import Image from 'next/image'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import BtnStack from './BtnStack'
+import Link from 'next/link'
 
 const projectBannerContent = {
   heading: {
     subTitle: '',
     title: '',
     description: '',
+    btn1: {
+      href: 'https://portfolio-eta-three-93.vercel.app/',
+      label: 'Demo',
+    },
+    btn: {
+      href: 'https://portfolio-eta-three-93.vercel.app/',
+      label: "Plus d'informations",
+    },
   },
 }
 
@@ -49,6 +58,8 @@ const ProjectBanner = ({ className, title, subTitle, description, image }) => {
             {image && (
               <Image src={image} width={700} height={985} alt="hero image" />
             )}
+            {/* Content right - stack */}
+            <BtnStack contentType="project" className="hidden lg:contents " />
           </motion.div>
 
           {/* Content */}
@@ -80,14 +91,11 @@ const ProjectBanner = ({ className, title, subTitle, description, image }) => {
                     transition: { delay: 0.06, duration: 0.5 },
                   }}
                   viewport={{ once: true }}
-                  className="text-4xl md:text-5xl xl:text-7xl text-[#2F2E2E] mb-10"
+                  className="text-3xl md:text-4xl xl:text-5xl text-[#2F2E2E] mb-10"
                 >
                   {title}
                 </motion.h2>
               )}
-
-              {/* Content left - stack */}
-              <BtnStack contentType="project" className="contents md:hidden" />
 
               {/* Content left - description */}
               {description && (
@@ -104,9 +112,43 @@ const ProjectBanner = ({ className, title, subTitle, description, image }) => {
                   {description}
                 </motion.p>
               )}
+              {/* Content left - btn */}
+              {projectBannerContent.heading.btn.label && (
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{
+                    opacity: 1,
+                    y: 0,
+                    transition: { delay: 0.2, duration: 0.5 },
+                  }}
+                  viewport={{ once: true }}
+                  className="btn-container"
+                >
+                  {/* Content left - btn - calendly */}
+                  <Link
+                    href={projectBannerContent.heading.btn.href}
+                    className="transistion-all duration-300 ease-in-out text-[11.5px]
+                  md:tracking-[2px] font-bold uppercase bg-gradient-to-r from-orange-500 to-orange-800 py-4 px-5
+                  rounded text-white inline-block hover:bg-white 
+                  hover:shadow-2xl mb-5 mr-5"
+                  >
+                    {projectBannerContent.heading.btn.label}
+                  </Link>
+                  {/* Content left - btn - projects */}
+                  <Link
+                    href={projectBannerContent.heading.btn1.href}
+                    className="transistion-all duration-300 ease-in-out text-[11.5px]
+                  md:tracking-[2px] font-bold uppercase bg-gradient-to-r from-orange-500 to-orange-800 py-4 px-5
+                  rounded text-white hover:bg-white 
+                  hover:shadow-2xl mb-5 mr-5 inline-block"
+                  >
+                    {projectBannerContent.heading.btn1.label}
+                  </Link>
+                </motion.div>
+              )}
 
               {/* Content left - stack */}
-              <BtnStack contentType="project" className="hidden md:contents " />
+              <BtnStack contentType="project" className="contents lg:hidden" />
             </div>
           </div>
         </div>

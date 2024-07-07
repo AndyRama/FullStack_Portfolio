@@ -11,7 +11,6 @@ import UnlcoachingImage from './../../public/images/unlcoaching.png'
 import FilleDeLaGraceImage from './../../public/images/Fille-de-la-grace2.png'
 import FilleDeLaGraceImage1 from './../../public/images/Fille-de-la-grace1.png'
 import HomePortfolio from './../../public/images/home-portfolio.png'
-import andy from './../../public/images/andy.jpeg'
 
 export const metadata = {
   title: 'Projects - Andy Ramaroson',
@@ -25,7 +24,7 @@ const page = () => {
         className="pt-32 lg:mb-22 xl:mb-32 "
         subTitle="Projets réalisés"
         title="Dernier ajout"
-        image={andy}
+        image={TeamImage}
         description="J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
         les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
         esthétiquement plaisantes."

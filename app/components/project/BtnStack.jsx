@@ -124,7 +124,7 @@ const BtnCategory = ({ className, contentType }) => {
 
   return (
     <section className={className} id="projects-min">
-      <div className="table mx-auto items-left md:items-center px-4">
+      <div className="contents mx-auto px-4">
         {BtnCategoriesContent.step.map((step, index) => (
           <motion.div
             key={index}
@@ -140,7 +140,7 @@ const BtnCategory = ({ className, contentType }) => {
             viewport={{ once: true }}
             className="bg-white relative rounded-md"
           >
-            <div className="pb-10 grid grid-cols-4 gap-4 lg:gap-8">
+            <div className="mt-10 pb-10 grid grid-cols-4 gap-4 lg:gap-8">
               {[
                 'title1',
                 'title2',
