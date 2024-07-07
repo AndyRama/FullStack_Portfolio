@@ -138,8 +138,7 @@ const BtnCategory = ({ className, contentType }) => {
               },
             }}
             viewport={{ once: true }}
-            whileHover={{ y: -10, transition: 0.1 }}
-            className=" bg-white relative rounded-md"
+            className="bg-white relative rounded-md"
           >
             <div className="pb-10 grid grid-cols-4 gap-4 lg:gap-8">
               {[
@@ -152,7 +151,11 @@ const BtnCategory = ({ className, contentType }) => {
                 'title7',
                 'title8',
               ].map((titleKey, idx) => (
-                <div key={idx}>
+                <motion.div
+                  key={idx}
+                  whileHover={{ y: -10, transition: 0.1 }}
+                  className="flex flex-col items-center"
+                >
                   <span className="text-2xl md:text-3xl flex flex-col items-center ">
                     {iconMapping[step[`icon${idx + 1}`]]}
                     <h3
@@ -165,7 +168,7 @@ const BtnCategory = ({ className, contentType }) => {
                       {step[titleKey]}
                     </h3>
                   </span>
-                </div>
+                </motion.div>
               ))}
             </div>
           </motion.div>
