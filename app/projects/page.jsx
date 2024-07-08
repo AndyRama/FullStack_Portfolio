@@ -34,6 +34,7 @@ const page = () => {
         className="pt-32 lg:mb-22 xl:mb-32 "
         subTitle="Application web"
         title="Unlcoaching.app"
+        time="1 mois 1/2"
         image={UnlcoachingImage}
         description="J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
         les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
@@ -44,6 +45,7 @@ const page = () => {
         className="pt-32 lg:mb-22 xl:mb-32 "
         subTitle="Site vitrine"
         title="Andyramaroson.com"
+        time="1 mois"
         image={HomePortfolio}
         description="J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
         les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
@@ -54,6 +56,7 @@ const page = () => {
         className="pt-32 lg:mb-22 xl:mb-32 "
         subTitle="Site vitrine"
         title="Unlcoaching.com"
+        time="1 mois 1/2"
         image={UnlcoachingImage}
         description="J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
         les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
@@ -64,6 +67,7 @@ const page = () => {
         className="pt-32 lg:mb-22 xl:mb-32 "
         subTitle="Site vitrine"
         title="Fille-de-la-grace.com"
+        time="1 mois"
         image={FilleDeLaGraceImage}
         description="J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
           les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
@@ -74,6 +78,7 @@ const page = () => {
         className="pt-32 lg:mb-22 xl:mb-32 "
         subTitle="Site vitrine"
         title="i-doctor.fr"
+        time="1 mois 1/2"
         image={FilleDeLaGraceImage}
         description="J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
         les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 

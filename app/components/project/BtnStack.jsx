@@ -23,7 +23,7 @@ const iconMappingProject = {
     <GrReactjs className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
   ),
   icon3: (
-    <TbDeviceMobileCode className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
+    <FaGithub className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
   ),
   icon4: (
     <SiVercel className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
@@ -38,11 +38,11 @@ const iconMappingProject = {
     <MdMarkEmailRead className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
   ),
   icon8: (
-    <FaGithub className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
+    <TbDeviceMobileCode className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
   ),
 }
 
-const BtnCategoriesContentProject = {
+const BtnStackContentProject = {
   heading: {
     title: '',
     subTitle: '',
@@ -54,7 +54,7 @@ const BtnCategoriesContentProject = {
       icon1: 'icon1',
       title2: 'React',
       icon2: 'icon2',
-      title3: 'Responsive',
+      title3: 'Github',
       icon3: 'icon3',
       title4: 'Vercel',
       icon4: 'icon4',
@@ -64,7 +64,7 @@ const BtnCategoriesContentProject = {
       icon6: 'icon6',
       title7: 'Resend',
       icon7: 'icon7',
-      title8: 'Github',
+      title8: 'Resp.',
       icon8: 'icon8',
     },
   ],
@@ -91,7 +91,7 @@ const iconMappingBlog = {
   ),
 }
 
-const BtnCategoriesContentBlog = {
+const BtnStackContentBlog = {
   heading: {
     title: '',
     subTitle: '',
@@ -115,17 +115,17 @@ const BtnCategoriesContentBlog = {
   ],
 }
 
-const BtnCategory = ({ className, contentType }) => {
+const BtnStack = ({ className, contentType }) => {
   const isProject = contentType === 'project'
   const iconMapping = isProject ? iconMappingProject : iconMappingBlog
-  const BtnCategoriesContent = isProject
-    ? BtnCategoriesContentProject
-    : BtnCategoriesContentBlog
+  const BtnStackContent = isProject
+    ? BtnStackContentProject
+    : BtnStackContentBlog
 
   return (
     <section className={className} id="projects-min">
       <div className="contents mx-auto px-4">
-        {BtnCategoriesContent.step.map((step, index) => (
+        {BtnStackContent.step.map((step, index) => (
           <motion.div
             key={index}
             initial={{ opacity: 0, y: 30 }}
@@ -140,7 +140,7 @@ const BtnCategory = ({ className, contentType }) => {
             viewport={{ once: true }}
             className="bg-white relative rounded-md"
           >
-            <div className="mt-10 pb-10 grid grid-cols-4 gap-4 lg:gap-8">
+            <div className="mt-10 pb-10 grid grid-cols-4 xl:grid-cols-8 gap-4 xl:gap-12">
               {[
                 'title1',
                 'title2',
@@ -178,4 +178,4 @@ const BtnCategory = ({ className, contentType }) => {
   )
 }
 
-export default BtnCategory
+export default BtnStack

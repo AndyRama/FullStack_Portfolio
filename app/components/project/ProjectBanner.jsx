@@ -10,7 +10,7 @@ const projectBannerContent = {
   heading: {
     subTitle: '',
     title: '',
-    time: '1 mois 1/2',
+    time: '',
     description: '',
     btn1: {
       href: 'https://portfolio-eta-three-93.vercel.app/',
@@ -43,7 +43,7 @@ const ProjectBanner = ({
     offset: ['start end', 'end start'],
   })
 
-  const imgScroll1 = useTransform(scrollYProgress, [0, 1], ['10%', '-20%'])
+  const imgScroll1 = useTransform(scrollYProgress, [0, 1], ['0%', '-20%'])
 
   return (
     <section className={`${className}`}>
@@ -73,7 +73,7 @@ const ProjectBanner = ({
 
           {/* Content Left */}
           <div className="lg:w-12/12 relative lg:mt-0 mb-8 lg:mb-0 lg:mr-20">
-            <div className="lg:max-w-4xl mx-auto">
+            <div className="lg:max-w-xl mx-auto mb-10">
               {/* Content Left - subtitle */}
               {subTitle && (
                 <motion.span
@@ -106,7 +106,7 @@ const ProjectBanner = ({
                 </motion.h2>
               )}
 
-              {/* Content Left - durée */}
+              {/* Content Left - Time */}
               {time && (
                 <motion.span
                   initial={{ opacity: 0, y: 20 }}
@@ -133,22 +133,6 @@ const ProjectBanner = ({
                   }}
                   viewport={{ once: true }}
                   className="leading-relaxed text-gray-500 w-auto lg:w-screen max-w-xl text-left lg:text-lg mb-10"
-                >
-                  {description}
-                </motion.p>
-              )}
-
-              {/* Content Left - Description */}
-              {description && (
-                <motion.p
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{
-                    opacity: 1,
-                    y: 0,
-                    transition: { delay: 0.2, duration: 0.5 },
-                  }}
-                  viewport={{ once: true }}
-                  className="leading-relaxed text-gray-500 w-auto lg:w-screen max-w-xl text-left lg:text-lg mb-10 hidden lg:contents"
                 >
                   {description}
                 </motion.p>
