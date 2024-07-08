@@ -155,8 +155,8 @@ const ProjectBanner = ({
                     href={projectBannerContent.heading.btn.href}
                     target="_blank"
                     className="transistion-all duration-300 ease-in-out text-[11.5px]
-                  md:tracking-[2px] font-bold uppercase bg-gradient-to-r from-green-500 to-green-800 py-4 px-5
-                  rounded text-white inline-block hover:bg-white 
+                  md:tracking-[2px] font-bold uppercase bg-gradient-to-r from-green-300 to-green-500 py-4 px-5
+                  rounded text-white inline-block hover:bg-white hover:text-[#2F2E2E]
                   hover:shadow-2xl mb-5 mr-5"
                   >
                     {projectBannerContent.heading.btn.label}
@@ -167,8 +167,8 @@ const ProjectBanner = ({
                     href={projectBannerContent.heading.btn1.href}
                     target="_blank"
                     className="transistion-all duration-300 ease-in-out text-[11.5px]
-                  md:tracking-[2px] font-bold uppercase bg-gradient-to-r from-green-500 to-green-800 py-4 px-5
-                  rounded text-white hover:bg-white 
+                  md:tracking-[2px] font-bold uppercase bg-gradient-to-r from-green-300 to-green-500 py-4 px-5
+                  rounded text-white hover:bg-white hover:text-[#2F2E2E]
                   hover:shadow-2xl mb-5 mr-5 inline-block"
                   >
                     {projectBannerContent.heading.btn1.label}

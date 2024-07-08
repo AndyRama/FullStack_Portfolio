@@ -53,7 +53,7 @@ const PricingPack = () => {
   return (
     <section className="mt-20 mb-20">
       <div className="transform-gpu blur-3xl">
-        <div className="absolute right-0 opacity-30 md:opacity-50 -z-20 w-48 h-52 bg-gradient-to-r from-orange-500 to-orange-800 "></div>
+        <div className="absolute right-0 opacity-30 md:opacity-50 -z-20 w-48 h-52 bg-gradient-to-r from-green-300 to-green-500 "></div>
       </div>
       <h2
         id="pack"
@@ -78,16 +78,16 @@ const PricingPack = () => {
                   {option.title}
                 </p>
                 {/* Card Pricing - Header - subTitle */}
-                <p className="text-xl mb-6 text-orange-500 text-center">
+                <p className="text-xl mb-6 text-green-500 text-center">
                   {option.subtitle}
                 </p>
                 <hr />
                 {/* Card Pricing - Header - Price  */}
                 <p className="mt-2 mb-1 text-center">
-                  <span className="text-4xl text-orange-500  mt-6 mr-2">
+                  <span className="text-4xl text-green-500  mt-6 mr-2">
                     {option.price}
                   </span>
-                  <span className="text-orange-500 tracking-tight">/ Mois</span>
+                  <span className="text-green-500 tracking-tight">/ Mois</span>
                 </p>
                 {/* Card Pricing - Header - subPrice  */}
                 <p className="text-xl mb-6 text-[#2F2E2E] text-center">
@@ -105,7 +105,7 @@ const PricingPack = () => {
                     duration: 0.5,
                   }}
                   className="inline-flex justify-center items-center text-black text-center
-                   w-full h-12 p-5 tracking-tight text-xl bg-gradient-to-r from-orange-500 to-orange-800 hover:bg-transparent
+                   w-full h-12 p-5 tracking-tight text-xl bg-gradient-to-r from-green-300 to-green-500 hover:bg-transparent
                     hover:text-[#2F2E2E] rounded-md transition 
                    duration-200"
                 >
@@ -120,7 +120,7 @@ const PricingPack = () => {
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: delay(index), duration: 0.5 }}
-                      className="mt-8 flex items-center text-orange-500"
+                      className="mt-8 flex items-center text-green-500"
                     >
                       •<span className="ml-2 text-[#2F2E2E]">{feature}</span>
                     </motion.li>

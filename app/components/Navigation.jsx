@@ -98,7 +98,7 @@ export default function Navigation() {
                     href={menu.href}
                     className={`relative before:content-['']
                      before:absolute before:bottom-0 before:left-0 before:w-full
-                     before:h-[2px] before:bg-green-500 before:origin-[100%, 50%]
+                     before:h-[2px] before:bg-green-400 before:origin-[100%, 50%]
                      before:transistion-all before:duration-300 before:ease-in-out
                      before:scale-x-0 before:scale-y-[1] before:scale-z[1]
                      before:wil-change-transform hover:before:origin-[100%, 0%]
@@ -182,8 +182,8 @@ export default function Navigation() {
                                   <Link
                                     href={menu.href}
                                     className={`py-2 text-[#2F2E2E] hover:text-green-500 inline-block relative before:content-['']
-                                    before:absolute before:bottom-0 before:left-0 before:w-full
-                                    before:h-[2px] before:bg-gradient-to-r from-green-300 to-green-800 before:origin-[100%, 50%]
+                                    before:absolute before:bottom-0 before:left-0 before:w-full 
+                                    before:h-[2px] before:bg-gradient-to-r from-green-300 to-green-500 before:origin-[100%, 50%]
                                     before:transistion-all before:duration-300 before:ease-in-out
                                     before:scale-x-0 before:scale-y-[1] before:scale-z[1]
                                     before:wil-change-transform hover:before:origin-[100%, 0%]
@@ -212,7 +212,7 @@ export default function Navigation() {
                             href="/contact"
                             alt="Btn Contact"
                             className="block text-center text-[11.5px] tracking-2[2px] font-bold uppercase bg-gradient-to-r 
-                                     from-green-300 to-green-800 py-3 px-5 text-white hover:shadow-2xl 
+                                     from-green-300 to-green-500 py-3 px-5 text-white hover:shadow-2xl 
                                       rounded-md"
                           >
                             Contact

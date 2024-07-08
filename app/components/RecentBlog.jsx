@@ -164,7 +164,7 @@ const RecentBlog = ({ className }) => {
           <Link
             href="/blog"
             className="transistion-all duration-300 ease-in-out text-[11.5px]
-          tracking-[2px] font-bold uppercase bg-gradient-to-r from-green-500 to-green-800 py-4 px-3
+          tracking-[2px] font-bold uppercase bg-gradient-to-r from-green-300 to-green-500 py-4 px-3
           rounded text-white inline-block items-start hover:bg-white hover:shadow-2xl 
           hover:shadow-1xl h-12  "
           >

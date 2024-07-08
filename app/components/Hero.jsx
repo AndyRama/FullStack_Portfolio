@@ -102,9 +102,8 @@ const Hero = ({ className }) => {
                 <Link
                   href={heroContent.intro.btn.href}
                   className="transistion-all duration-300 ease-in-out text-[11.5px]
-                  md:tracking-[2px] font-bold uppercase bg-gradient-to-r from-green-300 to-green-800 py-4 px-5
-                  rounded text-white inline-block hover:bg-white 
-                  hover:shadow-2xl mb-5 mr-5"
+                  md:tracking-[2px] font-bold uppercase bg-gradient-to-r from-green-300 to-green-500 py-4 px-5
+                  rounded text-white inline-block hover:bg-white hover:text-gray-900 hover:shadow-2xl mb-5 mr-5"
                 >
                   {heroContent.intro.btn.label}
                 </Link>
@@ -112,9 +111,8 @@ const Hero = ({ className }) => {
                 <Link
                   href={heroContent.intro.btn1.href}
                   className="transistion-all duration-300 ease-in-out text-[11.5px]
-                  md:tracking-[2px] font-bold uppercase bg-gradient-to-r from-green-300 to-green-800 py-4 px-5
-                  rounded text-white hover:bg-white 
-                  hover:shadow-2xl mb-5 mr-5 inline-block"
+                  md:tracking-[2px] font-bold uppercase bg-gradient-to-r from-green-300 to-green-500 py-4 px-5
+                  rounded text-white hover:bg-white hover:text-gray-900"
                 >
                   {heroContent.intro.btn1.label}
                 </Link>
