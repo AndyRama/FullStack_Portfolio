@@ -52,7 +52,7 @@ const Items = ({ currentItems, Post }) => {
                   <h3 className="mb-4">
                     <Link
                       href={`/${post.url}`}
-                      className="text-orange-400 text-lg leading-none text-center "
+                      className="text-green-400 text-lg leading-none text-center "
                     >
                       {post.title}
                     </Link>
@@ -66,7 +66,7 @@ const Items = ({ currentItems, Post }) => {
                       className={` text-gray-500 hover:text-[#2F2E2E] text-[12px] tracking-[2px] uppercase
                         pb-2 inline-block  duration-300 transistion-all ease-in-out relative before:content-['']
                         before:absolute before:bottom-0 before:left-0 before:w-full
-                        before:h-[2px] before:bg-orange-400 before:origin-[100%, 50%]
+                        before:h-[2px] before:bg-green-400 before:origin-[100%, 50%]
                         before:transistion-all before:duration-300 before:ease-in-out
                         before:scale-x-0 before:scale-y-[1] before:scale-z[1]
                         before:wil-change-transform hover:before:origin-[100%, 0%]
@@ -75,7 +75,7 @@ const Items = ({ currentItems, Post }) => {
                     >
                       lire l&apos;article
                     </Link>
-                    <span className="text-orange-400 ml-20">Lecture 5 min</span>
+                    <span className="text-green-400 ml-20">Lecture 5 min</span>
                   </div>
                 </div>
               </Link>

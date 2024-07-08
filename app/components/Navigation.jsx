@@ -13,9 +13,9 @@ const navigationMenu = [
   { href: '/', label: 'Home' },
   { href: '/blog', label: 'Blog' },
   { href: '/projects', label: 'projects' },
-  // { href: '/expertise', label: 'Expertise' },
-  // { href: '/methodologie', label: 'Méthodologie' },
-  // { href: '/prestations', label: 'Prestations' },
+  { href: '/expertise', label: 'Expertise' },
+  { href: '/methodologie', label: 'Méthodologie' },
+  { href: '/prestations', label: 'Prestations' },
 ]
 export default function Navigation() {
   const [open, setOpen] = useState(false)
@@ -71,7 +71,7 @@ export default function Navigation() {
               className="flex flex-row text-2xl md:text-3xl text-[#2F2E2E] font-bold "
             >
               {/* Logo - content left*/}
-              <span className="my-[-10px] mx-3 flex">
+              <span className="my-[-10px] mx-3 hidden md:flex ">
                 <Image
                   src={IconLogo}
                   weight={60}
@@ -90,7 +90,7 @@ export default function Navigation() {
           <div>
             <ul
               role="list"
-              className="hidden xl:flex space-x-8 text-[#2F2E2E] text-2xl"
+              className="hidden  space-x-8 text-[#2F2E2E] text-2xl"
             >
               {navigationMenu.map((menu, index) => (
                 <li key={menu.label}>
@@ -98,7 +98,7 @@ export default function Navigation() {
                     href={menu.href}
                     className={`relative before:content-['']
                      before:absolute before:bottom-0 before:left-0 before:w-full
-                     before:h-[2px] before:bg-orange-500 before:origin-[100%, 50%]
+                     before:h-[2px] before:bg-green-500 before:origin-[100%, 50%]
                      before:transistion-all before:duration-300 before:ease-in-out
                      before:scale-x-0 before:scale-y-[1] before:scale-z[1]
                      before:wil-change-transform hover:before:origin-[100%, 0%]
@@ -106,7 +106,7 @@ export default function Navigation() {
                      hover:before:scale-z-[1] text-[12px] tracking-[2px] uppercase
                      font-semibold pb-2 ${
                        newPathname == menu.href
-                         ? 'border-orange-400 before:scale-x-[1]'
+                         ? 'border-green-400 before:scale-x-[1]'
                          : ' border-transparent'
                      }`}
                     onClick={() => setOpen(false)}
@@ -117,25 +117,11 @@ export default function Navigation() {
               ))}
             </ul>
             <button
-              className="xl:hidden text-lg text-[#2F2E2E] rounded-md"
+              className=" text-lg text-green-500 rounded-md"
               onClick={() => setOpen(true)}
             >
               {open ? null : <HiMenu className="text-[32px] mt-2" />}
             </button>
-          </div>
-
-          {/* Menu Navigation - content right - btn */}
-          <div className="border-gray-200 px-4 py-6 sm:px-6 hidden xl:contents">
-            <div>
-              <Link
-                href="/contact"
-                alt="Btn Contact"
-                className="block text-center text-[11.5px] tracking-2[2px] font-bold uppercase bg-gradient-to-r 
-                from-orange-500 to-orange-800 py-3 px-5 text-white hover:shadow-2xl rounded-md"
-              >
-                Contact
-              </Link>
-            </div>
           </div>
         </div>
       </header>
@@ -152,7 +138,7 @@ export default function Navigation() {
             leaveForm="opacity-100"
             leaveTo="opacity-0"
           >
-            <div className="fixed inset-0 bg-gray-500 bg-opacity-25 transition-opacity" />
+            <div className="fixed inset-0 bg-green-500 bg-opacity-25 transition-opacity" />
           </Transition.Child>
           <div className="fixed inset-0 overflow-hidden">
             <div className="absolute inset-0 overflow-hidden">
@@ -170,13 +156,13 @@ export default function Navigation() {
                     <div className="flex h-full flex-col overflow-y-scroll bg-white border shadow-xl">
                       <div className="flex-1 overflow-y-auto px-8 py-8 sm:px-12">
                         <div className="flex items-start justify-between">
-                          <Dialog.Title className="text-lg font-medium text-[#2F2E2E]">
+                          <Dialog.Title className="text-lg font-medium text-[">
                             Menu
                           </Dialog.Title>
                           <div className="ml-3 flex h-7 items-center">
                             <button
                               type="button"
-                              className="relative -m-2 p-2 mt-3 -mr-0 text-[#2F2E2E] hover:text-gray-500"
+                              className="relative -m-2 p-2 mt-3 -mr-0 text-green-500 hover:text-gray-500"
                               onClick={() => setOpen(false)}
                             >
                               <span className="absolute -inset-0.5" />
@@ -195,9 +181,9 @@ export default function Navigation() {
                                 <li key={menu.label}>
                                   <Link
                                     href={menu.href}
-                                    className={`py-2 text-[#2F2E2E] hover:text-gray-500 inline-block relative before:content-['']
+                                    className={`py-2 text-[#2F2E2E] hover:text-green-500 inline-block relative before:content-['']
                                     before:absolute before:bottom-0 before:left-0 before:w-full
-                                    before:h-[2px] before:bg-gradient-to-r from-orange-500 to-orange-800 before:origin-[100%, 50%]
+                                    before:h-[2px] before:bg-gradient-to-r from-green-300 to-green-800 before:origin-[100%, 50%]
                                     before:transistion-all before:duration-300 before:ease-in-out
                                     before:scale-x-0 before:scale-y-[1] before:scale-z[1]
                                     before:wil-change-transform hover:before:origin-[100%, 0%]
@@ -205,7 +191,7 @@ export default function Navigation() {
                                     hover:before:scale-z-[1] text-[12px] tracking-[2px] uppercase
                                     font-semibold pb-2 ${
                                       newPathname == menu.href
-                                        ? 'border-orange-500 before:scale-x-[1]'
+                                        ? 'border-green-500 before:scale-x-[1]'
                                         : ' border-transparent'
                                     }`}
                                     onClick={() => setOpen(false)}
@@ -226,7 +212,7 @@ export default function Navigation() {
                             href="/contact"
                             alt="Btn Contact"
                             className="block text-center text-[11.5px] tracking-2[2px] font-bold uppercase bg-gradient-to-r 
-                                     from-orange-500 to-orange-800 py-3 px-5 text-white hover:shadow-2xl 
+                                     from-green-300 to-green-800 py-3 px-5 text-white hover:shadow-2xl 
                                       rounded-md"
                           >
                             Contact

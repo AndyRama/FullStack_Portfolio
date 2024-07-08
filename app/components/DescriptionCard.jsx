@@ -45,7 +45,7 @@ const CardDescription = ({ className, title, subTitle, description }) => {
                 },
               }}
               viewport={{ once: true }}
-              className="uppercase tracking-[3px] text-[12.5px] inline-block text-orange-400"
+              className="uppercase tracking-[3px] text-[12.5px] inline-block text-green-500"
             >
               {cardDescriptionContent.heading.subTitle}
             </motion.span>

@@ -85,7 +85,7 @@ const ProjectContent = ({ project }) => {
               <div
                 className="border-l border-gray-200 relative pl-3 before:content-['']
                 before:top-0 before:-left-[1px] before:absolute before:h-7 before:w-[1px]
-                before:bg-orange-600"
+                before:bg-green-600"
               >
                 {/* Content Client */}
                 <span className="block text-gray-400">Client</span>
@@ -96,7 +96,7 @@ const ProjectContent = ({ project }) => {
               <div
                 className="border-l border-gray-200 relative pl-3 before:content-['']
                 before:top-0 before:-left-[1px] before:absolute before:h-7 before:w-[1px]
-                before:bg-orange-600"
+                before:bg-green-600"
               >
                 <span className="block text-gray-400">Year</span>
                 <span>{project.year}</span>
@@ -106,7 +106,7 @@ const ProjectContent = ({ project }) => {
               <div
                 className="border-l border-gray-200 relative pl-3 before:content-['']
                 before:top-0 before:-left-[1px] before:absolute before:h-7 before:w-[1px]
-                before:bg-orange-600"
+                before:bg-green-600"
               >
                 <span className="block text-gray-400">Durée</span>
                 <span>{project.duration}</span>
@@ -116,7 +116,7 @@ const ProjectContent = ({ project }) => {
               {/* <div
                 className="border-l border-gray-200 relative pl-3 before:content-['']
                 before:top-0 before:-left-[1px] before:absolute before:h-7 before:w-[1px]
-                before:bg-orange-600"
+                before:bg-green-600"
               >
                 <span className="block text-gray-400">Durée</span>
                 <span>{project.duration}</span>

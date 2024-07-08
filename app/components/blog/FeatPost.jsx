@@ -47,7 +47,7 @@ const PostCard = ({ index, post }) => {
           {format(parseISO(post.date), 'LLL d, yyyy')} • {post.author}
         </p>
 
-        <h3 className="mb-4 text-orange-500">
+        <h3 className="mb-4 text-green-500">
           <Link href={post.url} className="text-lg leading-none">
             {post.title}
           </Link>
@@ -63,7 +63,7 @@ const PostCard = ({ index, post }) => {
             inline-block  duration-300 transistion-all bg-white-600
             ease-in-out relative before:content-['']
             before:absolute before:bottom-0 before:left-0 before:w-full
-            before:h-[2px] before:bg-orange-500 before:origin-[100%, 50%]
+            before:h-[2px] before:bg-green-500 before:origin-[100%, 50%]
             before:transistion-all before:duration-300 before:ease-in-out
             before:scale-x-0 before:scale-y-[1] before:scale-z[1]
             before:wil-change-transform hover:before:origin-[100%, 0%]
@@ -72,7 +72,7 @@ const PostCard = ({ index, post }) => {
           >
             lire l&apos;article
           </Link>
-          {/* <span className="text-orange-500 ml-18 md:ml-32">Lecture 5 min</span> */}
+          {/* <span className="text-green-500 ml-18 md:ml-32">Lecture 5 min</span> */}
         </div>
       </div>
     </motion.div>
@@ -100,7 +100,7 @@ const FeatPost = ({ className }) => {
                   },
                 }}
                 viewport={{ once: true }}
-                className="uppercase tracking-[3px] text-sm inline-block text-orange-400"
+                className="uppercase tracking-[3px] text-sm inline-block text-green-400"
               >
                 {featPostContent.heading.subTitle}
               </motion.span>
@@ -165,8 +165,8 @@ const FeatPost = ({ className }) => {
           <Link
             href="/blog"
             className="transistion-all duration-300 ease-in-out text-[11.5px]
-          tracking-[2px] font-bold uppercase bg-gradient-to-r from-orange-500 to-orange-800 py-4 px-3
-          rounded text-white inline-block items-start hover:bg-white hover:text-orange-400
+          tracking-[2px] font-bold uppercase bg-gradient-to-r from-green-500 to-green-800 py-4 px-3
+          rounded text-white inline-block items-start hover:bg-white hover:text-green-400
           hover:shadow-1xl h-12  "
           >
             Voir tous les articles

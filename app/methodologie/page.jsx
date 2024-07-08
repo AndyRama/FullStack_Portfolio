@@ -1,6 +1,6 @@
 import DescriptionCard from './../components/DescriptionCard'
 import SubHero from '../components/SubHero'
-// import SubHeroR from '../components/about/SubHeroR'
+import Subscribe from '../components/Subscribe'
 
 export const metadata = {
   title: 'Méthodologie et Processus de fonctionnement',
@@ -19,6 +19,7 @@ export default function Methodologie() {
         une maquette, tester l'application, nous faire des suggestions
         d'amélioration, intégrer vos données... Je ne vous lâche pas !"
       />
+      <Subscribe className="py-16 pt-64 lg:py-32 " />
     </>
   )
 }

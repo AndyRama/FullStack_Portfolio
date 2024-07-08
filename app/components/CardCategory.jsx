@@ -172,7 +172,7 @@ const CardCategory = ({ className, contentType }) => {
               <span className="text-2xl flex">
                 <h2
                   data-testid="categories-title"
-                  className="text-2xl text-[#2F2E2E] hover:text-orange-500"
+                  className="text-2xl text-[#2F2E2E] hover:text-green-500"
                 >
                   Catégories
                 </h2>
@@ -190,7 +190,7 @@ const CardCategory = ({ className, contentType }) => {
                         <h3
                           className="text-xl hover:text-gray-500 text-[#2F2E2E] pb-2 inline-block duration-300 transition-all bg-white-600 ease-in-out 
                         relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:h-[2px]
-                        before:bg-gradient-to-r from-orange-500 to-orange-800  before:origin-[100%, 50%] before:transition-all before:duration-300 before:ease-in-out before:scale-x-0
+                        before:bg-gradient-to-r from-green-500 to-green-800  before:origin-[100%, 50%] before:transition-all before:duration-300 before:ease-in-out before:scale-x-0
                         before:scale-y-[1] before:scale-z[1] before:will-change-transform hover:before:origin-[100%, 0%] hover:before:scale-x-[1] 
                         hover:before:scale-y-[1] hover:before:scale-z-[1]"
                         >

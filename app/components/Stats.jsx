@@ -58,7 +58,7 @@ const Stats = () => {
                 <Link
                   href={statContent.getStarted.cta.cta_href}
                   target="_blank"
-                  className="block text-center text-[11.5px] tracking-[2px] font-bold uppercase bg-orange-600 py-4 px-5 text-white rounded-md hover:shadow-2xl "
+                  className="block text-center text-[11.5px] tracking-[2px] font-bold uppercase  bg-gradient-to-r from-green-300 to-green-800 py-4 px-5 text-white rounded-md hover:shadow-2xl "
                 >
                   <span>{statContent.getStarted.cta.cta_label}</span>
                 </Link>

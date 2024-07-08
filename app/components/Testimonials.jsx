@@ -51,7 +51,7 @@ const testimonials = [
 const Testimonials = () => {
   return (
     <div className="container mx-auto tracking-wide mb-24 mt-10 md:mt-0">
-      <h3 className="uppercase tracking-[3px] text-sm inline-block text-orange-400 px-4">
+      <h3 className="uppercase tracking-[3px] text-sm inline-block text-green-400 px-4">
         Retour sur mes services
       </h3>
       <h2 className="text-2xl lg:text-3xl mb-4 lg:mb-10 px-4">
@@ -72,7 +72,7 @@ const Testimonials = () => {
                 />
                 <div>
                   <h6>{testimonial.user}</h6>
-                  <span className="text-sm font-normal italic text-orange-500">
+                  <span className="text-sm font-normal italic text-green-500">
                     {testimonial.company}
                   </span>
                 </div>

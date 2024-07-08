@@ -48,7 +48,7 @@ const Client = ({ className }) => {
                     },
                   }}
                   viewport={{ once: true }}
-                  className="uppercase tracking-[3px] text-sm inline-block text-orange-400"
+                  className="uppercase tracking-[3px] text-sm inline-block text-green-400"
                 >
                   {clientContent.intro.subTitle}
                 </motion.span>

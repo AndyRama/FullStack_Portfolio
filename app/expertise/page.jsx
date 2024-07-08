@@ -19,44 +19,6 @@ export default function Expertise() {
         d'honneur à rester à la pointe des dernières technologies et tendances du web pour offrir des solutions 
         innovantes et adaptées aux besoins de mes clients."
       />
-      <DescriptionCardR
-        className=" pt-14 pb-15"
-        img="/images/desktop.jpg"
-        description=" Lorem ipsum dolor sit amet consectetur adipisicing elit.
-         Amet non nihil tenetur est minima, molestiae, laborum animi eum qui quos
-         beatae debitis, molestias veniam voluptatibus itaque inventore perspiciatis
-         ea aut."
-      />
-      <DescriptionCard
-        className=" pt-14 pb-15"
-        description=" Lorem ipsum dolor sit amet consectetur adipisicing elit.
-         Amet non nihil tenetur est minima, molestiae, laborum animi eum qui quos
-         beatae debitis, molestias veniam voluptatibus itaque inventore perspiciatis
-         ea aut."
-      />
-      <DescriptionCardR
-        className=" pt-14 pb-15"
-        img="/images/desktop1.jpg"
-        description=" Lorem ipsum dolor sit amet consectetur adipisicing elit.
-         Amet non nihil tenetur est minima, molestiae, laborum animi eum qui quos
-         beatae debitis, molestias veniam voluptatibus itaque inventore perspiciatis
-         ea aut."
-      />
-      <DescriptionCard
-        className=" pt-14 pb-15"
-        description=" Lorem ipsum dolor sit amet consectetur adipisicing elit.
-         Amet non nihil tenetur est minima, molestiae, laborum animi eum qui quos
-         beatae debitis, molestias veniam voluptatibus itaque inventore perspiciatis
-         ea aut."
-      />
-      <DescriptionCardR
-        className=" pt-14 pb-15"
-        img="/images/desktop.jpg"
-        description=" Lorem ipsum dolor sit amet consectetur adipisicing elit.
-         Amet non nihil tenetur est minima, molestiae, laborum animi eum qui quos
-         beatae debitis, molestias veniam voluptatibus itaque inventore perspiciatis
-         ea aut."
-      />
       <Subscribe className="py-16 pt-64 lg:py-32 " />
     </>
   )
