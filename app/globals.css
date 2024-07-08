@@ -26,7 +26,7 @@
   @apply bg-white shadow-2xl text-green-600;
 }
 
-.pagination li:first-child {
+/* .pagination li:first-child {
   @apply !mr-2 md: !mr-5;
 }
 
@@ -40,7 +40,7 @@
 
 .pagination li:last-child a {
   @apply w-auto px-3 md:px-5 rounded-none;
-}
+} */
 
 .prose h1,
 h2,
