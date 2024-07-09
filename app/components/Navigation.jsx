@@ -90,7 +90,7 @@ export default function Navigation() {
           <div>
             <ul
               role="list"
-              className="hidden  space-x-8 text-[#2F2E2E] text-2xl"
+              className="hidden space-x-8 text-[#2F2E2E] text-2xl"
             >
               {navigationMenu.map((menu, index) => (
                 <li key={menu.label}>
@@ -156,12 +156,13 @@ export default function Navigation() {
                     <div className="flex h-full flex-col overflow-y-scroll bg-white border shadow-xl">
                       <div className="flex-1 overflow-y-auto px-8 py-8 sm:px-12">
                         <div className="flex items-start justify-between">
-                          <Dialog.Title className="text-lg font-medium text-[">
+                          <Dialog.Title className="text-lg font-medium">
                             Menu
                           </Dialog.Title>
                           <div className="ml-3 flex h-7 items-center">
                             <button
                               type="button"
+                              alt="open menu"
                               className="relative -m-2 p-2 mt-3 -mr-0 text-red-500 hover:text-gray-500"
                               onClick={() => setOpen(false)}
                             >

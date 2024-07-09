@@ -93,24 +93,26 @@ const Footer = ({ className }) => {
             </Link>
             <br />
             <div className="flex mt-2">
-              <span>
+              <span className="flex flex-row">
+                <FaGithub />
                 <Link
                   href="https://github.com/AndyRama"
-                  className="text-[28px] text-[#2F2E2E] font-bold mr-10"
-                  alt="Github-icon"
+                  className="text-[12px] text-[#2F2E2E] hover:text-red-500 font-bold ml-2 mr-5 mt-[-2]"
+                  alt="andy rama Github link"
                   target="_blank"
                 >
-                  <FaGithub />
+                  Github
                 </Link>
               </span>
-              <span>
+              <span className="flex flex-row text-center">
+                <FaLinkedin />
                 <Link
                   href="http://www.linkedin.com/in/andy-ramaroson"
-                  className="text-[28px] text-[#2F2E2E] font-bold mr-10"
-                  alt="Linkedin-icon"
+                  className="text-[12px] text-[#2F2E2E] hover:text-red-500 font-bold ml-2 mt-[-2]"
+                  alt="andy rama Linkedin link"
                   target="_blank"
                 >
-                  <FaLinkedin />
+                  Linkedin
                 </Link>
               </span>
             </div>

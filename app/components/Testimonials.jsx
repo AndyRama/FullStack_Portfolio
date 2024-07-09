@@ -54,13 +54,13 @@ const Testimonials = () => {
       <h3 className="uppercase tracking-[3px] text-sm inline-block px-4">
         Retour sur mes services
       </h3>
-      <h2 className="text-2xl lg:text-3xl mb-4 lg:mb-10 px-4 text-red-400">
+      <h2 className="text-2xl lg:text-3xl mb-4 lg:mb-10 px-4 text-red-600">
         Quelques témoignage sur les prestations !
       </h2>
       <div className="flex flex-wrap justify-center">
         {testimonials.map((testimonial, index) => (
           <div key={index} className="w-full sm:w-1/2 lg:w-1/2 px-4 py-2">
-            <div className="text-[#2F2E2E] bg-gray-50 rounded-md p-6 text-md border border-gray-500 font-thin">
+            <div className="text-[#2F2E2E] rounded-md p-6 text-md border border-[#2F2E2E] font-thin">
               <p>{testimonial.text}</p>
               <div className="flex mt-8 items-start">
                 <Image
@@ -72,7 +72,7 @@ const Testimonials = () => {
                 />
                 <div>
                   <h6 className="text-md font-bold">{testimonial.user}</h6>
-                  <span className="text-md font-bold italic text-red-500">
+                  <span className="text-md font-bold italic text-red-600">
                     {testimonial.company}
                   </span>
                 </div>
