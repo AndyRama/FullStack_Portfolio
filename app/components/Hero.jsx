@@ -64,7 +64,7 @@ const Hero = ({ className }) => {
                   transition: { delay: 0.2, duration: 0.5 },
                 }}
                 viewport={{ once: true }}
-                className=" text-gray-800 text-3xl sm:text-3xl md:text-4xl lg:text-5xl w-auto lg:w-screen max-w-xl mb-4 md:mb-7 mt-0 lg:mt-32"
+                className=" text-[#b5443d] text-3xl md:text-4xl lg:text-6xl w-auto lg:w-screen max-w-xl mb-4 md:mb-7 mt-0 lg:mt-32"
               >
                 {heroContent.intro.title}
               </motion.h1>
@@ -102,7 +102,7 @@ const Hero = ({ className }) => {
                 <Link
                   href={heroContent.intro.btn.href}
                   className="transistion-all duration-300 ease-in-out text-[11.5px]
-                  md:tracking-[2px] font-bold uppercase bg-gradient-to-r from-green-300 to-green-500 py-4 px-5
+                  md:tracking-[2px] font-bold uppercase bg-gradient-to-r from-red-400 to-red-600 py-4 px-5
                   rounded hover:text-white inline-block hover:bg-white text-gray-900 hover:shadow-2xl mb-5 mr-5"
                 >
                   {heroContent.intro.btn.label}
@@ -111,7 +111,7 @@ const Hero = ({ className }) => {
                 <Link
                   href={heroContent.intro.btn1.href}
                   className="transistion-all duration-300 ease-in-out text-[11.5px]
-                  md:tracking-[2px] font-bold uppercase bg-gradient-to-r from-green-100 to-green-200 py-4 px-5
+                  md:tracking-[2px] font-bold uppercase bg-gradient-to-r from-red-200 to-red-500 py-4 px-5
                   rounded hover:text-white hover:bg-white text-gray-900"
                 >
                   {heroContent.intro.btn1.label}

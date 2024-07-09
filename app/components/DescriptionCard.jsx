@@ -62,7 +62,7 @@ const CardDescription = ({ className, title, subTitle, description }) => {
                 },
               }}
               viewport={{ once: true }}
-              className="text-2xl lg:text-4xl text-green-500"
+              className="text-2xl lg:text-4xl text-red-500"
             >
               {cardDescriptionContent.heading.title}
             </motion.h2>

@@ -12,7 +12,7 @@ import logo5 from './../../public/images/logo5.jpg'
 
 const clientContent = {
   intro: {
-    subTitle: 'Partenaires',
+    subTitle: '',
     title: "ils m'ont fait confiance",
     description:
       'Je réalise au quotidien des projets pour des startups, PME, éditeurs de logiciels.',
@@ -65,7 +65,7 @@ const Client = ({ className }) => {
                     },
                   }}
                   viewport={{ once: true }}
-                  className="text-2xl lg:text-4xl mb-4 lg:mb-0 text-green-400"
+                  className="text-2xl lg:text-4xl mb-4 lg:mb-0 text-red-400"
                 >
                   {clientContent.intro.title}
                 </motion.h2>

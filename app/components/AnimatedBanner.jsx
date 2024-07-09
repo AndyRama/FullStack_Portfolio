@@ -15,7 +15,7 @@ const AnimatedBanner = () => {
   return (
     <>
       <motion.div
-        className="w-full h-20 bg-gradient-to-r from-green-100 to-green-300"
+        className="w-full h-20 bg-gradient-to-r from-red-200 to-red-400"
         initial={{ x: '100%' }}
         animate={{
           x: isVisible ? 0 : '-99%',

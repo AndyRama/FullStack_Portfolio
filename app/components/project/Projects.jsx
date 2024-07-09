@@ -68,8 +68,8 @@ const Items = ({ currentItems }) => {
                 <Link
                   href={project.url}
                   className={`text-[12px] tracking-[2px] uppercase mt-6 md:px-2 mr-2 border
-                        border-gray-200 px-4 pt-2 pb-2 rounded-md hover:text-bold hover:text-green-900
-                        hover:border-green-500`}
+                        border-gray-200 px-4 pt-2 pb-2 rounded-md hover:text-bold hover:text-red-900
+                        hover:border-red-500`}
                 >
                   plus d&apos;infos
                 </Link>
@@ -77,8 +77,8 @@ const Items = ({ currentItems }) => {
                 <Link
                   href={production}
                   className={`text-[12px] tracking-[2px] uppercase flex mt-6 md:px-2 mr-2 border
-                          border-gray-200 px-4 pt-2 pb-2 rounded-md hover:text-bold hover:text-green-900
-                          hover:border-green-500`}
+                          border-gray-200 px-4 pt-2 pb-2 rounded-md hover:text-bold hover:text-red-900
+                          hover:border-red-500`}
                   target="_blank"
                 >
                   Demo
@@ -88,8 +88,8 @@ const Items = ({ currentItems }) => {
                   href={repository}
                   target="_blank"
                   className={`text-[12px] tracking-[2px] uppercase flex mt-6 md:px-2 mr-2 border
-                        border-gray-200 px-4 pt-2 pb-0 rounded-md hover:text-bold hover:text-green-900
-                        hover:border-green-500`}
+                        border-gray-200 px-4 pt-2 pb-0 rounded-md hover:text-bold hover:text-red-900
+                        hover:border-red-500`}
                 >
                   Code
                 </Link>

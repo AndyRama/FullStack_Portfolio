@@ -54,7 +54,7 @@ const Testimonials = () => {
       <h3 className="uppercase tracking-[3px] text-sm inline-block px-4">
         Retour sur mes services
       </h3>
-      <h2 className="text-2xl lg:text-3xl mb-4 lg:mb-10 px-4 text-green-400">
+      <h2 className="text-2xl lg:text-3xl mb-4 lg:mb-10 px-4 text-red-400">
         Quelques témoignage sur les prestations !
       </h2>
       <div className="flex flex-wrap justify-center">
@@ -72,7 +72,7 @@ const Testimonials = () => {
                 />
                 <div>
                   <h6>{testimonial.user}</h6>
-                  <span className="text-sm font-bold italic text-green-500">
+                  <span className="text-sm font-bold italic text-red-500">
                     {testimonial.company}
                   </span>
                 </div>

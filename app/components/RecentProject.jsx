@@ -166,7 +166,7 @@ const RecentProject = ({ className }) => {
                     },
                   }}
                   viewport={{ once: true }}
-                  className="text-2xl lg:text-4xl mb-10 text-green-500"
+                  className="text-2xl lg:text-4xl mb-10 text-red-500"
                 >
                   {recentProjectContent.heading.title}
                 </motion.h2>
@@ -210,7 +210,7 @@ const RecentProject = ({ className }) => {
                       </div>
                       <div className="md:w-7/12 p-7 md:p-8 flex items-center">
                         <div>
-                          <h2 className="text-2xl text-green-400 block">
+                          <h2 className="text-2xl text-red-400 block">
                             {recentProject.title}
                           </h2>
                           <div className="flex space-x-2 text-sm">
@@ -250,7 +250,7 @@ const RecentProject = ({ className }) => {
               className={`${
                 isBeginning
                   ? 'opacity-30 bg-gray-300 text-gray-600 cursor-not-allowed'
-                  : 'opacity-100 bg-green-400 text-white cursor-pointer'
+                  : 'opacity-100 bg-red-400 text-white cursor-pointer'
               } relative top-0 group transition-all duration-300 ease-in-out w-12 h-12 rounded-full inline-flex justify-center items-center`}
             >
               <BiChevronLeft
@@ -263,7 +263,7 @@ const RecentProject = ({ className }) => {
               className={`${
                 isEnd
                   ? 'opacity-30 bg-gray-300 text-gray-600 cursor-not-allowed'
-                  : 'opacity-100  bg-gradient-to-r from-green-300 to-green-500 text-white cursor-pointer'
+                  : 'opacity-100  bg-gradient-to-r from-red-400 to-red-600  text-white cursor-pointer'
               } relative top-0 group transition-all duration-300 ease-in-out w-12 h-12 rounded-full inline-flex justify-center items-center`}
             >
               <BiChevronRight
@@ -285,9 +285,9 @@ const RecentProject = ({ className }) => {
               <Link
                 href={recentProjectContent.btn.href}
                 className="transistion-all duration-300 ease-in-out text-[11.5px]
-                      tracking-[2px] font-bold uppercase  bg-gradient-to-r from-green-300 to-green-500 py-4 px-3
+                      tracking-[2px] font-bold uppercase  bg-gradient-to-r from-red-300 to-red-500 py-4 px-3
                       rounded text-black hover:text-white inline-block items-end hover:bg-white 
-                      hover:shadow-2xl hover:border hover:border-green-400 h-12"
+                      hover:shadow-2xl hover:border hover:border-red-400 h-12"
               >
                 {recentProjectContent.btn.label}
               </Link>

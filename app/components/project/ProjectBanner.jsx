@@ -100,7 +100,7 @@ const ProjectBanner = ({
                     transition: { delay: 0.06, duration: 0.5 },
                   }}
                   viewport={{ once: true }}
-                  className="text-3xl md:text-4xl xl:text-5xl text-green-500 mb-5"
+                  className="text-3xl md:text-4xl xl:text-5xl text-red-500 mb-5"
                 >
                   {title}
                 </motion.h2>
@@ -155,7 +155,7 @@ const ProjectBanner = ({
                     href={projectBannerContent.heading.btn.href}
                     target="_blank"
                     className="transistion-all duration-300 ease-in-out text-[11.5px]
-                  md:tracking-[2px] font-bold uppercase bg-gradient-to-r from-green-300 to-green-500 py-4 px-5
+                  md:tracking-[2px] font-bold uppercase bg-gradient-to-r from-red-300 to-red-500 py-4 px-5
                   rounded  text-[#2F2E2E]  hover:text-white inline-block hover:bg-white 
                   hover:shadow-2xl mb-5 mr-5"
                   >
@@ -167,7 +167,7 @@ const ProjectBanner = ({
                     href={projectBannerContent.heading.btn1.href}
                     target="_blank"
                     className="transistion-all duration-300 ease-in-out text-[11.5px]
-                  md:tracking-[2px] font-bold uppercase bg-gradient-to-r from-green-300 to-green-500 py-4 px-5
+                  md:tracking-[2px] font-bold uppercase bg-gradient-to-r from-red-300 to-red-500 py-4 px-5
                   rounded hover:text-white hover:bg-white text-[#2F2E2E]
                   hover:shadow-2xl mb-5 mr-5 inline-block"
                   >
