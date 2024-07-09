@@ -71,7 +71,7 @@ const Testimonials = () => {
                   height={200}
                 />
                 <div>
-                  <h6 className="text-md font-bold">{testimonial.user}</h6>
+                  <h3 className="text-md font-bold">{testimonial.user}</h3>
                   <span className="text-md font-bold italic text-red-600">
                     {testimonial.company}
                   </span>

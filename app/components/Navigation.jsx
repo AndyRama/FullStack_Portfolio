@@ -118,6 +118,7 @@ export default function Navigation() {
             </ul>
             <button
               className=" text-lg text-red-500 rounded-md"
+              aria-label="Button menu open"
               onClick={() => setOpen(true)}
             >
               {open ? null : <HiMenu className="text-[32px] mt-2" />}
@@ -162,7 +163,7 @@ export default function Navigation() {
                           <div className="ml-3 flex h-7 items-center">
                             <button
                               type="button"
-                              alt="open menu"
+                              aria-label="Button menu close"
                               className="relative -m-2 p-2 mt-3 -mr-0 text-red-500 hover:text-gray-500"
                               onClick={() => setOpen(false)}
                             >
