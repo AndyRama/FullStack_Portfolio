@@ -22,12 +22,12 @@ const testimonials = [
     image: user2,
     text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ipsum consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam !',
   },
-  // {
-  //   user: 'Jane Smith',
-  //   company: 'Blue Horizon Technologies',
-  //   image: user5,
-  //   text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ipsum consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam !',
-  // },
+  {
+    user: 'Jane Smith',
+    company: 'Blue Horizon Technologies',
+    image: user5,
+    text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ipsum consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam !',
+  },
   {
     user: 'Honoré Rabefarihy',
     company: 'Ingénieur Agronome',
@@ -40,12 +40,12 @@ const testimonials = [
     image: user1,
     text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ipsum consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam !',
   },
-  // {
-  //   user: 'Marc Davis',
-  //   company: 'Synergy Systems',
-  //   image: user6,
-  //   text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ipsum consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam !',
-  // },
+  {
+    user: 'Marc Davis',
+    company: 'Synergy Systems',
+    image: user6,
+    text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ipsum consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam !',
+  },
 ]
 
 const Testimonials = () => {
@@ -60,7 +60,7 @@ const Testimonials = () => {
       <div className="flex flex-wrap justify-center">
         {testimonials.map((testimonial, index) => (
           <div key={index} className="w-full sm:w-1/2 lg:w-1/2 px-4 py-2">
-            <div className="text-[#2F2E2E] bg-white rounded-md p-6 text-md border border-gray-200 font-thin">
+            <div className="text-[#2F2E2E] bg-gray-50 rounded-md p-6 text-md border border-gray-500 font-thin">
               <p>{testimonial.text}</p>
               <div className="flex mt-8 items-start">
                 <Image
@@ -71,8 +71,8 @@ const Testimonials = () => {
                   height={200}
                 />
                 <div>
-                  <h6>{testimonial.user}</h6>
-                  <span className="text-sm font-bold italic text-red-500">
+                  <h6 className="text-md font-bold">{testimonial.user}</h6>
+                  <span className="text-md font-bold italic text-red-500">
                     {testimonial.company}
                   </span>
                 </div>

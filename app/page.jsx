@@ -18,7 +18,7 @@ export default function Home() {
         subTitle="quelques mots"
       />
       <RecentProject className="mt-28 pb-22" />
-      <Client className="mt-28 pb-22" />
+      <Client className="mt-22 pb-22" />
       <Testimonials />
       <Stats />
       <PricingDetails />
