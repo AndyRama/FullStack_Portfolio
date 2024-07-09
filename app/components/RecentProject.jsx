@@ -135,7 +135,7 @@ const RecentProject = ({ className }) => {
       <div className="container px-4 mx-auto">
         <div className="flex ">
           <div className="w-full gap-0 ">
-            <div className="text-left md:text-center w-auto md:w-screen max-w-full lg:max-w-xl">
+            <div className="text-left md:ml-24 w-auto md:w-screen max-w-full lg:max-w-xl">
               {recentProjectContent.heading.subTitle && (
                 <motion.span
                   initial={{ opacity: 0, y: 20 }}
@@ -148,7 +148,7 @@ const RecentProject = ({ className }) => {
                     },
                   }}
                   viewport={{ once: true }}
-                  className="uppercase tracking-[3px] text-[12.5px] mb-4 inline-block text-green-400"
+                  className="uppercase tracking-[3px] text-[12.5px] mb-4 inline-block"
                 >
                   {recentProjectContent.heading.subTitle}
                 </motion.span>
@@ -166,7 +166,7 @@ const RecentProject = ({ className }) => {
                     },
                   }}
                   viewport={{ once: true }}
-                  className="text-2xl lg:text-4xl mb-10 "
+                  className="text-2xl lg:text-4xl mb-10 text-green-500"
                 >
                   {recentProjectContent.heading.title}
                 </motion.h2>
@@ -286,8 +286,8 @@ const RecentProject = ({ className }) => {
                 href={recentProjectContent.btn.href}
                 className="transistion-all duration-300 ease-in-out text-[11.5px]
                       tracking-[2px] font-bold uppercase  bg-gradient-to-r from-green-300 to-green-500 py-4 px-3
-                      rounded text-white inline-block items-end hover:bg-white 
-                      hover:shadow-2xl hover:border hover:border-green-400 hover:text-green-400 h-12"
+                      rounded text-black hover:text-white inline-block items-end hover:bg-white 
+                      hover:shadow-2xl hover:border hover:border-green-400 h-12"
               >
                 {recentProjectContent.btn.label}
               </Link>

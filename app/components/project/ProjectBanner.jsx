@@ -84,7 +84,7 @@ const ProjectBanner = ({
                     transition: { delay: 0.03, duration: 0.5 },
                   }}
                   viewport={{ once: true }}
-                  className="uppercase tracking-[3px] text-[18px] mb-5 inline-block text-green-500 font-bold"
+                  className="uppercase tracking-[3px] text-[18px] mb-5 inline-block  text-[#2F2E2E] font-bold"
                 >
                   {subTitle}
                 </motion.span>
@@ -100,7 +100,7 @@ const ProjectBanner = ({
                     transition: { delay: 0.06, duration: 0.5 },
                   }}
                   viewport={{ once: true }}
-                  className="text-3xl md:text-4xl xl:text-5xl text-[#2F2E2E] mb-5"
+                  className="text-3xl md:text-4xl xl:text-5xl text-green-500 mb-5"
                 >
                   {title}
                 </motion.h2>
@@ -116,7 +116,7 @@ const ProjectBanner = ({
                     transition: { delay: 0.03, duration: 0.5 },
                   }}
                   viewport={{ once: true }}
-                  className="tracking-[3px] text-[14px] mb-5 inline-block text-green-500 font-bold"
+                  className="tracking-[3px] text-[14px] mb-5 inline-block  text-[#2F2E2E]  font-bold"
                 >
                   FullStack | {time}
                 </motion.span>
@@ -156,7 +156,7 @@ const ProjectBanner = ({
                     target="_blank"
                     className="transistion-all duration-300 ease-in-out text-[11.5px]
                   md:tracking-[2px] font-bold uppercase bg-gradient-to-r from-green-300 to-green-500 py-4 px-5
-                  rounded text-white inline-block hover:bg-white hover:text-[#2F2E2E]
+                  rounded  text-[#2F2E2E]  hover:text-white inline-block hover:bg-white 
                   hover:shadow-2xl mb-5 mr-5"
                   >
                     {projectBannerContent.heading.btn.label}
@@ -168,7 +168,7 @@ const ProjectBanner = ({
                     target="_blank"
                     className="transistion-all duration-300 ease-in-out text-[11.5px]
                   md:tracking-[2px] font-bold uppercase bg-gradient-to-r from-green-300 to-green-500 py-4 px-5
-                  rounded text-white hover:bg-white hover:text-[#2F2E2E]
+                  rounded hover:text-white hover:bg-white text-[#2F2E2E]
                   hover:shadow-2xl mb-5 mr-5 inline-block"
                   >
                     {projectBannerContent.heading.btn1.label}

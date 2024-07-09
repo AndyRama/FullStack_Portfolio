@@ -12,7 +12,7 @@ import logo5 from './../../public/images/logo5.jpg'
 
 const clientContent = {
   intro: {
-    subTitle: 'les partenaires',
+    subTitle: 'Partenaires',
     title: "ils m'ont fait confiance",
     description:
       'Je réalise au quotidien des projets pour des startups, PME, éditeurs de logiciels.',
@@ -48,7 +48,7 @@ const Client = ({ className }) => {
                     },
                   }}
                   viewport={{ once: true }}
-                  className="uppercase tracking-[3px] text-sm inline-block text-green-400"
+                  className="uppercase tracking-[3px] text-sm inline-block "
                 >
                   {clientContent.intro.subTitle}
                 </motion.span>
@@ -65,7 +65,7 @@ const Client = ({ className }) => {
                     },
                   }}
                   viewport={{ once: true }}
-                  className="text-2xl lg:text-4xl mb-4 lg:mb-0"
+                  className="text-2xl lg:text-4xl mb-4 lg:mb-0 text-green-400"
                 >
                   {clientContent.intro.title}
                 </motion.h2>

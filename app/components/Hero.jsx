@@ -12,7 +12,7 @@ const heroContent = {
       'Je suis Andy Ramaroson, un développeur FullStack JS basée sur Bordeaux (N. Aquitaine, 33) et je réalise des applications sur mesure en me basant sur des technologies web modernes et I.A. Je suis spécialisé sur le langage  JavaScript avec le framework React & NextJs.',
     btn1: {
       href: '/projects',
-      label: 'Projets',
+      label: 'Portfolio',
     },
     btn: {
       href: 'https://calendly.com/andyramaroson/30min',
@@ -103,7 +103,7 @@ const Hero = ({ className }) => {
                   href={heroContent.intro.btn.href}
                   className="transistion-all duration-300 ease-in-out text-[11.5px]
                   md:tracking-[2px] font-bold uppercase bg-gradient-to-r from-green-300 to-green-500 py-4 px-5
-                  rounded text-white inline-block hover:bg-white hover:text-gray-900 hover:shadow-2xl mb-5 mr-5"
+                  rounded hover:text-white inline-block hover:bg-white text-gray-900 hover:shadow-2xl mb-5 mr-5"
                 >
                   {heroContent.intro.btn.label}
                 </Link>
@@ -111,8 +111,8 @@ const Hero = ({ className }) => {
                 <Link
                   href={heroContent.intro.btn1.href}
                   className="transistion-all duration-300 ease-in-out text-[11.5px]
-                  md:tracking-[2px] font-bold uppercase bg-gradient-to-r from-green-300 to-green-500 py-4 px-5
-                  rounded text-white hover:bg-white hover:text-gray-900"
+                  md:tracking-[2px] font-bold uppercase bg-gradient-to-r from-green-100 to-green-200 py-4 px-5
+                  rounded hover:text-white hover:bg-white text-gray-900"
                 >
                   {heroContent.intro.btn1.label}
                 </Link>

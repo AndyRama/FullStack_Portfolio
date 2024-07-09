@@ -124,8 +124,8 @@ const Subscribe = ({ className }) => {
               href={subscribeContent.heading.btn.href}
               target="_blank"
               className="transistion-all duration-300 ease-in-out text-[11.5px] md:tracking-[2px] font-bold uppercase 
-              bg-gradient-to-r from-green-300 to-green-500 py-4 px-5 rounded text-white hover:bg-white
-              hover:shadow-2xl mb-5 mr-5 inline-block w-[300px] text-center hover:text-[#2F2E2E]"
+              bg-gradient-to-r from-green-300 to-green-500 py-4 px-5 rounded hover:text-white hover:bg-white
+              hover:shadow-2xl mb-5 mr-5 inline-block w-[300px] text-center text-[#2F2E2E]"
             >
               {subscribeContent.heading.btn.label}
             </Link>
