@@ -54,7 +54,7 @@ const Testimonials = () => {
       <h3 className="uppercase tracking-[3px] text-sm inline-block px-4">
         Retour sur mes services
       </h3>
-      <h2 className="text-2xl lg:text-3xl mb-4 lg:mb-10 px-4 text-red-600">
+      <h2 className="text-2xl lg:text-3xl mb-4 lg:mb-10 px-4 text-green-500">
         Quelques témoignage sur les prestations !
       </h2>
       <div className="flex flex-wrap justify-center">
@@ -67,12 +67,12 @@ const Testimonials = () => {
                   className="w-12 h-12 mr-6 rounded-full"
                   src={testimonial.image}
                   alt="profile"
-                  width={200}
-                  height={200}
+                  width={48}
+                  height={48}
                 />
                 <div>
                   <h3 className="text-md font-bold">{testimonial.user}</h3>
-                  <span className="text-md font-bold italic text-red-600">
+                  <span className="text-md font-bold italic text-green-600">
                     {testimonial.company}
                   </span>
                 </div>

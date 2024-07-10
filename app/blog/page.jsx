@@ -3,6 +3,8 @@ import SubHero from '../components/blog/SubHero'
 import Posts from '../components/blog/Posts'
 import Subscribe from '../components/Subscribe'
 
+import TeamImage from './../../public/images/Team.jpg'
+
 export const metadata = {
   title: 'Blogs - Andy Ramaroson',
 }
@@ -14,6 +16,7 @@ const page = () => {
         className="pt-32 lg:mb-22 xl:mb-32"
         subTitle="Mon blog"
         title="Dernier articles"
+        image={TeamImage}
         description="Ma veille technologique se concentre principalement sur le langage JavaScript. Je suis également les évolutions des frameworks populaires comme React et NextJS, en explorant les nouvelles fonctionnalités, les meilleures pratiques
         et les patterns de conception émergents que je partage au travers de ce blog."
       />

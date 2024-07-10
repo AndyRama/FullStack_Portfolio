@@ -9,30 +9,12 @@ const subHeroContent = {
     subTitle: '',
     title: '',
     description: '',
-    image: '/images/desktop.jpg',
   },
 }
 const SubHero = ({ className, title, subTitle, description, image }) => {
-  if (title) {
-    title = title
-  } else {
-    title = subHeroContent.heading.title
-  }
-  if (subTitle) {
-    subTitle = subTitle
-  } else {
-    subTitle = subHeroContent.heading.subTitle
-  }
-  if (description) {
-    description = description
-  } else {
-    description = subHeroContent.heading.description
-  }
-  if (image) {
-    image = image
-  } else {
-    image = subHeroContent.heading.image
-  }
+  title = title || subHeroContent.heading.title
+  subTitle = subTitle || subHeroContent.heading.subTitle
+  description = description || subHeroContent.heading.description
 
   const ref = useRef(null)
 
@@ -114,12 +96,9 @@ const SubHero = ({ className, title, subTitle, description, image }) => {
               style={{ y: imgScroll1 }}
               className="z-[2] relative bg-cover bg-center"
             >
-              <Image
-                src={subHeroContent.heading.image}
-                width={700}
-                height={985}
-                alt="hero image desktop"
-              />
+              {image && (
+                <Image src={image} width={700} height={985} alt="hero image" />
+              )}
             </motion.div>
           </div>
         </div>

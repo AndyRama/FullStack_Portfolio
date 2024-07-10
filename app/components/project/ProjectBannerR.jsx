@@ -10,14 +10,16 @@ const projectBannerContent = {
   heading: {
     subTitle: '',
     title: '',
-    time: '1 mois 1/2',
+    time: '',
     description: '',
+    mission: '',
+    developpement: '',
     btn1: {
-      href: 'https://portfolio-eta-three-93.vercel.app/',
+      href: '#',
       label: 'Demo',
     },
     btn: {
-      href: 'https://portfolio-eta-three-93.vercel.app/',
+      href: '/projects/Unlcoaching-jeremy-prat',
       label: "Plus d'informations",
     },
   },
@@ -30,11 +32,17 @@ const ProjectBanner = ({
   description,
   image,
   time,
+  mission,
+  developpement,
+  btn1,
 }) => {
   title = title || projectBannerContent.heading.title
   subTitle = subTitle || projectBannerContent.heading.subTitle
   description = description || projectBannerContent.heading.description
   time = time || projectBannerContent.heading.time
+  mission = mission || projectBannerContent.heading.mission
+  developpement = developpement || projectBannerContent.heading.developpement
+  btn1 = btn1 || projectBannerContent.heading.btn1.href
 
   const ref = useRef(null)
 
@@ -100,7 +108,7 @@ const ProjectBanner = ({
                     transition: { delay: 0.06, duration: 0.5 },
                   }}
                   viewport={{ once: true }}
-                  className="text-3xl md:text-4xl xl:text-5xl text-red-500 mb-10"
+                  className="text-3xl md:text-4xl xl:text-5xl text-green-500 mb-10"
                 >
                   {title}
                 </motion.h2>
@@ -118,7 +126,7 @@ const ProjectBanner = ({
                   viewport={{ once: true }}
                   className="tracking-[3px] text-[14px] mb-5 inline-block text-[#2F2E2E] font-bold"
                 >
-                  FullStack | {time}
+                  {developpement} | {time} | {mission}
                 </motion.span>
               )}
 
@@ -150,25 +158,23 @@ const ProjectBanner = ({
                   viewport={{ once: true }}
                   className="btn-container mt-10"
                 >
-                  {/* Content left - btn - info */}
-                  <Link
-                    href={projectBannerContent.heading.btn.href}
-                    className="transistion-all duration-300 ease-in-out text-[11.5px]
-                  md:tracking-[2px] font-bold uppercase bg-gradient-to-r from-red-300 to-red-500 py-4 px-5
-                  rounded hover:text-white inline-block hover:bg-white text-[#2F2E2E] 
-                  hover:shadow-2xl mb-5 mr-5"
-                  >
-                    {projectBannerContent.heading.btn.label}
-                  </Link>
                   {/* Content left - btn - demo */}
                   <Link
                     href={projectBannerContent.heading.btn1.href}
                     className="transistion-all duration-300 ease-in-out text-[11.5px]
-                  md:tracking-[2px] font-bold uppercase bg-gradient-to-r from-red-300 to-red-500 py-4 px-5
-                  rounded hover:text-white hover:bg-white text-[#2F2E2E]
-                  hover:shadow-2xl mb-5 mr-5 inline-block"
+                    md:tracking-[2px] font-bold uppercase bg-gradient-to-r from-green-300 to-green-500 py-4 px-5
+                    rounded  text-gray-600 hover:bg-white hover:text-[#2F2E2E] inline-block hover:shadow-2xl mb-5 mr-5"
                   >
                     {projectBannerContent.heading.btn1.label}
+                  </Link>
+                  {/* Content left - btn - info */}
+                  <Link
+                    href={projectBannerContent.heading.btn.href}
+                    className="transistion-all duration-300 ease-in-out text-[11.5px]
+                    md:tracking-[2px] font-bold uppercase bg-gradient-to-r from-green-100 to-green-300 py-4 px-5
+                    rounded  text-gray-600 hover:bg-white hover:text-[#2F2E2E] inline-block hover:shadow-2xl mb-5 mr-5"
+                  >
+                    {projectBannerContent.heading.btn.label}
                   </Link>
                 </motion.div>
               )}

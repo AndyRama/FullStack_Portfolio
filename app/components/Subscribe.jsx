@@ -124,7 +124,7 @@ const Subscribe = ({ className }) => {
               href={subscribeContent.heading.btn.href}
               target="_blank"
               className="transistion-all duration-300 ease-in-out text-[11.5px] md:tracking-[2px] font-bold uppercase 
-              bg-gradient-to-r from-red-400 to-red-600  py-4 px-5 rounded hover:text-white hover:bg-white
+              bg-gradient-to-r from-green-400 to-green-600  py-4 px-5 rounded hover:text-white hover:bg-white
               hover:shadow-2xl mb-5 mr-5 inline-block w-[300px] text-center text-[#2F2E2E]"
             >
               {subscribeContent.heading.btn.label}
@@ -133,7 +133,7 @@ const Subscribe = ({ className }) => {
         </div>
       </div>
       <div className="transform-gpu blur-3xl">
-        <div className="absolute right-0 bottom-60 opacity-50 -z-50 w-32 h-48 md:w-52 md:h-64 bg-gradient-to-tr from-red-400 to-red-600 "></div>
+        <div className="absolute right-0 bottom-60 opacity-50 -z-50 w-32 h-48 md:w-52 md:h-64 bg-gradient-to-tr from-green-400 to-green-600 "></div>
       </div>
     </section>
   )

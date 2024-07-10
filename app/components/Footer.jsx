@@ -68,12 +68,12 @@ const Copyright = () => {
     <div className="pt-2 mb-5 md:mt-5 md:pt-3 mr-1 border-t border-t-gray-100 text-center text-[#2F2E2E] ">
       <div className="text-center items-center mx-auto text-sm">
         &copy; 2024
-        <Link href="/" className="text-red-500 ml-1 mr-1">
+        <Link href="/" className="text-green-500 ml-1 mr-1">
           Portfolio
         </Link>
-        Crée avec <BiSolidHeart className="text-red-400 inline-block mr-1" />
+        Crée avec <BiSolidHeart className="text-green-400 inline-block mr-1" />
         par
-        <Link href="/" className="text-red-500 ml-1">
+        <Link href="/" className="text-green-500 ml-1">
           Andy Ramaroson
         </Link>
       </div>
@@ -97,7 +97,7 @@ const Footer = ({ className }) => {
                 <FaGithub />
                 <Link
                   href="https://github.com/AndyRama"
-                  className="text-[12px] text-[#2F2E2E] hover:text-red-500 font-bold ml-2 mr-5 mt-[-2]"
+                  className="text-[12px] text-[#2F2E2E] hover:text-green-500 font-bold ml-2 mr-5 mt-[-2]"
                   alt="andy rama Github link"
                   target="_blank"
                 >
@@ -108,7 +108,7 @@ const Footer = ({ className }) => {
                 <FaLinkedin />
                 <Link
                   href="http://www.linkedin.com/in/andy-ramaroson"
-                  className="text-[12px] text-[#2F2E2E] hover:text-red-500 font-bold ml-2 mt-[-2]"
+                  className="text-[12px] text-[#2F2E2E] hover:text-green-500 font-bold ml-2 mt-[-2]"
                   alt="andy rama Linkedin link"
                   target="_blank"
                 >
@@ -132,14 +132,14 @@ const Footer = ({ className }) => {
                           className={`${
                             link.badge ? 'flex gap-2 items-center' : ''
                           }
-                            text-[#2F2E2E] duration-300 transition-all ease-in-out hover:text-red-500`}
+                            text-[#2F2E2E] duration-300 transition-all ease-in-out hover:text-green-500`}
                         >
                           {link.label === 'CO2' ? (
                             <>
                               <span className="target_blanc">{link.label}</span>
                               <span
-                                className="py-0.5 px-1 rounded-full bg-red-100
-                                    border border-red-500 text-[10px] text-red-500
+                                className="py-0.5 px-1 rounded-full bg-green-100
+                                    border border-green-500 text-[10px] text-green-500
                                     invisible sm:visible"
                               >
                                 {link.badge}
@@ -163,14 +163,14 @@ const Footer = ({ className }) => {
           <Link
             href="/document/privacy"
             target="_blank"
-            className="text-red-500 hover:text-[#2F2E2E]"
+            className="text-green-500 hover:text-[#2F2E2E]"
           >
             Privacy{' '}
           </Link>{' '}
           <Link
             href="/document/terms"
             target="_blank"
-            className="text-[#2F2E2E] hover:text-red-500"
+            className="text-[#2F2E2E] hover:text-green-500"
           >
             Terms{' '}
           </Link>
@@ -178,8 +178,8 @@ const Footer = ({ className }) => {
         <Copyright />
       </div>
       <div className="transform-gpu blur-3xl ">
-        <div className="absolute -mt-20 left-0 opacity-50 -z-50 w-32 h-48 md:w-80 md:h-96 bg-gradient-to-tr from-red-300 to-red-500"></div>
-        <div className="absolute -mt-20 right-0 opacity-0 md:opacity-50 -z-50 w-80 h-96 bg-gradient-to-tr from-red-300 to-red-500"></div>
+        <div className="absolute -mt-20 left-0 opacity-50 -z-50 w-32 h-48 md:w-80 md:h-96 bg-gradient-to-tr from-green-300 to-green-500"></div>
+        <div className="absolute -mt-20 right-0 opacity-0 md:opacity-50 -z-50 w-80 h-96 bg-gradient-to-tr from-green-300 to-green-500"></div>
       </div>
     </footer>
   )
