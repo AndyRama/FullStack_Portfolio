@@ -12,7 +12,7 @@ const CardDescription = ({ className, title, subTitle, description }) => {
       description: description || '',
     },
     content: {
-      img: '/images/AndyPhotoNoir&Blanc.jpeg',
+      img: '/images/andy.jpeg',
       descriptions: [
         "En tant que développeur FullStack JS passionné par le développement web, je me spécialise dans la création d'interfaces utilisateur modernes et performantes.",
         "Avec plus de deux ans d'expérience dans le développement d'applications web sur mesure, j'ai acquis une expertise approfondie qui me permet de transformer leurs idées en solutions web sur mesure, performantes et répondant au mieux à leurs besoins",

@@ -19,7 +19,7 @@ const projectBannerContent = {
       label: 'Demo',
     },
     btn: {
-      href: '/projects/portfolio-andy-ramaroson',
+      href: '',
       label: "Plus d'informations",
     },
   },
