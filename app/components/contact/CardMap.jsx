@@ -51,7 +51,7 @@ const CardMap = ({ className }) => {
                 src={
                   "https://www.google.com/maps/embed/v1/place?key=AIzaSyBwOWZ_C1sw6lYJhxYk_LJJCI2uM9GW8IA&q=220 avenue de l'argonne,merignac,bordeaux,france "
                 }
-                allowfullscreen
+                allowFullScreen
               ></iframe>
             </div>
           </motion.div>
