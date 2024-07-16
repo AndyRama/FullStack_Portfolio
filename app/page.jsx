@@ -7,7 +7,7 @@ import Client from './components/Client'
 import Subscribe from './components/Subscribe'
 import Testimonials from './components/Testimonials'
 import DescriptionCard from './components/DescriptionCard'
-import HowIworks form '.components/HowIworks'
+import HowIworks from './components/HowIworks'
 
 export default function Home() {
   return (
@@ -16,9 +16,9 @@ export default function Home() {
       <DescriptionCard
         className="mt-28 pb-22"
         title="À propos de moi"
-        subTitle="quelques mots"    
+        subTitle="quelques mots"
       />
-      <HowIworks/>
+      <HowIworks />
       <RecentProject className="mt-28 pb-22" />
       <Client className="mt-22 pb-22" />
       <Testimonials />
