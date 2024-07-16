@@ -4,7 +4,6 @@ import SubHero from '../components/project/SubHero'
 import Subscribe from '../components/Subscribe'
 import ProjectBanner from '../components/project/ProjectBanner'
 import ProjectBannerR from '../components/project/ProjectBannerR'
-import AnimatedBanner from '../components/AnimatedBanner'
 
 import TeamImage from './../../public/images/Team.jpg'
 import UnlcoachingImage from './../../public/images/unlcoaching.png'
@@ -19,7 +18,6 @@ export const metadata = {
 const page = () => {
   return (
     <>
-      <AnimatedBanner />
       <SubHero
         className="pt-32 lg:mb-22 xl:mb-32 "
         subTitle="Dernier ajout"

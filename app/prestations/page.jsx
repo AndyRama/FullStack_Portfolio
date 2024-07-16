@@ -4,6 +4,7 @@ import PricingPack from '../components/prestation/PricingPack'
 import PricingDetails from '../components/prestation/PricingDetails'
 import Subscribe from '../components/Subscribe'
 import Testimonials from '../components/Testimonials'
+import AnimatedBanner from '../components/AnimatedBanner'
 
 export const metadata = {
   title: 'Prestations - Réaliser par Andy Ramaroson',
@@ -11,6 +12,7 @@ export const metadata = {
 const page = () => {
   return (
     <>
+      <AnimatedBanner />
       <SubHero
         className="pt-32"
         subTitle="mes services"

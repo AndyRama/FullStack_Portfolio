@@ -1,7 +1,6 @@
-import DescriptionCard from './../components/expertise/DescriptionCard'
-import DescriptionCardR from './../components/expertise/DescriptionCardR'
 import Subscribe from './../components/Subscribe'
 import SubHero from '../components/expertise/SubHero'
+import AnimatedBanner from '../components/AnimatedBanner'
 
 export const metadata = {
   title: 'Expertise et spécialisation',
@@ -9,6 +8,7 @@ export const metadata = {
 export default function Expertise() {
   return (
     <>
+      <AnimatedBanner />
       <SubHero
         className="pt-32"
         subTitle="Toutes mon"

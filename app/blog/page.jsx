@@ -4,6 +4,7 @@ import Posts from '../components/blog/Posts'
 import Subscribe from '../components/Subscribe'
 
 import TeamImage from './../../public/images/Team.jpg'
+import AnimatedBanner from '../components/AnimatedBanner'
 
 export const metadata = {
   title: 'Blogs - Andy Ramaroson',
@@ -12,6 +13,7 @@ export const metadata = {
 const page = () => {
   return (
     <>
+      <AnimatedBanner />
       <SubHero
         className="pt-32 lg:mb-22 xl:mb-32"
         subTitle="Mon blog"
