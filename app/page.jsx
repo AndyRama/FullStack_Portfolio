@@ -8,6 +8,7 @@ import Subscribe from './components/Subscribe'
 import Testimonials from './components/Testimonials'
 import DescriptionCard from './components/DescriptionCard'
 import HowIworks from './components/HowIworks'
+import HowIworksV2 from './components/HowIworksV2'
 
 export default function Home() {
   return (
@@ -18,12 +19,13 @@ export default function Home() {
         title="À propos de moi"
         subTitle="quelques mots"
       />
-      <HowIworks />
+      {/* <HowIworks /> */}
+      <HowIworksV2 />
       <RecentProject className="mt-28 pb-22" />
       <Client className="mt-22 pb-22" />
       <Testimonials />
       <Stats />
-      <PricingDetails />
+      {/* <PricingDetails /> */}
       <RecentBlog className="pt-14 pb-15 " />
       <Subscribe className="py-16 lg:py-32 " />
     </>
