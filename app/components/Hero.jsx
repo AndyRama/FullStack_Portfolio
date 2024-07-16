@@ -96,7 +96,7 @@ const Hero = ({ className }) => {
                   transition: { delay: 0.2, duration: 0.5 },
                 }}
                 viewport={{ once: true }}
-                className="btn-container"
+                // className="btn-container"
               >
                 {/* Content left - btn - calendly */}
                 <Link

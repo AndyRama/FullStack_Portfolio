@@ -3,8 +3,11 @@
 import React from 'react'
 import { BiSolidHeart } from 'react-icons/bi'
 import { FaGithub } from 'react-icons/fa'
-import { FaLinkedin } from 'react-icons/fa'
+import IconLinkedin from './../../public/images/linkedin.svg'
+import IconMalt from './../../public/images/malt.svg'
+
 import Link from 'next/link'
+import Image from 'next/image'
 
 const footerContent = {
   footerLinks: [
@@ -105,14 +108,30 @@ const Footer = ({ className }) => {
                 </Link>
               </span>
               <span className="flex flex-row text-center">
-                <FaLinkedin />
+                <Image
+                  src={IconLinkedin}
+                  weight={18}
+                  height={18}
+                  alt="logo linkedin"
+                />
+                <Link
+                  href="http://www.linkedin.com/in/andy-ramaroson"
+                  className="text-[12px] text-[#2F2E2E] hover:text-green-500 font-bold ml-2 mr-5 mt-[-2]"
+                  alt="andy rama Linkedin link"
+                  target="_blank"
+                >
+                  Linkedin
+                </Link>
+              </span>
+              <span className="flex flex-row text-center">
+                <Image src={IconMalt} weight={18} height={18} alt="logo malt" />
                 <Link
                   href="http://www.linkedin.com/in/andy-ramaroson"
                   className="text-[12px] text-[#2F2E2E] hover:text-green-500 font-bold ml-2 mt-[-2]"
                   alt="andy rama Linkedin link"
                   target="_blank"
                 >
-                  Linkedin
+                  Malt
                 </Link>
               </span>
             </div>

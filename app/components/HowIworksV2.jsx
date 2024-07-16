@@ -146,7 +146,7 @@ function PrestationsDetails() {
             href="/prestations"
             className="transition-all duration-300 ease-in-out text-[11.5px] tracking-[2px] font-bold uppercase bg-gradient-to-r from-green-500 to-green-800 py-4 px-3 rounded text-white inline-block items-start hover:bg-white hover:border hover:text-green-400 hover:shadow-1xl h-12"
           >
-            Prestations
+            Prendre rendez-vous
           </Link>
         </motion.div>
       </div>
