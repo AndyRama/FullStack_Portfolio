@@ -115,12 +115,12 @@ function PrestationsDetails() {
                             <feature.icon />
                           </span>
 
-                          <h3 className="text-md mb-4 text-[#2F2E2E]">
+                          <h3 className="text-lg mb-4 text-[#2F2E2E]">
                             {feature.title}
                           </h3>
                         </div>
                       </div>
-                      <p className="leading-relaxed text-[15px] text-[#2F2E2E] text-opacity-75 mb-7 text-justify hover:bg-green-100 px-4">
+                      <p className="leading-relaxed text-md text-[#2F2E2E] text-opacity-75 mb-7 text-justify hover:bg-green-100 px-4">
                         {feature.description}
                       </p>
                     </div>

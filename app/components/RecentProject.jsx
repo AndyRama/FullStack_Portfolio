@@ -136,7 +136,7 @@ const RecentProject = ({ className }) => {
         <div className="flex ">
           <div className="w-full gap-0 ">
             {/*  Content center - subTitle Left  */}
-            <div className="text-left md:ml-24 w-auto md:w-screen max-w-full lg:max-w-xl">
+            <div className="text-left w-auto md:w-screen max-w-full lg:max-w-xl">
               {recentProjectContent.heading.subTitle && (
                 <motion.span
                   initial={{ opacity: 0, y: 20 }}
@@ -224,7 +224,7 @@ const RecentProject = ({ className }) => {
                             <p className="mb-4">{recentProject.years}</p>
                           </div>
                           {/*  Content Swipper - Besoins -  Right  */}
-                          <blockquote className="text-lg mb-4 text-gray-500">
+                          <blockquote className="text-md mb-4 text-gray-500">
                             {recentProject.quote}
                           </blockquote>
                           <p>

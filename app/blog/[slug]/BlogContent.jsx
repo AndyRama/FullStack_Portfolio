@@ -45,7 +45,7 @@ const BlogContent = ({ post }) => {
         },
       }}
       viewport={{ once: true }}
-      className="pt-44 pb-20 container mx-auto px-4"
+      className="pt-44 pb-20 px-4 md:px-8 lg:container lg:mx-auto"
     >
       <div className="mx-auto">
         <div className="text-center mb-16">
@@ -81,15 +81,15 @@ const BlogContent = ({ post }) => {
           <Image
             src={post.image}
             width={1065}
-            height={644}
-            className="object-cover object-top rounded-md border border-gray-200 mx-auto"
+            height={350}
+            className="object-fit object-top rounded-md border w-full h-[350px] border-gray-200 mx-auto"
             alt={post.title}
           />
         </div>
 
         {/* Content Article */}
-        <div className="w-full">
-          <article className="prose mx-auto text-base md:text-left">
+        <div className="w-full ">
+          <article className="prose mx-auto text-base md:text-left max-w-5xl">
             <MDXContent />
           </article>
         </div>

@@ -80,7 +80,7 @@ const Hero = ({ className }) => {
                   transition: { delay: 0.2, duration: 0.5 },
                 }}
                 viewport={{ once: true }}
-                className="leading-relaxed text-gray-500 w-auto md:w-screen max-w-md text-base lg:text-lg mb-10 lg:mb-16"
+                className="leading-relaxed text-gray-500 w-auto md:w-screen max-w-lg text-base lg:text-lg mb-10 lg:mb-16"
               >
                 {heroContent.intro.description}
               </motion.p>

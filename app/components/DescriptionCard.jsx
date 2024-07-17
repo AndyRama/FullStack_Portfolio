@@ -1,7 +1,7 @@
 'use client'
 
-import Image from 'next/image'
 import React, { useRef } from 'react'
+import Image from 'next/image'
 import { motion, useScroll, useTransform } from 'framer-motion'
 
 const CardDescription = ({ className, title, subTitle, description }) => {
@@ -14,9 +14,9 @@ const CardDescription = ({ className, title, subTitle, description }) => {
     content: {
       img: '/images/andy.jpeg',
       descriptions: [
-        "En tant que développeur FullStack JS passionné par le développement web, je me spécialise dans la création d'interfaces utilisateur modernes et performantes.",
         "Avec plus de deux ans d'expérience dans le développement d'applications web sur mesure, j'ai acquis une expertise approfondie qui me permet de transformer leurs idées en solutions web sur mesure, performantes et répondant au mieux à leurs besoins",
-        "Avec plus de deux ans d'expérience dans le développement d'applications web sur mesure, j'ai acquis une expertise approfondie qui me permet de transformer leurs idées",
+        "Avec plus de deux ans d'expérience dans le développement d'applications web sur mesure, j'ai acquis une expertise approfondie qui me permet de transformer leurs idées en solutions web sur mesure, performantes et répondant au mieux à leurs besoins",
+        "Avec plus de deux ans d'expérience dans le développement d'applications web sur mesure, j'ai acquis une expertise approfondie qui me permet de transformer leurs idées en solutions web sur mesure, performantes et répondant au mieux à leurs besoins",
       ],
     },
   }
@@ -88,10 +88,10 @@ const CardDescription = ({ className, title, subTitle, description }) => {
               >
                 <Image
                   src={cardDescriptionContent.content.img}
-                  className="object-cover !w-full !h-full lg:max-w-2xl object-center rounded-md"
+                  className="!w-full !h-full md:w-[500px] md:h-[500px] lg:max-w-2xl object-center rounded-md"
                   alt="Andy profile"
-                  width={200}
-                  height={200}
+                  width={350}
+                  height={400}
                 />
               </motion.div>
             </div>
@@ -111,7 +111,7 @@ const CardDescription = ({ className, title, subTitle, description }) => {
                       },
                     }}
                     viewport={{ once: true }}
-                    className="text-xl mb-7 text-gray-500"
+                    className="text-lg mb-7 text-gray-500"
                   >
                     {description}
                   </motion.p>

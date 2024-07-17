@@ -22,12 +22,12 @@ const testimonials = [
     image: user2,
     text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ipsum consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam !',
   },
-  {
-    user: 'Jane Smith',
-    company: 'Blue Horizon Technologies',
-    image: user5,
-    text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ipsum consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam !',
-  },
+  // {
+  //   user: 'Jane Smith',
+  //   company: 'Blue Horizon Technologies',
+  //   image: user5,
+  //   text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ipsum consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam !',
+  // },
   {
     user: 'Honoré Rabefarihy',
     company: 'Ingénieur Agronome',
@@ -40,17 +40,17 @@ const testimonials = [
     image: user1,
     text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ipsum consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam !',
   },
-  {
-    user: 'Marc Davis',
-    company: 'Synergy Systems',
-    image: user6,
-    text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ipsum consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam !',
-  },
+  // {
+  //   user: 'Marc Davis',
+  //   company: 'Synergy Systems',
+  //   image: user6,
+  //   text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ipsum consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam !',
+  // },
 ]
 
 const Testimonials = () => {
   return (
-    <div className="container mx-auto tracking-wide mb-24 mt-10 md:mt-0">
+    <div className="container mx-auto tracking-wide mb-24 mt-52 md:mt-0">
       <h3 className="uppercase tracking-[3px] text-sm inline-block px-4">
         Retour sur mes services
       </h3>

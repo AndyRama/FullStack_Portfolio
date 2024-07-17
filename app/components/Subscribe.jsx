@@ -1,9 +1,9 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import IconLogo from './../../public/images/logo4.jpg'
-import { motion } from 'framer-motion'
+import { motion, useScroll, useTransform } from 'framer-motion'
 
 const subscribeContent = {
   heading: {
@@ -45,17 +45,39 @@ const Subscribe = ({ className }) => {
     }
   }
 
+  const ref = useRef()
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ['start end', 'end start'],
+  })
+  const imgScroll1 = useTransform(scrollYProgress, [0, 1], ['10%', '-10%'])
+
   return (
-    <section className={`${className}`}>
+    <section className={`${className}`} ref={ref}>
       <div className="container px-4 mx-auto">
         <div className="flex justify-center items-center pb-5">
-          <Image
-            src={IconLogo}
-            width={150}
-            height={150}
-            alt="logo"
-            className="border-black rounded-full"
-          />
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                delay: 0.4,
+                duration: 0.5,
+              },
+            }}
+            viewport={{ once: true }}
+            style={{ y: imgScroll1 }}
+            className="z-[2] relative bg-cover bg-center"
+          >
+            <Image
+              src={IconLogo}
+              width={150}
+              height={150}
+              alt="logo"
+              className="border-black rounded-full"
+            />
+          </motion.div>
         </div>
         <div className="flex justify-center items-center">
           <div className="w-10/12 flex gap-0">
@@ -115,20 +137,31 @@ const Subscribe = ({ className }) => {
               transition: { delay: 0.9, duration: 0.5 },
             }}
             viewport={{ once: true }}
-            className="w-auto max-w-md mx-auto text-center text-[#2F2E2E] text-opacity-80"
+            className="w-auto max-w-lg mx-auto text-center text-[#2F2E2E] text-opacity-80"
           >
             {subscribeContent.heading.description}
           </motion.p>
           <div className="flex flex-col mx-auto justify-center mt-10">
-            <Link
-              href={subscribeContent.heading.btn.href}
-              target="_blank"
-              className="transistion-all duration-300 ease-in-out text-[11.5px] md:tracking-[2px] font-bold uppercase 
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: { delay: 1.2, duration: 1 },
+              }}
+              viewport={{ once: true }}
+              className="w-auto max-w-lg mx-auto text-center text-[#2F2E2E] text-opacity-80"
+            >
+              <Link
+                href={subscribeContent.heading.btn.href}
+                target="_blank"
+                className="transistion-all duration-300 ease-in-out text-[11.5px] md:tracking-[2px] font-bold uppercase 
               bg-gradient-to-r from-green-400 to-green-600  py-4 px-5 rounded hover:text-white hover:bg-white
               hover:shadow-2xl mb-5 mr-5 inline-block w-[300px] text-center text-[#2F2E2E]"
-            >
-              {subscribeContent.heading.btn.label}
-            </Link>
+              >
+                {subscribeContent.heading.btn.label}
+              </Link>
+            </motion.div>
           </div>
         </div>
       </div>
