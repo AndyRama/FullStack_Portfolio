@@ -14,6 +14,7 @@ const projectBannerContent = {
     description: '',
     mission: '',
     developpement: '',
+    contentType: '',
     btn1: {
       href: '#',
       label: 'Demo',
@@ -35,6 +36,7 @@ const ProjectBanner = ({
   mission,
   developpement,
   btn1,
+  contentType,
 }) => {
   title = title || projectBannerContent.heading.title
   subTitle = subTitle || projectBannerContent.heading.subTitle
@@ -43,6 +45,7 @@ const ProjectBanner = ({
   mission = mission || projectBannerContent.heading.mission
   developpement = developpement || projectBannerContent.heading.developpement
   btn1 = btn1 || projectBannerContent.heading.btn1.href
+  contentType = contentType || projectBannerContent.heading.contentType
 
   const ref = useRef(null)
 
@@ -76,7 +79,10 @@ const ProjectBanner = ({
               <Image src={image} width={700} height={985} alt="hero image" />
             )}
             {/* Content Left - stack */}
-            <BtnStack contentType="project" className="hidden lg:contents " />
+            <BtnStack
+              contentType={contentType}
+              className="hidden lg:contents "
+            />
           </motion.div>
 
           {/* Content Right */}
