@@ -47,7 +47,7 @@ const Hero = ({ className }) => {
                 viewport={{ once: true }}
                 className="inline-block py-0.5 pl-3 text-heading font-semibold
                   relative mb-7 before:content-[''] before:absolute before:w-2/3
-                  before:bg-yellowLight before:left-0 before:top-0 before:bottom-0
+                  before:left-0 before:top-0 before:bottom-0
                   before:z-[-1]"
               >
                 {heroContent.intro.subTitle}

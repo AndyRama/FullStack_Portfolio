@@ -200,7 +200,7 @@ const RecentProject = ({ className }) => {
               {recentProjectContent.recentProjects.map(
                 (recentProject, index) => (
                   <SwiperSlide key={index} className="w-full">
-                    <div className="block md:flex overflow-y-visible items-stretch bg-white">
+                    <div className="block md:flex overflow-y-visible items-stretch bg-[#f8f3f3] border border-gray-200">
                       {/*  Content Swipper - Image -  Left  */}
                       <div className="md:w-7/12">
                         <Image
@@ -234,28 +234,6 @@ const RecentProject = ({ className }) => {
                         </div>
                       </div>
                     </div>
-
-                    {/*  Content center - btn Left + de Projects  */}
-                    <motion.div
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{
-                        opacity: 1,
-                        y: 0,
-                        transition: { delay: 0.2, duration: 0.5 },
-                      }}
-                      viewport={{ once: true }}
-                      className="ml-8 md:ml-0 mt-5"
-                    >
-                      <Link
-                        href={recentProjectContent.btn.href}
-                        className="transistion-all duration-300 ease-in-out text-[11.5px]
-                      tracking-[2px] font-bold uppercase  bg-gradient-to-r from-green-300 to-green-500 py-4 px-3
-                      rounded text-black hover:text-white inline-block items-end hover:bg-white 
-                      hover:shadow-2xl hover:border hover:border-green-400 h-12"
-                      >
-                        {recentProjectContent.btn.label}
-                      </Link>
-                    </motion.div>
                   </SwiperSlide>
                 ),
               )}
@@ -270,7 +248,7 @@ const RecentProject = ({ className }) => {
             transition: { delay: 0.9, duration: 0.5 },
           }}
           viewport={{ once: true }}
-          className="flex justify-center md:mt-20"
+          className="flex justify-center mt-[-70px]"
         >
           <div className="flex space-x-5">
             <div
@@ -298,6 +276,27 @@ const RecentProject = ({ className }) => {
                 className={`text-3xl text-primary transition-all duration-300 ease-in-out group-hover:text-white`}
               />
             </div>
+            {/*  Content center - btn Left + de Projects  */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: { delay: 0.2, duration: 0.5 },
+              }}
+              viewport={{ once: true }}
+              className="ml-8 md:ml-0"
+            >
+              <Link
+                href={recentProjectContent.btn.href}
+                className="transistion-all duration-300 ease-in-out text-[11.5px]
+                      tracking-[2px] font-bold uppercase  bg-gradient-to-r from-green-300 to-green-500 py-4 px-3
+                      rounded text-black hover:text-white inline-block items-end hover:bg-white 
+                      hover:shadow-2xl hover:border hover:border-green-400 h-12"
+              >
+                {recentProjectContent.btn.label}
+              </Link>
+            </motion.div>
           </div>
         </motion.div>
       </div>

@@ -1,6 +1,5 @@
 import React from 'react'
 import SubHero from '../components/SubHero'
-import PricingPack from '../components/prestation/PricingPack'
 import PricingDetails from '../components/prestation/PricingDetails'
 import Subscribe from '../components/Subscribe'
 import Testimonials from '../components/Testimonials'
@@ -22,7 +21,6 @@ const page = () => {
         en me basant sur des technologies web modernes. Je suis spécialisé sur le
         langage  JavaScript avec le framework React & NextJs."
       />
-      {/* <PricingPack /> */}
       <PricingDetails />
       <Testimonials />
       <Subscribe className="py-16 lg:py-32" />

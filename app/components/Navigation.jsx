@@ -60,10 +60,7 @@ export default function Navigation() {
 
   return (
     <div>
-      <header
-        className="py-4 fixed w-full z-[10] bg-[#ffffff] border-b border-gray-200"
-        alt="NavBar"
-      >
+      <header className="py-4 fixed w-full z-[10] bg-[#f8f3f3] " alt="NavBar">
         <div className="px-4 md:px-14 mx-auto flex items-center justify-between  ">
           <div>
             <Link
@@ -154,7 +151,7 @@ export default function Navigation() {
                   leaveTo="opacity-0"
                 >
                   <Dialog.Panel className="pointer-events-auto w-screen max-w-sm">
-                    <div className="flex h-full flex-col overflow-y-scroll bg-white border shadow-xl">
+                    <div className="flex h-full flex-col overflow-y-scroll bg-[#f8f3f3] border shadow-xl">
                       <div className="flex-1 overflow-y-auto px-8 py-8 sm:px-12">
                         <div className="flex items-start justify-between">
                           <Dialog.Title className="text-lg font-medium">
