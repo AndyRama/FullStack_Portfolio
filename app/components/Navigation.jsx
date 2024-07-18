@@ -78,7 +78,7 @@ export default function Navigation() {
                 />
               </span>
               {/* Name Link - content left*/}
-              Andy Ramaroson
+              Lemurian Agency
               <span className=" text-[#2F2E2E] ">.</span>
             </Link>
           </div>

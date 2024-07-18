@@ -2,11 +2,9 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
-import { HiSparkles } from 'react-icons/hi'
-import { HiOutlineTemplate } from 'react-icons/hi'
 import { TbBrandNextjs } from 'react-icons/tb'
-import { BiSolidGrid } from 'react-icons/bi'
-import { SiLighthouse } from 'react-icons/si'
+import { TbBrandFramerMotion } from 'react-icons/tb'
+import { SiTypescript } from 'react-icons/si'
 import { GrReactjs } from 'react-icons/gr'
 import { TbDeviceMobileCode } from 'react-icons/tb'
 import { SiVercel } from 'react-icons/si'
@@ -16,7 +14,8 @@ import { MdMarkEmailRead } from 'react-icons/md'
 import { FaGithub } from 'react-icons/fa'
 import { FaFigma } from 'react-icons/fa6'
 import { FaTrello } from 'react-icons/fa6'
-import { SiWebflow } from 'react-icons/si'
+import { BsFillShieldLockFill } from 'react-icons/bs'
+import { TbDatabaseHeart } from 'react-icons/tb'
 
 const iconMappingProjectCode = {
   icon1: (
@@ -49,6 +48,9 @@ const iconMappingProjectCode = {
   icon10: (
     <FaTrello className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
   ),
+  icon11: (
+    <TbBrandFramerMotion className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
+  ),
 }
 
 const BtnStackContentProjectCode = {
@@ -73,37 +75,51 @@ const BtnStackContentProjectCode = {
       icon6: 'icon6',
       title7: 'Resend',
       icon7: 'icon7',
-      title8: 'Resp.',
+      title8: 'Responsive',
       icon8: 'icon8',
       title9: 'Figma',
       icon9: 'icon9',
       title10: 'Trello',
       icon10: 'icon10',
+      title11: 'Motion',
+      icon11: 'icon11',
     },
   ],
 }
 
 const iconMappingProjectNoCode = {
   icon1: (
-    <SiWebflow className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
+    <TbBrandNextjs className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
   ),
   icon2: (
-    <FaFigma className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
+    <GrReactjs className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
   ),
   icon3: (
-    <TbDeviceMobileCode className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
+    <TbBrandFramerMotion className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
   ),
   icon4: (
-    <HiOutlineTemplate className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
+    <FaGithub className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
   ),
   icon5: (
     <FaCcStripe className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
   ),
   icon6: (
-    <HiSparkles className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
+    <TbDatabaseHeart className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
   ),
   icon7: (
-    <SiLighthouse className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
+    <TbDatabaseHeart className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
+  ),
+  icon8: (
+    <BsFillShieldLockFill className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
+  ),
+  icon9: (
+    <SiTypescript className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
+  ),
+  icon10: (
+    <MdMarkEmailRead className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
+  ),
+  icon11: (
+    <TbDeviceMobileCode className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
   ),
 }
 
@@ -115,20 +131,28 @@ const BtnStackContentProjectNoCode = {
   },
   step: [
     {
-      title1: 'WebFlow',
+      title1: 'Nextjs',
       icon1: 'icon1',
-      title2: 'Figma',
+      title2: 'React',
       icon2: 'icon2',
-      title3: 'Resp.',
+      title3: 'Motion',
       icon3: 'icon3',
-      title4: 'Nocode',
+      title4: 'Github',
       icon4: 'icon4',
-      title5: 'Stripe',
+      title5: 'Vercel',
       icon5: 'icon5',
-      title6: 'I.A',
+      title6: 'Stripe',
       icon6: 'icon6',
-      title7: 'Perf.',
+      title7: 'Postgres',
       icon7: 'icon7',
+      title8: 'NextAuth',
+      icon8: 'icon8',
+      title9: 'Typescript',
+      icon9: 'icon9',
+      title10: 'Resend',
+      icon10: 'icon10',
+      title11: 'Responsive',
+      icon11: 'icon11',
     },
   ],
 }
@@ -160,7 +184,7 @@ const BtnStack = ({ className, contentType }) => {
             viewport={{ once: true }}
             className=" relative rounded-md"
           >
-            <div className="mt-10 pb-10 grid grid-cols-3 lg:grid-cols-5 xl:grid-cols-10 gap-4 ">
+            <div className="mt-10 pb-10 grid grid-cols-3 md:grid-cols-4  xl:grid-cols-6 gap-4 ">
               {[
                 'title1',
                 'title2',
@@ -172,6 +196,7 @@ const BtnStack = ({ className, contentType }) => {
                 'title8',
                 'title9',
                 'title10',
+                'title11',
               ].map((titleKey, idx) => (
                 <motion.div
                   key={idx}

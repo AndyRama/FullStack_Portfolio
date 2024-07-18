@@ -135,8 +135,7 @@ const RecentProject = ({ className }) => {
       <div className="container px-4 mx-auto">
         <div className="flex ">
           <div className="w-full gap-0 ">
-            {/*  Content center - subTitle Left  */}
-            <div className="text-left w-auto md:w-screen max-w-full lg:max-w-xl">
+            <div className="text-left md:text-center w-auto md:w-screen max-w-full lg:max-w-xl">
               {recentProjectContent.heading.subTitle && (
                 <motion.span
                   initial={{ opacity: 0, y: 20 }}
@@ -149,13 +148,12 @@ const RecentProject = ({ className }) => {
                     },
                   }}
                   viewport={{ once: true }}
-                  className="uppercase tracking-[3px] text-[12.5px] mb-4 inline-block"
+                  className="uppercase tracking-[3px] text-[12.5px] mb-4 inline-block text-green-400"
                 >
                   {recentProjectContent.heading.subTitle}
                 </motion.span>
               )}
 
-              {/*  Content center - Title Left  */}
               {recentProjectContent.heading.title && (
                 <motion.h2
                   initial={{ opacity: 0, y: 20 }}
@@ -168,7 +166,7 @@ const RecentProject = ({ className }) => {
                     },
                   }}
                   viewport={{ once: true }}
-                  className="text-2xl lg:text-4xl mb-10 text-green-500"
+                  className="text-2xl lg:text-4xl mb-10 "
                 >
                   {recentProjectContent.heading.title}
                 </motion.h2>
@@ -176,7 +174,7 @@ const RecentProject = ({ className }) => {
             </div>
           </div>
         </div>
-        {/*  Content Swipper  */}
+
         <div className="lg:flex justify-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -200,31 +198,27 @@ const RecentProject = ({ className }) => {
               {recentProjectContent.recentProjects.map(
                 (recentProject, index) => (
                   <SwiperSlide key={index} className="w-full">
-                    <div className="block md:flex overflow-y-visible items-stretch bg-[#f8f3f3] border border-gray-200">
-                      {/*  Content Swipper - Image -  Left  */}
-                      <div className="md:w-7/12">
+                    <div className="block md:flex overflow-y-visible items-stretch bg-[#f8f3f3] ">
+                      <div className="md:w-5/12">
                         <Image
                           src={recentProject.img}
                           alt={recentProject.name}
-                          width={400}
-                          height={350}
-                          className="object-cover object-center !h-full !w-full rounded-md border-2"
+                          width={500}
+                          height={400}
+                          className="object-cover object-center rounded-md border-2"
                         />
                       </div>
                       <div className="md:w-7/12 p-7 md:p-8 flex items-center">
                         <div>
-                          {/*  Content Swipper - Title -  Right  */}
                           <h2 className="text-2xl text-green-400 block">
                             {recentProject.title}
                           </h2>
-                          {/*  Content Swipper - Status -  Right  */}
                           <div className="flex space-x-2 text-sm">
                             <span>{recentProject.type}</span>
                             <span>&mdash;</span>
                             <p className="mb-4">{recentProject.years}</p>
                           </div>
-                          {/*  Content Swipper - Besoins -  Right  */}
-                          <blockquote className="text-md mb-4 text-gray-500">
+                          <blockquote className="text-lg mb-4 text-gray-500">
                             {recentProject.quote}
                           </blockquote>
                           <p>
@@ -248,9 +242,9 @@ const RecentProject = ({ className }) => {
             transition: { delay: 0.9, duration: 0.5 },
           }}
           viewport={{ once: true }}
-          className="flex justify-center mt-[-70px]"
+          className="flex justify-center md:mt-20"
         >
-          <div className="flex space-x-5">
+          <div className="flex space-x-3">
             <div
               onClick={prevHandler}
               className={`${
@@ -269,14 +263,15 @@ const RecentProject = ({ className }) => {
               className={`${
                 isEnd
                   ? 'opacity-30 bg-gray-300 text-gray-600 cursor-not-allowed'
-                  : 'opacity-100  bg-gradient-to-r from-green-400 to-green-600  text-white cursor-pointer'
+                  : 'opacity-100 bg-green-400 text-white cursor-pointer'
               } relative top-0 group transition-all duration-300 ease-in-out w-12 h-12 rounded-full inline-flex justify-center items-center`}
             >
               <BiChevronRight
                 className={`text-3xl text-primary transition-all duration-300 ease-in-out group-hover:text-white`}
               />
             </div>
-            {/*  Content center - btn Left + de Projects  */}
+
+            {/*  Content center - btn Right + de Projects  */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{
@@ -285,14 +280,14 @@ const RecentProject = ({ className }) => {
                 transition: { delay: 0.2, duration: 0.5 },
               }}
               viewport={{ once: true }}
-              className="ml-8 md:ml-0"
+              className="btn-container"
             >
               <Link
                 href={recentProjectContent.btn.href}
                 className="transistion-all duration-300 ease-in-out text-[11.5px]
-                      tracking-[2px] font-bold uppercase  bg-gradient-to-r from-green-300 to-green-500 py-4 px-3
-                      rounded text-black hover:text-white inline-block items-end hover:bg-white 
-                      hover:shadow-2xl hover:border hover:border-green-400 h-12"
+                      tracking-[2px] font-bold uppercase bg-green-400 py-4 px-3
+                      rounded text-white inline-block items-end hover:bg-white 
+                      hover:shadow-2xl h-12"
               >
                 {recentProjectContent.btn.label}
               </Link>

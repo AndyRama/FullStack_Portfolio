@@ -7,6 +7,7 @@ import { motion } from 'framer-motion'
 import { allPosts } from 'contentlayer/generated'
 import { compareDesc, format, parseISO } from 'date-fns'
 import PostCard from '@/app/components/blog/category/PostCard'
+import Toc from '@/app/components/blog/Toc'
 
 import { getMDXComponent } from 'next-contentlayer/hooks'
 
@@ -50,7 +51,7 @@ const BlogContent = ({ post }) => {
       <div className="mx-auto">
         <div className="text-center mb-16">
           {/* Content title post */}
-          <h2 className="text-[#2F2E2E] text-center text-4xl/none lg:text-6xl/none font-medium">
+          <h2 className="text-[#2F2E2E] text-center lg:text-6xl/none font-medium">
             {post.title}
           </h2>
 
@@ -88,8 +89,11 @@ const BlogContent = ({ post }) => {
         </div>
 
         {/* Content Article */}
-        <div className="w-full ">
-          <article className="prose mx-auto text-base md:text-left max-w-5xl">
+        <div className="flex min-w-full">
+          <div className="hidden w-2/12">
+            <Toc />
+          </div>
+          <article className="lg:w-8/12 prose mx-auto text-base md:text-left md:flex-end bg-red-500">
             <MDXContent />
           </article>
         </div>

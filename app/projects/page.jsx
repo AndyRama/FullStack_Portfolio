@@ -22,7 +22,6 @@ const projectsData = [
     mission: 'Client final',
     developpement: 'Full-Stack',
     image: UnlcoachingImage,
-    contentType: 'project',
     btn1: { href: 'https://www.unlcoaching.com' },
     description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
                   les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
@@ -60,6 +59,33 @@ const projectsData = [
     Component: ProjectBanner,
     subTitle: 'Site vitrine',
     title: 'Fille-de-la-grace.com',
+    time: 'en cours',
+    mission: 'Client final',
+    developpement: 'Full-Stack',
+    image: FilleDeLaGraceImage,
+    contentType: 'project',
+    btn1: { href: 'https://www.andyramaroson.com' },
+    description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
+                  les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
+                  esthétiquement plaisantes.`,
+  },
+  {
+    Component: ProjectBannerR,
+    subTitle: 'Site vitrine',
+    title: 'i-doctor.fr',
+    time: 'en cours',
+    mission: 'Client final',
+    developpement: 'Full-Stack',
+    image: UnlcoachingImage,
+    btn1: { href: 'https://www.unlcoaching.com' },
+    description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
+                  les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
+                  esthétiquement plaisantes.`,
+  },
+  {
+    Component: ProjectBanner,
+    subTitle: 'E-commerce',
+    title: 'HatGasy.com',
     time: 'en cours',
     mission: 'Client final',
     developpement: 'Full-Stack',
