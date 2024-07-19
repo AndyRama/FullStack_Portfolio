@@ -89,7 +89,7 @@ const BlogContent = ({ post }) => {
         </div>
 
         {/* Content Article */}
-        <div className="flex min-w-full">
+        <div className="flex">
           <div className="hidden w-2/12">
             <Toc />
           </div>

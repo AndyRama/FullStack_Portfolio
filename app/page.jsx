@@ -1,6 +1,7 @@
 import Hero from './components/Hero'
 import RecentProject from './components/RecentProject'
 import RecentBlog from './components/RecentBlog'
+import FeaturedPosts from './components/FeaturedPosts'
 import Stats from './components/Stats'
 import Client from './components/Client'
 import Subscribe from './components/Subscribe'
@@ -19,9 +20,10 @@ export default function Home() {
       />
       <Client className="mt-22 pb-22" />
       <HowIworksV2 />
-      <RecentProject className="mt-22 pb-22" />
+      {/* <RecentProject className="mt-22 pb-22" /> */}
       <Testimonials />
       <Stats />
+      <FeaturedPosts className="mt-22 pb-22" />
       <RecentBlog className="pt-14 pb-15 " />
       <Subscribe className="py-16 lg:py-32 " />
     </>
