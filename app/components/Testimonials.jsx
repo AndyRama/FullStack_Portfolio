@@ -50,7 +50,7 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <div className="container mx-auto tracking-wide mb-24 mt-52 md:mt-0">
+    <div className="container mx-auto tracking-wide mb-24 mt-52 md:mt-22 md:mb-32">
       <h3 className="uppercase tracking-[3px] text-sm inline-block px-4">
         Retour sur mes services
       </h3>

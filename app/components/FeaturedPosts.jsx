@@ -30,9 +30,9 @@ const PostCard = ({ index, post }) => {
         },
       }}
       viewport={{ once: true }}
-      className="border border-gray-300 bg-gray-50 relative overflow-hidden group rounded w-12/12 flex flex-rows"
+      className="border border-gray-300  relative overflow-hidden group rounded w-12/12 flex flex-cols bg-red-200"
     >
-      <div className="w-4/12">
+      <div className="flex grid-cols-1 w-4/12">
         <Link href={post.url} className="relative block overflow-hidden">
           <Image
             src={post.image}
@@ -44,7 +44,7 @@ const PostCard = ({ index, post }) => {
           />
         </Link>
       </div>
-      <div className="w-4/12">
+      <div className="flex  w-4/12">
         <div className="p-6 ">
           <p className="text-[#2F2E2E] mb-2 uppercase text-[12px] tracking-[1px]">
             {format(parseISO(post.date), 'LLL d, yyyy')} • {post.author}
@@ -78,9 +78,9 @@ const PostCard = ({ index, post }) => {
             </Link>
           </div>
         </div>
-        <div className="w-4/12">
-          <BtnStack />
-        </div>
+      </div>
+      <div className="flex w-4/12">
+        <BtnStack />
       </div>
     </motion.div>
   )

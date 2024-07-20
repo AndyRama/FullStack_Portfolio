@@ -35,7 +35,7 @@ const footerContent = {
         {
           href: '/projects',
           label: 'Projects',
-          badge: 'en cours',
+          badge: 'New',
         },
         {
           href: '/methodologie',
@@ -74,7 +74,7 @@ const Copyright = () => {
         <Link href="/" className="text-green-500 ml-1 mr-1">
           Portfolio
         </Link>
-        Crée avec <BiSolidHeart className="text-green-400 inline-block mr-1" />
+        Crée avec <BiSolidHeart className="text-red-400 inline-block mr-1" />
         par
         <Link href="/" className="text-green-500 ml-1">
           Andy Ramaroson
@@ -155,7 +155,7 @@ const Footer = ({ className }) => {
                         >
                           {link.label === 'CO2' ? (
                             <>
-                              <span className="target_blanc">{link.label}</span>
+                              <span>{link.label}</span>
                               <span
                                 className="py-0.5 px-1 rounded-full bg-green-100
                                     border border-green-500 text-[10px] text-green-500

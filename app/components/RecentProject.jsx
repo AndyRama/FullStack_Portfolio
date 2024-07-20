@@ -52,18 +52,18 @@ const recentProjectContent = {
       quote:
         'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ipsum consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam praesentium sint veniam ad recusandae ab amet impedit  consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam praesentium sint veniam ad recusandae ab amet impedit !',
     },
-    // {
-    //   img: '/images/desktop.jpg',
-    //   title: 'VanilleB2B.com',
-    //   years: ' Mai 2024',
-    //   type: 'Refonte du site complet',
-    //   name: 'Honoré Rabefary',
-    //   role: 'Landscape Architect',
-    //   quote:
-    //     'Collaborating with Lemurian on projects has been a rewarding experience. Their ability to seamlessly integrate indoor and outdoor spaces, creating a harmonious flow, has elevated the overall design and user experience.',
-    // },
     {
-      img: '/images/home-portfolio.png',
+      img: '/images/desktop.jpg',
+      title: 'VanilleB2B.com',
+      years: ' Mai 2024',
+      type: 'Refonte du site complet',
+      name: 'Honoré Rabefary',
+      role: 'Landscape Architect',
+      quote:
+        'Collaborating with Lemurian on projects has been a rewarding experience. Their ability to seamlessly integrate indoor and outdoor spaces, creating a harmonious flow, has elevated the overall design and user experience.',
+    },
+    {
+      img: '/images/lemurianV1.png',
       title: 'AndyRamaroson.com',
       years: 'Juin 2024',
       type: 'Site vitrine',
@@ -135,7 +135,7 @@ const RecentProject = ({ className }) => {
       <div className="container px-4 mx-auto">
         <div className="flex ">
           <div className="w-full gap-0 ">
-            <div className="text-left md:text-center w-auto md:w-screen max-w-full lg:max-w-xl">
+            <div className="text-left  w-auto md:w-screen max-w-full lg:max-w-xl">
               {recentProjectContent.heading.subTitle && (
                 <motion.span
                   initial={{ opacity: 0, y: 20 }}
@@ -184,7 +184,7 @@ const RecentProject = ({ className }) => {
               transition: { delay: 0.9, duration: 0.5 },
             }}
             viewport={{ once: true }}
-            className="w-full lg:w-10/12 lg:flex gap-0 items-center"
+            className="w-full lg:w-12/12 lg:flex gap-0 items-center"
           >
             <Swiper
               ref={sliderRef}
@@ -205,7 +205,7 @@ const RecentProject = ({ className }) => {
                           alt={recentProject.name}
                           width={500}
                           height={400}
-                          className="object-cover object-center rounded-md border-2"
+                          className="object-cover h-[400px] w-[500px] object-center rounded-md border-2"
                         />
                       </div>
                       <div className="md:w-7/12 p-7 md:p-8 flex items-center">
