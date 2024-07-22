@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useRef } from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 import Image from 'next/image'
 import { motion, useScroll, useTransform } from 'framer-motion'
 
@@ -28,7 +28,7 @@ const SubHero = ({ className, title, subTitle, description, image }) => {
   return (
     <section className={`${className}`}>
       <div className="container mx-auto px-4">
-        <div className="lg:flex lg:w-12/12 mx-auto ">
+        <div className="lg:flex lg:w-12/12 mx-auto">
           {/* Content center - subtitle */}
           <div className="lg:max-w-3xl mx-auto mt-[75px] mb-10">
             {subTitle && (
@@ -41,7 +41,7 @@ const SubHero = ({ className, title, subTitle, description, image }) => {
                 }}
                 viewport={{ once: true }}
                 className="uppercase tracking-[3px] text-[18px]
-                  mb-5 inline-block text-green-500 font-bold"
+                  mb-5 inline-block text-orange-500 font-bold"
               >
                 {subTitle}
               </motion.span>

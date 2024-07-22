@@ -69,7 +69,7 @@ const CardProgram = ({ className }) => {
             },
           }}
           viewport={{ once: true }}
-          className="uppercase tracking-[3px] text-sm inline-block text-green-500"
+          className="uppercase tracking-[3px] text-sm inline-block text-orange-500"
         >
           {program.heading.subTitle}
         </motion.span>
@@ -106,7 +106,7 @@ const CardProgram = ({ className }) => {
                 }}
                 viewport={{ once: true }}
                 data-testid="program-title"
-                className="text-green-500 font-bold text:lg md:text-2xl w-auto lg:w-screen max-w-xl mb-2"
+                className="text-orange-500 font-bold text:lg md:text-2xl w-auto lg:w-screen max-w-xl mb-2"
               >
                 {program.title}
               </motion.h1>
@@ -135,8 +135,8 @@ const CardProgram = ({ className }) => {
                   href={program.btn.href}
                   alt="prestations page"
                   className="transistion-all duration-300 ease-in-out text-[14px] 
-                    tracking-[2px] font-bold uppercase text-[#2F2E2E] hover:text-green-500 
-                    hover:border-green-400 bg-transparent py-4 px-5 rounded inline-block 
+                    tracking-[2px] font-bold uppercase text-[#2F2E2E] hover:text-orange-500 
+                    hover:border-orange-400 bg-transparent py-4 px-5 rounded inline-block 
                     border hover:shadow-2xl mb-10"
                 >
                   {program.btn.label}
@@ -170,7 +170,7 @@ const CardProgram = ({ className }) => {
         ))}
       </div>
       <div className="transform-gpu blur-3xl">
-        <div className="absolute left-0 opacity-50 -z-20 w-64 h-72 bg-gradient-to-tr from-green-500 to-green-800"></div>
+        <div className="absolute left-0 opacity-50 -z-20 w-64 h-72 bg-gradient-to-tr from-[#e78738] to-[#fb923c]"></div>
       </div>
     </section>
   )

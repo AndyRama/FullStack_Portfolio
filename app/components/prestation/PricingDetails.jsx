@@ -1,7 +1,6 @@
 'use client'
 
 import React from 'react'
-import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { BiLayer } from 'react-icons/bi'
 import {
@@ -44,10 +43,10 @@ const PricingDetails = ({ className }) => {
     <>
       <section className="mt-10 pb-20">
         <div className="transform-gpu blur-3xl">
-          <div className="absolute left-0 opacity-30 md:opacity-50 -z-20 w-56 h-64 bg-gradient-to-r from-green-300 to-green-500"></div>
+          <div className="absolute left-0 opacity-30 md:opacity-50 -z-20 w-56 h-64 bg-gradient-to-r from-orange-300 to-orange-500"></div>
         </div>
         <div className="container px-4 mx-auto">
-          <h3 className="text-green-500 text-xl text-left">
+          <h3 className="text-[#ff5e29] text-xl text-left">
             Ce que je te propose
           </h3>
           <h2 className="text-[#2F2E2E] text-3xl text-left mb-20">
@@ -76,7 +75,7 @@ const PricingDetails = ({ className }) => {
                     >
                       <div>
                         <div className="flex">
-                          <span className="text-3xl text-green-500 mr-4">
+                          <span className="text-3xl text-[#ff5e29] mr-4">
                             <feature.icon />
                           </span>
                           <h3 className="text-lg mb-4 text-[#2F2E2E]">
@@ -107,20 +106,10 @@ const PricingDetails = ({ className }) => {
             }}
             viewport={{ once: true }}
             className="btn-container text-left mt-5"
-          >
-            {/* <Link
-              href="/prestations"
-              className="transistion-all duration-300 ease-in-out text-[11.5px]
-          tracking-[2px] font-bold uppercase bg-gradient-to-r from-green-500 to-green-800  py-4 px-3
-          rounded text-white inline-block items-start hover:bg-white hover:border hover:text-green-400
-          hover:shadow-1xl h-12"
-            >
-              Prestations
-            </Link> */}
-          </motion.div>
+          ></motion.div>
         </div>
         <div className="transform-gpu blur-3xl">
-          <div className="absolute right-0 opacity-30 md:opacity-50 -z-20 w-56 h-64 bg-gradient-to-tr from-green-300 to-green-500"></div>
+          <div className="absolute right-0 opacity-30 md:opacity-50 -z-20 w-56 h-64 bg-gradient-to-tr from-orange-300 to-orange-500"></div>
         </div>
       </section>
     </>

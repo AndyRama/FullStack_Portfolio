@@ -7,8 +7,6 @@ import { motion } from 'framer-motion'
 import { allPosts } from 'contentlayer/generated'
 import { compareDesc, format, parseISO } from 'date-fns'
 import PostCard from '@/app/components/blog/category/PostCard'
-import Toc from '@/app/components/blog/Toc'
-
 import { getMDXComponent } from 'next-contentlayer/hooks'
 
 function slugify(str) {
@@ -88,15 +86,9 @@ const BlogContent = ({ post }) => {
           />
         </div>
 
-        {/* Content Article */}
-        {/* <div className="flex"> */}
-        {/* <div className="hidden w-2/12">
-            <Toc />
-          </div> */}
         <article className="max-w-[800px] mx-auto text-base md:text-left prose ">
           <MDXContent />
         </article>
-        {/* </div> */}
 
         <div className="max-w-5xl mx-auto mt-20 lg:mt-32">
           <h2 className="text-2xl text-gray-700 mb-10">
@@ -118,7 +110,7 @@ const BlogContent = ({ post }) => {
             <Link
               href="/blog"
               className="transition-all duration-300 ease-in-out text-[11.5px] tracking-[2px] font-bold uppercase
-               bg-gradient-to-r from-green-500 to-green-800 hover:transparent hover:border-white py-4 px-5
+               bg-gradient-to-tr from-[#e78738] to-[#fb923c] hover:transparent hover:border-white py-4 px-5
              text-white hover:shadown-2xl rounded-md"
             >
               Voir tous mes articles

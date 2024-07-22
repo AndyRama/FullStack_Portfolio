@@ -207,8 +207,8 @@ const BtnStack = ({ className, contentType }) => {
                     {iconMapping[step[`icon${idx + 1}`]]}
                     <h3
                       className="text-xl hover:text-gray-500 text-[#2F2E2E] pb-2 inline-block duration-300 transition-all bg-white-600 ease-in-out 
-                      relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:h-[2px] before:bg-gradient-to-r from-red-300
-                      to-red-500  before:origin-[100%, 50%] before:transition-all before:duration-300 before:ease-in-out before:scale-x-0
+                      relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:h-[2px] before:bg-gradient-to-tr from-[#e78738] to-[#fb923c]
+                      before:origin-[100%, 50%] before:transition-all before:duration-300 before:ease-in-out before:scale-x-0
                       before:scale-y-[1] before:scale-z[1] before:will-change-transform hover:before:origin-[100%, 0%] hover:before:scale-x-[1] 
                       hover:before:scale-y-[1] hover:before:scale-z-[1]"
                     >

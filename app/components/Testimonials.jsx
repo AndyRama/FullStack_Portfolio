@@ -50,11 +50,11 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <div className="container mx-auto tracking-wide mb-24 mt-52 md:mt-22 md:mb-32">
+    <div className="container mx-auto tracking-wide mb-24 md:mt-22 md:mb-32">
       <h3 className="uppercase tracking-[3px] text-sm inline-block px-4">
         Retour sur mes services
       </h3>
-      <h2 className="text-2xl lg:text-3xl mb-4 lg:mb-10 px-4 text-green-500">
+      <h2 className="text-2xl lg:text-3xl mb-4 lg:mb-10 px-4 text-[#ff5e29]">
         Quelques témoignage sur les prestations !
       </h2>
       <div className="flex flex-wrap justify-center">
@@ -72,7 +72,7 @@ const Testimonials = () => {
                 />
                 <div>
                   <h3 className="text-md font-bold">{testimonial.user}</h3>
-                  <span className="text-md font-bold italic text-green-600">
+                  <span className="text-md font-bold italic text-[#ff5e29]">
                     {testimonial.company}
                   </span>
                 </div>

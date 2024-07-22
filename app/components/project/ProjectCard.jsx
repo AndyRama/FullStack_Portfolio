@@ -50,7 +50,7 @@ const ProjectCard = ({ project, index }) => {
           <Link
             href={`/${project.url}`}
             className="uppercase text-[12px] tracking-[2px] border-b-2
-            pb-2 inline-block border-green-600"
+            pb-2 inline-block border-orange-600"
           >
             Plus d&apos;informations
           </Link>

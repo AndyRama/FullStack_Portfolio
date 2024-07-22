@@ -59,18 +59,18 @@ function PrestationsDetails() {
 
   return (
     <section className="mt-10 pb-20">
-      {/* Content - Blur green - background - top-Left */}
+      {/* Content - Blur orange - background - top-Left */}
       <div className="transform-gpu blur-3xl">
-        <div className="absolute left-0 opacity-30 md:opacity-50 -z-20 w-56 h-64 bg-gradient-to-r from-green-300 to-green-500"></div>
+        <div className="absolute left-0 opacity-30 md:opacity-50 -z-20 w-56 h-64 bg-gradient-to-r from-orange-300 to-orange-500"></div>
       </div>
 
       {/* Content Right - subtitle */}
       <div className="container px-4 mx-auto">
-        <h3 className="text-green-500 text-xl text-left">
+        <h3 className="text-[#2F2E2E] text-xl text-left">
           Ce que je te propose
         </h3>
         {/* Content Right - subtitle */}
-        <h2 className="text-[#2F2E2E] text-3xl text-left mb-20">
+        <h2 className=" text-[#ff5e29] text-3xl text-left mb-20">
           Détails de mes services
         </h2>
         <div className="lg:flex ">
@@ -111,7 +111,7 @@ function PrestationsDetails() {
                     <div>
                       <div>
                         <div className="flex ">
-                          <span className="text-3xl text-green-500 mr-4">
+                          <span className="text-3xl text-orange-500 mr-4">
                             <feature.icon />
                           </span>
 
@@ -120,7 +120,7 @@ function PrestationsDetails() {
                           </h3>
                         </div>
                       </div>
-                      <p className="leading-relaxed text-md text-[#2F2E2E] text-opacity-75 mb-7 text-justify hover:bg-green-100 px-4">
+                      <p className="leading-relaxed text-md text-[#2F2E2E] text-opacity-75 mb-7 text-justify hover:bg-orange-100 px-4">
                         {feature.description}
                       </p>
                     </div>
@@ -144,16 +144,16 @@ function PrestationsDetails() {
         >
           <Link
             href="/prestations"
-            className="transition-all duration-300 ease-in-out text-[11.5px] tracking-[2px] font-bold uppercase bg-gradient-to-r from-green-500 to-green-800 py-4 px-3 rounded text-white inline-block items-start hover:bg-white hover:border hover:text-green-400 hover:shadow-1xl h-12"
+            className="transition-all duration-300 ease-in-out text-[11.5px] tracking-[2px] font-bold uppercase bg-gradient-to-r from-orange-500 to-orange-800 py-4 px-3 rounded text-white inline-block items-start hover:bg-white hover:border hover:text-orange-400 hover:shadow-1xl h-12"
           >
             Prendre rendez-vous
           </Link>
         </motion.div>
       </div>
 
-      {/* Content - Blur green - background - bottom-Right */}
+      {/* Content - Blur orange - background - bottom-Right */}
       <div className="transform-gpu blur-3xl">
-        <div className="absolute right-0 opacity-30 md:opacity-50 -z-20 w-56 h-64 bg-gradient-to-tr from-green-300 to-green-500"></div>
+        <div className="absolute right-0 opacity-30 md:opacity-50 -z-20 w-56 h-64 bg-gradient-to-tr from-orange-300 to-orange-500"></div>
       </div>
     </section>
   )

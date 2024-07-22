@@ -22,7 +22,7 @@ const statContent = {
 const Stats = (className) => {
   return (
     <section className="mt-22 pb-32">
-      <div className="container px-8 mx-auto lg:border border-green-600 rounded-md">
+      <div className="container px-8 mx-auto lg:border border-[#ff5e29] rounded-md">
         <div className="lg:flex justify-between items-center space-x-0">
           <div className="w-full lg:w-9/12 mb-10 lg:mb-0">
             <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
@@ -59,7 +59,7 @@ const Stats = (className) => {
                   href={statContent.getStarted.cta.cta_href}
                   target="_blank"
                   className="block text-center text-[11.5px] tracking-[2px] font-bold uppercase 
-                  bg-gradient-to-r from-green-400 to-green-600 py-4 px-5 text-black hover:text-white
+                  bg-gradient-to-r from-orange-400 to-orange-600 py-4 px-5 hover:text-black text-white
                   rounded-md hover:shadow-2xl "
                 >
                   <span>{statContent.getStarted.cta.cta_label}</span>

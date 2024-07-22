@@ -1,7 +1,7 @@
 'use client'
+
 import React from 'react'
 import { motion } from 'framer-motion'
-
 import { getMDXComponent } from 'next-contentlayer/hooks'
 
 const DocumentContent = ({ info }) => {

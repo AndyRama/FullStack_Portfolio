@@ -69,7 +69,7 @@ const SubHero = ({ className, title, subTitle, description, image }) => {
                 }}
                 viewport={{ once: true }}
                 className="uppercase tracking-[3px] text-[18px]
-                  mb-5 inline-block text-green-500 font-bold"
+                  mb-5 inline-block text-orange-500 font-bold"
               >
                 {subTitle}
               </motion.span>

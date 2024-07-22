@@ -95,7 +95,7 @@ export default function Navigation() {
                     href={menu.href}
                     className={`relative before:content-['']
                      before:absolute before:bottom-0 before:left-0 before:w-full
-                     before:h-[2px] before:bg-green-400 before:origin-[100%, 50%]
+                     before:h-[2px] before:bg-orange-400 before:origin-[100%, 50%]
                      before:transistion-all before:duration-300 before:ease-in-out
                      before:scale-x-0 before:scale-y-[1] before:scale-z[1]
                      before:wil-change-transform hover:before:origin-[100%, 0%]
@@ -103,7 +103,7 @@ export default function Navigation() {
                      hover:before:scale-z-[1] text-[12px] tracking-[2px] uppercase
                      font-semibold pb-2 ${
                        newPathname == menu.href
-                         ? 'border-green-400 before:scale-x-[1]'
+                         ? 'border-orange-400 before:scale-x-[1]'
                          : ' border-transparent'
                      }`}
                     onClick={() => setOpen(false)}
@@ -114,7 +114,7 @@ export default function Navigation() {
               ))}
             </ul>
             <button
-              className=" text-lg text-green-500 rounded-md"
+              className=" text-lg text-orange-500 rounded-md"
               aria-label="Button menu open"
               onClick={() => setOpen(true)}
             >
@@ -136,7 +136,7 @@ export default function Navigation() {
             leaveForm="opacity-100"
             leaveTo="opacity-0"
           >
-            <div className="fixed inset-0 bg-green-500 bg-opacity-25 transition-opacity" />
+            <div className="fixed inset-0 bg-orange-500 bg-opacity-25 transition-opacity" />
           </Transition.Child>
           <div className="fixed inset-0 overflow-hidden">
             <div className="absolute inset-0 overflow-hidden">
@@ -161,7 +161,7 @@ export default function Navigation() {
                             <button
                               type="button"
                               aria-label="Button menu close"
-                              className="relative -m-2 p-2 mt-3 -mr-0 text-green-500 hover:text-gray-500"
+                              className="relative -m-2 p-2 mt-3 -mr-0 text-orange-500 hover:text-gray-500"
                               onClick={() => setOpen(false)}
                             >
                               <span className="absolute -inset-0.5" />
@@ -180,9 +180,9 @@ export default function Navigation() {
                                 <li key={menu.label}>
                                   <Link
                                     href={menu.href}
-                                    className={`py-2 text-[#2F2E2E] hover:text-green-500 inline-block relative before:content-['']
+                                    className={`py-2 text-[#2F2E2E] hover:text-orange-500 inline-block relative before:content-['']
                                     before:absolute before:bottom-0 before:left-0 before:w-full 
-                                    before:h-[2px] before:bg-gradient-to-r from-green-300 to-green-500 before:origin-[100%, 50%]
+                                    before:h-[2px] before:bg-gradient-to-r from-orange-300 to-orange-500 before:origin-[100%, 50%]
                                     before:transistion-all before:duration-300 before:ease-in-out
                                     before:scale-x-0 before:scale-y-[1] before:scale-z[1]
                                     before:wil-change-transform hover:before:origin-[100%, 0%]
@@ -190,7 +190,7 @@ export default function Navigation() {
                                     hover:before:scale-z-[1] text-[12px] tracking-[2px] uppercase
                                     font-semibold pb-2 ${
                                       newPathname == menu.href
-                                        ? 'border-green-500 before:scale-x-[1]'
+                                        ? 'border-orange-500 before:scale-x-[1]'
                                         : ' border-transparent'
                                     }`}
                                     onClick={() => setOpen(false)}
@@ -210,8 +210,9 @@ export default function Navigation() {
                           <Link
                             href="/contact"
                             alt="Btn Contact"
+                            onClick={() => setOpen(false)}
                             className="block text-center text-[11.5px] tracking-2[2px] font-bold uppercase bg-gradient-to-r 
-                                     from-green-300 to-green-500 py-3 px-5 text-[#2F2E2E] hover:text-white hover:shadow-2xl 
+                                     from-orange-300 to-orange-500 py-3 px-5 text-[#2F2E2E] hover:text-white hover:shadow-2xl 
                                       rounded-md"
                           >
                             Contact

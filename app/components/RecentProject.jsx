@@ -148,7 +148,7 @@ const RecentProject = ({ className }) => {
                     },
                   }}
                   viewport={{ once: true }}
-                  className="uppercase tracking-[3px] text-[12.5px] mb-4 inline-block text-green-400"
+                  className="uppercase tracking-[3px] text-[12.5px] mb-4 inline-block text-[#ff5e29]"
                 >
                   {recentProjectContent.heading.subTitle}
                 </motion.span>
@@ -210,7 +210,7 @@ const RecentProject = ({ className }) => {
                       </div>
                       <div className="md:w-7/12 p-7 md:p-8 flex items-center">
                         <div>
-                          <h2 className="text-2xl text-green-400 block">
+                          <h2 className="text-2xl text-[#ff5e29] block">
                             {recentProject.title}
                           </h2>
                           <div className="flex space-x-2 text-sm">
@@ -250,11 +250,11 @@ const RecentProject = ({ className }) => {
               className={`${
                 isBeginning
                   ? 'opacity-30 bg-gray-300 text-gray-600 cursor-not-allowed'
-                  : 'opacity-100 bg-green-400 text-white cursor-pointer'
+                  : 'opacity-100 bg--[#ff5e29] text-white cursor-pointer'
               } relative top-0 group transition-all duration-300 ease-in-out w-12 h-12 rounded-full inline-flex justify-center items-center`}
             >
               <BiChevronLeft
-                className={`text-3xl text-primary transition-all duration-300 ease-in-out group-hover:text-white`}
+                className={`text-3xl text-primary transition-all duration-300 ease-in-out group-hover:text-black`}
               />
             </div>
 
@@ -263,11 +263,11 @@ const RecentProject = ({ className }) => {
               className={`${
                 isEnd
                   ? 'opacity-30 bg-gray-300 text-gray-600 cursor-not-allowed'
-                  : 'opacity-100 bg-green-400 text-white cursor-pointer'
+                  : 'opacity-100 bg-[#ff5e29] text-white cursor-pointer'
               } relative top-0 group transition-all duration-300 ease-in-out w-12 h-12 rounded-full inline-flex justify-center items-center`}
             >
               <BiChevronRight
-                className={`text-3xl text-primary transition-all duration-300 ease-in-out group-hover:text-white`}
+                className={`text-3xl text-primary transition-all duration-300 ease-in-out group-hover:text-black`}
               />
             </div>
 
@@ -285,8 +285,8 @@ const RecentProject = ({ className }) => {
               <Link
                 href={recentProjectContent.btn.href}
                 className="transistion-all duration-300 ease-in-out text-[11.5px]
-                      tracking-[2px] font-bold uppercase bg-green-400 py-4 px-3
-                      rounded text-white inline-block items-end hover:bg-white 
+                      tracking-[2px] font-bold uppercase bg-[#ff5e29] py-4 px-3
+                      rounded text-white inline-block items-end hover:text-black
                       hover:shadow-2xl h-12"
               >
                 {recentProjectContent.btn.label}

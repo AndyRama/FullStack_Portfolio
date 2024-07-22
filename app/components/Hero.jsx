@@ -64,7 +64,7 @@ const Hero = ({ className }) => {
                   transition: { delay: 0.2, duration: 0.5 },
                 }}
                 viewport={{ once: true }}
-                className=" text-green-500 text-4xl md:text-5xl lg:text-6xl w-auto lg:w-screen max-w-xl mb-4 md:mb-7 mt-0 lg:mt-32"
+                className=" text-[#ff5e29] text-4xl md:text-5xl lg:text-6xl w-auto lg:w-screen max-w-xl mb-4 md:mb-7 mt-0 lg:mt-28"
               >
                 {heroContent.intro.title}
               </motion.h1>
@@ -102,7 +102,7 @@ const Hero = ({ className }) => {
                 <Link
                   href={heroContent.intro.btn.href}
                   className="transistion-all duration-300 ease-in-out text-[11.5px]
-                  md:tracking-[2px] font-bold uppercase bg-gradient-to-r from-green-400 to-green-600 py-4 px-5
+                  md:tracking-[2px] font-bold uppercase bg-gradient-to-r from-orange-400 to-orange-600 py-4 px-5
                   rounded hover:text-white inline-block hover:bg-white text-gray-900 hover:shadow-2xl mb-5 mr-5"
                 >
                   {heroContent.intro.btn.label}
@@ -111,7 +111,7 @@ const Hero = ({ className }) => {
                 <Link
                   href={heroContent.intro.btn1.href}
                   className="transistion-all duration-300 ease-in-out text-[11.5px]
-                  md:tracking-[2px] font-bold uppercase bg-gradient-to-r from-green-100 to-green-300 py-4 px-5
+                  md:tracking-[2px] font-bold uppercase bg-gradient-to-r from-orange-100 to-orange-300 py-4 px-5
                   rounded hover:text-white hover:bg-white text-gray-900"
                 >
                   {heroContent.intro.btn1.label}
@@ -136,7 +136,7 @@ const Hero = ({ className }) => {
               className="z-[2] relative bg-cover bg-center"
             >
               <Image
-                src="/images/desktop1.jpg"
+                src="/images/desktop.jpg"
                 width={900}
                 height={1024}
                 className=" rounded-md"

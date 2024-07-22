@@ -12,7 +12,6 @@ export default function Methodologie() {
         className="pt-32"
         subTitle="Mais comment"
         title="ça marche ? "
-        image=""
         description="Je développe pour vous, mais surtout
         AVEC vous. Le client est inclus dans toutes les etapes
         du développement. Dégrossir le projet ensemble, valider
