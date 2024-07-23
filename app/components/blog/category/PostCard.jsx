@@ -32,8 +32,8 @@ const PostCard = ({ post, index }) => {
           src={post.image}
           alt={post.title}
           width={1064}
-          height={644}
-          className="object-cover object-center h-[400px] !max-w-full duration-300
+          height={250}
+          className="object-cover object-center h-[250px] !max-w-full duration-300
             transition-all ease-in-out group-hover:scale-[1.05] rounded-t-md"
         />
       </Link>

@@ -36,8 +36,8 @@ const PostCard = ({ index, post }) => {
           src={post.image}
           alt={post.title}
           width={1064}
-          height={544}
-          className="object-cover object-center h-[200px] duration-300
+          height={350}
+          className="object-cover object-center h-[250px] duration-300
             transition-all ease-in-out group-hover:scale-[1.1]"
         />
       </Link>
@@ -53,9 +53,10 @@ const PostCard = ({ index, post }) => {
           </Link>
         </h3>
 
-        <p className="text-[#2F2E2E] mb-3 text-[14px] tracking-[1px]">
+        {/* <p className="text-[#2F2E2E] mb-3 text-[14px] tracking-[1px]">
           {post.excerpt}
-        </p>
+        </p> */}
+
         <div>
           <Link
             href={post.url}

@@ -80,8 +80,8 @@ const BlogContent = ({ post }) => {
           <Image
             src={post.image}
             width={1065}
-            height={350}
-            className="object-fit object-top rounded-md border w-Full md:w-8/12 h-[350px] border-gray-200 mx-auto"
+            height={250}
+            className="object-fit object-top rounded-md border w-Full md:w-8/12 h-[250px] border-gray-200 mx-auto"
             alt={post.title}
           />
         </div>
