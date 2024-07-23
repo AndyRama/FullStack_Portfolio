@@ -12,7 +12,7 @@ import logo5 from './../../public/images/logo5.jpg'
 
 const clientContent = {
   intro: {
-    subTitle: '',
+    subTitle: 'Réalisations',
     title: "ils m'ont fait confiance",
     description:
       'Je réalise au quotidien des projets pour des startups, PME, éditeurs de logiciels.',
@@ -48,7 +48,7 @@ const Client = ({ className }) => {
                     },
                   }}
                   viewport={{ once: true }}
-                  className="uppercase tracking-[3px] text-sm inline-block "
+                  className="uppercase tracking-[3px] text-sm inline-block"
                 >
                   {clientContent.intro.subTitle}
                 </motion.span>

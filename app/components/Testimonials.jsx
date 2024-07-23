@@ -51,12 +51,12 @@ const testimonials = [
 const Testimonials = () => {
   return (
     <div className="container mx-auto tracking-wide mb-24 md:mt-22 md:mb-32">
-      <h3 className="uppercase tracking-[3px] text-sm inline-block px-4">
+      <h4 className="uppercase tracking-[3px] text-sm inline-block px-4">
         Retour sur mes services
-      </h3>
-      <h2 className="text-2xl lg:text-3xl mb-4 lg:mb-10 px-4 text-[#ff5e29]">
+      </h4>
+      <h3 className="text-2xl lg:text-3xl mb-4 lg:mb-10 px-4 text-[#ff5e29]">
         Quelques témoignage sur les prestations !
-      </h2>
+      </h3>
       <div className="flex flex-wrap justify-center">
         {testimonials.map((testimonial, index) => (
           <div key={index} className="w-full sm:w-1/2 lg:w-1/2 px-4 py-2">

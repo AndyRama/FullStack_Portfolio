@@ -64,7 +64,7 @@ const Hero = ({ className }) => {
                   transition: { delay: 0.2, duration: 0.5 },
                 }}
                 viewport={{ once: true }}
-                className=" text-[#ff5e29] text-4xl md:text-5xl lg:text-6xl w-auto lg:w-screen max-w-xl mb-4 md:mb-7 mt-0 lg:mt-28"
+                className=" text-orange-400 text-4xl md:text-5xl lg:text-6xl w-auto lg:w-screen max-w-xl mb-4 md:mb-7 mt-0 lg:mt-28"
               >
                 {heroContent.intro.title}
               </motion.h1>

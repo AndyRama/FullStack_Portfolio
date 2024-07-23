@@ -84,6 +84,11 @@ const RecentBlog = ({ className }) => {
   )
   return (
     <section className={`${className}`}>
+      {/* Content - Blur orange - background - bottom-left */}
+      <div className="transform-gpu blur-3xl">
+        <div className="absolute left-0 opacity-30 md:opacity-50 -z-20 w-48 h-56 bg-gradient-to-tr from-orange-300 to-orange-500"></div>
+      </div>
+
       <div className="container mx-auto rounded-md ">
         <div className=" px-4 lg:flex justify-left mb-2">
           <div className="lg:w-10/12">

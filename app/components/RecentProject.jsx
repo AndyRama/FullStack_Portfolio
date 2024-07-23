@@ -135,7 +135,7 @@ const RecentProject = ({ className }) => {
       <div className="container px-4 mx-auto">
         <div className="flex ">
           <div className="w-full gap-0 ">
-            <div className="text-left  w-auto md:w-screen max-w-full lg:max-w-xl">
+            <div className="text-left w-auto md:w-screen max-w-full lg:max-w-xl">
               {recentProjectContent.heading.subTitle && (
                 <motion.span
                   initial={{ opacity: 0, y: 20 }}
@@ -148,7 +148,7 @@ const RecentProject = ({ className }) => {
                     },
                   }}
                   viewport={{ once: true }}
-                  className="uppercase tracking-[3px] text-[12.5px] mb-4 inline-block text-[#ff5e29]"
+                  className="uppercase tracking-[3px] text-[12.5px] mb-2 inline-block text-[#ff5e29]"
                 >
                   {recentProjectContent.heading.subTitle}
                 </motion.span>
@@ -263,7 +263,7 @@ const RecentProject = ({ className }) => {
               className={`${
                 isEnd
                   ? 'opacity-30 bg-gray-300 text-gray-600 cursor-not-allowed'
-                  : 'opacity-100 bg-[#ff5e29] text-white cursor-pointer'
+                  : 'opacity-100 bg-gradient-to-tr from-orange-400 to-orange-600 text-white cursor-pointer'
               } relative top-0 group transition-all duration-300 ease-in-out w-12 h-12 rounded-full inline-flex justify-center items-center`}
             >
               <BiChevronRight
@@ -280,12 +280,11 @@ const RecentProject = ({ className }) => {
                 transition: { delay: 0.2, duration: 0.5 },
               }}
               viewport={{ once: true }}
-              className="btn-container"
             >
               <Link
                 href={recentProjectContent.btn.href}
                 className="transistion-all duration-300 ease-in-out text-[11.5px]
-                      tracking-[2px] font-bold uppercase bg-[#ff5e29] py-4 px-3
+                      tracking-[2px] font-bold uppercase bg-gradient-to-tr from-orange-400 to-orange-600 py-4 px-3
                       rounded text-white inline-block items-end hover:text-black
                       hover:shadow-2xl h-12"
               >

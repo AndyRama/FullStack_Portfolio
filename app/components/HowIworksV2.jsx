@@ -66,13 +66,13 @@ function PrestationsDetails() {
 
       {/* Content Right - subtitle */}
       <div className="container px-4 mx-auto">
-        <h3 className="text-[#2F2E2E] text-xl text-left">
-          Ce que je te propose
-        </h3>
-        {/* Content Right - subtitle */}
-        <h2 className=" text-[#ff5e29] text-3xl text-left mb-20">
+        <h4 className="text-[#2F2E2E] text-left uppercase tracking-[3px] text-sm inline-block">
+          Ce que je vous propose
+        </h4>
+        {/* Content Right - title */}
+        <h3 className=" text-[#ff5e29] text-3xl text-left mb-20">
           Détails de mes services
-        </h2>
+        </h3>
         <div className="lg:flex ">
           <div className="lg:w-6/12 px-4 lg:px-8 mb-10 lg:mb-0">
             {/* Content Left - video */}
@@ -87,7 +87,7 @@ function PrestationsDetails() {
             </div>
           </div>
 
-          {/* Content Right - feature */}
+          {/* Content Right - 4 feature */}
           <div className=" flex flex-col lg:w-6/12">
             <div className="grid grid-cols-1 xl:grid-cols-2 gap-10">
               {PrestationContentDetails.features.map((feature, index) => {
@@ -130,25 +130,6 @@ function PrestationsDetails() {
             </div>
           </div>
         </div>
-
-        {/* Content Left - Btn - calendly */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{
-            opacity: 1,
-            y: 0,
-            transition: { delay: 0.2, duration: 0.5 },
-          }}
-          viewport={{ once: true }}
-          className="text-left mt-10"
-        >
-          <Link
-            href="/prestations"
-            className="transition-all duration-300 ease-in-out text-[11.5px] tracking-[2px] font-bold uppercase bg-gradient-to-r from-orange-500 to-orange-800 py-4 px-3 rounded text-white inline-block items-start hover:bg-white hover:border hover:text-orange-400 hover:shadow-1xl h-12"
-          >
-            Prendre rendez-vous
-          </Link>
-        </motion.div>
       </div>
 
       {/* Content - Blur orange - background - bottom-Right */}
