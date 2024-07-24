@@ -12,9 +12,9 @@ Projet Création de site web Développer avec NextJs | React
 <kbd>![Presentation](./home-portfolio.png)</kbd>
 
 > PROBLEMATIQUE
-Andy souhait presenter ses différents projets aux travers de ce site, présenter son activité et ses différents services dans un site.
-Il souhaiterait aussi crée un blog qui l'alimenterait avec des articles concernant son domain expertise actuelle, ...
-Il souhaiterait aussi crée une page service et un calendly pour closer des contrats ...
+Présenter de façon cohérente les différents projets au travers de ce site, présenter son activité et ses différents services.
+créer un blog qui l'alimenterait avec des articles concernant son domaine expertise actuelle, ...
+mais aussi crée une page service et ajouter un button calendly pour un rendez-vous ....
 
 > BESOIN
 Création du site avec une stack complète en JavaScript avec Nextjs, React et Tailwind css.
@@ -23,7 +23,7 @@ Création du site avec une stack complète en JavaScript avec Nextjs, React et T
 
 > React App
 - code           : [Github](https://github.com/AndyRama/FullStack_Portfolio)
-<!-- - pre-production: [vercel](https://portfolio-eta-three-93.vercel.app/) -->
+- pre-production: [vercel](https://portfolio-eta-three-93.vercel.app/)
 <!-- - production     : [vercel](https://andyramaroson.com/) -->
 
 ## Compétences développées
@@ -100,9 +100,9 @@ Website Creation Project Develop with NextJs | React
 <kbd>![Presentation](./home-portfolio.png)</kbd>
 
 > PROBLEMATIC
-Andy wishes to present his different projects through this site, to present his activity and his different services in one site.
-He would also like to create a blog which would provide him with articles concerning his current area of ​​expertise, ...
-He would also like to create a service page and a calendar to close contracts...
+Coherently present the different projects through this site, present its activity and its different services.
+create a blog that would feed it with articles concerning its current area of ​​expertise, ...
+but also create a service page and add a calendar button for an appointment....
 
 > NEED
 Creation of the site with a complete stack in JavaScript with Nextjs, React and Tailwind css.

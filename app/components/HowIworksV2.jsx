@@ -31,7 +31,7 @@ const PrestationContentDetails = {
     },
     {
       icon: BiLayer,
-      title: 'Optimisation pour les Moteurs de Recherche (SEO)',
+      title: 'Optimisation pour les Moteurs de Recherche',
       description:
         'En tant que développeur web indépendant, je vous propose des solutions entièrement personnalisées pour répondre à vos besoins spécifiques. ',
       video:
