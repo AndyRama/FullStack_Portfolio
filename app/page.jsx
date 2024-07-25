@@ -6,7 +6,7 @@ import Client from './components/Client'
 import Subscribe from './components/Subscribe'
 import Testimonials from './components/Testimonials'
 import DescriptionCard from './components/DescriptionCard'
-import HowIworksV2 from './components/HowIworksV2'
+import HowIworks from './components/HowIworks'
 
 export default function Home() {
   return (
@@ -18,7 +18,7 @@ export default function Home() {
         subTitle="quelques mots"
       />
       <Client className="mt-22 pb-32" />
-      <HowIworksV2 />
+      <HowIworks />
       <Stats />
       <Testimonials />
       <RecentProject className="mt-32 pb-22" />
