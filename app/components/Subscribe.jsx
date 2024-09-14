@@ -129,19 +129,7 @@ const Subscribe = ({ className }) => {
               {message}
             </motion.p>
           )}
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{
-              opacity: 1,
-              y: 0,
-              transition: { delay: 0.9, duration: 0.5 },
-            }}
-            viewport={{ once: true }}
-            className="w-auto max-w-lg mx-auto text-center text-[#2F2E2E] text-opacity-80"
-          >
-            {subscribeContent.heading.description}
-          </motion.p>
-          <div className="flex flex-col mx-auto justify-center mt-10">
+          <div className="flex flex-col mx-auto justify-center mt-4">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{
@@ -163,6 +151,18 @@ const Subscribe = ({ className }) => {
               </Link>
             </motion.div>
           </div>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{
+                  opacity: 1,
+                  y: 0,
+                  transition: { delay: 0.9, duration: 0.5 },
+                }}
+                viewport={{ once: true }}
+                className="w-auto max-w-lg mx-auto text-center text-[#2F2E2E] text-opacity-80"
+              >
+                {subscribeContent.heading.description}
+              </motion.p>
         </div>
       </div>
       <div className="transform-gpu blur-3xl">

@@ -9,7 +9,7 @@ const heroContent = {
     subTitle: '',
     title: 'Bienvenue',
     description:
-      'Je suis Andy Ramaroson, un développeur FullStack JS basée sur Bordeaux (N. Aquitaine, 33) et je réalise des applications sur mesure en me basant sur des technologies web modernes et I.A. Je suis spécialisé sur le langage  JavaScript avec le framework React & NextJs.',
+      'Je suis Andy Ramaroson, un développeur FullStack JS basée sur Bordeaux (N. Aquitaine, 33) et je réalise des applications sur mesure en me basant sur des technologies web modernes. Je suis spécialisé sur le langage  JavaScript avec le framework React & NextJs.',
     btn1: {
       href: '/projects',
       label: 'Portfolio',

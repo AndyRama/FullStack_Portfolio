@@ -6,6 +6,7 @@ import ProjectBannerR from '../components/project/ProjectBannerR'
 
 import TeamImage from './../../public/images/Team.jpg'
 import UnlcoachingImage from './../../public/images/unlcoaching.png'
+import schoolUnlcoachingImage from './../../public/images/unlcoaching2.png'
 import FilleDeLaGraceImage from './../../public/images/Fille-de-la-grace2.png'
 import HomePortfolio from './../../public/images/lemurianV1.png'
 
@@ -17,11 +18,11 @@ const projectsData = [
   {
     Component: ProjectBannerR,
     subTitle: 'Application web',
-    title: 'Unlcoaching.app',
+    title: 'School-Unlcoaching.com',
     time: '1 mois 1/2',
     mission: 'Client final',
     developpement: 'Full-Stack',
-    image: UnlcoachingImage,
+    image: schoolUnlcoachingImage,
     btn1: { href: 'https://www.unlcoaching.com' },
     description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
                   les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
@@ -30,7 +31,7 @@ const projectsData = [
   {
     Component: ProjectBanner,
     subTitle: 'Site vitrine',
-    title: 'Andyramaroson.com',
+    title: 'lemurian-agency.com',
     time: '1 mois',
     mission: 'Side Project',
     developpement: 'Full-Stack',
@@ -96,6 +97,7 @@ const projectsData = [
                   les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
                   esthétiquement plaisantes.`,
   },
+
 ]
 
 const page = () => {
