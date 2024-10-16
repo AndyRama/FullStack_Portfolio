@@ -165,7 +165,7 @@ const RecentProject = ({ className }) => {
             className="transistion-all duration-300 ease-in-out text-[11.5px]
           tracking-[2px] font-bold uppercase bg-gradient-to-tr from-[#e78738] to-[#fb923c]py-4 px-3
           rounded text-white inline-block items-center hover:bg-white hover:text-orange-400
-          hover:shadow-1xl h-12"
+          hover:shadow-1xl h-12 "
           >
             Voir tous les projects
           </Link>

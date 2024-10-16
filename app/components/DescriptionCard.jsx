@@ -31,11 +31,8 @@ const CardDescription = ({ className, title, subTitle, description }) => {
   return (
     <section className={`${className}`} ref={ref}>
       {/* Content - Blur orange - background - bottom-left */}
-      <div className="transform-gpu blur-3xl">
-        <div className="absolute left-0 opacity-30 md:opacity-50 -z-20 w-48 h-56 bg-gradient-to-tr from-orange-300 to-orange-500"></div>
-      </div>
       <div className="container px-4 mx-auto">
-        <div className="text-center lg:max-w-xl pb-0 md:pb-10 relative z-[5]">
+        <div className="text-left lg:max-w-xl pb-0 md:pb-10 relative z-[5]">
           {cardDescriptionContent.heading.subTitle && (
             <motion.span
               initial={{ opacity: 0, y: 20 }}

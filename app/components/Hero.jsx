@@ -32,10 +32,10 @@ const Hero = ({ className }) => {
 
   return (
     <section className={`${className}`}>
-      <div className="container px-4 mx-auto">
+      <div className="container px-4 lg:px-16 mx-auto">
         <div className="lg:flex ">
           {/* Content left - subtitle */}
-          <div className="lg:w-6/12 mb-10 mt-6">
+          <div className="lg:w-6/12 mb-0 lg:mb-10 mt-0 lg:mt-6">
             {heroContent.intro.subTitle && (
               <motion.span
                 initial={{ opacity: 0, y: 20 }}
@@ -120,7 +120,7 @@ const Hero = ({ className }) => {
             )}
           </div>
           {/* Image right */}
-          <div className="lg:w-12/12 relative lg:-mt-140 mb-8 ">
+          <div className="lg:w-10/12 relative lg:-mt-140 mb-8 ">
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               whileInView={{
@@ -136,7 +136,7 @@ const Hero = ({ className }) => {
               className="z-[2] relative bg-cover bg-center"
             >
               <Image
-                src="/images/desktop.jpg"
+                src="/images/bannerLemurian.jpg"
                 width={900}
                 height={1024}
                 className=" rounded-md"

@@ -8,7 +8,7 @@ import logo2 from './../../public/images/logo2.png'
 import logo3 from './../../public/images/logo3.png'
 import logo4 from './../../public/images/logo4.jpg'
 import logo5 from './../../public/images/logo5.jpg'
-// import logo6 from './../../public/images/logo6.png'
+import logo6 from './../../public/images/logo6.png'
 
 const clientContent = {
   intro: {
@@ -23,7 +23,7 @@ const clientContent = {
     { logo: logo3, id: 3 },
     { logo: logo4, id: 4 },
     { logo: logo5, id: 5 },
-    // { logo: logo6, id: 6 },
+    { logo: logo6, id: 6 },
   ],
 }
 
@@ -74,8 +74,8 @@ const Client = ({ className }) => {
           </div>
         </div>
       </div>
-      <div className="w-full lg:w-8/12 items-center justify-between lg:ml-[20%] ml-[5%] mt-10 md:mt-15 mb-10 lg:mb-15">
-        <div className="grid grid-cols-3 md:grid-cols-6">
+      <div className="w-full items-center justify-arround mt-10 md:mt-15 mb-10 lg:mb-15">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {clientContent.logos.map((logo) => {
             id += 0.5
             return (
@@ -92,7 +92,7 @@ const Client = ({ className }) => {
                 viewport={{ once: true }}
                 key={logo.id}
                 whileHover={{ y: -10, transition: { duration: 0.01 } }}
-                className="z-[2] relative bg-cover bg-center"
+                className="z-[2] relative bg-cover bg-center mx-auto"
               >
                 <Image
                   src={logo.logo}
