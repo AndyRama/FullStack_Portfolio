@@ -22,12 +22,9 @@ const statContent = {
 const Stats = (className) => {
   return (
     <>
-      <div className="transform-gpu blur-3xl">
-        <div className="absolute left-0 opacity-30 md:opacity-50 -z-20 w-18 h-24 bg-gradient-to-tr from-orange-300 to-orange-500"></div>
-      </div>
       <section className="mt-22 pb-32">
-        {/* Content - Blur orange - background - bottom-left */}
-        <div className="container px-8 mx-auto lg:border border-black rounded-md">
+        {/* Content - bottom -left */}
+        <div className="container px-4 lg:px-16 mx-auto lg:border border-black rounded-md">
           <div className="lg:flex justify-between items-center space-x-0">
             <div className="w-full lg:w-9/12 mb-10 lg:mb-0">
               <div className="grid grid-cols-2 gap-4 md:grid-cols-4">

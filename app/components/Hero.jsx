@@ -120,7 +120,7 @@ const Hero = ({ className }) => {
             )}
           </div>
           {/* Image right */}
-          <div className="lg:w-10/12 relative lg:-mt-140 mb-8 ">
+          <div className="lg:w-8/12 relative lg:-mt-140 mb-8 ">
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               whileInView={{

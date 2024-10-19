@@ -151,7 +151,7 @@ const BtnStackContentProjectNoCode = {
       icon9: 'icon9',
       title10: 'Resend',
       icon10: 'icon10',
-      title11: 'Responsive',
+      title11: 'Resp.',
       icon11: 'icon11',
     },
   ],
@@ -184,7 +184,7 @@ const BtnStack = ({ className, contentType }) => {
             viewport={{ once: true }}
             className=" relative rounded-md"
           >
-            <div className="mt-10 pb-10 grid grid-cols-3 md:grid-cols-4  xl:grid-cols-6 gap-4 ">
+            <div className="pb-10 grid grid-cols-3 lg:grid-cols-6 xl:grid-cols-12 gap-4">
               {[
                 'title1',
                 'title2',
@@ -206,11 +206,7 @@ const BtnStack = ({ className, contentType }) => {
                   <span className="text-2xl md:text-3xl flex flex-col items-center ">
                     {iconMapping[step[`icon${idx + 1}`]]}
                     <h3
-                      className="text-xl hover:text-gray-500 text-[#2F2E2E] pb-2 inline-block duration-300 transition-all bg-white-600 ease-in-out 
-                      relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:h-[2px] before:bg-gradient-to-tr from-[#e78738] to-[#fb923c]
-                      before:origin-[100%, 50%] before:transition-all before:duration-300 before:ease-in-out before:scale-x-0
-                      before:scale-y-[1] before:scale-z[1] before:will-change-transform hover:before:origin-[100%, 0%] hover:before:scale-x-[1] 
-                      hover:before:scale-y-[1] hover:before:scale-z-[1]"
+                      className="text-xl hover:text-gray-500 text-[#2F2E2E] pb-2 inline-block "
                     >
                       {step[titleKey]}
                     </h3>

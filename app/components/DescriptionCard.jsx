@@ -31,7 +31,7 @@ const CardDescription = ({ className, title, subTitle, description }) => {
   return (
     <section className={`${className}`} ref={ref}>
       {/* Content - Blur orange - background - bottom-left */}
-      <div className="container px-4 mx-auto">
+      <div className="container px-4 lg:px-16 mx-auto">
         <div className="text-left lg:max-w-xl pb-0 md:pb-10 relative z-[5]">
           {cardDescriptionContent.heading.subTitle && (
             <motion.span
@@ -89,10 +89,10 @@ const CardDescription = ({ className, title, subTitle, description }) => {
               >
                 <Image
                   src={cardDescriptionContent.content.img}
-                  className="!w-full !h-full md:w-[500px] md:h-[500px] lg:max-w-2xl object-center rounded-md"
+                  className="!w-full !h-full md:w-[500px] md:h-[600px] lg:max-w-2xl object-center rounded-md"
                   alt="Andy profile"
-                  width={350}
-                  height={400}
+                  width={500}
+                  height={600}
                 />
               </motion.div>
             </div>

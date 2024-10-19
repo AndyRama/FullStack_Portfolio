@@ -59,13 +59,8 @@ function PrestationsDetails() {
 
   return (
     <section className="mt-10 pb-20">
-      {/* Content - Blur orange - background - top-Left */}
-      <div className="transform-gpu blur-3xl">
-        <div className="absolute left-0 opacity-30 md:opacity-50 -z-20 w-56 h-64 bg-gradient-to-r from-orange-300 to-orange-500"></div>
-      </div>
-
       {/* Content Right - subtitle */}
-      <div className="container px-4 mx-auto">
+      <div className="container px-4 lg:px-16 mx-auto">
         <h4 className="text-[#2F2E2E] text-left uppercase tracking-[3px] text-sm inline-block">
           Ce que je vous propose
         </h4>

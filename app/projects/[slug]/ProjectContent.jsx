@@ -9,6 +9,7 @@ import { compareDesc, format, parseISO } from 'date-fns'
 import { motion } from 'framer-motion'
 import { getMDXComponent } from 'next-contentlayer/hooks'
 import RecentBlog from '@/app/components/project/RecentBlog'
+
 function slugify(str) {
   return str
     .toLowerCase()

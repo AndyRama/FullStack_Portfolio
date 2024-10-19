@@ -58,8 +58,8 @@ const ProjectBanner = ({
 
   return (
     <section className={`${className}`}>
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col lg:flex-row lg:w-12/12 mx-auto">
+      <div className="container mx-auto px-4 md:px-0">
+        <div className="flex flex-col xl:flex-row lg:w-12/12 mx-auto">
           {/* Content Left - image */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
@@ -73,16 +73,11 @@ const ProjectBanner = ({
             }}
             viewport={{ once: true }}
             style={{ y: imgScroll1 }}
-            className="z-[2] relative bg-cover bg-center mb-8 lg:mb-0"
+            className="z-[2] relative bg-cover bg-center mx-auto mb-8 lg:mb-0"
           >
             {image && (
               <Image src={image} width={700} height={985} alt="hero image" />
             )}
-            {/* Content Left - stack */}
-            <BtnStack
-              contentType={contentType}
-              className="hidden lg:contents "
-            />
           </motion.div>
 
           {/* Content Right */}
@@ -152,6 +147,8 @@ const ProjectBanner = ({
                 </motion.p>
               )}
 
+              <BtnStack contentType="project" className="contents lg:hidden" />
+
               {/* Content Right - BtnAction */}
               {projectBannerContent.heading.btn.label && (
                 <motion.div
@@ -184,15 +181,14 @@ const ProjectBanner = ({
                   </Link>
                 </motion.div>
               )}
-
-              {/* Content Right - stack - mobile */}
-              <BtnStack contentType="project" className="contents lg:hidden" />
             </div>
           </div>
         </div>
-        <div className="contents md:hidden">
+        {/* Content Right - stack - mobile */}
+        <BtnStack contentType="project" className="hidden lg:contents" />
+        {/* <div className="contents md:hidden">
           <hr />
-        </div>
+        </div> */}
       </div>
     </section>
   )
