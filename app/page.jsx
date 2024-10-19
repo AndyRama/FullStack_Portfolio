@@ -7,6 +7,7 @@ import Subscribe from './components/Subscribe'
 import Testimonials from './components/Testimonials'
 import DescriptionCard from './components/DescriptionCard'
 import HowIworks from './components/HowIworks'
+import HowIWorks2 from './components/HowIWorks2'
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Client className="mt-22 pb-32" />
       <HowIworks />
       <Stats />
+      <HowIWorks2/>
       <Testimonials />
       <RecentProject className="mt-32 pb-22" />
       <RecentBlog className="pt-14 pb-15 " />

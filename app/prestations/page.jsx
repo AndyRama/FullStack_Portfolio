@@ -4,9 +4,9 @@ import PricingDetails from '../components/prestation/PricingDetails'
 import Subscribe from '../components/Subscribe'
 import Testimonials from '../components/Testimonials'
 import AnimatedBanner from '../components/AnimatedBanner'
-import Pricing2 from '../components/Pricing2'
-import HeroSection from '../components/HeroSection'
-import HowIWorks2 from '../components/HowIWorks2'
+// import Pricing2 from '../components/Pricing2'
+// import HeroSection from '../components/HeroSection'
+// import HowIWorks2 from '../components/HowIWorks2'
 
 export const metadata = {
   title: 'Prestations - Réaliser par Andy Ramaroson',
@@ -15,9 +15,9 @@ const page = () => {
   return (
     <>
       <AnimatedBanner />
-      <HeroSection/>
-      <Pricing2/>
-      <HowIWorks2/>
+      {/* <HeroSection/> */}
+      {/* <Pricing2/> */}
+      {/* <HowIWorks2/> */}
       <SubHero
         className="pt-32"
         subTitle="mes services"

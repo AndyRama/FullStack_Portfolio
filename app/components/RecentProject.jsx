@@ -33,12 +33,12 @@ const recentProjectContent = {
         "Ayant à présent un développeur web capable de transformer mes idées ambitieuses en solutions numériques, J'ai demandé à Andy de réaliser un autre project pour moi. Un site web vitrine avec un blog présentant mon activité de coaching, on a réalisé la maquette ensemble puis l'a intégrée pour me livrer un site web responsive et performant.",
     },
     {
-      img: '/images/Fille-de-la-grace2.png',
-      title: 'Fille-de-la-grace.com',
+      img: '/images/Epress3.png',
+      title: 'Express-depannage-plomberie.com',
       years: ' Avril 2024',
-      type: 'Refonte du site complet',
-      name: 'Fara Rabefary',
-      role: 'Designe interieur',
+      type: 'site complet',
+      name: 'Stephane Brunie',
+      role: 'Artisan Batiment',
       quote:
         'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ipsum consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam praesentium sint veniam ad recusandae ab amet impedit  consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam praesentium sint veniam ad recusandae ab amet impedit !',
     },
@@ -63,7 +63,7 @@ const recentProjectContent = {
         'Collaborating with Lemurian on projects has been a rewarding experience. Their ability to seamlessly integrate indoor and outdoor spaces, creating a harmonious flow, has elevated the overall design and user experience.',
     },
     {
-      img: '/images/lemurianV1.png',
+      img: '/images/lemurian-hero.png',
       title: 'AndyRamaroson.com',
       years: 'Juin 2024',
       type: 'Site vitrine',
