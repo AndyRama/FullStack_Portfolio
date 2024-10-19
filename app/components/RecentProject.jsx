@@ -33,7 +33,7 @@ const recentProjectContent = {
         "Ayant à présent un développeur web capable de transformer mes idées ambitieuses en solutions numériques, J'ai demandé à Andy de réaliser un autre project pour moi. Un site web vitrine avec un blog présentant mon activité de coaching, on a réalisé la maquette ensemble puis l'a intégrée pour me livrer un site web responsive et performant.",
     },
     {
-      img: '/images/Epress3.png',
+      img: '/images/Express3.png',
       title: 'Express-depannage-plomberie.com',
       years: ' Avril 2024',
       type: 'site complet',
