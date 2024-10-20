@@ -7,7 +7,7 @@ import Subscribe from './components/Subscribe'
 import Testimonials from './components/Testimonials'
 import DescriptionCard from './components/DescriptionCard'
 import HowIworks from './components/HowIworks'
-import HowIWorks2 from './components/HowIWorks2'
+// import HowIWorks2 from './components/HowIWorks2'
 
 export default function Home() {
   return (
@@ -21,9 +21,9 @@ export default function Home() {
       <HowIworks />
       <Stats />
       <Client className="mt-22 pb-32" />
-      <HowIWorks2/>
-      <Testimonials />
+      {/* <HowIWorks2/> */}
       <RecentProject className="mt-32 pb-22" />
+      <Testimonials />
       <RecentBlog className="pt-14 pb-15 " />
       <Subscribe className="py-16 lg:py-32 " />
     </>
