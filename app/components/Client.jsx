@@ -4,11 +4,12 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import logo1 from './../../public/images/logo1.png'
-import logo2 from './../../public/images/logo2.png'
+import logo2 from './../../public/images/logo7.jpg'
 import logo3 from './../../public/images/logo3.png'
 import logo4 from './../../public/images/logo4.jpg'
 import logo5 from './../../public/images/logo5.jpg'
 import logo6 from './../../public/images/logo6.png'
+import logo8 from './../../public/images/logo8.jpg'
 
 const clientContent = {
   intro: {
@@ -24,6 +25,7 @@ const clientContent = {
     { logo: logo4, id: 4 },
     { logo: logo5, id: 5 },
     { logo: logo6, id: 6 },
+    { logo: logo8, id: 7 },
   ],
 }
 

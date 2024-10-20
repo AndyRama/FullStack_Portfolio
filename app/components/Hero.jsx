@@ -136,7 +136,7 @@ const Hero = ({ className }) => {
               className="z-[2] relative bg-cover bg-center"
             >
               <Image
-                src="/images/bannerLemurian.jpg"
+                src="/images/desktop.jpg"
                 width={900}
                 height={1024}
                 className=" rounded-md"
