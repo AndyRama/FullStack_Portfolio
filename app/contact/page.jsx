@@ -16,6 +16,7 @@ const page = () => {
         sur Bordeaux (N. Aquitaine, 33) et je réalise des applications sur mesure
         en me basant sur des technologies web modernes. Je suis spécialisé sur le
         langage  JavaScript avec le framework React & NextJs."
+        image='/images/bannerLemurian.jpg'
       />
       <CardContact />
     </>

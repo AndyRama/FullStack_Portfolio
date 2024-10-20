@@ -63,7 +63,7 @@ const CardInfo = ({ className }) => {
             <div className="px-2 lg:px-4 mt-1 relative flex flex-col gap-3 items-start">
               <div className="flex items-center px-16">
                 <Image
-                  src="/images/bannerLemurian.jpg"
+                  src="/images/lemurian-hero.png"
                   width={150}
                   height={150}
                   alt="logo"
