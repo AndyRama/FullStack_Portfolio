@@ -4,7 +4,7 @@ import React from 'react'
 import { BiSolidHeart } from 'react-icons/bi'
 import { FaGithub } from 'react-icons/fa'
 import IconLinkedin from './../../public/images/linkedin.svg'
-import IconMalt from './../../public/images/malt.svg'
+// import IconMalt from './../../public/images/malt.svg'
 
 import Link from 'next/link'
 import Image from 'next/image'
@@ -123,7 +123,7 @@ const Footer = ({ className }) => {
                   Linkedin
                 </Link>
               </span>
-              <span className="flex flex-row text-center">
+              {/* <span className="flex flex-row text-center">
                 <Image src={IconMalt} weight={18} height={18} alt="logo malt" />
                 <Link
                   href="#"
@@ -133,7 +133,7 @@ const Footer = ({ className }) => {
                 >
                   Malt
                 </Link>
-              </span>
+              </span> */}
             </div>
           </div>
 
