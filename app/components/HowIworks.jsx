@@ -60,16 +60,16 @@ function PrestationsDetails() {
   return (
     <section className="mt-10 pb-20">
       {/* Content Right - subtitle */}
-      <div className="container px-4 lg:px-16 mx-auto">
+      <div className="container px-4 lg:px-0 mx-auto">
         <h4 className="text-[#2F2E2E] text-left uppercase tracking-[3px] text-sm inline-block">
           Ce que je vous propose
         </h4>
         {/* Content Right - title */}
-        <h3 className=" text-[#ff5e29] text-3xl text-left mb-20">
+        <h3 className=" text-[#ff5e29] text-3xl text-left mb-12 md:mb-20">
           Détails de mes services
         </h3>
         <div className="lg:flex ">
-          <div className="lg:w-6/12 px-4 lg:px-8 mb-10 lg:mb-0">
+          <div className="lg:w-6/12 px-0 lg:px-8 mb-10 lg:mb-0">
             {/* Content Left - video */}
             <div className="relative overflow-hidden rounded-lg shadow-lg">
               <video

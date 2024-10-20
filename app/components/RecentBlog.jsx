@@ -42,7 +42,7 @@ const PostCard = ({ index, post }) => {
         />
       </Link>
 
-      <div className="p-6 ">
+      <div className="p-4 lg:p-6 ">
         <p className="text-[#2F2E2E] mb-2 uppercase text-[12px] tracking-[1px]">
           {format(parseISO(post.date), 'LLL d, yyyy')} • {post.author}
         </p>
@@ -148,11 +148,8 @@ const RecentBlog = ({ className }) => {
         </div>
       </div>
 
-      <div
-        className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3
-          gap-4 w-full mx-auto mt-10 mb-10  "
-      >
-        {posts.slice(0, 3).map((post, index) => (
+      <div className="w-full lg:w-9/12 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 mx-auto mt-10 mb-10 px-4">
+        {posts.slice(0, 4).map((post, index) => (
           <PostCard key={index} index={index} post={post} />
         ))}
 

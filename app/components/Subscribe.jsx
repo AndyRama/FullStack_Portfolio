@@ -8,7 +8,7 @@ import { motion, useScroll, useTransform } from 'framer-motion'
 const subscribeContent = {
   heading: {
     title:
-      'Vous avez besoin d’un développeur pour créer ou mettre à jour votre site ?',
+      'Besoin d’un développeur pour vous aider à créer votre site ?',
     subtitle: 'Contactez-moi',
     description: 'Je reviendrai vers vous très rapidement.',
     btn: {

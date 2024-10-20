@@ -9,7 +9,7 @@ const statContent = {
     { number: '4', label: 'Clients' },
   ],
   getStarted: {
-    heading: 'Besoin d’un développeur pour créer votre site ?',
+    heading: 'Besoin d’un développeur pour vous aider à créer votre site ?',
     description: 'Contactez-moi, je reviendrai vers vous très rapidement.',
     image: '/images/icon.',
     cta: {
@@ -24,7 +24,7 @@ const Stats = (className) => {
     <>
       <section className="mt-22 pb-32 px-4 md:px-8">
         {/* Content - bottom -left */}
-        <div className="container px-4 lg:px-16 mx-auto lg:border border-black rounded-md">
+        <div className="container px-0 lg:px-16 mx-auto lg:border border-black rounded-md">
           <div className="lg:flex justify-between items-center space-x-0">
             <div className="lg:w-10/12 mb-10 lg:mb-0">
               <div className="grid grid-cols-2 gap-4 md:grid-cols-4">

@@ -1,18 +1,19 @@
 'use client'
 
 import React from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
+
 import { BiSolidHeart } from 'react-icons/bi'
 import { FaGithub } from 'react-icons/fa'
 import IconLinkedin from './../../public/images/linkedin.svg'
-// import IconMalt from './../../public/images/malt.svg'
+import IconMalt from './../../public/images/malt.svg'
 
-import Link from 'next/link'
-import Image from 'next/image'
 
 const footerContent = {
   footerLinks: [
     {
-      heading: '',
+      heading: 'site',
       links: [
         {
           href: '/',
@@ -24,17 +25,18 @@ const footerContent = {
           badge: 'New',
         },
         {
-          href: '/expertise',
-          label: 'Expertise',
+          href: '/contact',
+          label: 'Contact',
         },
+     
       ],
     },
     {
-      heading: '',
+      heading: 'services',
       links: [
         {
           href: '/projects',
-          label: 'Projects',
+          label: 'Réalisations',
           badge: 'New',
         },
         {
@@ -42,13 +44,13 @@ const footerContent = {
           label: 'Methodologie',
         },
         {
-          href: '/contact',
-          label: 'Contact',
+          href: '/expertise',
+          label: 'Expertise',
         },
       ],
     },
     {
-      heading: '',
+      heading: 'Performance',
       links: [
         {
           href: 'https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fportfolio-eta-three-93.vercel.app%2F&strategy=desktop&category=performance&category=accessibility&category=best-practices&category=seo&utm_source=lh-chrome-ext#',
@@ -58,6 +60,22 @@ const footerContent = {
         {
           href: 'https://www.websitecarbon.com/website/portfolio-eta-three-93-vercel-app/',
           label: 'CO2',
+          badge: 'New',
+          target: '_blank',
+        },
+      ],
+    },
+    {
+      heading: 'Cvg',
+      links: [
+        {
+          href: '/document/privacy',
+          label: 'Privacy',
+          target: '_blank',
+        },
+        {
+          href: '/document/terms',
+          label: 'Terms',
           badge: 'New',
           target: '_blank',
         },
@@ -86,7 +104,7 @@ const Copyright = () => {
 
 const Footer = ({ className }) => {
   return (
-    <footer className={`${className} overflow-hidden w-full h-full z-[2] `}>
+    <footer className={`${className} overflow-hidden w-full h-full z-[2]`}>
       <div className="container mx-auto px-4 relative mt-10">
         <div className="md:flex ">
           <div className="md:w-4/12 mb-5 md:mb-0">
@@ -123,7 +141,7 @@ const Footer = ({ className }) => {
                   Linkedin
                 </Link>
               </span>
-              {/* <span className="flex flex-row text-center">
+              <span className="flex flex-row text-center">
                 <Image src={IconMalt} weight={18} height={18} alt="logo malt" />
                 <Link
                   href="#"
@@ -133,12 +151,12 @@ const Footer = ({ className }) => {
                 >
                   Malt
                 </Link>
-              </span> */}
+              </span>
             </div>
           </div>
 
-          <div className="md:w-7/12 ">
-            <div className="grid grid-cols-3 md:grid-cols-3 ">
+          <div className="md:w-8/12 ">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap 0 md:gap-4 ">
               {footerContent.footerLinks.map((item, index) => (
                 <div className="mb-5 md:mb-0" key={item.heading}>
                   <h3 className="text-gray-400 mb-3">{item.heading}</h3>
@@ -177,23 +195,6 @@ const Footer = ({ className }) => {
           </div>
         </div>
 
-        {/* Version 2 */}
-        <div className="text-right items-right mx-auto text-sm pb-0">
-          <Link
-            href="/document/privacy"
-            target="_blank"
-            className="text-[#ff5e29] hover:text-[#2F2E2E]"
-          >
-            Privacy{' '}
-          </Link>{' '}
-          <Link
-            href="/document/terms"
-            target="_blank"
-            className="text-[#2F2E2E] hover:text-[#ff5e29]"
-          >
-            Terms{' '}
-          </Link>
-        </div>
         <Copyright />
       </div>
       <div className="transform-gpu blur-3xl ">

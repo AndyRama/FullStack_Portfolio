@@ -10,7 +10,7 @@ const subHeroContent = {
     subTitle: '',
     title: '',
     description: '',
-    image: '/images/Team.jpg',
+    image: '/images/bannerLemurian.jpg',
     btn1: {
       href: '/projects',
       label: 'Projets',

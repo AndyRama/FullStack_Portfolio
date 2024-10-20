@@ -22,12 +22,12 @@ const testimonials = [
     image: user2,
     text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ipsum consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam !',
   },
-  // {
-  //   user: 'Jane Smith',
-  //   company: 'Blue Horizon Technologies',
-  //   image: user5,
-  //   text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ipsum consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam !',
-  // },
+  {
+    user: 'Jane Smith',
+    company: 'Blue Horizon Technologies',
+    image: user5,
+    text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ipsum consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam !',
+  },
   {
     user: 'Honoré Rabefarihy',
     company: 'Ingénieur Agronome',
@@ -40,26 +40,26 @@ const testimonials = [
     image: user1,
     text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ipsum consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam !',
   },
-  // {
-  //   user: 'Marc Davis',
-  //   company: 'Synergy Systems',
-  //   image: user6,
-  //   text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ipsum consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam !',
-  // },
+  {
+    user: 'Marc Davis',
+    company: 'Synergy Systems',
+    image: user6,
+    text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ipsum consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam !',
+  },
 ]
 
 const Testimonials = () => {
   return (
-    <div className="container px-4 lg:px-16 mx-auto tracking-wide mb-24 md:mt-22 md:mb-32">
+    <div className="container px-4 lg:px-16 mx-auto tracking-wide mb-24 mt-12 md:mt-22 md:mb-32">
       <h4 className="uppercase tracking-[3px] text-sm inline-block">
         Retour sur mes services
       </h4>
-      <h3 className="text-2xl lg:text-3xl mb-4 lg:mb-10 px-4 text-[#ff5e29]">
+      <h3 className="text-2xl lg:text-3xl mb-4 lg:mb-10 text-[#ff5e29]">
         Quelques témoignage sur les prestations !
       </h3>
-      <div className="flex flex-wrap justify-center">
+      <div className="flex flex-wrap justify-center ">
         {testimonials.map((testimonial, index) => (
-          <div key={index} className="w-full sm:w-1/2 lg:w-1/2 px-4 py-2">
+          <div key={index} className="w-full md:w-1/2 lg:w-1/3 py-2 px-4">
             <div className="text-[#2F2E2E] rounded-md p-6 text-md border border-[#2F2E2E] font-thin">
               <p>{testimonial.text}</p>
               <div className="flex mt-8 items-start">
