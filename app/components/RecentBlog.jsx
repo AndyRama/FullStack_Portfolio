@@ -91,7 +91,7 @@ const RecentBlog = ({ className }) => {
       </div>
 
       <div className="container mx-auto rounded-md ">
-        <div className=" px-4 lg:flex justify-left mb-2">
+        <div className=" px-4 md:px-16 lg:flex justify-left mb-2">
           <div className="lg:w-10/12">
             {recentBlogContent.heading.subTitle && (
               <motion.span
@@ -149,8 +149,8 @@ const RecentBlog = ({ className }) => {
       </div>
 
       <div
-        className="px-4 md:px-8 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4
-          gap-4 w-full lg:w-10/12 mx-auto mt-10 mb-10  "
+        className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4
+          gap-4 w-full lg:w-11/12 mx-auto mt-10 mb-10  "
       >
         {posts.slice(0, 4).map((post, index) => (
           <PostCard key={index} index={index} post={post} />

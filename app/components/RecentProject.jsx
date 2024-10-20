@@ -132,7 +132,7 @@ const RecentProject = ({ className }) => {
 
   return (
     <section className={`${className} overflow-hidden`}>
-      <div className="container px-4 mx-auto">
+      <div className="container px-4 md:px-16 mx-auto">
         <div className="flex ">
           <div className="w-full gap-0 ">
             <div className="text-left w-auto md:w-screen max-w-full lg:max-w-xl">
@@ -203,9 +203,9 @@ const RecentProject = ({ className }) => {
                         <Image
                           src={recentProject.img}
                           alt={recentProject.name}
-                          width={500}
-                          height={400}
-                          className="object-cover h-[400px] w-[500px] object-center rounded-md border-2"
+                          width={650}
+                          height={500}
+                          className="object-cover h-[450px] w-full object-center rounded-md border-2"
                         />
                       </div>
                       <div className="md:w-7/12 p-7 md:p-8 flex items-center">

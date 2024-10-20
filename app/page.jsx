@@ -18,9 +18,9 @@ export default function Home() {
         title="À propos de moi"
         subTitle="quelques mots"
       />
-      <Client className="mt-22 pb-32" />
       <HowIworks />
       <Stats />
+      <Client className="mt-22 pb-32" />
       <HowIWorks2/>
       <Testimonials />
       <RecentProject className="mt-32 pb-22" />

@@ -22,11 +22,11 @@ const statContent = {
 const Stats = (className) => {
   return (
     <>
-      <section className="mt-22 pb-32">
+      <section className="mt-22 pb-32 px-4 md:px-8">
         {/* Content - bottom -left */}
         <div className="container px-4 lg:px-16 mx-auto lg:border border-black rounded-md">
           <div className="lg:flex justify-between items-center space-x-0">
-            <div className="w-full lg:w-9/12 mb-10 lg:mb-0">
+            <div className="lg:w-10/12 mb-10 lg:mb-0">
               <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
                 {statContent.stats.map((stat, index) => (
                   <div

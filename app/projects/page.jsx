@@ -18,7 +18,7 @@ const projectsData = [
   {
     Component: ProjectBannerR,
     subTitle: 'Application web',
-    title: 'School-Unlcoaching.com',
+    title: 'express-depanage-plomberie.fr',
     time: '1 mois 1/2',
     mission: 'Client final',
     developpement: 'Full-Stack',
@@ -31,7 +31,7 @@ const projectsData = [
   {
     Component: ProjectBanner,
     subTitle: 'Site vitrine',
-    title: 'lemurian-agency.com',
+    title: 'lemurian.fr',
     time: '1 mois',
     mission: 'Side Project',
     developpement: 'Full-Stack',

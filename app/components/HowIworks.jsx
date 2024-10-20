@@ -115,7 +115,7 @@ function PrestationsDetails() {
                           </h3>
                         </div>
                       </div>
-                      <p className="leading-relaxed text-md text-[#2F2E2E] text-opacity-75 mb-7 text-justify hover:bg-orange-100 px-4">
+                      <p className="leading-relaxed text-md text-[#2F2E2E] text-opacity-75 mb-7 text-block hover:bg-orange-100 px-4">
                         {feature.description}
                       </p>
                     </div>
