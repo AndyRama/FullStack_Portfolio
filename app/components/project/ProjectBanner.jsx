@@ -59,7 +59,7 @@ const ProjectBanner = ({
   return (
     <section className={`${className}`}>
       <div className="container mx-auto px-4">
-        <div className="flex flex-col lg:flex-row-reverse lg:w-12/12 mx-auto">
+        <div className="flex flex-col lg:flex-row-reverse mx-auto">
           {/* Content Right */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
@@ -73,20 +73,15 @@ const ProjectBanner = ({
             }}
             viewport={{ once: true }}
             style={{ y: imgScroll1 }}
-            className="z-[2] relative bg-cover bg-center lg:mb-0"
+            className="z-[2] relative bg-cover bg-center mx-auto mb-8 lg:mb-0"
           >
             {image && (
               <Image src={image} width={700} height={985} alt="hero image" />
             )}
-            {/* Content Right - Stack */}
-            <BtnStack
-              contentType={contentType}
-              className="hidden lg:contents "
-            />
           </motion.div>
 
           {/* Content Left */}
-          <div className="lg:w-12/12 relative lg:mt-0 mb-8 lg:mb-0 lg:mr-20">
+          <div className="relative lg:mt-0 mb-8 lg:mb-0 lg:mr-20">
             <div className="lg:max-w-xl mx-auto mb-10">
               {/* Content Left - subtitle */}
               {subTitle && (
@@ -152,6 +147,8 @@ const ProjectBanner = ({
                 </motion.p>
               )}
 
+              <BtnStack contentType="project" className="contents lg:hidden" />
+
               {/* Content Left - BtnAction */}
               {projectBannerContent.heading.btn.label && (
                 <motion.div
@@ -187,18 +184,15 @@ const ProjectBanner = ({
                   </Link>
                 </motion.div>
               )}
-
-              {/* Content left - stack - mobile */}
-              <BtnStack
-                contentType={contentType}
-                className="contents lg:hidden"
-              />
             </div>
           </div>
         </div>
-        <div className="contents md:hidden">
+
+        {/* Content Right - stack - mobile */}
+        <BtnStack contentType="project" className="hidden lg:contents" />
+        {/* <div className="contents md:hidden">
           <hr />
-        </div>
+        </div> */}
       </div>
     </section>
   )

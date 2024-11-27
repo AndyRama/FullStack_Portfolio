@@ -59,7 +59,7 @@ const ProjectBanner = ({
   return (
     <section className={`${className}`}>
       <div className="container mx-auto px-4 md:px-0">
-        <div className="flex flex-col xl:flex-row lg:w-12/12 mx-auto">
+        <div className="flex flex-col xl:flex-row mx-auto">
           {/* Content Left - image */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
@@ -81,7 +81,7 @@ const ProjectBanner = ({
           </motion.div>
 
           {/* Content Right */}
-          <div className="lg:w-12/12 relative lg:mt-0 mb-8 lg:mb-0 lg:ml-20">
+          <div className="relative lg:mt-0 mb-8 lg:mb-0 lg:ml-20">
             <div className="lg:max-w-xl mx-auto mb-10">
               {/* Content Right - subtitle */}
               {subTitle && (
