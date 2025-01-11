@@ -23,6 +23,16 @@ const recentProjectContent = {
   },
   recentProjects: [
     {
+      img: '/images/i-doctor.png',
+      title: 'Idoctor.com',
+      years: 'Janv. 2025',
+      type: 'Site vitrine',
+      name: 'Stephane Brunie',
+      role: 'Medecin',
+      quote:
+        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ipsum consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam praesentium sint veniam ad recusandae ab amet impedit  consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam praesentium sint veniam ad recusandae ab amet impedit !',
+    },
+    {
       img: '/images/unlcoaching.png',
       title: 'Unlcoaching.com',
       years: 'Janv. 2025',
@@ -33,8 +43,8 @@ const recentProjectContent = {
         "Ayant à présent un développeur web capable de transformer mes idées ambitieuses en solutions numériques, J'ai demandé à Andy de réaliser un autre project pour moi. Un site web vitrine avec un blog présentant mon activité de coaching, on a réalisé la maquette ensemble puis l'a intégrée pour me livrer un site web responsive et performant.",
     },
     {
-      img: '/images/Express3.png',
-      title: 'Express-depannage-plomberie.com',
+      img: '/images/Express4.png',
+      title: 'Express-plomberie.com',
       years: 'Nov. 2024',
       type: 'Site vitrine',
       name: 'Stephane Brunie',
@@ -62,16 +72,16 @@ const recentProjectContent = {
       quote:
         'Collaborating with Lemurian on projects has been a rewarding experience. Their ability to seamlessly integrate indoor and outdoor spaces, creating a harmonious flow, has elevated the overall design and user experience.',
     },
-    {
-      img: '/images/portfolio.png',
-      title: 'AndyRamaroson.com',
-      years: 'Janv. 2024',
-      type: 'Site vitrine',
-      name: 'Andy Ramaroson',
-      role: 'Développeur Fullstack Js',
-      quote:
-        "Réalisation d'un portfolio afin de présenter mon activité, Je souhaitais aussi tenir un blog tech me permetant de partager régulièrement mes connaissances et mes réflexions sur les dernières tendances du développement web.  Vitrine en ligne captivante pour promouvoir mon expertise, attirer nouveaux clients, collaborer avec d'autres professionnels en mettant en valeur quelques réalisations.",
-    },
+    // {
+    //   img: '/images/portfolio.png',
+    //   title: 'AndyRamaroson.com',
+    //   years: 'Janv. 2024',
+    //   type: 'Site vitrine',
+    //   name: 'Andy Ramaroson',
+    //   role: 'Développeur Fullstack Js',
+    //   quote:
+    //     "Réalisation d'un portfolio afin de présenter mon activité, Je souhaitais aussi tenir un blog tech me permetant de partager régulièrement mes connaissances et mes réflexions sur les dernières tendances du développement web.  Vitrine en ligne captivante pour promouvoir mon expertise, attirer nouveaux clients, collaborer avec d'autres professionnels en mettant en valeur quelques réalisations.",
+    // },
   ],
 }
 
@@ -143,26 +153,6 @@ const RecentProject = ({ className }) => {
               )}
             </div>
           </div>
-          {/*  Content center - btn Right + de Projects  */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{
-              opacity: 1,
-              y: 0,
-              transition: { delay: 0.2, duration: 0.5 },
-            }}
-            viewport={{ once: true }}
-          >
-            <Link
-              href={recentProjectContent.btn.href}
-              className="transistion-all duration-300 ease-in-out text-[11.5px] 
-                      tracking-[2px] font-bold uppercase bg-gradient-to-tr from-orange-400 to-orange-600 py-4 px-3
-                      rounded text-white inline-block items-end hover:text-black
-                      hover:shadow-2xl h-12 w-[150px] mt-3"
-            >
-              {recentProjectContent.btn.label}
-            </Link>
-          </motion.div>
         </div>
 
         <div className="lg:flex justify-center">
@@ -215,6 +205,25 @@ const RecentProject = ({ className }) => {
                             <strong>{recentProject.name}</strong>
                           </p>
                           <p>{recentProject.role}</p>
+                      {/*  Content center - btn Right + de Projects  */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: { delay: 0.2, duration: 0.5 },
+              }}
+              viewport={{ once: true }}
+            >
+              <Link
+                href={recentProjectContent.btn.href}
+                className="mt-8 transistion-all duration-300 ease-in-out text-[11.5px] 
+                      tracking-[2px] font-bold uppercase bg-gradient-to-tr from-orange-400 to-orange-600 py-4 px-3
+                      rounded text-white inline-block items-end hover:shadow-xl h-12 w-[150px] mt-3"
+              >
+                {recentProjectContent.btn.label}
+              </Link>
+            </motion.div>
                         </div>
                       </div>
                     </div>
@@ -237,11 +246,10 @@ const RecentProject = ({ className }) => {
           <div className="flex space-x-3">
             <div
               onClick={prevHandler}
-              className={`${
-                isBeginning
+              className={`${isBeginning
                   ? 'opacity-30 bg-gray-300 text-gray-600 cursor-not-allowed'
                   : 'opacity-100 bg--[#ff5e29] text-white cursor-pointer'
-              } relative top-0 group transition-all duration-300 ease-in-out w-12 h-12 rounded-full inline-flex justify-center items-center`}
+                } relative top-0 group transition-all duration-300 ease-in-out w-12 h-12 rounded-full inline-flex justify-center items-center`}
             >
               <BiChevronLeft
                 className={`text-3xl text-primary transition-all duration-300 ease-in-out group-hover:text-black`}
@@ -250,16 +258,16 @@ const RecentProject = ({ className }) => {
 
             <div
               onClick={nextHandler}
-              className={`${
-                isEnd
+              className={`${isEnd
                   ? 'opacity-30 bg-gray-300 text-gray-600 cursor-not-allowed'
                   : 'opacity-100 bg-gradient-to-tr from-orange-400 to-orange-600 text-white cursor-pointer'
-              } relative top-0 group transition-all duration-300 ease-in-out w-12 h-12 rounded-full inline-flex justify-center items-center`}
+                } relative top-0 group transition-all duration-300 ease-in-out w-12 h-12 rounded-full inline-flex justify-center items-center`}
             >
               <BiChevronRight
                 className={`text-3xl text-primary transition-all duration-300 ease-in-out group-hover:text-black`}
               />
             </div>
+            
           </div>
         </motion.div>
       </div>

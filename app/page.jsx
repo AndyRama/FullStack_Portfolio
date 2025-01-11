@@ -7,7 +7,6 @@ import Subscribe from './components/Subscribe'
 import Testimonials from './components/Testimonials'
 import DescriptionCard from './components/DescriptionCard'
 import HowIworks from './components/HowIworks'
-// import HowIWorks2 from './components/HowIWorks2'
 
 export default function Home() {
   return (
@@ -18,10 +17,9 @@ export default function Home() {
         title="À propos de moi"
         subTitle="quelques mots"
       />
-      <HowIworks />
+      <HowIworks/>
       <Stats />
       <Client className="mt-22 pb-8" />
-      {/* <HowIWorks2/> */}
       <RecentProject className="mt-32 pb-22" />
       <Testimonials/>
       <RecentBlog className="pt-14 pb-15 " />

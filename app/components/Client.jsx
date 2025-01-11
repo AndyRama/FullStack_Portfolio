@@ -3,13 +3,14 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import logo from './../../public/images/logo.png'
 import logo1 from './../../public/images/logo1.png'
 import logo2 from './../../public/images/logo7.jpg'
 import logo3 from './../../public/images/logo3.png'
 import logo4 from './../../public/images/logo4.jpg'
 import logo5 from './../../public/images/logo5.jpg'
 import logo6 from './../../public/images/logo6.png'
-import logo8 from './../../public/images/logo8.jpg'
+import logo7 from './../../public/images/logo7.jpg'
 
 const clientContent = {
   intro: {
@@ -19,13 +20,14 @@ const clientContent = {
       'Je réalise au quotidien des projets pour des startups, PME, éditeurs de logiciels.',
   },
   logos: [
-    { logo: logo1, id: 1 },
-    { logo: logo2, id: 2 },
-    { logo: logo3, id: 3 },
+    { logo: logo, id: 1 },
+    { logo: logo1, id: 2 },
+    { logo: logo2, id: 3 },
     { logo: logo4, id: 4 },
     { logo: logo5, id: 5 },
-    { logo: logo6, id: 6 },
-    { logo: logo8, id: 7 },
+    { logo: logo3, id: 6 },
+    { logo: logo6, id: 7 },
+    // { logo: logo, id: 8 },
   ],
 }
 
