@@ -24,11 +24,11 @@ const recentProjectContent = {
   recentProjects: [
     {
       img: '/images/i-doctor.png',
-      title: 'Idoctor.com',
-      years: 'Janv. 2025',
+      title: 'I-doctor.fr',
+      years: 'Frev. 2025',
       type: 'Site vitrine',
-      name: 'Stephane Brunie',
-      role: 'Medecin',
+      name: 'Lucienne Ramaroson',
+      role: 'Médecin Généraliste',
       quote:
         'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ipsum consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam praesentium sint veniam ad recusandae ab amet impedit  consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam praesentium sint veniam ad recusandae ab amet impedit !',
     },
@@ -60,7 +60,7 @@ const recentProjectContent = {
       name: 'Fara Rabefary',
       role: 'Designe interieur',
       quote:
-        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ipsum consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam praesentium sint veniam ad recusandae ab amet impedit  consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam praesentium sint veniam ad recusandae ab amet impedit !',
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ipsum consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam praesentium sint veniam ad recusandae ab amet impedit  consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam praesentium sint veniam ad recusandae ab amet impedit !',
     },
     {
       img: '/images/lemurian-hero.png',
@@ -72,16 +72,6 @@ const recentProjectContent = {
       quote:
         'Collaborating with Lemurian on projects has been a rewarding experience. Their ability to seamlessly integrate indoor and outdoor spaces, creating a harmonious flow, has elevated the overall design and user experience.',
     },
-    // {
-    //   img: '/images/portfolio.png',
-    //   title: 'AndyRamaroson.com',
-    //   years: 'Janv. 2024',
-    //   type: 'Site vitrine',
-    //   name: 'Andy Ramaroson',
-    //   role: 'Développeur Fullstack Js',
-    //   quote:
-    //     "Réalisation d'un portfolio afin de présenter mon activité, Je souhaitais aussi tenir un blog tech me permetant de partager régulièrement mes connaissances et mes réflexions sur les dernières tendances du développement web.  Vitrine en ligne captivante pour promouvoir mon expertise, attirer nouveaux clients, collaborer avec d'autres professionnels en mettant en valeur quelques réalisations.",
-    // },
   ],
 }
 
