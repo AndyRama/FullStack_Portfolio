@@ -5,7 +5,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 
-// Use only BiIcons for simplicity and consistency
 import { 
   BiLayer, 
   BiCode, 
@@ -32,7 +31,7 @@ const serviceDetails = {
   development: {
     title: "Développement",
     description: "Chez nous, nous avons une passion pour les passions !",
-    image: "public/images/agile.jpg",
+    image: "/images/agile.jpg",
     link: "/developpement-sur-mesure",
     features: [
       {
@@ -56,7 +55,7 @@ const serviceDetails = {
   hosting: {
     title: "Hébergement",
     description: "Notre coeur de métier comporte aussi la mise en place et le maintien de serveurs.",
-    image: "/public/images/cahierDesCharges",
+    image: "/images/cahierDesCharges.jpg",
     link: "/hebergement",
     features: [
       {
@@ -230,7 +229,7 @@ function HowIWorks2() {
                       <Link href={serviceDetails[key].link}>
                         <div className="h-64 w-full relative">
                           <Image 
-                            url={serviceDetails[key].image}
+                            src={serviceDetails[key].image}
                             alt={serviceDetails[key].title}
                             fill
                             className="object-cover"
