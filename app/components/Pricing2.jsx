@@ -1,8 +1,8 @@
 "use client";
 
 import { Badge } from "@/components/ui/badge";
-import { Typography } from "@/components/ui/typography";
-import { Button } from "@/components/ui/button";
+// import { Typography } from "@/components/ui/typography";
+// import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
 import { useParams } from "next/navigation";
 
@@ -53,7 +53,7 @@ export const PricingCard = (props) => {
           <h2 className="text-3xl font-bold text-black">
             ${props.price}
           </h2>
-          <Typography className="text-gray-600">{props.currency}</Typography>
+          <p className="text-gray-600">{props.currency}</p>
           
           {props.barredPrice && (
             <div className="relative self-start">
@@ -63,9 +63,9 @@ export const PricingCard = (props) => {
           )}
         </div>
         
-        <Button className="mt-4 w-full rounded-lg bg-orange-500 px-6 py-3 text-white shadow-md hover:bg-orange-600">
+        <button className="mt-4 w-full rounded-lg bg-orange-500 px-6 py-3 text-white shadow-md hover:bg-orange-600">
           {props.cta}
-        </Button>
+        </button>
         
         <p className="mt-2 text-sm text-gray-500">
           {props.ctaSubtitle}
@@ -178,9 +178,9 @@ export const ContrastPricing = () => {
             <p className="text-3xl font-bold text-gray-900 mb-2">$2,000</p>
             <p className="text-gray-700">Then $200/month</p>
             <p className="text-sm text-gray-500 mt-2">4-year commitment, no guarantee of results.</p>
-            <Button className="mt-4 bg-red-600 hover:bg-red-700">
+            <button className="mt-4 bg-red-600 hover:bg-red-700">
               Get scammed
-            </Button>
+            </button>
           </div>
         </div>
 
@@ -206,9 +206,9 @@ export const ContrastPricing = () => {
             <p className="text-3xl font-bold text-gray-900 mb-2">$29.99</p>
             <p className="text-gray-700">per month</p>
             <p className="text-sm text-gray-500 mt-2">No long-term commitment, cancel anytime.</p>
-            <Button className="mt-4 bg-orange-500 hover:bg-orange-600">
+            <button className="mt-4 bg-orange-500 hover:bg-orange-600">
               Get your AI agents
-            </Button>
+            </button>
           </div>
         </div>
       </div>
