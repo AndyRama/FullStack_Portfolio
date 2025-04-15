@@ -23,16 +23,10 @@ export default function SolutionsTechniques() {
       alt: 'Logo Neon'
     },
     {
-      name: 'Pré-prod',
+      name: 'Production',
       color: 'bg-indigo-200',
       logo: '/vercel-logo.png',
       alt: 'Logo Vercel'
-    },
-    {
-      name: 'Production',
-      color: 'bg-indigo-200',
-      logo: '/Hostinger-logo.png',
-      alt: 'Logo Hostinger'
     },
   ];
 

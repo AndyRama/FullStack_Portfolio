@@ -35,7 +35,7 @@ const Hero = ({ className }) => {
       <div className="container px-4 lg:px-16 mx-auto">
         <div className="lg:flex ">
           {/* Content left - subtitle */}
-          <div className="lg:w-6/12 mb-0 lg:mb-10 mt-0 lg:mt-6">
+          <div className="lg:w-6/12 mb-0 lg:mb-10 mt-0 xl:mt-6">
             {heroContent.intro.subTitle && (
               <motion.span
                 initial={{ opacity: 0, y: 20 }}
@@ -111,8 +111,8 @@ const Hero = ({ className }) => {
                 <Link
                   href={heroContent.intro.btn1.href}
                   className="transistion-all duration-300 ease-in-out text-[11.5px]
-                  md:tracking-[2px] font-bold uppercase bg-gradient-to-r from-orange-100 to-orange-300 py-4 px-5
-                  rounded hover:text-white hover:bg-white text-gray-900"
+                  md:tracking-[2px] font-bold uppercase border border-gradient-to-r from-orange-100 to-orange-300 py-4 px-5
+                  rounded hover:text-gray-400 hover:bg-white text-gray-900"
                 >
                   {heroContent.intro.btn1.label}
                 </Link>
