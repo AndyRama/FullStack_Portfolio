@@ -14,9 +14,9 @@ const CardDescription = ({ className, title, subTitle, description }) => {
     content: {
       img: '/images/andy.jpeg',
       descriptions: [
-        "Avec plus de deux ans d'expérience dans le développement d'applications web sur mesure, j'ai acquis une expertise approfondie qui me permet de transformer leurs idées en solutions web sur mesure, performantes et répondant au mieux à leurs besoins",
-        "Avec plus de deux ans d'expérience dans le développement d'applications web sur mesure, j'ai acquis une expertise approfondie qui me permet de transformer leurs idées en solutions web sur mesure, performantes et répondant au mieux à leurs besoins",
-        "Avec plus de deux ans d'expérience dans le développement d'applications web sur mesure, j'ai acquis une expertise approfondie qui me permet de transformer leurs idées en solutions web sur mesure, performantes et répondant au mieux à leurs besoins",
+        "Fort de mon expertise technique et de ma passion pour le développement web, je propose mes services pour transformer vos idées en solutions digitales concrètes. Mon approche méthodique et organisée me permet de gérer efficacement chaque projet, de la conception initiale au déploiement final.",
+        "Que vous soyez une entreprise cherchant à renforcer votre présence en ligne ou un particulier avec un projet innovant, je mets à votre disposition mes compétences techniques et mon expérience pour vous accompagner vers le succès digital",
+        "Basé à Bordeaux, je travaille également en remote. N'hésitez pas à me contacter pour discuter de votre projet et explorer ensemble les meilleures solutions pour le concrétiser.",
       ],
     },
   }
