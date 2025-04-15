@@ -31,7 +31,7 @@ export default function SolutionsTechniques() {
   ];
 
   return (
-    <section className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+    <section className="max-w-6xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
       <div className="text-left">
         <h2 className="text-4xl font-bold tracking-tight text-gray-900">
           Nos solutions techniques pour créer des{' '}
@@ -47,7 +47,7 @@ export default function SolutionsTechniques() {
       <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {technologies.map((tech) => (
           <div key={tech.name} className={`${tech.color} rounded-lg overflow-hidden`}>
-            <div className="flex items-center justify-center bg-white rounded-full w-40 h-40 mx-auto my-8">
+            <div className="flex items-center justify-center bg-white rounded-full w-40 h-40 my-8">
               <Image 
                 src="#" 
                 alt={tech.alt} 
