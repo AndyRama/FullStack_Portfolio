@@ -5,7 +5,7 @@ import Subscribe from '../components/Subscribe'
 import Testimonials from '../components/Testimonials'
 import AnimatedBanner from '../components/AnimatedBanner'
 import Pricing2 from '../components/Pricing2'
-import HeroSection from '../components/HeroSection'
+// import HeroSection from '../components/HeroSection'
 import HowIWorks2 from '../components/HowIWorks2'
 
 export const metadata = {
@@ -15,9 +15,7 @@ const page = () => {
   return (
     <>
       <AnimatedBanner />
-      <HeroSection/>
-      <Pricing2/>
-      <HowIWorks2/>
+      {/* <HeroSection/> */}
       <SubHero
         className="pt-32"
         subTitle="mes services"
@@ -27,6 +25,8 @@ const page = () => {
         en me basant sur des technologies web modernes. Je suis spécialisé sur le
         langage  JavaScript avec le framework React & NextJs."
       />
+      <HowIWorks2/>
+      <Pricing2/>
       <PricingDetails />
       <Testimonials />
       <Subscribe className="py-16 lg:py-32" />
