@@ -110,10 +110,10 @@ const Footer = ({ className }) => {
             <div className="mb-0">
               <Link href="/" className="flex flex-row text-2xl font-bold"> 
                 {/* Logo - Navigation - left */}
-                <span className="mt-2 py-2 pr-2">
+                {/* <span className="mt-2 py-2 pr-2">
                   <Image src={IconLogo} width={30} height={30} alt="logo" /> 
-                </span>
-                <span className="text-[#ff5e29]">
+                </span> */}
+                <span className="text-black">
                   Lemurian Agency
                 </span>
               </Link>
@@ -138,7 +138,7 @@ const Footer = ({ className }) => {
                 <FaGithub />
                 <Link
                   href="https://github.com/AndyRama"
-                  className="text-[12px] text-[#2F2E2E] hover:text-[#ff5e29] font-bold ml-2 mr-5 mt-[-2px]" 
+                  className="text-[12px] text-[#2F2E2E] hover:text-[#ff5e29] font-bold ml-2 mr-5" 
                   alt="andy rama Github link"
                   target="_blank"
                 >
@@ -154,7 +154,7 @@ const Footer = ({ className }) => {
                 />
                 <Link
                   href="http://www.linkedin.com/in/andy-ramaroson"
-                  className="text-[12px] text-[#2F2E2E] hover:text-[#ff5e29] font-bold ml-2 mr-5 mt-[-2px]"
+                  className="text-[12px] text-[#2F2E2E] hover:text-[#ff5e29] font-bold ml-2 mr-5"
                   alt="andy rama Linkedin link"
                   target="_blank"
                 >
