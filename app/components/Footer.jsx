@@ -28,7 +28,7 @@ const footerContent = {
           href: '/contact',
           label: 'Contact',
         },
-     
+
       ],
     },
     {
@@ -88,7 +88,7 @@ const Copyright = () => {
   return (
     <div className="pt-2 mb-5 md:mt-5 md:pt-3 mr-1 border-t border-t-gray-100 text-center text-[#2F2E2E] ">
       <div className="text-center items-center mx-auto text-sm">
-        &copy; 2024
+        &copy; 2025
         <Link href="/" className="text-[#ff5e29] ml-1 mr-1">
           Portfolio
         </Link>
@@ -166,9 +166,8 @@ const Footer = ({ className }) => {
                         <Link
                           href={link.href}
                           target={link.target || '_self'}
-                          className={`${
-                            link.badge ? 'flex gap-2 items-center' : ''
-                          }
+                          className={`${link.badge ? 'flex gap-2 items-center' : ''
+                            }
                             text-[#2F2E2E] duration-300 transition-all ease-in-out hover:text-[#ff5e29]`}
                         >
                           {link.label === 'CO2' ? (
@@ -193,6 +192,24 @@ const Footer = ({ className }) => {
               ))}
             </div>
           </div>
+        </div>
+
+        {/* Version 2 */}
+        <div className="text-right items-right mx-auto text-sm pb-0">
+          <Link
+            href="#"
+            target="_blank"
+            className="text-red-500 hover:text-[#2F2E2E]"
+          >
+            Privacy{' '}
+          </Link>{' '}
+          <Link
+            href="#"
+            target="_blank"
+            className="text-[#2F2E2E] hover:text-red-500"
+          >
+            Terms{' '}
+          </Link>
         </div>
 
         <Copyright />
