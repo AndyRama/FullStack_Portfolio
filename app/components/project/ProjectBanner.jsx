@@ -59,7 +59,7 @@ const ProjectBanner = ({
   return (
     <section className={`${className}`}>
       <div className="container mx-auto px-4">
-        <div className="flex flex-col lg:flex-row-reverse mx-auto">
+        <div className="flex flex-col lg:flex-row-reverse mx-auto mb-10">
           {/* Content Right */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
