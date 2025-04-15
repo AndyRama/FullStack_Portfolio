@@ -26,7 +26,7 @@ const page = () => {
         en me basant sur des technologies web modernes. Je suis spécialisé sur le
         langage  JavaScript avec le framework React & NextJs."
       />
-      <HowIWorks2/>
+      {/* <HowIWorks2/> */}
       <PricingPack/>
       <PricingDetails />
       <Testimonials />
