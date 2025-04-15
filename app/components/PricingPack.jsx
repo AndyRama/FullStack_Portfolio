@@ -6,7 +6,7 @@ const pricingOptions = [
   {
     title: 'Basique TJM',
     subtitle: 'Débutant (4 Mois)',
-    price: '350€',
+    price: '350€/jrs',
     subPrice: '',
     features: [
       'Creation cahier des charges.',
@@ -17,9 +17,9 @@ const pricingOptions = [
     ],
   },
   {
-    title: 'Tjm + Hébergement',
+    title: 'Creation + Hébergement',
     subtitle: 'Intermédiaire (4 Mois)',
-    price: '350€ + 50€/mois',
+    price: '350€/jrs + 50€/mois',
     subPrice: '',
     features: [
       'Creation cahier des charges.',
@@ -32,10 +32,12 @@ const pricingOptions = [
   {
     title: 'Maintenance herbergement',
     subtitle: 'forfait mensuelle',
-    price: '50€/ mois',
+    price: '50€/mois',
     subPrice: '',
     features: [
-      'Administration site',
+      'Creation cahier des charges.',
+      'Création maquette',
+      'Développement du project',
       'Maintenance',
       'support client',
     ],
@@ -46,9 +48,11 @@ const pricingOptions = [
     price: '500€',
     subPrice: '',
     features: [
-      'Code source',
-      'Update project',
-      'livraison',
+      'Creation cahier des charges.',
+      'Création maquette',
+      'Développement du project',
+      'Maintenance',
+      'support client',
     ],
   },
   {
@@ -57,9 +61,11 @@ const pricingOptions = [
     price: '500€',
     subPrice: '',
     features: [
-      'Code source',
-      'Update project',
-      'livraison',
+      'Creation cahier des charges.',
+      'Création maquette',
+      'Développement du project',
+      'Maintenance',
+      'support client',
     ],
   },
   {
@@ -68,9 +74,11 @@ const pricingOptions = [
     price: '500€',
     subPrice: '',
     features: [
-      'Code source',
-      'Update project',
-      'livraison',
+      'Creation cahier des charges.',
+      'Création maquette',
+      'Développement du project',
+      'Maintenance',
+      'support client',
     ],
   },
 ]
@@ -115,7 +123,7 @@ const PricingPack = () => {
                   <span className="text-4xl text-[#ff5e29] mt-6 mr-2">
                     {option.price}
                   </span>
-                  <span className="text-[#ff5e29] tracking-tight">/ Mois</span>
+                  {/* <span className="text-[#ff5e29] tracking-tight">/ Mois</span> */}
                 </p>
                 {/* Card Pricing - Header - subPrice  */}
                 <p className="text-xl mb-6 text-[#2F2E2E] text-center">
