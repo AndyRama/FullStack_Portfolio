@@ -4,9 +4,10 @@ import PricingDetails from '../components/prestation/PricingDetails'
 import Subscribe from '../components/Subscribe'
 import Testimonials from '../components/Testimonials'
 import AnimatedBanner from '../components/AnimatedBanner'
-import Pricing2 from '../components/Pricing2'
+// import Pricing2 from '../components/PricingPack'
 // import HeroSection from '../components/HeroSection'
 import HowIWorks2 from '../components/HowIWorks2'
+import PricingPack from '../components/PricingPack'
 
 export const metadata = {
   title: 'Prestations - Réaliser par Andy Ramaroson',
@@ -26,7 +27,7 @@ const page = () => {
         langage  JavaScript avec le framework React & NextJs."
       />
       <HowIWorks2/>
-      <Pricing2/>
+      <PricingPack/>
       <PricingDetails />
       <Testimonials />
       <Subscribe className="py-16 lg:py-32" />
