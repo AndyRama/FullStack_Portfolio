@@ -8,7 +8,7 @@ import { BiSolidHeart } from 'react-icons/bi'
 import { FaGithub } from 'react-icons/fa'
 import IconLinkedin from './../../public/images/linkedin.svg'
 import IconMalt from './../../public/images/malt.svg'
-import IconLogo from './../../public/images/logo.svg' 
+import IconLogo from './../../public/images/logo4.png' 
 
 const footerContent = {
   footerLinks: [
