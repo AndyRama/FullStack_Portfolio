@@ -17,16 +17,22 @@ export default function SolutionsTechniques() {
       alt: 'Logo Next.js'
     },
     {
-      name: 'Prisma',
-      color: 'bg-indigo-200',
-      logo: '/php-logo.png',
-      alt: 'Logo PHP'
-    },
-    {
       name: 'Postgres',
       color: 'bg-red-800',
       logo: '/Neon-logo.png',
       alt: 'Logo Neon'
+    },
+    {
+      name: 'Pré-prod',
+      color: 'bg-indigo-200',
+      logo: '/vercel-logo.png',
+      alt: 'Logo Vercel'
+    },
+    {
+      name: 'Production',
+      color: 'bg-indigo-200',
+      logo: '/Hostinger-logo.png',
+      alt: 'Logo Hostinger'
     },
   ];
 
@@ -44,7 +50,7 @@ export default function SolutionsTechniques() {
         </p>
       </div>
 
-      <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-5">
         {technologies.map((tech) => (
           <div key={tech.name} className={`${tech.color} rounded-lg overflow-hidden`}>
             <div className="flex items-center justify-center bg-white rounded-full w-40 h-40 mx-auto my-8">
