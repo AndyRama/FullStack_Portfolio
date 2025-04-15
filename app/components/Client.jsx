@@ -78,7 +78,7 @@ const Client = ({ className }) => {
           </div>
         </div>
       </div>
-      <div className="items-center justify-beteween mt-10 md:mt-15 mb-10">
+      <div className="mx-auto items-center justify-beteween mt-10 md:mt-15 mb-10">
         <div className=" grid grid-cols-2 md:grid-cols-3 xl:grid-cols-7">
           {clientContent.logos.map((logo) => {
             id += 0.5
