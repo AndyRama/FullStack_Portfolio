@@ -4,22 +4,23 @@ import { motion } from 'framer-motion'
 
 const pricingOptions = [
   {
-    title: 'Basique',
+    title: 'Basique TJM',
     subtitle: 'Débutant (4 Mois)',
     price: '350€',
-    subPrice: '(350€)',
+    subPrice: '',
     features: [
       'Creation cahier des charges.',
       'Création maquette',
       'Développement du project',
+      'Création feature',
       'Livraison',
     ],
   },
   {
-    title: 'Creation + maintenance',
+    title: 'Tjm + Hébergement',
     subtitle: 'Intermédiaire (4 Mois)',
-    price: '400€',
-    subPrice: '(400€)',
+    price: '350€ + 50€/mois',
+    subPrice: '',
     features: [
       'Creation cahier des charges.',
       'Création maquette',
@@ -33,12 +34,34 @@ const pricingOptions = [
   {
     title: 'Maintenance',
     subtitle: 'forfait mensuelle',
-    price: '50€',
-    subPrice: '(50€ /mois)',
+    price: '50€/ mois',
+    subPrice: '',
     features: [
       'Administration site',
       'Maintenance',
       'support client',
+    ],
+  },
+  {
+    title: 'Hébergement',
+    subtitle: 'forfait mensuelle',
+    price: '50€/ mois',
+    subPrice: '',
+    features: [
+      'Administration site',
+      'Maintenance',
+      'support client',
+    ],
+  },
+  {
+    title: 'template',
+    subtitle: 'forfait mensuelle',
+    price: '500€',
+    subPrice: '',
+    features: [
+      'Code source',
+      'Update project',
+      'livraison',
     ],
   },
 ]
