@@ -9,8 +9,8 @@ import logo2 from './../../public/images/logo7.jpg'
 import logo3 from './../../public/images/logo3.png'
 import logo4 from './../../public/images/logo4.jpg'
 import logo5 from './../../public/images/logo5.jpg'
-import logo6 from './../../public/images/logo6.png'
-import logo7 from './../../public/images/logo7.jpg'
+// import logo6 from './../../public/images/logo6.png'
+// import logo7 from './../../public/images/logo7.jpg'
 
 const clientContent = {
   intro: {
@@ -26,7 +26,7 @@ const clientContent = {
     { logo: logo4, id: 4 },
     { logo: logo5, id: 5 },
     { logo: logo3, id: 6 },
-    { logo: logo6, id: 7 },
+    // { logo: logo6, id: 7 },
     // { logo: logo, id: 8 },
   ],
 }
