@@ -1,15 +1,11 @@
 "use client";
 
 import { Badge } from "@/components/ui/badge";
-import { Card, CardFooter, CardHeader } from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
 import { Typography } from "@/components/ui/typography";
 import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
 import { Check } from "lucide-react";
 import { useParams } from "next/navigation";
 
-// Redesigned PricingCard component inspired by the standard/premium plan designs
 export const PricingCard = (props) => {
   const params = useParams();
   const organizationSlug = params.orgSlug ? params.orgSlug : "";
@@ -129,7 +125,7 @@ export const Pricing = () => {
           </h2>
           <div className="rounded-lg border border-orange-200 bg-white p-8 shadow-sm">
             <p className="leading-relaxed text-gray-700">
-              Understanding the digital challenges businesses face, we've developed a pragmatic AI agent solution.
+              Understanding the digital challenges businesses face, we&apos;ve developed a pragmatic AI agent solution.
               Inspired by recent studies published on February 15, 2025, showing that only 15% of entrepreneurs
               use generative AI, we aim to offer simple and accessible AI agents that can transform your professional
               interactions without technical complexity, while ensuring optimal confidentiality and security.
@@ -165,8 +161,8 @@ export const ContrastPricing = () => {
         <div className="bg-white p-6 rounded-lg shadow-md">
           <h3 className="text-xl font-bold mb-4">Traditional Agency</h3>
           <p className="text-gray-700 mb-4">
-            Hello, I'm a typical agency. I'll create your website for ONLY $2,000. Then, I'll charge you
-            $200 per month for hosting and SEO. If you want any changes, that'll cost you $100 per hour.
+            Hello, I&apos;m a typical agency. I&apos;ll create your website for ONLY $2,000. Then, I&apos;ll charge you
+            $200 per month for hosting and SEO. If you want any changes, that&apos;ll cost you $100 per hour.
             With a bit of luck, you might get 1 client per month! You have 5 minutes to decide.
           </p>
           <ul className="space-y-3 mb-4">
