@@ -133,7 +133,7 @@ const Footer = ({ className }) => {
               </p>
             </div>
             <br />
-            <div className="flex mt-2">
+            <div className="flex mt-[-20px] mb-4 md:mb-0">
               <span className="flex flex-row">
                 <FaGithub />
                 <Link
@@ -161,7 +161,7 @@ const Footer = ({ className }) => {
                   Linkedin
                 </Link>
               </span>
-              {/* <span className="flex flex-row text-center">
+              <span className="flex flex-row text-center">
                 <Image 
                   src={IconMalt} 
                   width={18} 
@@ -176,7 +176,7 @@ const Footer = ({ className }) => {
                 >
                   Malt
                 </Link>
-              </span> */}
+              </span>
             </div>
           </div>
 
