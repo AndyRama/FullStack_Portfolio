@@ -32,10 +32,10 @@ export default function SolutionsTechniques() {
 
   return (
     <section className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-      <div className="text-center">
+      <div className="text-left">
         <h2 className="text-4xl font-bold tracking-tight text-gray-900">
           Nos solutions techniques pour créer des{' '}
-          <span className="text-cyan-500">applications métier</span>
+          <span className="text-orange-500">applications métier</span>
         </h2>
         <p className="mt-4 max-w-3xl mx-auto text-lg text-gray-600">
           Dans un souci de transparence et de liberté, Kernl a fait le choix d&apos;utiliser des technologies open source : 
