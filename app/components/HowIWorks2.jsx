@@ -18,7 +18,6 @@ import {
   BiChip 
 } from 'react-icons/bi'
 
-// Use only FaIcons for the remaining
 import { 
   FaAndroid, 
   FaCompass, 
@@ -33,7 +32,7 @@ const serviceDetails = {
   development: {
     title: "Développement",
     description: "Chez nous, nous avons une passion pour les passions !",
-    image: "/images/agile.jpg",
+    image: "public/images/agile.jpg",
     link: "/developpement-sur-mesure",
     features: [
       {
@@ -231,7 +230,7 @@ function HowIWorks2() {
                       <Link href={serviceDetails[key].link}>
                         <div className="h-64 w-full relative">
                           <Image 
-                            src={serviceDetails[key].image}
+                            url={serviceDetails[key].image}
                             alt={serviceDetails[key].title}
                             fill
                             className="object-cover"
