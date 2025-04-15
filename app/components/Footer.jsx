@@ -107,28 +107,27 @@ const Footer = ({ className }) => {
       <div className="container mx-auto px-4 relative mt-8">
         <div className="lg:flex">
           <div className="lg:w-4/12"> 
-            <div className="mb-6 md:mb-0">
+            <div className="mb-0">
               <Link href="/" className="flex flex-row text-2xl font-bold"> 
                 {/* Logo - Navigation - left */}
-                <span className="pt-2 py-4 pr-2">
-                  <Image src={IconLogo} width={60} height={60} alt="logo" /> 
+                <span className="mt-2 py-2 pr-2">
+                  <Image src={IconLogo} width={30} height={30} alt="logo" /> 
                 </span>
-                <span className="text-red-500">
+                <span className="text-[#ff5e29]">
                   Lemurian Agency
                 </span>
               </Link>
 
               <p className="text-start text-black">
-                60 rue François 1er <br className="hidden md:block" />
-                75008 Paris
+                60 rue François 1er 75008 Paris
               </p>
               <p className="text-start text-black">
-                plomberie.depannage33@gmail.com
+                lemuriane33@gmail.com
               </p>
               <p className="text-start text-black font-bold">
                 {' '}
                 05.56.34.89.79 -{' '}
-                <span className="text-red-500 font-bold text-center">
+                <span className="text-[#ff5e29] font-bold text-center">
                   06.56.34.89.79
                 </span>
               </p>
@@ -162,7 +161,7 @@ const Footer = ({ className }) => {
                   Linkedin
                 </Link>
               </span>
-              <span className="flex flex-row text-center">
+              {/* <span className="flex flex-row text-center">
                 <Image 
                   src={IconMalt} 
                   width={18} 
@@ -177,7 +176,7 @@ const Footer = ({ className }) => {
                 >
                   Malt
                 </Link>
-              </span>
+              </span> */}
             </div>
           </div>
 
@@ -232,22 +231,22 @@ const Footer = ({ className }) => {
         </div>
 
         {/* Version 2 */}
-        <div className="text-right items-right mx-auto text-sm pb-0">
+        {/* <div className="text-right items-right mx-auto text-sm pb-0">
           <Link
             href="#"
             target="_blank"
-            className="text-red-500 hover:text-[#2F2E2E]"
+            className="text-[#ff5e29] hover:text-[#2F2E2E]"
           >
             Privacy{' '}
           </Link>{' '}
           <Link
             href="#"
             target="_blank"
-            className="text-[#2F2E2E] hover:text-red-500"
+            className="text-[#2F2E2E] hover:text-[#ff5e29]"
           >
             Terms{' '}
           </Link>
-        </div>
+        </div> */}
 
         <Copyright />
       </div>
