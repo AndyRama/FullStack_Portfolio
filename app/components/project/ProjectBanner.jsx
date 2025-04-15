@@ -58,7 +58,7 @@ const ProjectBanner = ({
 
   return (
     <section className={`${className}`}>
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 md:px-16">
         <div className="flex flex-col lg:flex-row-reverse mx-auto mb-10">
           {/* Content Right */}
           <motion.div
@@ -190,9 +190,6 @@ const ProjectBanner = ({
 
         {/* Content Right - stack - mobile */}
         <BtnStack contentType="project" className="hidden lg:contents" />
-        {/* <div className="contents md:hidden">
-          <hr />
-        </div> */}
       </div>
     </section>
   )
