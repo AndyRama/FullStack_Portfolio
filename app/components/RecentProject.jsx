@@ -209,7 +209,7 @@ const RecentProject = ({ className }) => {
                 href={recentProjectContent.btn.href}
                 className="mt-8 transistion-all duration-300 ease-in-out text-[11.5px] 
                       tracking-[2px] font-bold uppercase bg-gradient-to-tr from-orange-400 to-orange-600 py-4 px-3
-                      rounded text-white inline-block items-end hover:shadow-xl h-12 w-[150px] mt-3"
+                      rounded text-white inline-block items-end hover:shadow-xl h-12 w-[150px] md:mt-3"
               >
                 {recentProjectContent.btn.label}
               </Link>
