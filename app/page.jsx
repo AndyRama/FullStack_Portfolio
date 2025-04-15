@@ -7,6 +7,7 @@ import Subscribe from './components/Subscribe'
 import Testimonials from './components/Testimonials'
 import DescriptionCard from './components/DescriptionCard'
 import HowIWorks2 from './components/HowIWorks2'
+import SolutionsTechniques from './components/SolutionsTechniques'
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <Stats />
       <Client className="mt-22 pb-8" />
       <RecentProject className="mt-32 pb-22" />
+      <SolutionsTechniques/>
       <Testimonials/>
       <RecentBlog className="pt-14 pb-15 " />
       <Subscribe className="py-16 lg:py-32 " />
