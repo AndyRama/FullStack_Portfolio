@@ -31,7 +31,7 @@ const serviceDetails = {
   development: {
     title: "Développement",
     description: "Chez nous, nous avons une passion pour les passions !",
-    image: "/images/agile.jpg",
+    image: "/public/images/agile.jpg",
     link: "/developpement-sur-mesure",
     features: [
       {
@@ -55,7 +55,7 @@ const serviceDetails = {
   hosting: {
     title: "Hébergement",
     description: "Notre coeur de métier comporte aussi la mise en place et le maintien de serveurs.",
-    image: "/images/cahierDesCharges.jpg",
+    image: "/public/images/cahierDesCharges.jpg",
     link: "/hebergement",
     features: [
       {
@@ -79,7 +79,7 @@ const serviceDetails = {
   maintenance: {
     title: "Maintenance",
     description: "Maintenir aujourd'hui, pour mieux développer demain !",
-    image: "/images/Team.jpg",
+    image: "/public/images/Team.jpg",
     link: "/maintenance",
     features: [
       {
@@ -103,7 +103,7 @@ const serviceDetails = {
   mobile: {
     title: "Mobile & tablette",
     description: "Nous assurons le développement sur mesure et le support d'applis mobiles.",
-    image: "/images/productivité.jpg",
+    image: "/public/images/productivité.jpg",
     link: "/developpement-applications-mobiles",
     features: [
       {
@@ -127,7 +127,7 @@ const serviceDetails = {
   consulting: {
     title: "Consulting",
     description: "Nous offrons également un service de conseil aux entreprises !",
-    image: "/images/Team.jpg",
+    image: "/public/images/Team.jpg",
     link: "/consulting",
     features: [
       {
@@ -244,7 +244,7 @@ function HowIWorks2() {
           </div>
         </div>
 
-        <div className="mt-10 flex justify-center">
+        <div className="mt-10 flex justify-end">
           <Link href="/expertise" className="inline-flex items-center px-6 py-3 text-white bg-[#ff5e29] rounded hover:bg-[#e64d18] transition-colors">
             <span className="mr-2">Notre Expertise</span>
             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
