@@ -89,7 +89,7 @@ const CardDescription = ({ className, title, subTitle, description }) => {
               >
                 <Image
                   src={cardDescriptionContent.content.img}
-                  className="w-[400px] h-[400px]  md:w-[450px] md:h-[550px] lg:max-w-2xl mx-auto rounded-xl"
+                  className="w-[400px] h-[400px] md:w-[450px] md:h-[550px] lg:max-w-2xl mx-auto rounded-xl"
                   alt="Andy profile"
                   width={300}
                   height={400}

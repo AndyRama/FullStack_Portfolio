@@ -5,21 +5,21 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 
-import { 
-  BiLayer, 
-  BiCode, 
-  BiFolder, 
-  BiTerminal, 
-  BiCog, 
-  BiMicrochip, 
-  BiUser, 
-  BiDevices, 
-  BiChip 
+import {
+  BiLayer,
+  BiCode,
+  BiFolder,
+  BiTerminal,
+  BiCog,
+  BiMicrochip,
+  BiUser,
+  BiDevices,
+  BiChip
 } from 'react-icons/bi'
 
-import { 
-  FaAndroid, 
-  FaCompass, 
+import {
+  FaAndroid,
+  FaCompass,
   FaConnectdevelop,
   FaCommentDots,
   FaCodeBranch,
@@ -31,7 +31,7 @@ const serviceDetails = {
   development: {
     title: "Développement",
     description: "Chez nous, nous avons une passion pour les passions !",
-    image: "/public/images/agile.jpg",
+    image: "/images/agile.jpg",
     link: "/developpement-sur-mesure",
     features: [
       {
@@ -55,7 +55,7 @@ const serviceDetails = {
   hosting: {
     title: "Hébergement",
     description: "Notre coeur de métier comporte aussi la mise en place et le maintien de serveurs.",
-    image: "/public/images/cahierDesCharges.jpg",
+    image: "/images/cahierDesCharges.jpg",
     link: "/hebergement",
     features: [
       {
@@ -79,7 +79,7 @@ const serviceDetails = {
   maintenance: {
     title: "Maintenance",
     description: "Maintenir aujourd'hui, pour mieux développer demain !",
-    image: "/public/images/Team.jpg",
+    image: "/images/Team.jpg",
     link: "/maintenance",
     features: [
       {
@@ -103,7 +103,7 @@ const serviceDetails = {
   mobile: {
     title: "Mobile & tablette",
     description: "Nous assurons le développement sur mesure et le support d'applis mobiles.",
-    image: "/public/images/productivité.jpg",
+    image: "/images/productivité.jpg",
     link: "/developpement-applications-mobiles",
     features: [
       {
@@ -127,7 +127,7 @@ const serviceDetails = {
   consulting: {
     title: "Consulting",
     description: "Nous offrons également un service de conseil aux entreprises !",
-    image: "/public/images/Team.jpg",
+    image: "/images/Team.jpg",
     link: "/consulting",
     features: [
       {
@@ -170,11 +170,10 @@ function HowIWorks2() {
               {Object.keys(serviceDetails).map((key) => (
                 <li key={key} className="w-1/2 lg:w-full mb-2">
                   <button
-                    className={`px-4 py-2 w-full text-left ${
-                      activeTab === key
+                    className={`px-4 py-2 w-full text-left ${activeTab === key
                         ? 'font-bold text-[#ff5e29] border-l-4 border-[#ff5e29]'
                         : 'text-[#2F2E2E] hover:text-[#ff5e29]'
-                    }`}
+                      }`}
                     onClick={() => setActiveTab(key)}
                   >
                     {serviceDetails[key].title}
@@ -227,10 +226,12 @@ function HowIWorks2() {
                       className="rounded-lg overflow-hidden shadow-lg"
                     >
                       <Link href={serviceDetails[key].link}>
-                        <div className="h-64 w-full relative">
-                          <Image 
+                        <div className="w-[300px] h-[400px] relative">
+                          <Image
                             src={serviceDetails[key].image}
                             alt={serviceDetails[key].title}
+                            width={300}
+                            height={400}
                             fill
                             className="object-cover"
                           />
