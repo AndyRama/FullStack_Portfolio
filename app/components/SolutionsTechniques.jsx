@@ -50,7 +50,7 @@ export default function SolutionsTechniques() {
         </p>
       </div>
 
-      <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-5">
+      <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {technologies.map((tech) => (
           <div key={tech.name} className={`${tech.color} rounded-lg overflow-hidden`}>
             <div className="flex items-center justify-center bg-white rounded-full w-40 h-40 mx-auto my-8">
