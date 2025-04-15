@@ -100,30 +100,30 @@ const serviceDetails = {
       }
     ]
   },
-  mobile: {
-    title: "Mobile & tablette",
-    description: "Nous assurons le développement sur mesure et le support d'applis mobiles.",
-    image: "/images/productivité.jpg",
-    link: "/developpement-applications-mobiles",
-    features: [
-      {
-        icon: BiDevices,
-        text: "Des applications mobiles et tablettes programmées pour s'adapter parfaitement à tous les appareils."
-      },
-      {
-        icon: FaAndroid,
-        text: "Expertise dans le développement d'applications pour iOS & Android."
-      },
-      {
-        icon: FaCompass,
-        text: "Création d'interfaces conviviales, axées sur l'utilisateur, pour une navigation fluide et une satisfaction maximale."
-      },
-      {
-        icon: BiChip,
-        text: "Optimisation pour des performances rapides et une efficacité énergétique sur les appareils mobiles et tablettes."
-      }
-    ]
-  },
+  // mobile: {
+  //   title: "Mobile & tablette",
+  //   description: "Nous assurons le développement sur mesure et le support d'applis mobiles.",
+  //   image: "/images/productivité.jpg",
+  //   link: "/developpement-applications-mobiles",
+  //   features: [
+  //     {
+  //       icon: BiDevices,
+  //       text: "Des applications mobiles et tablettes programmées pour s'adapter parfaitement à tous les appareils."
+  //     },
+  //     {
+  //       icon: FaAndroid,
+  //       text: "Expertise dans le développement d'applications pour iOS & Android."
+  //     },
+  //     {
+  //       icon: FaCompass,
+  //       text: "Création d'interfaces conviviales, axées sur l'utilisateur, pour une navigation fluide et une satisfaction maximale."
+  //     },
+  //     {
+  //       icon: BiChip,
+  //       text: "Optimisation pour des performances rapides et une efficacité énergétique sur les appareils mobiles et tablettes."
+  //     }
+  //   ]
+  // },
   consulting: {
     title: "Consulting",
     description: "Nous offrons également un service de conseil aux entreprises !",
@@ -160,7 +160,7 @@ function HowIWorks2() {
           Nos services
         </h4>
         <h3 className="text-[#ff5e29] text-3xl text-left mb-12 md:mb-10">
-          Comment nous pouvons vous aider
+          Comment je peux vous aider
         </h3>
 
         <div className="flex flex-col lg:flex-row">
@@ -193,11 +193,11 @@ function HowIWorks2() {
                 <div className="flex flex-col lg:flex-row">
                   <div className="lg:w-7/12 mb-6 lg:mb-0">
                     <div className="p-0 lg:p-5">
-                      <h3 className="font-bold text-xl mb-2">
+                      {/* <h3 className="font-bold text-xl mb-2">
                         <Link href={serviceDetails[key].link} className="text-[#2F2E2E] hover:text-[#ff5e29]">
                           {serviceDetails[key].title}
                         </Link>
-                      </h3>
+                      </h3> */}
                       <p className="text-lg mb-6">{serviceDetails[key].description}</p>
 
                       <div className="grid grid-cols-2 gap-4">
